@@ -79,30 +79,41 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const active = useScrollSpy();
 
-  useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handler, { passive: true });
-    return () => window.removeEventListener('scroll', handler);
-  }, []);
+useEffect(() => {
+  const handler = () => {
+  console.log("scrollY =", window.scrollY);
+
+  const value = window.scrollY > 50;
+
+  console.log("scrolled =", value);
+
+  setScrolled(value);
+  };
+
+  handler(); // vérifie aussi au chargement
+
+  window.addEventListener('scroll', handler, { passive: true });
+  return () => window.removeEventListener('scroll', handler);
+}, []);
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-blur ${
-        scrolled
-          ? 'bg-black/90 border-b border-[rgba(201,162,39,0.2)] py-3'
-          : 'bg-transparent py-5'
+  scrolled
+    ? 'bg-transparent py-5 border-transparent'
+      : 'bg-black py-3 border-b border-[rgba(201,162,39,0.2)]'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-3 group">
           <img
-            src="/images/logo.png"
-            alt="PPA Logo"
-            className="h-12 w-12 object-contain transition-transform group-hover:scale-105"
+            src="/images/logo ecusson transparent.png"
+            alt="Performance & Prestige Academy"
+            className="h-20 w-20 object-contain transition-transform duration-300 group-hover:scale-105"
           />
           <div className="leading-none">
-            <div className="font-racing font-700 text-lg tracking-widest gold-gradient">PERFORMANCE</div>
-            <div className="font-racing text-sm tracking-[0.3em] text-[#A8A9AD]">&amp; PRESTIGE ACADEMY</div>
+            <div className="font-racing font-black text-xl tracking-[0.18em] gold-gradient">PERFORMANCE</div>
+            <div className="font-racing text-sm tracking-[0.32em] text-white/90">&amp; PRESTIGE ACADEMY</div>
           </div>
         </a>
 
@@ -111,10 +122,10 @@ function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className={`font-racing text-sm tracking-widest uppercase transition-colors duration-200 ${
+                className={`font-racing font-extrabold text-sm tracking-[0.22em] uppercase transition-colors duration-200 ${
                   active === l.href.slice(1)
                     ? 'text-[#C9A227]'
-                    : 'text-[#A8A9AD] hover:text-white'
+                    : 'text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227]'
                 }`}
               >
                 {l.label}
@@ -125,7 +136,7 @@ function Navbar() {
 
         <a
           href="#contact"
-          className="hidden lg:flex btn-gold text-black font-racing font-bold text-sm tracking-widest px-6 py-2.5 rounded"
+          className="hidden lg:flex btn-gold text-black font-racing font-bold text-sm tracking-widest px-9 py-3.5 rounded shadow-[0_0_20px_rgba(201,162,39,0.35)]"
         >
           DEVIS GRATUIT
         </a>
@@ -181,7 +192,7 @@ function Hero() {
         <div className="absolute inset-0 checkered-accent opacity-20" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-24">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-32">
         <p className="font-racing text-sm sm:text-base tracking-[0.5em] text-[#C9A227] mb-4 animate-fade-in-up animate-delay-100">
           PERFORMANCE &amp; PRESTIGE ACADEMY
         </p>
@@ -690,9 +701,9 @@ function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/images/ChatGPT_Image_15_juil._2026,_18_26_06_BIS.png"
-                alt="PPA Logo"
-                className="h-10 w-10 object-contain"
+                src="/images/logo ecusson transparent.png"
+                alt="Performance & Prestige Academy"
+                className="h-18 w-18 object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div>
                 <div className="font-racing text-sm font-bold gold-gradient tracking-widest">PERFORMANCE</div>
