@@ -77,25 +77,17 @@ function useScrollSpy() {
 function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const active = useScrollSpy();
 
 useEffect(() => {
-  const handler = () => {
-  console.log("scrollY =", window.scrollY);
-
-  const value = window.scrollY > 50;
-
-  console.log("scrolled =", value);
-
-  setScrolled(value);
+  const onScroll = () => {
+    setScrolled(window.scrollY > 50);
   };
 
-  handler(); // vérifie aussi au chargement
+  window.addEventListener("scroll", onScroll);
+  onScroll();
 
-  window.addEventListener('scroll', handler, { passive: true });
-  return () => window.removeEventListener('scroll', handler);
+  return () => window.removeEventListener("scroll", onScroll);
 }, []);
-
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-blur ${
