@@ -92,8 +92,8 @@ useEffect(() => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-blur ${
   scrolled
-    ? 'bg-transparent py-5 border-transparent'
-      : 'bg-black py-3 border-b border-[rgba(201,162,39,0.2)]'
+  ? 'bg-black/80 backdrop-blur-xl py-3 border-b border-[rgba(201,162,39,0.2)]'
+  : 'bg-transparent py-5 border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
