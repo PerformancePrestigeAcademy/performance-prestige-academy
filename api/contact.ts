@@ -14,7 +14,6 @@ const result = await resend.emails.send({
   from: "Performance & Prestige Academy <onboarding@resend.dev>",
   to: "performanceprestigeacademy@gmail.com",
   subject: `[PPA] ${subject}`,
-  replyTo: email,
   text: `
 Nom : ${name}
 
@@ -27,10 +26,10 @@ Sujet : ${subject}
 Message :
 
 ${message}
-  `,
+`,
 });
 
-console.log("RESEND RESULT :", result);
+console.log(result);
 
 return res.status(200).json(result);
 
