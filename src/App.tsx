@@ -533,7 +533,7 @@ function Contact() {
           <div className="gold-line mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           <div>
             <h3 className="font-racing font-bold text-3xl text-white mb-4">
   Parlons de votre projet
@@ -623,7 +623,7 @@ function Contact() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-dark-card gold-border rounded-2xl p-8 space-y-5">
+              <form onSubmit={handleSubmit} className="bg-dark-card gold-border rounded-2xl p-8 space-y-5 h-full flex flex-col">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-xs font-racing tracking-widest text-[#A8A9AD] mb-2">NOM COMPLET *</label>
@@ -675,17 +675,19 @@ function Contact() {
                   </select>
                 </div>
 
-                <div>
-                  <label className="block text-xs font-racing tracking-widest text-[#A8A9AD] mb-2">MESSAGE *</label>
-                  <textarea
-                    required
-                    rows={5}
-                    value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Décrivez votre projet ou votre demande..."
-                    className="contact-input w-full px-4 py-3 rounded-lg text-sm resize-none"
-                  />
-                </div>
+                <div className="flex-1 flex flex-col">
+  <label className="block text-xs font-racing tracking-widest text-[#A8A9AD] mb-2">
+    MESSAGE *
+  </label>
+
+  <textarea
+    required
+    value={form.message}
+    onChange={(e) => setForm({ ...form, message: e.target.value })}
+    placeholder="Décrivez votre projet ou votre demande..."
+    className="contact-input w-full flex-1 px-4 py-3 rounded-lg text-sm resize-none"
+  />
+</div>
 
                 <button
                   type="submit"
