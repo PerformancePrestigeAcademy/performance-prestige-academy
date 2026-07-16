@@ -386,8 +386,8 @@ function Formation() {
             <img
               src="/images/logo-transparent.png"
               alt="PPA Logo"
-              className=" w-[320px]
-            h-[320px]
+              className=" w-[400px]
+            h-[400px]
             object-contain
             drop-shadow-[0_0_35px_rgba(201,162,39,0.25)]
         "
