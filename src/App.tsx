@@ -175,6 +175,7 @@ function Hero() {
           className="w-full h-full object-cover object-center opacity-40"
         />
         <div className="hero-overlay absolute inset-0" />
+        <div className="absolute inset-0 racing-grid" />
         <div className="absolute inset-0 checkered-accent opacity-20" />
       </div>
 
