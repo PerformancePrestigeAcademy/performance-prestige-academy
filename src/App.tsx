@@ -382,11 +382,15 @@ function Formation() {
         </div>
 
         <div className="relative rounded-2xl overflow-hidden bg-dark-card gold-border flex flex-col sm:flex-row items-center">
-          <div className="sm:w-2/5 flex justify-center p-4 sm:p-6">
+          <div className="sm:w-2/5 flex items-center justify-center p-4">
             <img
               src="/images/logo-transparent.png"
               alt="PPA Logo"
-              className="h-56 w-56 sm:h-56 sm:w-56 object-contain"
+              className=" w-[320px]
+            h-[320px]
+            object-contain
+            drop-shadow-[0_0_35px_rgba(201,162,39,0.25)]
+        "
             />
           </div>
           <div className="sm:w-3/5 p-8 sm:pr-12">
