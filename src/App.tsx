@@ -386,7 +386,7 @@ function Formation() {
             <img
               src="/images/logo-transparent.png"
               alt="PPA Logo"
-              className="w-full max-w-[300px] object-contain"
+              className="h-[400px] w-[400px] object-contain"
             />
           </div>
           <div className="sm:w-3/5 p-8 sm:pr-12">
