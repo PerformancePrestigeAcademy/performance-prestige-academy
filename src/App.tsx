@@ -16,7 +16,7 @@ const NAV_LINKS = [
 const SERVICES = [
   {
     id: 'maintenance',
-    image: '/images/ChatGPT_Image_15_juil._2026,_18_05_41.png',
+    image: '/images/maintenance.png',
     tag: 'Maintenance',
     title: 'Maintenance Véhicules',
     subtitle: 'VÉHICULES 2 ROUES & 4 ROUES',
@@ -27,7 +27,7 @@ const SERVICES = [
   },
   {
     id: 'formation',
-    image: '/images/ChatGPT_Image_15_juil._2026,_18_07_33.png',
+    image: '/images/formation.png',
     tag: 'Formation',
     title: 'Formation mécanique et technique',
     subtitle: 'DÉBUTANTS · PARTICULIERS · PROFESSIONNELS',
@@ -38,7 +38,7 @@ const SERVICES = [
   },
   {
     id: 'preparation',
-    image: '/images/ChatGPT_Image_15_juil._2026,_18_08_38.png',
+    image: '/images/preparation.png',
     tag: 'Performance',
     title: 'Préparation & Développement',
     subtitle: 'PERFORMANCE · FIABILITÉ · COMPÉTITION',
@@ -96,7 +96,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-3 group">
           <img
-            src="/images/ChatGPT_Image_15_juil._2026,_18_26_06_BIS.png"
+            src="/images/logo.png"
             alt="PPA Logo"
             className="h-12 w-12 object-contain transition-transform group-hover:scale-105"
           />
@@ -170,9 +170,10 @@ function Hero() {
       id="accueil"
       className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden"
     >
+     
       <div className="absolute inset-0">
         <img
-          src="/images/ChatGPT_Image_15_juil._2026,_22_34_42.png"
+          src="/images/hero.png"
           alt="Hero background"
           className="w-full h-full object-cover object-center opacity-40"
         />
@@ -443,13 +444,13 @@ function About() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-2xl border border-[rgba(201,162,39,0.15)]" />
             <img
-              src="/images/ChatGPT_Image_15_juil._2026,_22_34_42.png"
+              src="/images/hero.png"
               alt="Atelier PPA"
               className="rounded-xl w-full h-auto object-cover"
             />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl overflow-hidden gold-border">
               <img
-                src="/images/ChatGPT_Image_15_juil._2026,_18_26_06_BIS.png"
+                src="/images/logo.png"
                 alt="PPA Logo"
                 className="w-full h-full object-cover"
               />
@@ -483,14 +484,39 @@ function Contact() {
     'Autre demande',
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-    setTimeout(() => {
-      setSending(false);
-      setSent(true);
-    }, 1200);
-  };
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  setSending(true);
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (!response.ok) {
+      throw new Error("Erreur d'envoi");
+    }
+
+    setSent(true);
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
+
+  } catch (error) {
+    alert("Erreur lors de l'envoi du message.");
+  } finally {
+    setSending(false);
+  }
+};
 
   return (
     <section id="contact" className="py-24 sm:py-32 bg-[#0D0D0D]">
@@ -548,7 +574,7 @@ function Contact() {
 
             <div className="mt-10 rounded-xl overflow-hidden gold-border">
               <img
-                src="/images/Sans_titre_2.png"
+                src="/images/competition.png"
                 alt="PPA Compétition"
                 className="w-full h-48 object-cover object-center"
               />
@@ -713,8 +739,8 @@ function Footer() {
 
 export default function App() {
   return (
-    <>
-      <Navbar />
+ <>
+ <Navbar />
       <main>
         <Hero />
         <Services />

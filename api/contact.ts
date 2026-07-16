@@ -1,0 +1,39 @@
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export default async function handler(req: any, res: any) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
+
+  try {
+    const { name, email, phone, subject, message } = req.body;
+
+    await resend.emails.send({
+      from: "Performance & Prestige Academy <onboarding@resend.dev>",
+      to: "performanceprestigeacademy@gmail.com",
+      subject: `[PPA] ${subject}`,
+      replyTo: email,
+      text: `
+Nom : ${name}
+
+Email : ${email}
+
+Téléphone : ${phone}
+
+Sujet : ${subject}
+
+Message :
+
+${message}
+      `,
+    });
+
+    return res.status(200).json({ success: true });
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ success: false });
+  }
+}
