@@ -384,7 +384,7 @@ function Formation() {
         <div className="relative rounded-2xl overflow-hidden bg-dark-card gold-border flex flex-col sm:flex-row items-center">
           <div className="sm:w-2/5 flex justify-center p-8 sm:p-12">
             <img
-              src="/images/logo.png"
+              src="/images/logo-transparent.png"
               alt="PPA Logo"
               className="h-40 w-40 sm:h-56 sm:w-56 object-contain"
             />
