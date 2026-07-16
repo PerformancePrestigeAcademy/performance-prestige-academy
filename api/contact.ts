@@ -10,12 +10,12 @@ export default async function handler(req: any, res: any) {
   try {
     const { name, email, phone, subject, message } = req.body;
 
-    await resend.emails.send({
-      from: "Performance & Prestige Academy <onboarding@resend.dev>",
-      to: "performanceprestigeacademy@gmail.com",
-      subject: `[PPA] ${subject}`,
-      replyTo: email,
-      text: `
+const result = await resend.emails.send({
+  from: "Performance & Prestige Academy <onboarding@resend.dev>",
+  to: "performanceprestigeacademy@gmail.com",
+  subject: `[PPA] ${subject}`,
+  replyTo: email,
+  text: `
 Nom : ${name}
 
 Email : ${email}
@@ -27,10 +27,12 @@ Sujet : ${subject}
 Message :
 
 ${message}
-      `,
-    });
+  `,
+});
 
-    return res.status(200).json({ success: true });
+console.log("RESEND RESULT :", result);
+
+return res.status(200).json(result);
 
   } catch (error) {
     console.error(error);
