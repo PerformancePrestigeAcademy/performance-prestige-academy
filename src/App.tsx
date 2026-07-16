@@ -525,7 +525,7 @@ function Contact() {
         <div className="section-divider mb-24" />
 
         <div className="text-center mb-20">
-          <p className="font-racing text-xs tracking-[0.5em] text-[#C9A227] mb-4">CONTACTEZ-NOUS</p>
+          <p className="font-racing text-sm tracking-[0.5em] text-[#C9A227] mb-4">CONTACTEZ-NOUS</p>
           <h2 className="font-racing font-bold text-4xl sm:text-5xl lg:text-6xl text-white mb-6">
             PARLONS DE
             <span className="gold-gradient"> VOTRE PROJET</span>
@@ -540,16 +540,14 @@ function Contact() {
 </h3>
 
 <p className="text-[#A8A9AD] leading-relaxed mb-10">
-  Chaque demande est étudiée personnellement afin de vous proposer la solution
-  la plus adaptée, qu'il s'agisse d'une préparation, d'une maintenance ou d'une
-  formation.
+  
 </p>
 
             <div className="space-y-6 mb-10">
               {[
                 { icon: <Phone className="w-5 h-5" />, label: 'Téléphone', value: '+33 (0)X XX XX XX XX' },
                 { icon: <Mail className="w-5 h-5" />, label: 'Email', value: 'performanceprestigeacademy@gmail.com' },
-                { icon: <MapPin className="w-5 h-5" />, label: 'Adresse', value: 'Nans Les Pins | 83860 | France' },
+                { icon: <MapPin className="w-5 h-5" />, label: 'Adresse', value: 'Nans Les Pins / 83860 / France' },
                 {icon: <BookOpen className="w-5 h-5" />, label: "Disponibilités", value: "Lundi au vendredi • 9h00 - 18h00\nSur rendez-vous",},
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4">
