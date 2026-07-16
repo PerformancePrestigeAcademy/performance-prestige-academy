@@ -100,7 +100,7 @@ useEffect(() => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-3 group">
           <img
-            src="/images/logo ecusson transparent.png"
+            src="/images/logo-ecusson-transparent.png"
             alt="Performance & Prestige Academy"
             className="h-20 w-20 object-contain transition-transform duration-300 group-hover:scale-105"
           />
@@ -391,7 +391,7 @@ function Formation() {
         <div className="relative rounded-2xl overflow-hidden bg-dark-card gold-border flex flex-col sm:flex-row items-center">
           <div className="sm:w-2/5 flex justify-center p-8 sm:p-12">
             <img
-              src="/images/ChatGPT_Image_15_juil._2026,_18_26_06_BIS.png"
+              src="/images/logo.png"
               alt="PPA Logo"
               className="h-40 w-40 sm:h-56 sm:w-56 object-contain"
             />
@@ -694,7 +694,7 @@ function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/images/logo ecusson transparent.png"
+                src="/images/logo-ecusson-transparent.png"
                 alt="Performance & Prestige Academy"
                 className="h-18 w-18 object-contain transition-transform duration-300 group-hover:scale-105"
               />
