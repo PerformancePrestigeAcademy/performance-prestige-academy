@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Menu, X, ChevronDown, Phone, Mail, MapPin,
   Wrench, Gauge, BookOpen, Trophy, Shield, Zap,
@@ -81,7 +81,10 @@ function Navbar() {
   return (
     <nav
   className="fixed top-0 left-0 right-0 z-50
-             bg-black/15
+             bg-gradient-to-b
+             from-black/30
+             via-black/18
+             to-black/8
              backdrop-blur-2xl
              border-b border-[#C9A22720]
              shadow-[0_10px_40px_rgba(0,0,0,0.30)]
