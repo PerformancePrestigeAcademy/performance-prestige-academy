@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import {
   Menu, X, ChevronDown, Phone, Mail, MapPin,
   Wrench, Gauge, BookOpen, Trophy, Shield, Zap,
@@ -77,26 +77,16 @@ function useScrollSpy() {
 function Navbar() {
   const active = useScrollSpy();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-useEffect(() => {
-  const onScroll = () => {
-    setScrolled(window.scrollY > 50);
-  };
-
-  window.addEventListener("scroll", onScroll);
-  onScroll();
-
-  return () => window.removeEventListener("scroll", onScroll);
-}, []);
+  
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-blur ${
-  scrolled
-  ? 'bg-black/80 backdrop-blur-xl py-3 border-b border-[rgba(201,162,39,0.2)]'
-  : 'bg-transparent py-5 border-transparent'
-      }`}
-    >
+  className="fixed top-0 left-0 right-0 z-50
+             bg-black/15
+             backdrop-blur-2xl
+             border-b border-[#C9A22720]
+             shadow-[0_10px_40px_rgba(0,0,0,0.30)]
+             transition-all duration-500 py-4"
+>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-3 group">
           <img
