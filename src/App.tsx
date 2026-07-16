@@ -535,13 +535,22 @@ function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
-            <h3 className="font-racing font-bold text-2xl text-white mb-8">Informations de contact</h3>
+            <h3 className="font-racing font-bold text-3xl text-white mb-4">
+  Parlons de votre projet
+</h3>
+
+<p className="text-[#A8A9AD] leading-relaxed mb-10">
+  Chaque demande est étudiée personnellement afin de vous proposer la solution
+  la plus adaptée, qu'il s'agisse d'une préparation, d'une maintenance ou d'une
+  formation.
+</p>
 
             <div className="space-y-6 mb-10">
               {[
                 { icon: <Phone className="w-5 h-5" />, label: 'Téléphone', value: '+33 (0)X XX XX XX XX' },
-                { icon: <Mail className="w-5 h-5" />, label: 'Email', value: 'contact@ppa-academy.fr' },
-                { icon: <MapPin className="w-5 h-5" />, label: 'Adresse', value: 'France' },
+                { icon: <Mail className="w-5 h-5" />, label: 'Email', value: 'performanceprestigeacademy@gmail.com' },
+                { icon: <MapPin className="w-5 h-5" />, label: 'Adresse', value: 'Nans Les Pins | 83860 | France' },
+                {icon: <BookOpen className="w-5 h-5" />, label: "Disponibilités", value: "Lundi au vendredi • 9h00 - 18h00\nSur rendez-vous",},
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.4)] flex items-center justify-center text-[#C9A227] flex-shrink-0">
@@ -554,21 +563,41 @@ function Contact() {
                 </div>
               ))}
             </div>
+            <div className="space-y-3 mb-10">
 
+  <div className="flex items-center gap-3 text-sm text-[#E5E5E5]">
+    <CheckCircle className="w-4 h-4 text-[#C9A227]" />
+    Réponse sous 24 à 48 heures
+  </div>
+
+  <div className="flex items-center gap-3 text-sm text-[#E5E5E5]">
+    <CheckCircle className="w-4 h-4 text-[#C9A227]" />
+    Devis gratuit
+  </div>
+
+  <div className="flex items-center gap-3 text-sm text-[#E5E5E5]">
+    <CheckCircle className="w-4 h-4 text-[#C9A227]" />
+    Premier échange sans engagement
+  </div>
+
+</div>
             <div>
               <p className="font-racing text-xs tracking-widest text-[#A8A9AD] mb-4">SUIVEZ-NOUS</p>
               <div className="flex gap-3">
                 {[
                   { icon: <Instagram className="w-5 h-5" />, label: 'Instagram' },
-                  { icon: <Facebook className="w-5 h-5" />, label: 'Facebook' },
+                  { icon: <Facebook className="w-5 h-5" />, label: 'Facebook', href: "https://www.facebook.com/profile.php?id=61592134912462"},
                 ].map((s) => (
-                  <button
-                    key={s.label}
-                    className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.4)] flex items-center justify-center text-[#C9A227] hover:bg-[rgba(201,162,39,0.1)] hover:border-[#C9A227] transition-all duration-200"
-                    aria-label={s.label}
-                  >
-                    {s.icon}
-                  </button>
+                  <a
+  key={s.label}
+  href={s.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.4)] flex items-center justify-center text-[#C9A227] hover:bg-[rgba(201,162,39,0.1)] hover:border-[#C9A227] transition-all duration-200"
+  aria-label={s.label}
+>
+  {s.icon}
+</a>
                 ))}
               </div>
             </div>
