@@ -123,7 +123,7 @@ export default function FormationPage() {
 
          <a
          href="#entree"
-         className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Préparation
@@ -136,7 +136,7 @@ export default function FormationPage() {
 
          <a
          href="#examens"
-         className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Préparation
@@ -147,7 +147,7 @@ export default function FormationPage() {
 
          <a
          href="#debutants"
-         className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Débuter
@@ -158,7 +158,7 @@ export default function FormationPage() {
 
          <a
          href="#professionnels"
-         className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Perfectionnement
@@ -169,7 +169,7 @@ export default function FormationPage() {
 
          <a
          href="#cfa"
-         className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
           CFA &
@@ -521,7 +521,7 @@ export default function FormationPage() {
 
 <section
   id="examens"
-  className="pt-24 pb-8 bg-[#0D0D0D]"
+  className="pt-24 bg-[#0D0D0D]"
 >
 
      <div className="max-w-7xl mx-auto px-6">
