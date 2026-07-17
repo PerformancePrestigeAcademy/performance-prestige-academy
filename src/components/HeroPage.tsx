@@ -25,8 +25,6 @@ export default function HeroPage({
 <div className="absolute inset-0 checkered-accent opacity-20" />
   </div>
     
-      {/* Voile noir */}
-      <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Contenu */}
       <div className="relative z-10 text-center">
