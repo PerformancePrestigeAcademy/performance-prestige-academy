@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./components/HomePage";
-import FormationPage from "./pages/FormationPage";
+import FormationPage from "./Pages/FormationPage";
 
 export default function App() {
   return (
