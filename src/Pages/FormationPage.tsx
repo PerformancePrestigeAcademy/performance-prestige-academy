@@ -1,6 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import Navbar from "../components/Navbar";
-import HeroPage from "../components/HeroPage";
+import HeroPage from "../components/HeroPage.tsx";
 
 export default function FormationPage() {
   return (
@@ -13,7 +13,7 @@ export default function FormationPage() {
          surTitre="FORMATIONS"
          titre="TRANSMETTRE"
          titreGold="L'EXCELLENCE"
-         image="/images/formation.jpg"
+         image="/images/hero.png"
          />
 
 

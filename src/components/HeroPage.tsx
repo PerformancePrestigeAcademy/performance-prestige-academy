@@ -11,10 +11,11 @@ export default function HeroPage({
   titreGold,
   image,
 }: HeroPageProps) {
+  console.log("HeroPage chargé");
   return (
     <section
       className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/hero.jpg')" }}
+      style={{ backgroundImage: `url(${image})` }}
     >
       {/* Voile noir */}
       <div className="absolute inset-0 bg-black/60"></div>
