@@ -129,6 +129,8 @@ export default function FormationPage() {
          Préparation
          <br />
          à l'entrée
+         <br />
+         en formation
          </h3>
          </a>
 
@@ -140,6 +142,17 @@ export default function FormationPage() {
          Préparation
          <br />
          aux examens
+         </h3>
+         </a>
+
+         <a
+         href="#debutants"
+         className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         >
+         <h3 className="font-racing text-xl">
+         Débuter
+         <br />
+         la mécanique
          </h3>
          </a>
 
@@ -558,7 +571,7 @@ export default function FormationPage() {
 
          <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
 
-         <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-sm tracking-[0.35em] text-[#C9A227] mb-3">
             CAP
          </p>
 
