@@ -28,7 +28,7 @@ export default function FormationPage() {
 
             {/* Choisissez votre parcours */}
 
-<section className="py-20 bg-[#0A0A0A]">
+<section id="objectif" className="py-20 bg-[#0A0A0A]">
 
      <div className="max-w-7xl mx-auto px-6">
 
