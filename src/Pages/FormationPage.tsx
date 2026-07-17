@@ -123,7 +123,7 @@ export default function FormationPage() {
 
          <a
          href="#entree"
-         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Préparation
@@ -136,7 +136,7 @@ export default function FormationPage() {
 
          <a
          href="#examens"
-         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Préparation
@@ -147,7 +147,7 @@ export default function FormationPage() {
 
          <a
          href="#debutants"
-         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Débuter
@@ -158,7 +158,7 @@ export default function FormationPage() {
 
          <a
          href="#professionnels"
-         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Perfectionnement
@@ -169,7 +169,7 @@ export default function FormationPage() {
 
          <a
          href="#cfa"
-         className="bg-dark-card service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
           CFA &
