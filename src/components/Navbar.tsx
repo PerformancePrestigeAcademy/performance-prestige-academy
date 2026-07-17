@@ -10,8 +10,7 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-    const active = useScrollSpy();
-    const [open, setOpen] = useState(false);
+        const [open, setOpen] = useState(false);
 
   return ( 
   <nav
@@ -43,11 +42,7 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className={`font-racing font-extrabold text-sm tracking-[0.22em] uppercase transition-colors duration-200 ${
-                  active === l.href.slice(1)
-                    ? 'text-[#C9A227]'
-                    : 'text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227]'
-                }`}
+               className="font-racing font-extrabold text-sm tracking-[0.22em] uppercase text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227] transition-colors duration-200"
               >
                 {l.label}
               </a>
@@ -96,33 +91,3 @@ export default function Navbar() {
   );
 }
 
-function useScrollSpy() {
-  const [active, setActive] = useState("accueil");
-
-  useEffect(() => {
-    const handler = () => {
-      const sections = [
-        "accueil",
-        "services",
-        "formation",
-        "apropos",
-        "contact",
-      ];
-
-      for (const id of [...sections].reverse()) {
-        const el = document.getElementById(id);
-
-        if (el && window.scrollY >= el.offsetTop - 100) {
-          setActive(id);
-          break;
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handler, { passive: true });
-
-    return () => window.removeEventListener("scroll", handler);
-  }, []);
-
-  return active;
-}
