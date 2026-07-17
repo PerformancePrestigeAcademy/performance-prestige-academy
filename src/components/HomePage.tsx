@@ -75,6 +75,7 @@ function useScrollSpy() {
   return active;
 }
 
+/*
 function Navbar() {
   const active = useScrollSpy();
   const [open, setOpen] = useState(false);
@@ -161,6 +162,7 @@ function Navbar() {
     </nav>
   );
 }
+*/
 
 function Hero() {
   return (

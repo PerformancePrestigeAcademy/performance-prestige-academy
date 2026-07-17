@@ -1,0 +1,40 @@
+type HeroPageProps = {
+  surTitre: string;
+  titre: string;
+  titreGold: string;
+  image: string;
+};
+
+export default function HeroPage({
+  surTitre,
+  titre,
+  titreGold,
+  image,
+}: HeroPageProps) {
+  return (
+    <section
+      className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      {/* Voile noir */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Contenu */}
+      <div className="relative z-10 text-center">
+
+        <p className="font-racing tracking-[0.5em] text-[#C9A227] mb-5">
+          {surTitre}
+        </p>
+
+        <h1 className="font-racing text-6xl">
+          {titre}
+          <br />
+          <span className="gold-gradient">
+            {titreGold}
+          </span>
+        </h1>
+
+      </div>
+    </section>
+  );
+}

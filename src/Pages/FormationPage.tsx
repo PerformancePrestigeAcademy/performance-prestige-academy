@@ -1,38 +1,20 @@
 import { ArrowLeft } from "lucide-react";
 import Navbar from "../components/Navbar";
+import HeroPage from "../components/HeroPage";
 
 export default function FormationPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
 
         <Navbar />
-        
+
              {/* Hero */}
-      <section className="h-[70vh] flex items-center justify-center">
-
-        <div className="text-center">
-
-          <p className="font-racing tracking-[0.5em] text-[#C9A227] mb-5">
-            FORMATIONS
-          </p>
-
-          <h1 className="font-racing text-6xl">
-            TRANSMETTRE
-            <br />
-            <span className="gold-gradient">
-              L'EXCELLENCE
-            </span>
-          </h1>
-          <a
-            href="#formations"
-            className="btn-gold inline-block mt-10 px-10 py-4 rounded font-racing tracking-widest"
-            >  
-             DÉCOUVRIR LES FORMATIONS
-          </a>
-
-        </div>
-
-      </section>
+        <HeroPage
+         surTitre="FORMATIONS"
+         titre="TRANSMETTRE"
+         titreGold="L'EXCELLENCE"
+         image="/images/hero.jpg"
+         />
 
 
 
