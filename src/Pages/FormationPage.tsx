@@ -555,7 +555,7 @@ export default function FormationPage() {
 
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-3xl tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-3">
             CAP
          </p>
 
@@ -586,9 +586,8 @@ export default function FormationPage() {
 
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-3xl tracking-[0.35em] text-[#C9A227] mb-3">
-            BAC PROFESSIONNEL
-         </p>
+         <p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-3">
+            BAC PRO      </p>
 
          <h3 className="font-racing text-3xl mb-6">
             Révisions techniques
@@ -617,7 +616,7 @@ export default function FormationPage() {
 
         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-3xl tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-3">
             BTS
          </p>
 
