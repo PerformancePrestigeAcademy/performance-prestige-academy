@@ -13,10 +13,16 @@ export default function HeroPage({
 }: HeroPageProps) {
   console.log("HeroPage chargé");
   return (
-    <section
-      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${image})` }}
-    >
+   <section className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden">
+
+  <div className="absolute inset-0">
+    <img
+      src={image}
+      alt="Hero background"
+      className="w-full h-full object-cover object-center opacity-40"
+    />
+  </div>
+    
       {/* Voile noir */}
       <div className="absolute inset-0 bg-black/60"></div>
 
