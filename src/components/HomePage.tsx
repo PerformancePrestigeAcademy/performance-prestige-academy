@@ -449,9 +449,7 @@ function About() {
               alt="Atelier PPA"
               className="rounded-xl w-full h-auto object-cover"
             />
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl overflow-hidden gold-border">
-              
-            </div>
+            
           </div>
         </div>
 
