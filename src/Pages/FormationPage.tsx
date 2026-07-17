@@ -13,7 +13,7 @@ export default function FormationPage() {
          surTitre="FORMATIONS"
          titre="TRANSMETTRE"
          titreGold="L'EXCELLENCE"
-         image="/images/hero.jpg"
+         image="/images/formation.jpg"
          />
 
 
