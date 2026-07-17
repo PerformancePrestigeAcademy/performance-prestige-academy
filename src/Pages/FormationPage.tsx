@@ -130,7 +130,7 @@ export default function FormationPage() {
 
     <div className="text-center mb-12">
 
-        <p className="font-racing tracking-[0.4em] text-[#C9A227] mb-4">
+        <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
             NOS FORMATIONS
         </p>
 
@@ -292,7 +292,7 @@ export default function FormationPage() {
 
          <div className="text-center mb-20">
 
-             <p className="font-racing tracking-[0.4em] text-[#C9A227] mb-4">
+             <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
              ACCOMPAGNEMENT
              </p>
 
@@ -458,7 +458,7 @@ export default function FormationPage() {
 
          <div className="text-center mb-20">
 
-         <p className="font-racing tracking-[0.4em] text-[#C9A227] mb-4">
+         <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
             PRÉPARATION AUX EXAMENS
          </p>
 
@@ -598,7 +598,7 @@ export default function FormationPage() {
 
          <div className="text-center mb-20">
 
-         <p className="font-racing tracking-[0.4em] text-[#C9A227] mb-4">
+         <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
             FORMATIONS MÉCANIQUES
          </p>
 
