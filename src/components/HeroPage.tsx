@@ -46,7 +46,7 @@ export default function HeroPage({
       </div>
 
        <a
-       href="#formations"
+       href="#objectif"
        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#C9A227] animate-bounce"
        >
        <ChevronDown className="w-8 h-8" />
