@@ -356,7 +356,7 @@ export default function FormationPage() {
 
 
 
-<section id="preparation" className="py-24 bg-[#0D0D0D]">
+<section id="preparation" className="pt-24 pb-8 bg-[#0D0D0D]">
 
      <div className="max-w-7xl mx-auto px-6">
 
@@ -389,7 +389,7 @@ export default function FormationPage() {
 
 {/* Préparation à l'entrée en formation */}
 
-<section className="py-24 bg-[#0A0A0A]">
+<section className="pt-8 pb-24 bg-[#0D0D0D]">
 
      <div className="max-w-7xl mx-auto px-6">
 
@@ -526,7 +526,7 @@ export default function FormationPage() {
 
 <section
   id="examens"
-  className="py-24 bg-[#0A0A0A]"
+  className="pt-24 pb-8 bg-[#0A0A0A]"
 >
 
      <div className="max-w-7xl mx-auto px-6">
