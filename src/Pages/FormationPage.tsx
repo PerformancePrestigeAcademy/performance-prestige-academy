@@ -571,7 +571,7 @@ export default function FormationPage() {
 
          <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
 
-         <p className="font-racing text-sm tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-mb tracking-[0.35em] text-[#C9A227] mb-3">
             CAP
          </p>
 
