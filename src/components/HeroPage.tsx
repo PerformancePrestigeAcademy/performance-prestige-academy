@@ -1,3 +1,5 @@
+import { ChevronDown } from "lucide-react";
+
 type HeroPageProps = {
   surTitre: string;
   titre: string;
@@ -42,6 +44,14 @@ export default function HeroPage({
         </h1>
 
       </div>
+
+       <a
+       href="#formations"
+       className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#C9A227] animate-bounce"
+       >
+       <ChevronDown className="w-8 h-8" />
+       </a>
+
     </section>
   );
 }
