@@ -10,7 +10,8 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+    const active = useScrollSpy();
+    const [open, setOpen] = useState(false);
 
   return ( 
   <nav
