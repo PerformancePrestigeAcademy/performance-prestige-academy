@@ -14,7 +14,7 @@ export default function HeroPage({
   return (
     <section
       className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: "url('/images/hero.jpg')" }}
     >
       {/* Voile noir */}
       <div className="absolute inset-0 bg-black/60"></div>
