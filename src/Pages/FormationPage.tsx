@@ -34,7 +34,7 @@ export default function FormationPage() {
 
          <div className="text-center mb-14">
 
-         <p className="font-racing tracking-[0.4em] text-[#C9A227] mb-4">
+         <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
          VOTRE OBJECTIF
          </p>
 
