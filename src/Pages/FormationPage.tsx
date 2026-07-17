@@ -247,7 +247,7 @@ export default function FormationPage() {
                      01
                      </p>
 
-                     <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+                     <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
                      DÉBUTANTS
                      </p>
 
@@ -281,7 +281,7 @@ export default function FormationPage() {
                  02
                  </p>
 
-                 <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
                  PROFESSIONNELS
                  </p>
 
@@ -315,7 +315,7 @@ export default function FormationPage() {
                  03
                  </p>
 
-                 <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
                  COMPÉTITION
                  </p>
 
@@ -400,7 +400,7 @@ export default function FormationPage() {
                  01
                  </p>
 
-                 <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
                  CAP
                  </p>
 
@@ -438,7 +438,7 @@ export default function FormationPage() {
                  02
                  </p>
 
-                 <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
                  BAC PRO
                  </p>
 
@@ -475,7 +475,7 @@ export default function FormationPage() {
                  03
                  </p>
 
-                 <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
                  BTS
                  </p>
 
@@ -555,7 +555,7 @@ export default function FormationPage() {
 
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             CAP
          </p>
 
@@ -616,7 +616,7 @@ export default function FormationPage() {
 
         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             BTS
          </p>
 
@@ -693,7 +693,7 @@ export default function FormationPage() {
      {/* DÉBUTANT */}
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             DÉBUTANT
          </p>
 
@@ -721,7 +721,7 @@ export default function FormationPage() {
      {/* INITIE */}
          <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
 
-         <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
 INITIE
          </p>
 
@@ -752,7 +752,7 @@ INITIE
      {/* COMPETITION */}
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             COMPÉTITION
          </p>
 
