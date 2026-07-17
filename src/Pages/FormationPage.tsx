@@ -168,17 +168,6 @@ export default function FormationPage() {
          </a>
 
          <a
-         href="#debutants"
-         className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
-         >
-         <h3 className="font-racing text-xl">
-         Débuter
-         <br />
-         la mécanique
-         </h3>
-         </a>
-
-         <a
          href="#cfa"
          className="service-card gold-border rounded-2xl p-8 text-center hover:-translate-y-2 transition-all duration-300"
          >
@@ -209,7 +198,7 @@ export default function FormationPage() {
 
 <div className="max-w-7xl mx-auto px-6">
 
-    <div className="text-center mb-20">
+    <div className="text-center mb-12">
 
         <p className="font-racing tracking-[0.4em] text-[#C9A227] mb-4">
             NOS FORMATIONS
@@ -242,7 +231,7 @@ export default function FormationPage() {
 
                     {/* Les parcours */}
 
-<section className="py-24 bg-[#0A0A0A]">
+<section className="-mt-6 pb-24 bg-[#0D0D0D]">
 
  <div className="max-w-7xl mx-auto px-6">
 
@@ -565,13 +554,13 @@ export default function FormationPage() {
 
          </div>
 
-     <div className="grid lg:grid-cols-3 gap-8"></div>
+     <div className="grid lg:grid-cols-3 gap-8">
 
      {/* CAP */}
 
-         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
+         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-         <p className="font-racing text-mb tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-3xl tracking-[0.35em] text-[#C9A227] mb-3">
             CAP
          </p>
 
@@ -599,9 +588,10 @@ export default function FormationPage() {
          </div>
 
      {/* BAC PROFESSIONNEL */}
-         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
 
-         <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+
+         <p className="font-racing text-3xl tracking-[0.35em] text-[#C9A227] mb-3">
             BAC PROFESSIONNEL
          </p>
 
@@ -629,9 +619,10 @@ export default function FormationPage() {
          </div>
 
       {/* BTS */}
-         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
 
-         <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
+        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+
+         <p className="font-racing text-3xl tracking-[0.35em] text-[#C9A227] mb-3">
             BTS
          </p>
 
@@ -659,6 +650,8 @@ export default function FormationPage() {
          </div>
 
     </div>
+
+</div>
 
 </section>
 
@@ -701,10 +694,10 @@ export default function FormationPage() {
 
          </div>
 
-     <div className="grid lg:grid-cols-3 gap-8"></div>
+     <div className="grid lg:grid-cols-3 gap-8">
 
      {/* DÉBUTANT */}
-         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
+         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
          <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
             DÉBUTANT
@@ -763,7 +756,7 @@ INITIE
          </div>
 
      {/* COMPETITION */}
-         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
+         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
          <p className="font-racing text-xs tracking-[0.35em] text-[#C9A227] mb-3">
             COMPÉTITION
@@ -792,8 +785,10 @@ INITIE
          </a>
 
          </div>
-
+     
      </div>
+
+    </div>
 
 </section>
 
