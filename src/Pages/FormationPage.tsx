@@ -382,10 +382,7 @@ export default function FormationPage() {
              </p>
 
          </div>
-
      </div>
-
-</section>
 
 {/* Préparation à l'entrée en formation */}
 
