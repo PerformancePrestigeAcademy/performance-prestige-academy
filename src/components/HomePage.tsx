@@ -374,7 +374,7 @@ function Formation() {
                       : 'btn-outline-gold text-[#C9A227]'
                   }`}
                 >
-                  DECOUVRIR NOS FORMATIONS
+                  DECOUVRIR LA FORMATION
                 </a>
               </div>
             </div>
@@ -400,10 +400,10 @@ function Formation() {
             </h3>
             <p className="text-[#A8A9AD] leading-relaxed mb-6">
               Chaque formation est dispensée directement en atelier, sur véhicules réels, avec des formateurs
-              issus du monde de la compétition.
+              issus du monde de la compétition. 
             </p>
             <a href="#contact" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
-              RENSEIGNEMENTS
+              VOIR TOUTES LES FORMATIONS
             </a>
           </div>
         </div>
@@ -450,11 +450,7 @@ function About() {
               className="rounded-xl w-full h-auto object-cover"
             />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl overflow-hidden gold-border">
-              <img
-                src="/images/logo.png"
-                alt="PPA Logo"
-                className="w-full h-full object-cover"
-              />
+              
             </div>
           </div>
         </div>
