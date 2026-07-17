@@ -1,65 +1,13 @@
 import { ArrowLeft } from "lucide-react";
+import Navbar from "../components/Navbar";
 
 export default function FormationPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
 
-      {/* Navbar */}
-      <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-[#C9A22720]">
-        <div className="max-w-7xl mx-auto h-24 px-6 flex items-center justify-between">
-
-          {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
-            <img
-              src="/images/logo-ecusson-transparent.png"
-              className="h-16"
-            />
-
-            <div>
-              <div className="font-racing text-lg gold-gradient">
-                PERFORMANCE
-              </div>
-
-              <div className="font-racing text-xs tracking-[0.3em] text-white/80">
-                & PRESTIGE ACADEMY
-              </div>
-            </div>
-          </a>
-
-          {/* Navigation */}
-          <nav className="hidden lg:flex gap-10 font-racing text-sm tracking-[0.25em] uppercase">
-
-            <a href="#formations" className="hover:text-[#C9A227] transition">
-              Formations
-            </a>
-
-            <a href="#examens" className="hover:text-[#C9A227] transition">
-              Examens
-            </a>
-
-            <a href="#ecoles" className="hover:text-[#C9A227] transition">
-              CFA & Écoles
-            </a>
-
-            <a href="#contact" className="hover:text-[#C9A227] transition">
-              Contact
-            </a>
-
-          </nav>
-
-          {/* Retour */}
-          <a
-            href="/"
-            className="btn-outline-gold px-6 py-3 rounded flex items-center gap-2"
-          >
-            <ArrowLeft size={18} />
-            Accueil
-          </a>
-
-        </div>
-      </header>
-
-      {/* Hero */}
+        <Navbar />
+        
+             {/* Hero */}
       <section className="h-[70vh] flex items-center justify-center">
 
         <div className="text-center">

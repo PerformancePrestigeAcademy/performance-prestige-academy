@@ -1,10 +1,19 @@
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+
+const NAV_LINKS = [
+  { label: "Accueil", href: "#accueil" },
+  { label: "Services", href: "#services" },
+  { label: "Formation", href: "/formation" },
+  { label: "À propos", href: "#apropos" },
+  { label: "Contact", href: "#contact" },
+];
 
 export default function Navbar() {
-  const active = useScrollSpy();
   const [open, setOpen] = useState(false);
-  
-  return (
-    <nav
+
+  return ( 
+  <nav
   className="fixed top-0 left-0 right-0 z-50
              bg-gradient-to-b
              from-black/30
@@ -84,4 +93,35 @@ export default function Navbar() {
       )}
     </nav>
   );
+}
+
+function useScrollSpy() {
+  const [active, setActive] = useState("accueil");
+
+  useEffect(() => {
+    const handler = () => {
+      const sections = [
+        "accueil",
+        "services",
+        "formation",
+        "apropos",
+        "contact",
+      ];
+
+      for (const id of [...sections].reverse()) {
+        const el = document.getElementById(id);
+
+        if (el && window.scrollY >= el.offsetTop - 100) {
+          setActive(id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handler, { passive: true });
+
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
+
+  return active;
 }
