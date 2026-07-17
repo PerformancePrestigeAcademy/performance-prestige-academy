@@ -14,7 +14,7 @@ export default function HeroPage({
   console.log("HeroPage chargé");
   return (
     <section
-      className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${image})` }}
     >
       {/* Voile noir */}
