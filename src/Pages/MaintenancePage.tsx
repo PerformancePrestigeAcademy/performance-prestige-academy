@@ -26,7 +26,7 @@ export default function MaintenancePage() {
 
 <section className="py-20 bg-[#0A0A0A]">
 
-  <div className="max-w-7xl mx-auto px-6 translate-x-2">
+  <div className="max-w-7xl mx-auto px-6 translate-x-3">
 
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
