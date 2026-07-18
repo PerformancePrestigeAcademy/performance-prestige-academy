@@ -348,7 +348,7 @@ export default function FormationPage() {
                  CAP
                  </p>
 
-                 <h3 className="font-racing text-3xl mb-5">
+                 <h3 className="font-racing text-3xl text-center mb-5">
                  Découvrir les fondamentaux
                  </h3>
 
@@ -386,7 +386,7 @@ export default function FormationPage() {
                  BAC PRO
                  </p>
 
-                 <h3 className="font-racing text-3xl mb-5">
+                 <h3 className="font-racing text-3xl text-center mb-5">
                  Développer son autonomie
                  </h3>
 
