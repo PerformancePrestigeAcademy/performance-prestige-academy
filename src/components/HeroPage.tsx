@@ -31,11 +31,11 @@ export default function HeroPage({
       {/* Contenu */}
       <div className="relative z-10 text-center">
 
-        <p className="font-racing tracking-[0.5em] text-[#C9A227] mb-5">
+        <p className="font-racing text-sm sm:text-base tracking-[0.5em] text-[#C9A227] mb-4">
           {surTitre}
         </p>
 
-        <h1 className="font-racing text-6xl">
+        <h1 className="font-racing font-bold text-5xl sm:text-7xl lg:text-8xl leading-none mb-6">
           {titre}
           <br />
           <span className="gold-gradient">
