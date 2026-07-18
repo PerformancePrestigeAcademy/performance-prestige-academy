@@ -220,7 +220,7 @@ function Hero() {
   );
 }
 
-function ServiceCard({ service, reversed }: { service: typeof SERVICES[0]; reversed: boolean }) {
+function ServiceCard({ service, reversed }: { service: typeof MAINTENANCE[0]; reversed: boolean }) {
   return (
     <div
       className={`flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-0 overflow-hidden rounded-2xl gold-border service-card`}
@@ -288,7 +288,7 @@ function Maintenance() {
         </div>
 
         <div className="flex flex-col gap-12">
-          {SERVICES.map((s, i) => (
+          {MAINTENANCE.map((s, i) => (
             <ServiceCard key={s.id} service={s} reversed={i % 2 !== 0} />
           ))}
         </div>
