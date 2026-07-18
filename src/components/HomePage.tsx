@@ -5,7 +5,7 @@ import {
   CheckCircle, ArrowRight, Instagram, Facebook
 } from 'lucide-react';
 import Navbar from "./Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer.tsx";
 
 const NAV_LINKS = [
   { label: 'Accueil', href: '#accueil' },
