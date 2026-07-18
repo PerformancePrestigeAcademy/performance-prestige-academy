@@ -62,24 +62,13 @@ export default function MaintenancePage() {
       </a>
 
       <a
-        href="#preparation"
+        href="#performance"
         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
       >
         <h3 className="font-racing text-xl">
           Préparation
           <br />
           & Optimisation
-        </h3>
-      </a>
-
-      <a
-        href="#competition"
-        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-      >
-        <h3 className="font-racing text-xl">
-          Sport
-          <br />
-          automobile
         </h3>
       </a>
 
@@ -137,7 +126,7 @@ export default function MaintenancePage() {
              </p>
 
          <h3 className="font-racing text-3xl mb-6 text-center">
-            Révisions
+            Révisions & entretiens
          </h3>
 
          <ul className="space-y-3 text-[#A8A9AD] mb-8">
@@ -165,7 +154,7 @@ export default function MaintenancePage() {
              </p>
 
          <h3 className="font-racing text-3xl mb-6 text-center">
-            Freinage
+            Freinage & sécurité
          </h3>
 
          <ul className="space-y-3 text-[#A8A9AD] mb-8">
@@ -221,136 +210,6 @@ export default function MaintenancePage() {
 
 
 
-{/* ===========================
-    ENTRETIEN COURANT
-=========================== */}
-
-<section
-  id="entretien"
-  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
->
-
-<div className="max-w-7xl mx-auto px-6">
-
-<div className="text-center mb-20">
-
-<p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-ENTRETIEN
-</p>
-
-<h2 className="font-racing text-5xl mb-6">
-ENTRETIEN
-<br />
-<span className="gold-gradient">
-COURANT
-</span>
-</h2>
-
-<p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-Chez Performance & Prestige Academy, l'entretien ne consiste pas uniquement à remplacer des pièces.
-Chaque intervention est réalisée avec la même exigence que sur un véhicule de compétition :
-contrôle, prévention et fiabilité avant tout.
-</p>
-
-</div>
-
-<div className="grid lg:grid-cols-3 gap-8">
-
-{/* ================= Carte 01 ================= */}
-
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-     04
- </p>
-
-<h3 className="font-racing text-3xl mb-6 text-center">
-Révision & entretien
-</h3>
-
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Vidange moteur</li>
-<li>✔ Remplacement des filtres</li>
-<li>✔ Contrôle des niveaux</li>
-<li>✔ Contrôle sécurité</li>
-<li>✔ Révision périodique</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Un entretien régulier permet de préserver les performances,
-la fiabilité et la longévité de votre véhicule.
-</p>
-
-</div>
-
-{/* ================= Carte 02 ================= */}
-
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-     05
- </p>
-
-<h3 className="font-racing text-3xl mb-6 text-center">
-Freinage & sécurité
-</h3>
-
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Plaquettes & disques</li>
-<li>✔ Liquide de frein</li>
-<li>✔ Purge complète</li>
-<li>✔ Contrôle hydraulique</li>
-<li>✔ Vérification du système</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Parce que la sécurité n'est jamais une option,
-chaque élément est contrôlé avec la plus grande rigueur.
-</p>
-
-</div>
-
-{/* ================= Carte 03 ================= */}
-
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             06
-             </p>
-
-<h3 className="font-racing text-3xl mb-6 text-center">
-Trains roulants
-</h3>
-
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Suspension</li>
-<li>✔ Direction</li>
-<li>✔ Pneumatiques</li>
-<li>✔ Géométrie</li>
-<li>✔ Contrôle du châssis</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Des liaisons au sol parfaitement réglées garantissent
-précision de conduite, stabilité et confort.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
 
 {/* ===========================
     RÉVISION CONSTRUCTEUR
@@ -393,7 +252,7 @@ automobile dans les meilleures conditions.
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             07
+             04
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -422,7 +281,7 @@ dans le temps.
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             08
+             05
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -451,7 +310,7 @@ constructeur et la fiabilité du véhicule.
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             09
+             06
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -524,7 +383,7 @@ nous identifions l'origine réelle du dysfonctionnement avant toute intervention
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             10
+             07
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -553,7 +412,7 @@ l'état électronique du véhicule.
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             11
+             08
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -581,7 +440,7 @@ Chaque panne est étudiée afin d'identifier son origine réelle avant toute ré
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             12
+             09
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -654,7 +513,7 @@ destinée à la compétition.
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             13
+             10
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -682,7 +541,7 @@ Chaque préparation est développée selon vos objectifs et votre utilisation.
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             14
+             11
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
@@ -710,11 +569,11 @@ Chaque réglage vise à exploiter pleinement le potentiel du véhicule.
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             15
+             12
              </p>
 
 <h3 className="font-racing text-3xl mb-6 text-center">
-Sport automobile
+Sport mécanique
 </h3>
 
 <ul className="space-y-3 text-[#A8A9AD] mb-8">
