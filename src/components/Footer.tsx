@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex items-center gap-6 mb-8">
 
               <img
-                src="/images/logo-ecusson-transparent.png"
+                src="/images/logo-transparent.png"
                 alt="Performance & Prestige Academy"
                 className="w-72 h-72 object-contain"
               />
