@@ -608,7 +608,7 @@ export default function FormationPage() {
 
 <section
   id="examens"
-  className="pt-24 bg-[#0D0D0D]"
+  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
 >
 
      <div className="max-w-7xl mx-auto px-6">
@@ -733,6 +733,7 @@ export default function FormationPage() {
     </div>
 
 </div>
+<div className="h-12"></div>
 
 </section>
 
