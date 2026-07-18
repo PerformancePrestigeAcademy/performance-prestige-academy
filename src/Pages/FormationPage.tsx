@@ -52,7 +52,7 @@ export default function FormationPage() {
          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
 
          <a
-         href="#entree"
+         href="#preparation"
          className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
@@ -286,7 +286,8 @@ export default function FormationPage() {
 
 
 
-<section id="preparation" className="py-24 bg-[#0A0A0A]">
+<section id="preparation" 
+            className="scroll-mt-32 py-24 bg-[#0A0A0A]"">
 
      <div className="max-w-7xl mx-auto px-6">
 
