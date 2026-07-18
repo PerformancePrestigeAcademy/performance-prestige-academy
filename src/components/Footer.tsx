@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
 
           {/* Partie droite */}
-         <div className="w-72 flex-shrink-0 flex flex-col items-end text-right gap-12 pt-32"> 
+         <div className="w-72 flex-shrink-0 flex flex-col items-end text-right gap-12 pt-[180px]"> 
 
             <div>
 
