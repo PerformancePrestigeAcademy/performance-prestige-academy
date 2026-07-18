@@ -8,13 +8,13 @@ import Navbar from "./Navbar";
 
 const NAV_LINKS = [
   { label: 'Accueil', href: '#accueil' },
-  { label: 'Services', href: '#services' },
+  { label: 'Maintenance', href: '#maintenance' },
   { label: 'Formation', href: '/formation' },
   { label: 'À propos', href: '#apropos' },
   { label: 'Contact', href: '#contact' },
 ];
 
-const SERVICES = [
+const MAINTENANCE = [
   {
     id: 'maintenance',
     image: '/images/maintenance.png',
@@ -60,7 +60,7 @@ function useScrollSpy() {
   const [active, setActive] = useState('accueil');
   useEffect(() => {
     const handler = () => {
-      const sections = ['accueil', 'services', 'formation', 'apropos', 'contact'];
+      const sections = ['accueil', 'maintenance', 'formation', 'apropos', 'contact'];
       for (const id of [...sections].reverse()) {
         const el = document.getElementById(id);
         if (el && window.scrollY >= el.offsetTop - 100) {
@@ -211,7 +211,7 @@ function Hero() {
       </div>
 
       <a
-        href="#services"
+        href="#maintenance"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#C9A227] animate-bounce"
       >
         <ChevronDown className="w-8 h-8" />
@@ -270,9 +270,9 @@ function ServiceCard({ service, reversed }: { service: typeof SERVICES[0]; rever
   );
 }
 
-function Services() {
+function Maintenance() {
   return (
-    <section id="services" className="py-24 sm:py-32 bg-[#0A0A0A]">
+    <section id="maintenance" className="py-24 sm:py-32 bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-20">
           <p className="font-racing text-xs tracking-[0.5em] text-[#C9A227] mb-4">NOS EXPERTISES</p>
@@ -736,7 +736,7 @@ function Footer() {
             <ul className="space-y-2">
               {['Préparation & Développement', 'Formation Professionnelle', 'Maintenance Véhicules', 'Cartographie ECU', 'Développement Compétition'].map((s) => (
                 <li key={s}>
-                  <a href="#services" className="text-[#A8A9AD] text-sm hover:text-[#C9A227] transition-colors">{s}</a>
+                  <a href="#maintenance" className="text-[#A8A9AD] text-sm hover:text-[#C9A227] transition-colors">{s}</a>
                 </li>
               ))}
             </ul>
@@ -770,7 +770,7 @@ export default function App() {
  <Navbar />
       <main>
         <Hero />
-        <Services />
+        <Maintenance />
         <Formation />
         <About />
         <Contact />
