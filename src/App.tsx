@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import FormationPage from "./Pages/FormationPage";
 import MaintenancePage from "./Pages/MaintenancePage";
-import MentionsLegales from "./pages/MentionsLegales";
-import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
+import MentionsLegales from "./Pages/MentionsLegales";
+import PolitiqueConfidentialite from "./Pages/PolitiqueConfidentialite";
 
 export default function App() {
   return (
