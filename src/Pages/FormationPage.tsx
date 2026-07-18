@@ -3,6 +3,9 @@ import {
   Wrench,
   Gauge,
   Flag,
+  GraduationCap,
+  Handshake,
+  School,
 } from "lucide-react";
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
@@ -264,170 +267,6 @@ export default function FormationPage() {
      </div>
 
     </div>
-
-</section>
-
-
-
-
-
-{/* Nos formations */}
-
-
-
-
-
-<section
-  id="formations"
-  className="py-24 bg-[#0D0D0D]"
->
-
-<div className="max-w-7xl mx-auto px-6">
-
-    <div className="text-center mb-12">
-
-        <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-            NOS FORMATIONS
-        </p>
-
-        <h2 className="font-racing text-5xl mb-6">
-            UNE FORMATION
-            <br />
-            <span className="gold-gradient">
-                POUR CHAQUE PARCOURS
-            </span>
-        </h2>
-
-        <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-            Que vous découvriez la mécanique ou que vous souhaitiez perfectionner
-            votre expertise professionnelle, Performance & Prestige Academy
-            propose des formations adaptées à chaque niveau.
-        </p>
-
-    </div>
-
-</div>
-
-</section>
-
-
-
-
-
-
-                    {/* Les parcours */}
-
-<section className="-mt-6 pb-24 bg-[#0D0D0D]">
-
- <div className="max-w-7xl mx-auto px-6">
-
-     <div className="grid lg:grid-cols-3 gap-8">
-
-         {/* Débutants */}
-
-         <div className="bg-dark-card gold-border rounded-2xl service-card">
-
-                 <div className="p-8">
-                    
-                     <p className="text-7xl font-black text-[#C9A22720] mb-6">
-                     01
-                     </p>
-
-                     <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-                     DÉBUTANTS
-                     </p>
-
-                     <h3 className="font-racing text-3xl mb-5">
-                     Découvrir la mécanique
-                     </h3>
-
-                     <p className="text-[#A8A9AD] leading-relaxed mb-8">
-                     Une approche progressive destinée aux passionnés qui souhaitent comprendre,
-                     entretenir et intervenir eux-mêmes sur leur véhicule.
-                     </p>
-
-                     <a
-                     href="#"
-                     className="btn-outline-gold inline-block px-6 py-3 rounded"
-                     >
-                     Découvrir
-                    </a>
-
-                 </div>
-
-             </div>
-
-        {/* Professionnels */}
-
-         <div className="bg-dark-card gold-border rounded-2xl service-card">
-
-             <div className="p-8">
-
-                 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-                 02
-                 </p>
-
-                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-                 PROFESSIONNELS
-                 </p>
-
-                 <h3 className="font-racing text-3xl mb-5">
-                 Développer son expertise
-                 </h3>
-
-                 <p className="text-[#A8A9AD] leading-relaxed mb-8">
-                 Des formations destinées aux apprentis, mécaniciens et techniciens souhaitant
-                 approfondir leurs compétences et leurs méthodes de travail.
-                 </p>
-
-                 <a
-                 href="#"
-                 className="btn-outline-gold inline-block px-6 py-3 rounded"
-                 >
-                 Découvrir
-                 </a>
-
-             </div>
-
-         </div>
-
-         {/* Compétition */}
-
-         <div className="bg-dark-card gold-border rounded-2xl service-card">
-
-             <div className="p-8">
-
-                 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-                 03
-                 </p>
-
-                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-                 COMPÉTITION
-                 </p>
-
-                 <h3 className="font-racing text-3xl mb-5">
-                 Performance & préparation
-                 </h3>
-
-                 <p className="text-[#A8A9AD] leading-relaxed mb-8">
-                 Préparation moteur, mise au point châssis, électronique embarquée et méthodes
-                 utilisées dans le sport automobile et moto.
-                 </p>
-
-                 <a
-                 href="#"
-                 className="btn-outline-gold inline-block px-6 py-3 rounded"
-                 >
-                 Découvrir
-                 </a>
-
-             </div>
-
-         </div>
-
-     </div>
-
-</div>
 
 </section>
 
@@ -890,6 +729,158 @@ export default function FormationPage() {
 
 </section>
 
+
+
+
+{/* CFA & ÉTABLISSEMENTS */}
+
+
+
+
+
+<section
+  id="cfa"
+  className="scroll-mt-32 py-24 bg-[#111111]"
+>
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-20">
+
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        PARTENARIATS
+      </p>
+
+      <h2 className="font-racing text-5xl mb-6">
+        CFA &
+        <br />
+        <span className="gold-gradient">
+          ÉTABLISSEMENTS
+        </span>
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Performance & Prestige Academy accompagne les établissements de formation,
+        CFA et lycées professionnels dans le développement de leurs parcours
+        pédagogiques grâce à des interventions techniques, des formations
+        spécialisées et des projets sur mesure.
+      </p>
+
+    </div>
+
+    <div className="grid lg:grid-cols-3 gap-8">
+
+      {/* Carte 1 */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+
+        <div className="flex justify-center mb-6">
+          <GraduationCap className="w-12 h-12 text-[#C9A227]" />
+        </div>
+
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+          FORMATIONS
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Sur site
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD]">
+
+          <li>✔ Intervention dans vos locaux</li>
+          <li>✔ Modules personnalisés</li>
+          <li>✔ Ateliers pratiques</li>
+          <li>✔ Formations techniques</li>
+          <li>✔ Adaptées à vos besoins</li>
+
+        </ul>
+
+      </div>
+
+      {/* Carte 2 */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+
+        <div className="flex justify-center mb-6">
+          <Handshake className="w-12 h-12 text-[#C9A227]" />
+        </div>
+
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+          PARTENARIATS
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Pédagogiques
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD]">
+
+          <li>✔ Création de contenus</li>
+          <li>✔ Accompagnement pédagogique</li>
+          <li>✔ Développement des compétences</li>
+          <li>✔ Projets communs</li>
+          <li>✔ Suivi des apprenants</li>
+
+        </ul>
+
+      </div>
+
+      {/* Carte 3 */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+
+        <div className="flex justify-center mb-6">
+          <School className="w-12 h-12 text-[#C9A227]" />
+        </div>
+
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+          PROJETS
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Sur mesure
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD]">
+
+          <li>✔ Sport automobile</li>
+          <li>✔ Véhicules de compétition</li>
+          <li>✔ Technologies récentes</li>
+          <li>✔ Interventions spécifiques</li>
+          <li>✔ Prestations personnalisées</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    {/* Appel à l'action */}
+
+    <div className="text-center mt-20">
+
+      <h3 className="font-racing text-4xl mb-6">
+        Vous représentez un établissement ?
+      </h3>
+
+      <p className="max-w-2xl mx-auto text-[#A8A9AD] mb-10 leading-relaxed">
+        Vous souhaitez développer une offre de formation en mécanique,
+        organiser des interventions techniques ou mettre en place un partenariat
+        pédagogique ? Échangeons ensemble sur votre projet.
+      </p>
+
+      <a
+        href="#contact"
+        className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
+      >
+        ÉCHANGER SUR VOTRE PROJET
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
