@@ -24,6 +24,7 @@ export default function FormationPage() {
 
              {/* Hero */}
         <HeroPage
+        className="font-racing font-bold text-5xl sm:text-7xl lg:text-8xl leading-none mb-6 animate-fade-in-up animate-delay-200"
          surTitre="FORMATIONS"
          titre="TRANSMETTRE"
          titreGold="L'EXCELLENCE"
