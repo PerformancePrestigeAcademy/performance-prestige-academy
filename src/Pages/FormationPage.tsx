@@ -187,11 +187,11 @@ export default function FormationPage() {
              01
              </p>
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             DÉBUTANT
          </p>
 
-         <h3 className="font-racing text-3xl text-center mb-6">
+         <h3 className="font-racing text-3xl mb-6">
             Découvrir la mécanique
          </h3>
 
@@ -219,11 +219,11 @@ export default function FormationPage() {
              02
              </p>
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             INITIE
          </p>
 
-         <h3 className="font-racing text-3xl text-center mb-6">
+         <h3 className="font-racing text-3xl mb-6">
             Développer son expertise
          </h3>
 
@@ -254,11 +254,11 @@ export default function FormationPage() {
              03
              </p>
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             COMPÉTITION
          </p>
 
-         <h3 className="font-racing text-3xl text-center mb-6">
+         <h3 className="font-racing text-3xl mb-6">
             Performance & préparation
          </h3>
 
@@ -348,7 +348,7 @@ export default function FormationPage() {
                  CAP
                  </p>
 
-                 <h3 className="font-racing text-3xl text-center mb-5">
+                 <h3 className="font-racing text-3xl mb-5">
                  Découvrir les fondamentaux
                  </h3>
 
@@ -386,7 +386,7 @@ export default function FormationPage() {
                  BAC PRO
                  </p>
 
-                 <h3 className="font-racing text-3xl text-center mb-5">
+                 <h3 className="font-racing text-3xl mb-5">
                  Développer son autonomie
                  </h3>
 
@@ -423,7 +423,7 @@ export default function FormationPage() {
                  BTS
                  </p>
 
-                 <h3 className="font-racing text-3xl text-center mb-5">
+                 <h3 className="font-racing text-3xl mb-5">
                  Approfondir son expertise
                  </h3>
 
@@ -653,11 +653,11 @@ export default function FormationPage() {
              01
              </p>
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
           DIAGNOSTIC
         </p>
 
-        <h3 className="font-racing text-3xl text-center mb-6">
+        <h3 className="font-racing text-3xl mb-6">
           Diagnostic avancé
         </h3>
 
@@ -688,11 +688,11 @@ export default function FormationPage() {
              02
              </p>
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
           PERFORMANCE
         </p>
 
-        <h3 className="font-racing text-3xl text-center mb-6">
+        <h3 className="font-racing text-3xl mb-6">
           Optimisation moteur
         </h3>
 
@@ -723,11 +723,11 @@ export default function FormationPage() {
              03
              </p>
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
           COMPÉTITION
         </p>
 
-        <h3 className="font-racing text-3xl text-center mb-6">
+        <h3 className="font-racing text-3xl mb-6">
           Châssis & préparation
         </h3>
 
@@ -804,11 +804,11 @@ export default function FormationPage() {
              01
              </p>
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
           FORMATIONS
         </p>
 
-        <h3 className="font-racing text-3xl text-center mb-6">
+        <h3 className="font-racing text-3xl mb-6">
           Sur site
         </h3>
 
@@ -832,11 +832,11 @@ export default function FormationPage() {
              02
              </p>
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
           PARTENARIATS
         </p>
 
-        <h3 className="font-racing text-3xl text-center mb-6">
+        <h3 className="font-racing text-3xl mb-6">
           Pédagogiques
         </h3>
 
@@ -860,11 +860,11 @@ export default function FormationPage() {
              03
              </p>
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
           PROJETS
         </p>
 
-        <h3 className="font-racing text-3xl text-center mb-6">
+        <h3 className="font-racing text-3xl mb-6">
           Sur mesure
         </h3>
 
