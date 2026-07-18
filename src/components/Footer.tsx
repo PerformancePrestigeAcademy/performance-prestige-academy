@@ -5,7 +5,7 @@ import { Instagram, Facebook } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-[rgba(201,162,39,0.15)] py-16">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1700px] mx-auto px-6">
 
         {/* Contenu principal */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-20">
@@ -18,16 +18,16 @@ export default function Footer() {
               <img
                 src="/images/logo-ecusson-transparent.png"
                 alt="Performance & Prestige Academy"
-                className="w-32 h-32 object-contain"
+                className="w-40 h-40 object-contain"
               />
 
               <div>
 
-                <h3 className="font-racing text-3xl gold-gradient tracking-[0.15em]">
+                <h3 className="font-racing text-4xl gold-gradient tracking-[0.15em]">
                   PERFORMANCE
                 </h3>
 
-                <p className="font-racing text-sm tracking-[0.30em] text-white">
+                <p className="font-racing text-base tracking-[0.30em] text-white">
                   & PRESTIGE ACADEMY
                 </p>
 
@@ -39,7 +39,7 @@ export default function Footer() {
               Préparation • Formation • Maintenance
             </p>
 
-            <p className="text-[#A8A9AD] italic text-lg max-w-xl leading-relaxed">
+            <p className="text-[#A8A9AD] italic text-lg max-w-3xl leading-relaxed">
               « L'excellence n'est pas une option.
               <br />
               C'est notre standard. »
