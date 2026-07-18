@@ -76,7 +76,7 @@ export default function FormationPage() {
          </a>
 
          <a
-         href="#debutants"
+         href="#formation-mecanique"
          className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
@@ -592,7 +592,7 @@ export default function FormationPage() {
 
 <section
   id="formation-mecanique"
-  className="py-24 bg-[#0A0A0A]"
+  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
 >
 
      <div className="max-w-7xl mx-auto px-6">
@@ -653,7 +653,7 @@ export default function FormationPage() {
          <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-INITIE
+            INITIE
          </p>
 
          <h3 className="font-racing text-3xl mb-6">
