@@ -103,7 +103,7 @@ export default function FormationPage() {
          </a>
 
          <a
-         href="#professionnels"
+         href="#perfectionnement"
          className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
@@ -740,6 +740,154 @@ export default function FormationPage() {
 
 
 
+{/* PERFECTIONNEMENT PROFESSIONNEL */}
+
+
+
+
+
+<section
+  id="perfectionnement"
+  className="scroll-mt-32 py-24 bg-[#111111]"
+>
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-20">
+
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        PERFECTIONNEMENT
+      </p>
+
+      <h2 className="font-racing text-5xl mb-6">
+        DÉVELOPPER
+        <br />
+        <span className="gold-gradient">
+          SON EXPERTISE
+        </span>
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Destinées aux professionnels comme aux passionnés exigeants,
+        nos formations permettent d'acquérir des compétences avancées
+        en diagnostic, préparation, électronique et méthodes
+        d'intervention issues des pratiques d'atelier et du sport automobile.
+      </p>
+
+    </div>
+
+    <div className="grid lg:grid-cols-3 gap-8">
+
+      {/* Diagnostic */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+
+        <div className="flex justify-center mb-6">
+          <Wrench className="w-12 h-12 text-[#C9A227]" />
+        </div>
+
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+          DIAGNOSTIC
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Diagnostic avancé
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+          <li>✔ Diagnostic constructeur</li>
+          <li>✔ Lecture calculateurs</li>
+          <li>✔ Recherche de panne</li>
+          <li>✔ Méthodes professionnelles</li>
+          <li>✔ Outils spécialisés</li>
+
+        </ul>
+
+        <a
+          href="#"
+          className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
+          Découvrir
+        </a>
+
+      </div>
+
+      {/* Performance */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+
+        <div className="flex justify-center mb-6">
+          <Gauge className="w-12 h-12 text-[#C9A227]" />
+        </div>
+
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+          PERFORMANCE
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Optimisation moteur
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+          <li>✔ Cartographie moteur</li>
+          <li>✔ Admission</li>
+          <li>✔ Échappement</li>
+          <li>✔ Optimisation des performances</li>
+          <li>✔ Fiabilisation</li>
+
+        </ul>
+
+        <a
+          href="#"
+          className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
+          Découvrir
+        </a>
+
+      </div>
+
+      {/* Compétition */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+
+        <div className="flex justify-center mb-6">
+          <Flag className="w-12 h-12 text-[#C9A227]" />
+        </div>
+
+        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+          COMPÉTITION
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Châssis & préparation
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+          <li>✔ Géométrie</li>
+          <li>✔ Suspensions</li>
+          <li>✔ Freinage</li>
+          <li>✔ Préparation circuit</li>
+          <li>✔ Assistance compétition</li>
+
+        </ul>
+
+        <a
+          href="#"
+          className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
+          Découvrir
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 
