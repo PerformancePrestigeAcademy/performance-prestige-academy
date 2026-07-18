@@ -1,4 +1,9 @@
-import { ArrowLeft } from "lucide-react";
+import {
+  ArrowLeft,
+  Wrench,
+  Gauge,
+  Flag,
+} from "lucide-react";
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
 
@@ -26,7 +31,18 @@ export default function FormationPage() {
 
 
 
-            {/* Choisissez votre parcours */}
+
+
+
+
+
+
+{/* Choisissez votre parcours */}
+
+
+
+
+
 
 <section id="objectif" className="scroll-mt-32 py-20 bg-[#0A0A0A]">
 
@@ -52,6 +68,17 @@ export default function FormationPage() {
          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
 
          <a
+         href="#formation-mecanique"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+         >
+         <h3 className="font-racing text-xl">
+         Débuter
+         <br />
+         la mécanique
+         </h3>
+         </a>
+
+         <a
          href="#preparation"
          className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
@@ -72,17 +99,6 @@ export default function FormationPage() {
          Préparation
          <br />
          aux examens
-         </h3>
-         </a>
-
-         <a
-         href="#formation-mecanique"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-         >
-         <h3 className="font-racing text-xl">
-         Débuter
-         <br />
-         la mécanique
          </h3>
          </a>
 
@@ -118,8 +134,148 @@ export default function FormationPage() {
 
 
 
+{/* Formation mécanique */}
 
-                {/* Nos formations */}
+
+
+
+
+<section
+  id="formation-mecanique"
+  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+>
+
+     <div className="max-w-7xl mx-auto px-6">
+
+         <div className="text-center mb-20">
+
+         <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+            FORMATIONS MÉCANIQUES
+         </p>
+
+         <h2 className="font-racing text-5xl mb-6">
+            APPRENDRE,
+            <br />
+            <span className="gold-gradient">
+                PROGRESSER, PERFORMER
+            </span>
+         </h2>
+
+         <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+            Des formations conçues pour tous les profils, du passionné qui souhaite
+            découvrir la mécanique jusqu'au professionnel désirant développer son
+            expertise ou se spécialiser dans le sport automobile.
+         </p>
+
+         </div>
+
+     <div className="grid lg:grid-cols-3 gap-8">
+
+     {/* DÉBUTANT */}
+         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
+            DÉBUTANT
+         </p>
+
+         <h3 className="font-racing text-3xl mb-6">
+            Découvrir la mécanique
+         </h3>
+
+         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+         <li>✔ Entretien courant</li>
+
+         <li>✔ Fonctionnement d'un moteur</li>
+         <li>✔ Contrôles essentiels</li>
+         <li>✔ Utilisation de l'outillage</li>
+         <li>✔ Premières interventions</li>
+
+         </ul>
+
+         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+            Découvrir
+         </a>
+
+         </div>
+
+     {/* INITIE */}
+         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
+
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
+            INITIE
+         </p>
+
+         <h3 className="font-racing text-3xl mb-6">
+            Développer son expertise
+         </h3>
+
+         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+         <li>✔ Diagnostic avancé</li>
+
+         <li>✔ Méthodes constructeur</li>
+
+         <li>✔ Électronique embarquée</li>
+
+         <li>✔ Organisation d'atelier</li>
+
+         <li>✔ Perfectionnement technique</li>
+
+         </ul>
+
+         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+            Découvrir
+         </a>
+
+         </div>
+
+     {/* COMPETITION */}
+         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
+            COMPÉTITION
+         </p>
+
+         <h3 className="font-racing text-3xl mb-6">
+            Performance & préparation
+         </h3>
+
+         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+         <li>✔ Préparation moteur</li>
+
+         <li>✔ Châssis & suspensions</li>
+
+         <li>✔ Acquisition de données</li>
+
+         <li>✔ Assistance circuit</li>
+
+         <li>✔ Méthodes de compétition</li>
+
+         </ul>
+
+         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+            Découvrir
+         </a>
+
+         </div>
+     
+     </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+{/* Nos formations */}
+
+
+
+
 
 <section
   id="formations"
@@ -584,138 +740,7 @@ export default function FormationPage() {
 
 
 
-{/* Formation mécanique */}
 
-
-
-
-
-<section
-  id="formation-mecanique"
-  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
->
-
-     <div className="max-w-7xl mx-auto px-6">
-
-         <div className="text-center mb-20">
-
-         <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-            FORMATIONS MÉCANIQUES
-         </p>
-
-         <h2 className="font-racing text-5xl mb-6">
-            APPRENDRE,
-            <br />
-            <span className="gold-gradient">
-                PROGRESSER, PERFORMER
-            </span>
-         </h2>
-
-         <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-            Des formations conçues pour tous les profils, du passionné qui souhaite
-            découvrir la mécanique jusqu'au professionnel désirant développer son
-            expertise ou se spécialiser dans le sport automobile.
-         </p>
-
-         </div>
-
-     <div className="grid lg:grid-cols-3 gap-8">
-
-     {/* DÉBUTANT */}
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
-
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            DÉBUTANT
-         </p>
-
-         <h3 className="font-racing text-3xl mb-6">
-            Découvrir la mécanique
-         </h3>
-
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-         <li>✔ Entretien courant</li>
-
-         <li>✔ Fonctionnement d'un moteur</li>
-         <li>✔ Contrôles essentiels</li>
-         <li>✔ Utilisation de l'outillage</li>
-         <li>✔ Premières interventions</li>
-
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
-            Découvrir
-         </a>
-
-         </div>
-
-     {/* INITIE */}
-         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
-
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            INITIE
-         </p>
-
-         <h3 className="font-racing text-3xl mb-6">
-            Développer son expertise
-         </h3>
-
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-         <li>✔ Diagnostic avancé</li>
-
-         <li>✔ Méthodes constructeur</li>
-
-         <li>✔ Électronique embarquée</li>
-
-         <li>✔ Organisation d'atelier</li>
-
-         <li>✔ Perfectionnement technique</li>
-
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
-            Découvrir
-         </a>
-
-         </div>
-
-     {/* COMPETITION */}
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
-
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            COMPÉTITION
-         </p>
-
-         <h3 className="font-racing text-3xl mb-6">
-            Performance & préparation
-         </h3>
-
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-         <li>✔ Préparation moteur</li>
-
-         <li>✔ Châssis & suspensions</li>
-
-         <li>✔ Acquisition de données</li>
-
-         <li>✔ Assistance circuit</li>
-
-         <li>✔ Méthodes de compétition</li>
-
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
-            Découvrir
-         </a>
-
-         </div>
-     
-     </div>
-
-    </div>
-
-</section>
 
 
 
