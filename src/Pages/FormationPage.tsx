@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
+import Footer from "../components/Footer.tsx";
 
 export default function FormationPage() {
   return (
@@ -24,7 +25,6 @@ export default function FormationPage() {
 
              {/* Hero */}
         <HeroPage
-        className="font-racing font-bold text-5xl sm:text-7xl lg:text-8xl leading-none mb-6 animate-fade-in-up animate-delay-200"
          surTitre="FORMATIONS"
          titre="TRANSMETTRE"
          titreGold="L'EXCELLENCE"

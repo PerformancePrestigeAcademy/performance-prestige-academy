@@ -780,7 +780,7 @@ Notre objectif n'est pas seulement de réparer un véhicule, mais de comprendre 
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             16
+             01
              </p>
 
 <h3 className="font-racing text-3xl text-center mb-6">
@@ -807,7 +807,7 @@ Chaque intervention débute par une analyse complète afin d'orienter le diagnos
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             17
+             02
              </p>
 
 <h3 className="font-racing text-3xl text-center mb-6">
@@ -834,7 +834,7 @@ Chaque opération est réalisée dans le respect des procédures afin de garanti
 <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             18
+             03
              </p>
 
 <h3 className="font-racing text-3xl text-center mb-6">
@@ -862,6 +862,101 @@ Le véhicule est systématiquement contrôlé avant sa restitution afin de garan
 
 </section>
 
+
+
+
+{/* ===========================
+        CTA FINAL
+=========================== */}
+
+<section className="py-28 bg-[#0D0D0D]">
+
+<div className="max-w-6xl mx-auto px-6">
+
+<div className="bg-dark-card gold-border rounded-3xl overflow-hidden">
+
+<div className="grid lg:grid-cols-2 items-center">
+
+{/* Logo */}
+
+<div className="flex justify-center items-center p-12">
+
+<img
+src="/images/logo-transparent.png"
+alt="Performance & Prestige Academy"
+className="
+w-[360px]
+h-[360px]
+object-contain
+drop-shadow-[0_0_35px_rgba(201,162,39,0.25)]
+"
+/>
+
+</div>
+
+{/* Texte */}
+
+<div className="p-10 lg:p-14">
+
+<p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-4">
+
+UN PROJET ?
+
+</p>
+
+<h2 className="font-racing text-5xl mb-8">
+
+CONFIEZ-NOUS
+
+<br />
+
+<span className="gold-gradient">
+
+VOTRE VÉHICULE
+
+</span>
+
+</h2>
+
+<p className="text-[#A8A9AD] leading-relaxed mb-8">
+
+Entretien, réparation, préparation moteur ou accompagnement en compétition.
+
+Chaque projet bénéficie de la même exigence, de la même rigueur et de la même passion qui font l'identité de Performance & Prestige Academy.
+
+</p>
+
+<div className="flex flex-col sm:flex-row gap-4">
+
+<a
+href="#contact"
+className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded text-center"
+>
+
+DEMANDER UN DEVIS
+
+</a>
+
+<a
+href="tel:+33600000000"
+className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded text-center"
+>
+
+NOUS APPELER
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
     </div>
   );
