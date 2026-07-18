@@ -145,7 +145,7 @@ export default function FormationPage() {
 
 <section
   id="formation-mecanique"
-  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+  className="scroll-mt-32 py-24 bg-[#0D0D0D]"
 >
 
      <div className="max-w-7xl mx-auto px-6">
@@ -447,7 +447,7 @@ export default function FormationPage() {
 
 <section
   id="examens"
-  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+  className="scroll-mt-32 py-24 bg-[#0D0D0D]"
 >
 
      <div className="max-w-7xl mx-auto px-6">
@@ -588,7 +588,7 @@ export default function FormationPage() {
 
 <section
   id="perfectionnement"
-  className="scroll-mt-32 py-24 bg-[#111111]"
+  className="scroll-mt-32 py-24 bg-[#0A0A0A"
 >
 
   <div className="max-w-7xl mx-auto px-6">
@@ -740,7 +740,7 @@ export default function FormationPage() {
 
 <section
   id="cfa"
-  className="scroll-mt-32 py-24 bg-[#111111]"
+  className="scroll-mt-32 py-24 bg-[#0D0D0D]"
 >
   <div className="max-w-7xl mx-auto px-6">
 
