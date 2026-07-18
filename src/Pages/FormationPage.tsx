@@ -6,6 +6,12 @@ import {
   GraduationCap,
   Handshake,
   School,
+  BookOpen,
+  ClipboardCheck,
+  Award,
+  Building2,
+  Target,
+  Rocket,
 } from "lucide-react";
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
@@ -176,6 +182,10 @@ export default function FormationPage() {
 
      {/* DÉBUTANT */}
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+             
+             <div className="flex justify-center mb-6">
+             <Wrench className="w-12 h-12 text-[#C9A227]" />
+             </div>
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             DÉBUTANT
@@ -204,6 +214,10 @@ export default function FormationPage() {
 
      {/* INITIE */}
          <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
+
+             <div className="flex justify-center mb-6">
+             <Target className="w-12 h-12 text-[#C9A227]" />
+             </div>
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             INITIE
@@ -235,6 +249,10 @@ export default function FormationPage() {
 
      {/* COMPETITION */}
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+
+             <div className="flex justify-center mb-6">
+             <Flag className="w-12 h-12 text-[#C9A227]" />
+             </div>
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             COMPÉTITION
