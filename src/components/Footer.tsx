@@ -1,23 +1,18 @@
-const NAV_LINKS = [
-  { label: "Accueil", href: "/" },
-  { label: "Maintenance", href: "/maintenance" },
-  { label: "Formation", href: "/formation" },
-  { label: "À propos", href: "#apropos" },
-  { label: "Contact", href: "#contact" },
-];
+
+import { NAV_LINKS } from "../data/navigation";
 
 export default function Footer() {
 
   return (
     <footer className="bg-black border-t border-[rgba(201,162,39,0.2)] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr] gap-16">
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex flex-col items-start mb-4">
               <img
                 src="/images/logo-ecusson-transparent.png"
                 alt="Performance & Prestige Academy"
-                className="h-18 w-18 object-contain transition-transform duration-300 group-hover:scale-105"
+                className="w-40 h-40 object-contain mb-4"
               />
               <div>
                 <div className="font-racing text-sm font-bold gold-gradient tracking-widest">PERFORMANCE</div>
