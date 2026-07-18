@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage";
-import Footer from "../components/Footer.tsx";
+import Footer from "../components/Footer";
 
 export default function MaintenancePage() {
   return (
@@ -958,6 +958,8 @@ NOUS APPELER
 </div>
 
 </section>
+
+<Footer />
 
     </div>
   );

@@ -910,7 +910,7 @@ export default function FormationPage() {
 
 </section>
 
-
+<Footer />
 
      </div>
 
