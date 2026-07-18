@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage";
+import Footer from "../components/Footer.tsx";
 
 export default function MaintenancePage() {
   return (
