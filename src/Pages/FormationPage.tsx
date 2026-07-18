@@ -183,9 +183,9 @@ export default function FormationPage() {
      {/* DÉBUTANT */}
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
              
-             <div className="flex justify-center mb-6">
-             <Wrench className="w-12 h-12 text-[#C9A227]" />
-             </div>
+             <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             01
+             </p>
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
             DÉBUTANT
@@ -215,9 +215,9 @@ export default function FormationPage() {
      {/* INITIE */}
          <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
 
-             <div className="flex justify-center mb-6">
-             <Target className="w-12 h-12 text-[#C9A227]" />
-             </div>
+         <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             02
+             </p>
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
             INITIE
@@ -250,9 +250,9 @@ export default function FormationPage() {
      {/* COMPETITION */}
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
-             <div className="flex justify-center mb-6">
-             <Flag className="w-12 h-12 text-[#C9A227]" />
-             </div>
+             <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             03
+             </p>
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
             COMPÉTITION
@@ -499,6 +499,9 @@ export default function FormationPage() {
 
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
+         <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             01
+             </p>
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             CAP
          </p>
@@ -530,6 +533,9 @@ export default function FormationPage() {
 
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
+         <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             02
+             </p>
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             BAC PRO      </p>
 
@@ -560,6 +566,9 @@ export default function FormationPage() {
 
         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
 
+         <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             03
+             </p>
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
             BTS
          </p>
@@ -640,9 +649,9 @@ export default function FormationPage() {
 
       <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 
-        <div className="flex justify-center mb-6">
-          <Wrench className="w-12 h-12 text-[#C9A227]" />
-        </div>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             01
+             </p>
 
         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
           DIAGNOSTIC
@@ -675,9 +684,9 @@ export default function FormationPage() {
 
       <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 
-        <div className="flex justify-center mb-6">
-          <Gauge className="w-12 h-12 text-[#C9A227]" />
-        </div>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             02
+             </p>
 
         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
           PERFORMANCE
@@ -710,9 +719,9 @@ export default function FormationPage() {
 
       <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 
-        <div className="flex justify-center mb-6">
-          <Flag className="w-12 h-12 text-[#C9A227]" />
-        </div>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             03
+             </p>
 
         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
           COMPÉTITION
@@ -791,9 +800,9 @@ export default function FormationPage() {
 
       <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 
-        <div className="flex justify-center mb-6">
-          <GraduationCap className="w-12 h-12 text-[#C9A227]" />
-        </div>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             01
+             </p>
 
         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
           FORMATIONS
@@ -819,9 +828,9 @@ export default function FormationPage() {
 
       <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 
-        <div className="flex justify-center mb-6">
-          <Handshake className="w-12 h-12 text-[#C9A227]" />
-        </div>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             02
+             </p>
 
         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
           PARTENARIATS
@@ -847,9 +856,9 @@ export default function FormationPage() {
 
       <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 
-        <div className="flex justify-center mb-6">
-          <School className="w-12 h-12 text-[#C9A227]" />
-        </div>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             03
+             </p>
 
         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
           PROJETS
