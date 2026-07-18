@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-[1700px] mx-auto px-6">
 
         {/* Contenu principal */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-20">
+        <div className="flex items-start gap-32">
 
           {/* Partie gauche */}
           <div className="max-w-2xl">
@@ -18,14 +18,18 @@ export default function Footer() {
               <img
                 src="/images/logo-ecusson-transparent.png"
                 alt="Performance & Prestige Academy"
-                className="w-40 h-40 object-contain"
+                className="w-72 h-72 object-contain"
               />
 
               <div>
 
-                <h3 className="font-racing text-4xl gold-gradient tracking-[0.15em]">
-                  PERFORMANCE
-                </h3>
+                 <h3 className="font-racing font-black text-6xl tracking-[0.18em] gold-gradient">
+                    PERFORMANCE
+                 </h3>
+
+                 <p className="font-racing text-xl tracking-[0.32em] text-white">
+                    & PRESTIGE ACADEMY
+                 </p>
 
                 <p className="font-racing text-base tracking-[0.30em] text-white">
                   & PRESTIGE ACADEMY
@@ -64,7 +68,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center text-[#C9A227] hover:bg-[#C9A227]/10 transition"
                 >
-                  <Instagram className="w-5 h-5" />
+                  <Instagram className="w-10 h-10" />
                 </a>
 
                 <a
@@ -73,7 +77,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center text-[#C9A227] hover:bg-[#C9A227]/10 transition"
                 >
-                  <Facebook className="w-5 h-5" />
+                  <Facebook className="w-10 h-10" />
                 </a>
 
               </div>
