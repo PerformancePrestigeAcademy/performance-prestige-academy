@@ -8,22 +8,22 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Contenu principal */}
-        <div className="grid lg:grid-cols-[2fr_1fr] gap-16 items-start">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-20">
 
           {/* Partie gauche */}
-          <div>
+          <div className="max-w-2xl">
 
             <div className="flex items-center gap-6 mb-8">
 
               <img
                 src="/images/logo-ecusson-transparent.png"
                 alt="Performance & Prestige Academy"
-                className="w-28 h-28 object-contain"
+                className="w-32 h-32 object-contain"
               />
 
               <div>
 
-                <h3 className="font-racing text-2xl gold-gradient tracking-[0.15em]">
+                <h3 className="font-racing text-3xl gold-gradient tracking-[0.15em]">
                   PERFORMANCE
                 </h3>
 
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           {/* Partie droite */}
-          <div className="flex flex-col items-end text-right gap-10">
+         <div className="w-72 flex-shrink-0 flex flex-col items-end text-right gap-12">  
 
             <div>
 
