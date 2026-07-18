@@ -5,7 +5,7 @@ import { Instagram, Facebook } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-[rgba(201,162,39,0.15)] py-16">
-      <div className="max-w-[1700px] mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Contenu principal */}
         <div className="flex items-start gap-32">
