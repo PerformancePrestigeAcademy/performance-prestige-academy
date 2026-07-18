@@ -344,7 +344,7 @@ export default function FormationPage() {
                  01
                  </p>
 
-                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
+                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
                  CAP
                  </p>
 
@@ -423,7 +423,7 @@ export default function FormationPage() {
                  BTS
                  </p>
 
-                 <h3 className="font-racing text-3xl mb-5">
+                 <h3 className="font-racing text-3xl text-center mb-5">
                  Approfondir son expertise
                  </h3>
 
