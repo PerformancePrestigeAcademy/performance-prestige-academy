@@ -1,57 +1,131 @@
 
 import { NAV_LINKS } from "../data/navigation";
+import { Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
-
   return (
-    <footer className="bg-black border-t border-[rgba(201,162,39,0.2)] py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr] gap-16">
+    <footer className="bg-black border-t border-[rgba(201,162,39,0.15)] py-16">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Contenu principal */}
+        <div className="grid lg:grid-cols-[2fr_1fr] gap-16 items-start">
+
+          {/* Partie gauche */}
           <div>
-            <div className="flex flex-col items-start mb-4">
+
+            <div className="flex items-center gap-6 mb-8">
+
               <img
                 src="/images/logo-ecusson-transparent.png"
                 alt="Performance & Prestige Academy"
-                className="w-40 h-40 object-contain mb-4"
+                className="w-28 h-28 object-contain"
               />
+
               <div>
-                <div className="font-racing text-sm font-bold gold-gradient tracking-widest">PERFORMANCE</div>
-                <div className="font-racing text-xs tracking-[0.25em] text-[#A8A9AD]">&amp; PRESTIGE ACADEMY</div>
+
+                <h3 className="font-racing text-2xl gold-gradient tracking-[0.15em]">
+                  PERFORMANCE
+                </h3>
+
+                <p className="font-racing text-sm tracking-[0.30em] text-white">
+                  & PRESTIGE ACADEMY
+                </p>
+
               </div>
+
             </div>
-            <p className="text-[#A8A9AD] text-sm leading-relaxed">
-              L'excellence mécanique au service de la performance et de la passion.
+
+            <p className="text-[#C9A227] font-racing tracking-[0.18em] text-sm mb-5">
+              Préparation • Formation • Maintenance
             </p>
+
+            <p className="text-[#A8A9AD] italic text-lg max-w-xl leading-relaxed">
+              « L'excellence n'est pas une option.
+              <br />
+              C'est notre standard. »
+            </p>
+
           </div>
 
-          <div>
-            <h4 className="font-racing font-bold text-sm tracking-widest text-[#C9A227] mb-4">SERVICES</h4>
-            <ul className="space-y-2">
-              {['Préparation & Développement', 'Formation Professionnelle', 'Maintenance Véhicules', 'Cartographie ECU', 'Développement Compétition'].map((s) => (
-                <li key={s}>
-                  <a href="#maintenance" className="text-[#A8A9AD] text-sm hover:text-[#C9A227] transition-colors">{s}</a>
-                </li>
-              ))}
-            </ul>
+          {/* Partie droite */}
+          <div className="flex flex-col items-end text-right gap-10">
+
+            <div>
+
+              <h4 className="font-racing text-sm tracking-[0.30em] text-[#C9A227] mb-4">
+                NOUS SUIVRE
+              </h4>
+
+              <div className="flex justify-end gap-4">
+
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center text-[#C9A227] hover:bg-[#C9A227]/10 transition"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=61592134912462"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center text-[#C9A227] hover:bg-[#C9A227]/10 transition"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+
+              </div>
+
+            </div>
+
+            <div>
+
+              <h4 className="font-racing text-sm tracking-[0.30em] text-[#C9A227] mb-4">
+                INFORMATIONS
+              </h4>
+
+              <div className="flex flex-col gap-2 text-sm">
+
+                <a
+                  href="/mentions-legales"
+                  className="text-[#A8A9AD] hover:text-[#C9A227] transition-colors"
+                >
+                  Mentions légales
+                </a>
+
+                <a
+                  href="/politique-confidentialite"
+                  className="text-[#A8A9AD] hover:text-[#C9A227] transition-colors"
+                >
+                  Politique de confidentialité
+                </a>
+
+              </div>
+
+            </div>
+
           </div>
 
-          <div>
-            <h4 className="font-racing font-bold text-sm tracking-widest text-[#C9A227] mb-4">NAVIGATION</h4>
-            <ul className="space-y-2">
-              {NAV_LINKS.map((l) => (
-                <li key={l.href}>
-                  <a href={l.href} className="text-[#A8A9AD] text-sm hover:text-[#C9A227] transition-colors">{l.label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
-        <div className="section-divider mb-6" />
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[#A8A9AD] text-xs">
-          <p>&copy; {new Date().getFullYear()} Performance & Prestige Academy. Tous droits réservés.</p>
-          <p className="font-racing tracking-widest">PERFORMANCE · FIABILITÉ · COMPÉTITION</p>
+        {/* Ligne */}
+        <div className="border-t border-[rgba(201,162,39,0.20)] my-10" />
+
+        {/* Bas */}
+        <div className="text-center">
+
+          <p className="text-[#A8A9AD] text-sm mb-3">
+            © {new Date().getFullYear()} Performance & Prestige Academy
+          </p>
+
+          <p className="font-racing tracking-[0.35em] text-[#C9A227] text-xs">
+            PERFORMANCE • FIABILITÉ • COMPÉTITION
+          </p>
+
         </div>
+
       </div>
     </footer>
   );
