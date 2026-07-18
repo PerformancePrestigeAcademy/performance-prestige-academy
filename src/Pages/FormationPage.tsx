@@ -187,11 +187,11 @@ export default function FormationPage() {
              <Wrench className="w-12 h-12 text-[#C9A227]" />
              </div>
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
             DÉBUTANT
          </p>
 
-         <h3 className="font-racing text-3xl mb-6">
+         <h3 className="font-racing text-3xl text-center mb-6">
             Découvrir la mécanique
          </h3>
 
@@ -219,11 +219,11 @@ export default function FormationPage() {
              <Target className="w-12 h-12 text-[#C9A227]" />
              </div>
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
             INITIE
          </p>
 
-         <h3 className="font-racing text-3xl mb-6">
+         <h3 className="font-racing text-3xl text-center mb-6">
             Développer son expertise
          </h3>
 
@@ -254,11 +254,11 @@ export default function FormationPage() {
              <Flag className="w-12 h-12 text-[#C9A227]" />
              </div>
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
+         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] text-center mb-3">
             COMPÉTITION
          </p>
 
-         <h3 className="font-racing text-3xl mb-6">
+         <h3 className="font-racing text-3xl text-center mb-6">
             Performance & préparation
          </h3>
 
