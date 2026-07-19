@@ -188,31 +188,33 @@ export default function MaintenancePage() {
 
     {/* Carte 3 */}
 
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+         <ServiceCard
+    number="03"
+    title="Liaisons au sol"
+>
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             03
-             </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <h3 className="font-racing text-3xl mb-6 text-center">
-            Liaisons au sol
-         </h3>
+        <li>✔ Pneumatiques</li>
+        <li>✔ Géométrie</li>
+        <li>✔ Suspension</li>
+        <li>✔ Direction</li>
+        <li>✔ Contrôle roulage</li>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+    </ul>
 
-         <li>✔ Pneumatiques</li>
-         <li>✔ Géométrie</li>
-         <li>✔ Suspension</li>
-         <li>✔ Direction</li>
-         <li>✔ Contrôle roulage</li>
+    <div className="mt-auto pt-8">
 
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
             En savoir plus
-         </a>
+        </a>
 
-         </div>
+    </div>
+
+</ServiceCard>
 
      </div>
 
