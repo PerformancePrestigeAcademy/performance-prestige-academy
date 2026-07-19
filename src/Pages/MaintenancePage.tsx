@@ -51,7 +51,6 @@ performance automobile
         href="#entretien"
         className="hover:-translate-y-2 transition-all duration-300"
       >
-       <Card>
         <div className="flex-1 flex items-center justify-center text-center">
            <h3 className="font-racing text-xl">
              Entretien
@@ -59,7 +58,6 @@ performance automobile
              courant
            </h3>
           </div>
-     </Card>
     </a>
 
       <a
