@@ -2,22 +2,10 @@ import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
-import Card from "../components/Card";
 
 export default function MaintenancePage() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white">
-
-      <Navbar />
-
-      <HeroPage
-        surTitre="MAINTENANCE"
-        titre="PRENDRE SOIN"
-        titreGold="DE VOTRE PASSION"
-        image="/images/hero.png"
-      />
-
-
+        <div className="min-h-screen bg-[#0A0A0A] text-white">
 <SEO
     title="Maintenance Automobile | Performance & Prestige Academy"
 
@@ -32,6 +20,18 @@ entretien,
 diagnostic,
 préparation moteur,
 performance automobile
+
+      <Navbar />
+
+      <HeroPage
+        surTitre="MAINTENANCE"
+        titre="PRENDRE SOIN"
+        titreGold="DE VOTRE PASSION"
+        image="/images/hero.png"
+      />
+
+
+
 "
 />
 
@@ -48,17 +48,15 @@ performance automobile
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
       <a
-        href="#entretien"
-        className="hover:-translate-y-2 transition-all duration-300"
-      >
-        <div className="flex-1 flex items-center justify-center text-center">
-           <h3 className="font-racing text-xl">
-             Entretien
-             <br />
-             courant
-           </h3>
-          </div>
-    </a>
+  href="#entretien"
+  className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+>
+  <h3 className="font-racing text-xl">
+    Entretien
+    <br />
+    courant
+  </h3>
+</a>
 
       <a
         href="#revision"
