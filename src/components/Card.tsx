@@ -12,10 +12,13 @@ export default function Card({ children }: CardProps) {
         service-card
         gold-border
         rounded-2xl
+        h-56
         p-8
-        h-full
         flex
         flex-col
+        hover:-translate-y-2
+        transition-all
+        duration-300
       "
     >
       {children}

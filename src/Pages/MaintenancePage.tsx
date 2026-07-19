@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
+import Card from "../components/Card";
 
 export default function MaintenancePage() {
   return (
@@ -37,15 +38,30 @@ export default function MaintenancePage() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
-      <a
-  href="#entretien"
-  className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
->
-  <h3 className="font-racing text-xl">
-    Entretien
-    <br />
-    courant
-  </h3>
+      <a href="#entretien">
+
+    <Card>
+
+        <div className="flex-1 flex items-center justify-center text-center">
+
+            <h3 className="font-racing text-xl">
+                Entretien
+                <br />
+                courant
+            </h3>
+
+        </div>
+
+        <div className="mt-auto pt-6">
+
+            <span className="font-racing tracking-widest text-[#C9A227] text-sm">
+                EN SAVOIR PLUS →
+            </span>
+
+        </div>
+
+    </Card>
+
 </a>
 
       <a
