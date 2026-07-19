@@ -198,71 +198,67 @@ Performance & Prestige Academy
      <div className="grid lg:grid-cols-3 gap-8">
 
      {/* DÉBUTANT */}
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
-             
-             <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             01
-             </p>
+         <ServiceCard
+    number="01"
+    title="Découvrir la mécanique"
+>
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            DÉBUTANT
-         </p>
+    <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-6 text-center">
+        DÉBUTANT
+    </p>
 
-         <h3 className="font-racing text-3xl mb-6">
-            Découvrir la mécanique
-         </h3>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <li>✔ Entretien courant</li>
+        <li>✔ Fonctionnement d'un moteur</li>
+        <li>✔ Contrôles essentiels</li>
+        <li>✔ Utilisation de l'outillage</li>
+        <li>✔ Premières interventions</li>
 
-         <li>✔ Entretien courant</li>
+    </ul>
 
-         <li>✔ Fonctionnement d'un moteur</li>
-         <li>✔ Contrôles essentiels</li>
-         <li>✔ Utilisation de l'outillage</li>
-         <li>✔ Premières interventions</li>
+    <div className="mt-auto pt-8">
 
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
             Découvrir
-         </a>
+        </a>
 
-         </div>
+    </div>
+
+</ServiceCard>
 
      {/* INITIE */}
-         <div className="bg-dark-card gold-border rounded-2xl p-8 service-card">
+         <ServiceCard
+    number="02"
+    subtitle="INITIÉ"
+    title="Développer son expertise"
+>
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             02
-             </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            INITIE
-         </p>
+        <li>✔ Diagnostic avancé</li>
+        <li>✔ Méthodes constructeur</li>
+        <li>✔ Électronique embarquée</li>
+        <li>✔ Organisation d'atelier</li>
+        <li>✔ Perfectionnement technique</li>
 
-         <h3 className="font-racing text-3xl mb-6">
-            Développer son expertise
-         </h3>
+    </ul>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+    <div className="mt-auto pt-8">
 
-         <li>✔ Diagnostic avancé</li>
-
-         <li>✔ Méthodes constructeur</li>
-
-         <li>✔ Électronique embarquée</li>
-
-         <li>✔ Organisation d'atelier</li>
-
-         <li>✔ Perfectionnement technique</li>
-
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
             Découvrir
-         </a>
+        </a>
 
-         </div>
+    </div>
+
+</ServiceCard>
 
      {/* COMPETITION */}
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
@@ -272,7 +268,7 @@ Performance & Prestige Academy
              </p>
 
          <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            COMPÉTITION
+            EXPERT
          </p>
 
          <h3 className="font-racing text-3xl mb-6">
@@ -353,114 +349,92 @@ Performance & Prestige Academy
 
             {/* ENTREE EN FORMATION CAP */}
         
-             <div className="bg-dark-card gold-border rounded-2xl service-card">
+             <ServiceCard
+    number="01"
+    subtitle="CAP"
+    title="Découvrir les fondamentaux"
+>
 
-                 <div className="p-8">
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-                 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-                 01
-                 </p>
+        <li>• Entretien courant des véhicules</li>
+        <li>• Contrôles et diagnostics simples</li>
+        <li>• Remplacement des organes d'usure</li>
+        <li>• Méthodes de travail en atelier</li>
 
-                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-                 CAP
-                 </p>
+    </ul>
 
-                 <h3 className="font-racing text-3xl mb-5">
-                 Découvrir les fondamentaux
-                 </h3>
+    <div className="mt-auto pt-8">
 
-                 <ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
+            DÉCOUVRIR
+        </a>
 
-                 <li>• Entretien courant des véhicules</li>
-                 <li>• Contrôles et diagnostics simples</li>
-                 <li>• Remplacement des organes d'usure</li>
-                 <li>• Méthodes de travail en atelier</li>
+    </div>
 
-                 </ul>
-
-                 <a
-                 href="#"
-                 className="btn-outline-gold inline-block px-6 py-3 rounded"
-                 >
-                 DÉCOUVRIR
-                 </a>
-
-                 </div>
-
-             </div>
+</ServiceCard>
       
             {/* ENTREE EN FORMATION BAC PRO */}
 
-             <div className="bg-dark-card gold-border rounded-2xl service-card">
+             <ServiceCard
+    number="02"
+    subtitle="BAC PRO"
+    title="Développer son autonomie"
+>
 
-                 <div className="p-8">
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-                 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-                 02
-                 </p>
+        <li>• Diagnostic des systèmes</li>
+        <li>• Maintenance corrective</li>
+        <li>• Contrôles et réglages</li>
+        <li>• Recherche de panne</li>
 
-                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-                 BAC PRO
-                 </p>
+    </ul>
 
-                 <h3 className="font-racing text-3xl mb-5">
-                 Développer son autonomie
-                 </h3>
+    <div className="mt-auto pt-8">
 
-                 <ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
+            DÉCOUVRIR
+        </a>
 
-                 <li>• Diagnostic des systèmes</li>
-                 <li>• Maintenance corrective</li>
-                 <li>• Contrôles et réglages</li>
-                 <li>• Recherche de panne</li>
+    </div>
 
-                 </ul>
-
-                 <a
-                 href="#"
-                 className="btn-outline-gold inline-block px-6 py-3 rounded"
-                 >
-                 DÉCOUVRIR
-                 </a>
-
-                 </div>
-
-             </div>
+</ServiceCard>
 
             {/* ENTREE EN FORMATION BTS */}
-             <div className="bg-dark-card gold-border rounded-2xl service-card">
+             <ServiceCard
+    number="03"
+    subtitle="BTS"
+    title="Approfondir son expertise"
+>
 
-                 <div className="p-8">
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-                 <p className="text-7xl font-black text-[#C9A22720] mb-6">
-                 03
-                 </p>
+        <li>• Analyse des systèmes complexes</li>
+        <li>• Diagnostic avancé</li>
+        <li>• Organisation des interventions</li>
+        <li>• Documentation constructeur</li>
 
-                 <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-                 BTS
-                 </p>
+    </ul>
 
-                 <h3 className="font-racing text-3xl mb-5">
-                 Approfondir son expertise
-                 </h3>
+    <div className="mt-auto pt-8">
 
-                 <ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
+            DÉCOUVRIR
+        </a>
 
-                 <li>• Analyse des systèmes complexes</li>
-                 <li>• Diagnostic avancé</li>
-                 <li>• Organisation des interventions</li>
-                 <li>• Documentation constructeur</li>
+    </div>
 
-                 </ul>
-
-                 <a
-                 href="#"
-                 className="btn-outline-gold inline-block px-6 py-3 rounded"
-                 >
-                 DÉCOUVRIR
-                 </a>
-
-                 </div>
+</ServiceCard>
 
              </div>
 
