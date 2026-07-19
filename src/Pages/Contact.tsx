@@ -3,6 +3,7 @@ import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from "lucide-react";
+import ContactForm from "../components/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -67,6 +68,7 @@ export default function ContactPage() {
 
           {/* Formulaire */}
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <ContactForm />
 
             {/* Infos */}
@@ -171,5 +173,6 @@ export default function ContactPage() {
       <Footer />
 
     </div>
+
   );
 }
