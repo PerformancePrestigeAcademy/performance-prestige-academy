@@ -258,39 +258,34 @@ Performance & Prestige Academy
 </ServiceCard>
 
      {/* COMPETITION */}
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+         <ServiceCard
+    number="03"
+    subtitle="EXPERT"
+    title="Performance & préparation"
+>
 
-             <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             03
-             </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            EXPERT
-         </p>
+        <li>✔ Préparation moteur</li>
+        <li>✔ Châssis & suspensions</li>
+        <li>✔ Acquisition de données</li>
+        <li>✔ Assistance circuit</li>
+        <li>✔ Méthodes de compétition</li>
 
-         <h3 className="font-racing text-3xl mb-6">
-            Performance & préparation
-         </h3>
+    </ul>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+    <div className="mt-auto pt-8">
 
-         <li>✔ Préparation moteur</li>
-
-         <li>✔ Châssis & suspensions</li>
-
-         <li>✔ Acquisition de données</li>
-
-         <li>✔ Assistance circuit</li>
-
-         <li>✔ Méthodes de compétition</li>
-
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
             Découvrir
-         </a>
+        </a>
 
-         </div>
+    </div>
+
+</ServiceCard>
      
      </div>
 
@@ -484,104 +479,96 @@ Performance & Prestige Academy
 
      {/* CAP */}
 
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+         <ServiceCard
+    number="01"
+    subtitle="CAP"
+    title="Révisions ciblées"
+>
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             01
-             </p>
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            CAP
-         </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <h3 className="font-racing text-3xl mb-6">
-            Révisions ciblées
-         </h3>
+        <li>✔ Technologie professionnelle</li>
+        <li>✔ Diagnostic de premier niveau</li>
+        <li>✔ Méthodologie d'intervention</li>
+        <li>✔ Analyse de pannes simples</li>
+        <li>✔ Préparation aux épreuves</li>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+    </ul>
 
-         <li>✔ Technologie professionnelle</li>
-         <li>✔ Diagnostic de premier niveau</li>
-         <li>✔ Méthodologie d'intervention</li>
-         <li>✔ Analyse de pannes simples</li>
-         <li>✔ Préparation aux épreuves</li>
+    <div className="mt-auto pt-8">
 
-         </ul>
-
-         <a
+        <a
             href="#"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
-            >
+        >
             Découvrir
-         </a>
+        </a>
 
-         </div>
+    </div>
+
+</ServiceCard>
 
      {/* BAC PROFESSIONNEL */}
 
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+         <ServiceCard
+    number="02"
+    subtitle="BAC PRO"
+    title="Révisions techniques"
+>
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             02
-             </p>
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            BAC PRO      </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <h3 className="font-racing text-3xl mb-6">
-            Révisions techniques
-         </h3>
+        <li>✔ Diagnostic approfondi</li>
+        <li>✔ Électricité embarquée</li>
+        <li>✔ Procédures constructeur</li>
+        <li>✔ Organisation d'intervention</li>
+        <li>✔ Préparation aux épreuves</li>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+    </ul>
 
-         <li>✔ Diagnostic approfondi</li>
-         <li>✔ Électricité embarquée</li>
-         <li>✔ Procédures constructeur</li>
-         <li>✔ Organisation d'intervention</li>
-         <li>✔ Préparation aux épreuves</li>
+    <div className="mt-auto pt-8">
 
-         </ul>
-
-         <a
+        <a
             href="#"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
-            >
+        >
             Découvrir
-         </a>
+        </a>
 
-         </div>
+    </div>
+
+</ServiceCard>
 
       {/* BTS */}
 
-        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full">
+        <ServiceCard
+    number="03"
+    subtitle="BTS"
+    title="Accompagnement BTS"
+>
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             03
-             </p>
-         <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-            BTS
-         </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <h3 className="font-racing text-3xl mb-6">
-            Accompagnement BTS
-         </h3>
+        <li>✔ Analyse technique</li>
+        <li>✔ Diagnostic avancé</li>
+        <li>✔ Gestion d'atelier</li>
+        <li>✔ Technologies innovantes</li>
+        <li>✔ Préparation aux examens</li>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+    </ul>
 
-         <li>✔ Analyse technique</li>
-         <li>✔ Diagnostic avancé</li>
-         <li>✔ Gestion d'atelier</li>
-         <li>✔ Technologies innovantes</li>
-         <li>✔ Préparation aux examens</li>
+    <div className="mt-auto pt-8">
 
-         </ul>
-
-         <a
+        <a
             href="#"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
-            >
+        >
             Découvrir
-         </a>
+        </a>
 
-         </div>
+    </div>
+
+</ServiceCard>
 
     </div>
 
@@ -634,108 +621,96 @@ Performance & Prestige Academy
 
       {/* Diagnostic */}
 
-      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+      <ServiceCard
+    number="01"
+    subtitle="DIAGNOSTIC"
+    title="Diagnostic avancé"
+>
 
-        <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             01
-             </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-          DIAGNOSTIC
-        </p>
+        <li>✔ Diagnostic constructeur</li>
+        <li>✔ Lecture calculateurs</li>
+        <li>✔ Recherche de panne</li>
+        <li>✔ Méthodes professionnelles</li>
+        <li>✔ Outils spécialisés</li>
 
-        <h3 className="font-racing text-3xl mb-6">
-          Diagnostic avancé
-        </h3>
+    </ul>
 
-        <ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-          <li>✔ Diagnostic constructeur</li>
-          <li>✔ Lecture calculateurs</li>
-          <li>✔ Recherche de panne</li>
-          <li>✔ Méthodes professionnelles</li>
-          <li>✔ Outils spécialisés</li>
-
-        </ul>
+    <div className="mt-auto pt-8">
 
         <a
-          href="#"
-          className="btn-outline-gold inline-block px-6 py-3 rounded"
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-          Découvrir
+            Découvrir
         </a>
 
-      </div>
+    </div>
+
+</ServiceCard>
 
       {/* Performance */}
 
-      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+      <ServiceCard
+    number="02"
+    subtitle="PERFORMANCE"
+    title="Optimisation moteur"
+>
 
-        <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             02
-             </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-          PERFORMANCE
-        </p>
+        <li>✔ Cartographie moteur</li>
+        <li>✔ Admission</li>
+        <li>✔ Échappement</li>
+        <li>✔ Optimisation des performances</li>
+        <li>✔ Fiabilisation</li>
 
-        <h3 className="font-racing text-3xl mb-6">
-          Optimisation moteur
-        </h3>
+    </ul>
 
-        <ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-          <li>✔ Cartographie moteur</li>
-          <li>✔ Admission</li>
-          <li>✔ Échappement</li>
-          <li>✔ Optimisation des performances</li>
-          <li>✔ Fiabilisation</li>
-
-        </ul>
+    <div className="mt-auto pt-8">
 
         <a
-          href="#"
-          className="btn-outline-gold inline-block px-6 py-3 rounded"
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-          Découvrir
+            Découvrir
         </a>
 
-      </div>
+    </div>
+
+</ServiceCard>
 
       {/* Compétition */}
 
-      <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+      <ServiceCard
+    number="03"
+    subtitle="COMPÉTITION"
+    title="Châssis & préparation"
+>
 
-        <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             03
-             </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3">
-          COMPÉTITION
-        </p>
+        <li>✔ Géométrie</li>
+        <li>✔ Suspensions</li>
+        <li>✔ Freinage</li>
+        <li>✔ Préparation circuit</li>
+        <li>✔ Assistance compétition</li>
 
-        <h3 className="font-racing text-3xl mb-6">
-          Châssis & préparation
-        </h3>
+    </ul>
 
-        <ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-          <li>✔ Géométrie</li>
-          <li>✔ Suspensions</li>
-          <li>✔ Freinage</li>
-          <li>✔ Préparation circuit</li>
-          <li>✔ Assistance compétition</li>
-
-        </ul>
+    <div className="mt-auto pt-8">
 
         <a
-          href="#"
-          className="btn-outline-gold inline-block px-6 py-3 rounded"
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-          Découvrir
+            Découvrir
         </a>
 
-      </div>
+    </div>
+
+</ServiceCard>
 
     </div>
 
