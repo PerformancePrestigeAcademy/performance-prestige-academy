@@ -200,14 +200,11 @@ Performance & Prestige Academy
      {/* DÉBUTANT */}
          <ServiceCard
     number="01"
+    subtitle="DÉBUTANT"
     title="Découvrir la mécanique"
 >
 
-    <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-6 text-center">
-        DÉBUTANT
-    </p>
-
-    <ul className="space-y-3 text-[#A8A9AD]">
+        <ul className="space-y-3 text-[#A8A9AD]">
 
         <li>✔ Entretien courant</li>
         <li>✔ Fonctionnement d'un moteur</li>
