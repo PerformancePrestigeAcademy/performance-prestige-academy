@@ -7,14 +7,8 @@ import {
 import Navbar from "./Navbar";
 import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
+import { NAV_LINKS } from "../data/navigation";
 
-const NAV_LINKS = [
-  { label: 'Accueil', href: '#accueil' },
-  { label: 'Maintenance', href: '#maintenance' },
-  { label: 'Formation', href: '/formation' },
-  { label: 'À propos', href: '#apropos' },
-  { label: 'Contact', href: '#contact' },
-];
 
 const MAINTENANCE = [
   {
