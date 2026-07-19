@@ -34,14 +34,14 @@ export default function ServiceCard({
       </p>
 
       {subtitle && (
-        <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-3 text-center">
-          {subtitle}
-        </p>
-      )}
+    <p className="font-racing text-2xl tracking-[0.35em] text-[#C9A227] mb-4 text-left">
+        {subtitle}
+    </p>
+)}
 
-      <h3 className="font-racing text-3xl mb-6 text-center">
-        {title}
-      </h3>
+<h3 className="font-racing text-3xl mb-6 text-center">
+    {title}
+</h3>
 
       {children}
     </div>
