@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
 import { NAV_LINKS } from "../data/navigation";
+import ContactForm from "../components/ContactForm";
 
 
 const MAINTENANCE = [

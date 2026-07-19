@@ -137,17 +137,17 @@ export default function ContactPage() {
 
                   <div className="flex items-center gap-4">
                     <Phone className="text-[#C9A227]" />
-                    06 XX XX XX XX
+                    06 83 87 26 31
                   </div>
 
                   <div className="flex items-center gap-4">
                     <Mail className="text-[#C9A227]" />
-                    contact@performance-prestige-academy.fr
+                    performanceprestigeacademy@gmail.com
                   </div>
 
                   <div className="flex items-center gap-4">
                     <MapPin className="text-[#C9A227]" />
-                    Var - France
+                    Nans Les Pins -Var - France
                   </div>
 
                   <div className="flex items-center gap-4">
