@@ -495,7 +495,7 @@ export default function App() {
         <Maintenance />
         <Formation />
         <About />
-        <ContactForm />
+        <Contact />
       </main>
       <Footer />
     </>
