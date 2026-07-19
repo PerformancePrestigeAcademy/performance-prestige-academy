@@ -169,7 +169,7 @@ export default function ContactPage() {
 
                   <Instagram className="text-[#C9A227] w-8 h-8 cursor-pointer" />
                   <Facebook className="text-[#C9A227] w-8 h-8 cursor-pointer" />
-                  <Linkedin className="text-[#C9A227] w-8 h-8 cursor-pointer" />
+                  {/* <Linkedin className="text-[#C9A227] w-8 h-8 cursor-pointer" /> */}
 
                 </div>
 

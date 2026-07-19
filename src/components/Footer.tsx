@@ -75,7 +75,7 @@ export default function Footer() {
                   href="https://www.facebook.com/profile.php?id=61592134912462"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center text-[#C9A227] hover:bg-[#C9A227]/10 transition"
+                  className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center text-[#C9A227] hover:bg-[#C9A227]/10 hover:scale-110 transition-all duration-300"
                 >
                   <Facebook className="w-10 h-10" />
                 </a>

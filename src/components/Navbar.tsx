@@ -19,7 +19,7 @@ export default function Navbar() {
              transition-all duration-500 py-4"
 >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        <a href="#accueil" className="flex items-center gap-3 group">
+        <a href="/" className="flex items-center gap-3 group">
           <img
             src="/images/logo-ecusson-transparent.png"
             alt="Performance & Prestige Academy"
