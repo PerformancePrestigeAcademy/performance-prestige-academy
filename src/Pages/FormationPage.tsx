@@ -436,7 +436,6 @@ Performance & Prestige Academy
 
 </ServiceCard>
 
-             </div>
 
          </div>
 
