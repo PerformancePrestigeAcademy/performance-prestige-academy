@@ -16,12 +16,27 @@ import {
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
 import Footer from "../components/Footer.tsx";
+import SEO from "../components/SEO.tsx";
 
 export default function FormationPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
 
         <Navbar />
+
+        <SEO
+            title="Formations Automobile | Performance & Prestige Academy"
+            description="Découvrez nos formations automobiles spécialisées en préparation moteur, maintenance et diagnostic dans le Var."
+            keywords="
+formation automobile,
+préparation moteur,
+maintenance automobile,
+diagnostic automobile,
+Nans-les-Pins,
+Var,
+Performance & Prestige Academy
+"
+        />
 
              {/* Hero */}
         <HeroPage

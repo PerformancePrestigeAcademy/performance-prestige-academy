@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { NAV_LINKS } from "../data/navigation";
 
 const NAV_LINKS = [
   { label: "Accueil", href: "/" },

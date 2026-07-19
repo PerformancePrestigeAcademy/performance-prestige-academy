@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import Navbar from "./Navbar";
 import Footer from "../components/Footer.tsx";
+import SEO from "../components/SEO.tsx";
 
 const NAV_LINKS = [
   { label: 'Accueil', href: '#accueil' },
@@ -76,6 +77,22 @@ function useScrollSpy() {
   return active;
 }
 
+<SEO
+    title="Performance & Prestige Academy | Préparation, Formation & Maintenance Automobile"
+    description="Performance & Prestige Academy est spécialisée dans la préparation moteur, la maintenance automobile, le diagnostic électronique et la formation professionnelle dans le Var."
+
+    keywords="
+préparation moteur,
+garage performance,
+maintenance automobile,
+diagnostic automobile,
+cartographie moteur,
+formation mécanique,
+Nans-les-Pins,
+Var,
+Performance & Prestige Academy
+"
+/>
 /*
 function Navbar() {
   const active = useScrollSpy();

@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://performance-prestige-academy.fr/sitemap.xml
