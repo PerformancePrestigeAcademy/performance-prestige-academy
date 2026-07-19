@@ -167,8 +167,22 @@ export default function ContactPage() {
 
                 <div className="flex gap-8">
 
-                  <Instagram className="text-[#C9A227] w-8 h-8 cursor-pointer" />
-                  <Facebook className="text-[#C9A227] w-8 h-8 cursor-pointer" />
+                  <a
+                  href="https://www.instagram.com/performance_prestige_academy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <Instagram className="text-[#C9A227] w-8 h-8 cursor-pointer hover:scale-110 transition-transform duration-300" />
+                  </a>
+
+                  <a
+                  href="https://www.facebook.com/profile.php?id=61592134912462"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <Facebook className="text-[#C9A227] w-8 h-8 cursor-pointer hover:scale-110 transition-transform duration-300" />
+                  </a>
+
                   {/* <Linkedin className="text-[#C9A227] w-8 h-8 cursor-pointer" /> */}
 
                 </div>
