@@ -483,8 +483,6 @@ function About() {
   );
 }
 
-<ContactForm />
-
 
 export default function App() {
   return (
@@ -495,7 +493,7 @@ export default function App() {
         <Maintenance />
         <Formation />
         <About />
-        <Contact />
+        <ContactForm />
       </main>
       <Footer />
     </>
