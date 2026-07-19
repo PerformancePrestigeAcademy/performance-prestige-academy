@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
-import Card from "../components/Card";
+import ServiceCard from "../components/ServiceCard";
 
 export default function MaintenancePage() {
   return (
@@ -38,30 +38,15 @@ export default function MaintenancePage() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
-      <a href="#entretien">
-
-    <Card>
-
-        <div className="flex-1 flex items-center justify-center text-center">
-
-            <h3 className="font-racing text-xl">
-                Entretien
-                <br />
-                courant
-            </h3>
-
-        </div>
-
-        <div className="mt-auto pt-6">
-
-            <span className="font-racing tracking-widest text-[#C9A227] text-sm">
-                EN SAVOIR PLUS →
-            </span>
-
-        </div>
-
-    </Card>
-
+      <a
+  href="#entretien"
+  className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+>
+  <h3 className="font-racing text-xl">
+    Entretien
+    <br />
+    courant
+  </h3>
 </a>
 
       <a
@@ -140,35 +125,41 @@ export default function MaintenancePage() {
 
      <div className="grid lg:grid-cols-3 gap-8">
 
-    {/* Carte */}
+{/* Carte 1 */}
+   <ServiceCard>
 
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+    <p className="text-7xl font-black text-[#C9A22720] mb-6">
+        01
+    </p>
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             01
-             </p>
+    <h3 className="font-racing text-3xl mb-6 text-center">
+        Révisions & entretiens
+    </h3>
 
-         <h3 className="font-racing text-3xl mb-6 text-center">
-            Révisions & entretiens
-         </h3>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <li>✔ Vidange moteur</li>
+        <li>✔ Remplacement des filtres</li>
+        <li>✔ Contrôle des niveaux</li>
+        <li>✔ Vérification batterie</li>
+        <li>✔ Contrôle visuel complet</li>
 
-         <li>✔ Vidange moteur</li>
-         <li>✔ Remplacement des filtres</li>
-         <li>✔ Contrôle des niveaux</li>
-         <li>✔ Vérification batterie</li>
-         <li>✔ Contrôle visuel complet</li>
+    </ul>
 
-         </ul>
+    <div className="mt-auto pt-8">
 
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
             En savoir plus
-         </a>
+        </a>
 
-         </div>
+    </div>
 
-    {/* Carte */}
+</ServiceCard>
+
+    {/* Carte 2 */}
 
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 

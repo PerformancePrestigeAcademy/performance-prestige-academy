@@ -17,6 +17,7 @@ import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
 import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
+import ServiceCard from "../components/ServiceCard";
 
 export default function FormationPage() {
   return (

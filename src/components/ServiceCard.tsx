@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
 
-interface CardProps {
+interface ServiceCardProps {
   children: ReactNode;
 }
 
-export default function Card({ children }: CardProps) {
+export default function ServiceCard({ children }: ServiceCardProps) {
   return (
     <div
       className="
@@ -12,10 +12,10 @@ export default function Card({ children }: CardProps) {
         service-card
         gold-border
         rounded-2xl
-        h-56
         p-8
         flex
         flex-col
+        h-full
         hover:-translate-y-2
         transition-all
         duration-300
