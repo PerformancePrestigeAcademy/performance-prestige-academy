@@ -128,13 +128,10 @@ export default function MaintenancePage() {
 {/* Carte 1 */}
    <ServiceCard>
 
-    <p className="text-7xl font-black text-[#C9A22720] mb-6">
-        01
-    </p>
-
-    <h3 className="font-racing text-3xl mb-6 text-center">
-        Révisions & entretiens
-    </h3>
+    <ServiceCard
+    number="01"
+    title="Révisions & entretiens"
+>
 
     <ul className="space-y-3 text-[#A8A9AD]">
 
@@ -161,33 +158,36 @@ export default function MaintenancePage() {
 
     {/* Carte 2 */}
 
-         <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
+         <ServiceCard
+    number="02"
+    title="Freinage & sécurité"
+>
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             02
-             </p>
+    <ul className="space-y-3 text-[#A8A9AD]">
 
-         <h3 className="font-racing text-3xl mb-6 text-center">
-            Freinage & sécurité
-         </h3>
+        <li>✔ Plaquettes</li>
+        <li>✔ Disques</li>
+        <li>✔ Liquide de frein</li>
+        <li>✔ Purge complète</li>
+        <li>✔ Contrôle sécurité</li>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+    </ul>
 
-         <li>✔ Plaquettes</li>
-         <li>✔ Disques</li>
-         <li>✔ Liquide de frein</li>
-         <li>✔ Purge complète</li>
-         <li>✔ Contrôle sécurité</li>
+    <div className="mt-auto pt-8">
 
-         </ul>
-
-         <a href="#" className="btn-outline-gold inline-block px-6 py-3 rounded">
+        <a
+            href="#"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        >
             En savoir plus
-         </a>
+        </a>
 
-         </div>
+    </div>
 
-    {/* Carte */}
+</ServiceCard>
+
+
+    {/* Carte 3 */}
 
          <div className="bg-dark-card gold-border rounded-2xl service-card p-8">
 
