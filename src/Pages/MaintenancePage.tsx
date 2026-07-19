@@ -126,7 +126,6 @@ export default function MaintenancePage() {
      <div className="grid lg:grid-cols-3 gap-8">
 
 {/* Carte 1 */}
-   <ServiceCard>
 
     <ServiceCard
     number="01"
