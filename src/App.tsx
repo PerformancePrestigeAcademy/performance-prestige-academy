@@ -5,7 +5,7 @@ import FormationPage from "./Pages/FormationPage";
 import MaintenancePage from "./Pages/MaintenancePage";
 import MentionsLegales from "./Pages/MentionsLegales";
 import PolitiqueConfidentialite from "./Pages/PolitiqueConfidentialite";
-import ContactPage from "./pages/Contact";
+import ContactPage from "./Pages/Contact";
 
 export default function App() {
   return (
