@@ -859,7 +859,7 @@ Performance & Prestige Academy
       </p>
 
       <a
-        href="#contact"
+        href="/contact"
         className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
       >
         ÉCHANGER SUR VOTRE PROJET

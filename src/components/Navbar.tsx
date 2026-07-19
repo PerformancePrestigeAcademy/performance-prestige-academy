@@ -45,7 +45,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="#contact"
+          href="/contact"
           className="hidden lg:flex btn-gold text-black font-racing font-bold text-sm tracking-widest px-9 py-3.5 rounded shadow-[0_0_20px_rgba(201,162,39,0.35)]"
         >
           DEVIS GRATUIT
@@ -73,7 +73,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/contact"
             onClick={() => setOpen(false)}
             className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-6 py-3 rounded text-center mt-2"
           >

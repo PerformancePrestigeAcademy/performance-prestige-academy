@@ -215,7 +215,7 @@ function Hero() {
           <a href="#maintenance" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded">
             DÉCOUVRIR NOS SERVICES
           </a>
-          <a href="#contact" className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded">
+          <a href="/contact" className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded">
             NOUS CONTACTER
           </a>
         </div>
@@ -271,7 +271,7 @@ function ServiceCard({ service, reversed }: { service: typeof MAINTENANCE[0]; re
         </ul>
 
         <a
-          href="#contact"
+          href="/contact"
           className="inline-flex items-center gap-2 text-[#C9A227] font-racing font-semibold text-sm tracking-widest hover:gap-4 transition-all duration-200 group"
         >
           DEMANDER UN DEVIS
@@ -382,7 +382,7 @@ function Formation() {
                 </ul>
 
                 <a
-                  href="#contact"
+                  href="/contact"
                   className={`block text-center font-racing font-bold text-sm tracking-widest py-3 rounded transition-all duration-200 ${
                     i === 1
                       ? 'btn-gold text-black'
@@ -417,7 +417,7 @@ function Formation() {
               Chaque formation est dispensée directement en atelier, sur véhicules réels, avec des formateurs
               issus du monde de la compétition. 
             </p>
-            <a href="#contact" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
+            <a href="/contact" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
               VOIR TOUTES LES FORMATIONS
             </a>
           </div>

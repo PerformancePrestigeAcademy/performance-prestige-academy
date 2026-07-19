@@ -5,6 +5,7 @@ import FormationPage from "./Pages/FormationPage";
 import MaintenancePage from "./Pages/MaintenancePage";
 import MentionsLegales from "./Pages/MentionsLegales";
 import PolitiqueConfidentialite from "./Pages/PolitiqueConfidentialite";
+import ContactPage from "./pages/Contact";
 
 export default function App() {
   return (
@@ -21,6 +22,8 @@ export default function App() {
         <Route path="/mentions-legales" element={<MentionsLegales />} />
 
         <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+
+        <Route path="/contact" element={<ContactPage />} />
 
       </Routes>
 

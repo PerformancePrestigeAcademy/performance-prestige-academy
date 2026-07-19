@@ -804,7 +804,7 @@ Chaque projet bénéficie de la même exigence, de la même rigueur et de la mê
 <div className="flex flex-col sm:flex-row gap-4">
 
 <a
-href="#contact"
+href="/contact"
 className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded text-center"
 >
 
