@@ -592,7 +592,7 @@ function Contact() {
               <p className="font-racing text-xs tracking-widest text-[#A8A9AD] mb-4">SUIVEZ-NOUS</p>
               <div className="flex gap-3">
                 {[
-                  { icon: <Instagram className="w-5 h-5" />, label: 'Instagram' },
+                  { icon: <Instagram className="w-5 h-5" />, label: 'Instagram', href : "https://www.instagram.com/performance_prestige_academy/" },
                   { icon: <Facebook className="w-5 h-5" />, label: 'Facebook', href: "https://www.facebook.com/profile.php?id=61592134912462"},
                 ].map((s) => (
                   <a

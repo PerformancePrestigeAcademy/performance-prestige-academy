@@ -63,7 +63,7 @@ export default function Footer() {
               <div className="flex justify-end gap-4">
 
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/performance_prestige_academy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center text-[#C9A227] hover:bg-[#C9A227]/10 transition"
