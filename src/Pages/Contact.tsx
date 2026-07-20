@@ -21,11 +21,12 @@ export default function ContactPage() {
         titre="PARLONS"
         titreGold="DE VOTRE PROJET"
         image="/images/hero.png"
+        scrollTarget="contact"
       />
 
       {/* Présentation */}
 
-      <section className="py-24">
+      <section id="contact" className="py-24">
 
         <div className="max-w-7xl mx-auto px-6">
 

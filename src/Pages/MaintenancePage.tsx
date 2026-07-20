@@ -20,6 +20,7 @@ export default function MaintenancePage() {
         titre="PRENDRE SOIN"
         titreGold="DE VOTRE PASSION"
         image="/images/hero.png"
+        scrollTarget="maintenance"
       />
 
 
@@ -32,7 +33,7 @@ export default function MaintenancePage() {
 
 
 
-<section className="py-20 bg-[#0A0A0A]">
+<section id="maintenance" className="py-20 bg-[#0A0A0A]">
 
   <div className="max-w-7xl mx-auto px-6 translate-x-4">
 

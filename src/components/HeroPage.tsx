@@ -5,6 +5,7 @@ type HeroPageProps = {
   titre: string;
   titreGold: string;
   image: string;
+  scrollTarget?: string;
 };
 
 export default function HeroPage({
@@ -12,6 +13,7 @@ export default function HeroPage({
   titre,
   titreGold,
   image,
+  scrollTarget = "objectif"
 }: HeroPageProps) {
   console.log("HeroPage chargé");
   return (
@@ -46,7 +48,7 @@ export default function HeroPage({
       </div>
 
        <a
-       href="#objectif"
+       href={`#${scrollTarget}`}
        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#C9A227] animate-bounce"
        >
        <ChevronDown className="w-8 h-8" />
