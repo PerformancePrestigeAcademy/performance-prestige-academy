@@ -26,7 +26,7 @@ export default function ContactPage() {
 
       {/* Présentation */}
 
-      <section id="contact" className="py-24">
+      <section id="contact" className="py-24 scroll-mt-28">
 
         <div className="max-w-7xl mx-auto px-6">
 

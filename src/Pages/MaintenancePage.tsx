@@ -33,7 +33,7 @@ export default function MaintenancePage() {
 
 
 
-<section id="maintenance" className="py-20 bg-[#0A0A0A]">
+<section id="maintenance" className="py-20 bg-[#0A0A0A] scroll-mt-28">
 
   <div className="max-w-7xl mx-auto px-6 translate-x-4">
 
