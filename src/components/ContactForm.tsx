@@ -99,17 +99,17 @@ export default function ContactForm() {
 
     {/* Les avantages */}
 
-<div className="flex flex-wrap justify-center gap-5 mb-20">
+<div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-20">
 
-  <div className="gold-border rounded-xl px-6 py-4 bg-dark-card">
+  <div className="gold-border rounded-xl px-6 py-4 bg-dark-card text-center">
     ✔ Réponse sous 24 à 48h
   </div>
 
-  <div className="gold-border rounded-xl px-6 py-4 bg-dark-card">
+  <div className="gold-border rounded-xl px-6 py-4 bg-dark-card text-center">
     ✔ Devis gratuit
   </div>
 
-  <div className="gold-border rounded-xl px-6 py-4 bg-dark-card">
+  <div className="gold-border rounded-xl px-6 py-4 bg-dark-card text-center">
     ✔ Premier échange sans engagement
   </div>
 
@@ -117,11 +117,21 @@ export default function ContactForm() {
 
 {/* Deux colonnes */}
 
-<div className="grid lg:grid-cols-2 gap-16 items-start">
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
   <form
   onSubmit={handleSubmit}
-  className="bg-dark-card gold-border rounded-2xl p-8 space-y-5 flex flex-col"
+  className="
+bg-dark-card
+gold-border
+rounded-2xl
+p-6
+sm:p-8
+space-y-5
+flex
+flex-col
+w-full
+"
 >
 
 
@@ -258,9 +268,9 @@ export default function ContactForm() {
 
       {/* Colonne droite */}
 
-      <div className="space-y-8">
+<div className="space-y-8 w-full">
 
-  <div className="gold-border rounded-2xl bg-dark-card p-8">
+  <div className="gold-border rounded-2xl bg-dark-card p-6 sm:p-8 w-full">
 
     <h3 className="font-racing text-3xl text-white mb-8">
       PERFORMANCE & PRESTIGE ACADEMY
@@ -268,21 +278,22 @@ export default function ContactForm() {
 
     <div className="space-y-6">
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-start gap-4">
         <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
           <Phone className="w-5 h-5 text-[#C9A227]" />
         </div>
-        <div>
+        
+        <div className="flex-1">
           <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
             Téléphone
           </p>
-          <p className="text-white">
+          <p className="text-white leading-relaxed">
             06 83 87 26 31
           </p>
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-start gap-4">
         <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
           <Mail className="w-5 h-5 text-[#C9A227]" />
         </div>
@@ -290,13 +301,13 @@ export default function ContactForm() {
           <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
             Email
           </p>
-          <p className="text-white">
+          <p className="text-white leading-relaxed">
             performanceprestigeacademy@gmail.com
           </p>
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-start gap-4">
         <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
           <MapPin className="w-5 h-5 text-[#C9A227]" />
         </div>
@@ -304,13 +315,13 @@ export default function ContactForm() {
           <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
             Adresse
           </p>
-          <p className="text-white">
+          <p className="text-white leading-relaxed">
             Nans-les-Pins • Var • France
           </p>
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-start gap-4">
         <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
           <BookOpen className="w-5 h-5 text-[#C9A227]" />
         </div>
@@ -318,7 +329,7 @@ export default function ContactForm() {
           <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
             Disponibilités
           </p>
-          <p className="text-white">
+          <p className="text-white leading-relaxed">
             Lundi au vendredi • 9h00 - 18h00
           </p>
         </div>
@@ -328,13 +339,13 @@ export default function ContactForm() {
 
   </div>
 
-  <div className="gold-border rounded-2xl bg-dark-card p-8">
+  <div className="gold-border rounded-2xl bg-dark-card p-6 sm:p-8 w-full">
 
     <h3 className="font-racing text-2xl text-white mb-8">
       SUIVEZ-NOUS
     </h3>
 
-    <div className="flex gap-5">
+    <div className="flex justify-center sm:justify-start gap-5">
 
       <a
         href="https://www.instagram.com/performance_prestige_academy/"
