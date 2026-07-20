@@ -383,7 +383,7 @@ function Formation() {
                 </ul>
 
                 <a
-                  href="/contact"
+                  href="/Formations"
                   className={`block text-center font-racing font-bold text-sm tracking-widest py-3 rounded transition-all duration-200 ${
                     i === 1
                       ? 'btn-gold text-black'
@@ -418,7 +418,7 @@ function Formation() {
               Chaque formation est dispensée directement en atelier, sur véhicules réels, avec des formateurs
               issus du monde de la compétition. 
             </p>
-            <a href="/contact" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
+            <a href="/Formations" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
               VOIR TOUTES LES FORMATIONS
             </a>
           </div>
