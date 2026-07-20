@@ -34,10 +34,11 @@ export default function AProposPage() {
   {/* =========================
       VERSION TABLETTE / DESKTOP
   ========================== */}
-  <div className="absolute inset-0 hidden md:block">
+  <div className="absolute inset-0 hidden md:flex justify-center">
+    <div className="relative w-full max-w-[1700px] h-full">
     {/* Portrait gauche — original */}
     <div
-      className="absolute inset-y-0 left-0 w-[48%] overflow-hidden"
+      className="absolute inset-y-0 left-0 w-[42%] overflow-hidden"
       style={{
         WebkitMaskImage:
           "linear-gradient(to right, black 0%, black 56%, transparent 100%)",
@@ -67,7 +68,7 @@ export default function AProposPage() {
 
     {/* Portrait droit — miroir */}
     <div
-      className="absolute inset-y-0 right-0 w-[48%] overflow-hidden"
+      className="absolute inset-y-0 right-0 w-[42%] overflow-hidden"
       style={{
         WebkitMaskImage:
           "linear-gradient(to left, black 0%, black 56%, transparent 100%)",
