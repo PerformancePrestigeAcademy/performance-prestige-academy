@@ -301,9 +301,11 @@ w-full
           <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
             Email
           </p>
-          <p className="text-white text-sm sm:text-base leading-relaxed">
-            performanceprestigeacademy@gmail.com
-          </p>
+          <p className="text-white leading-relaxed">
+  performanceprestigeacademy
+  <br />
+  @gmail.com
+</p>
         </div>
       </div>
 
