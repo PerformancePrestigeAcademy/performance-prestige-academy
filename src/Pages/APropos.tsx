@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 
@@ -24,13 +23,168 @@ export default function AProposPage() {
 
       <Navbar />
 
-      <HeroPage
-        surTitre="L'HISTOIRE"
-        titre="À"
-        titreGold="PROPOS"
-        image="/images/about-hero.jpg"
-        scrollTarget="histoire"
+      {/* Hero À propos — portrait en miroir */}
+
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+  {/* Fond discret */}
+  <div className="absolute inset-0 bg-[#050505]" />
+
+  {/* Version ordinateur : portrait original à gauche */}
+  <div
+    className="hidden sm:block absolute inset-y-0 left-0 w-1/2 pointer-events-none"
+    style={{
+      maskImage:
+        "linear-gradient(to right, black 0%, black 45%, transparent 100%)",
+      WebkitMaskImage:
+        "linear-gradient(to right, black 0%, black 45%, transparent 100%)",
+    }}
+  >
+    <img
+      src="/images/about-portrait.jpg"
+      alt=""
+      aria-hidden="true"
+      className="
+        absolute bottom-0 left-0
+        h-[92%] w-full
+        object-contain object-left-bottom
+        opacity-60
+        blur-[0.5px]
+        scale-[1.02]
+      "
+    />
+  </div>
+
+  {/* Version ordinateur : portrait miroir à droite */}
+  <div
+    className="hidden sm:block absolute inset-y-0 right-0 w-1/2 pointer-events-none"
+    style={{
+      maskImage:
+        "linear-gradient(to left, black 0%, black 45%, transparent 100%)",
+      WebkitMaskImage:
+        "linear-gradient(to left, black 0%, black 45%, transparent 100%)",
+    }}
+  >
+    <img
+      src="/images/about-portrait.jpg"
+      alt=""
+      aria-hidden="true"
+      className="
+        absolute bottom-0 right-0
+        h-[92%] w-full
+        object-contain object-right-bottom
+        opacity-60
+        blur-[0.5px]
+        scale-x-[-1]
+      "
+    />
+  </div>
+
+  {/* Version mobile : un seul portrait en arrière-plan */}
+  <div className="sm:hidden absolute inset-0 pointer-events-none">
+    <img
+      src="/images/about-portrait.jpg"
+      alt=""
+      aria-hidden="true"
+      className="
+        h-full w-full
+        object-cover object-[42%_center]
+        opacity-45
+        grayscale
+      "
+    />
+  </div>
+
+  {/* Assombrissement général */}
+  <div className="absolute inset-0 bg-black/35" />
+
+  {/* Ombre centrale pour préserver la lisibilité */}
+  <div
+    className="
+      absolute inset-0
+      bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.90)_0%,rgba(0,0,0,0.72)_28%,rgba(0,0,0,0.20)_68%,rgba(0,0,0,0.05)_100%)]
+    "
+  />
+
+  {/* Dégradés identiques à l’esprit des autres Hero */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#0A0A0A]" />
+  <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20" />
+
+  {/* Contenu */}
+  <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-28 text-center">
+    <p
+      className="
+        font-racing
+        text-xs sm:text-sm
+        tracking-[0.4em]
+        text-[#C9A227]
+        mb-5
+      "
+    >
+      L&apos;HISTOIRE
+    </p>
+
+    <h1
+      className="
+        font-racing font-black
+        text-6xl sm:text-7xl lg:text-8xl
+        leading-none
+        tracking-tight
+        text-white
+      "
+    >
+      À{" "}
+      <span className="gold-gradient">
+        PROPOS
+      </span>
+    </h1>
+
+    <p
+      className="
+        mt-7
+        font-racing
+        text-sm sm:text-base
+        tracking-[0.22em]
+        uppercase
+        text-white/80
+      "
+    >
+      Une passion devenue métier
+    </p>
+  </div>
+
+  {/* Flèche vers la première section */}
+  <a
+    href="#histoire"
+    aria-label="Découvrir mon histoire"
+    className="
+      absolute bottom-8 left-1/2 z-20
+      -translate-x-1/2
+      flex h-12 w-12 items-center justify-center
+      rounded-full
+      border border-[#C9A227]/50
+      text-[#C9A227]
+      transition-all duration-300
+      hover:border-[#C9A227]
+      hover:bg-[#C9A227]/10
+      hover:translate-y-1
+    "
+  >
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      className="h-5 w-5"
+      aria-hidden="true"
+    >
+      <path
+        d="M6 9l6 6 6-6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
+    </svg>
+  </a>
+</section>
 
       {/* Histoire */}
 
