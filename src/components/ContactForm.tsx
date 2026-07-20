@@ -278,36 +278,45 @@ w-full
 
     <div className="space-y-6">
 
-      <div className="flex items-start gap-4">
-        <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
-          <Phone className="w-5 h-5 text-[#C9A227]" />
-        </div>
+      <a
+  href="tel:+33683872631"
+  className="flex items-start gap-4 group"
+>
+  <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center group-hover:bg-[#C9A227]/10 transition">
+    <Phone className="w-5 h-5 text-[#C9A227]" />
+  </div>
 
-        <div className="flex-1">
-          <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
-            Téléphone
-          </p>
-          <p className="text-white leading-relaxed">
-            06 83 87 26 31
-          </p>
-        </div>
-      </div>
+  <div className="flex-1">
+    <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
+      Téléphone
+    </p>
 
-      <div className="flex items-start gap-4">
-        <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
-          <Mail className="w-5 h-5 text-[#C9A227]" />
-        </div>
-        <div>
-          <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
-            Email
-          </p>
-          <p className="text-white leading-relaxed">
-  performanceprestigeacademy
-  <br />
-  @gmail.com
-</p>
-        </div>
-      </div>
+    <p className="text-white group-hover:text-[#C9A227] transition">
+      06 83 87 26 31
+    </p>
+  </div>
+</a>
+
+      <a
+  href="mailto:performanceprestigeacademy@gmail.com"
+  className="flex items-start gap-4 group"
+>
+  <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center group-hover:bg-[#C9A227]/10 transition">
+    <Mail className="w-5 h-5 text-[#C9A227]" />
+  </div>
+
+  <div className="flex-1">
+    <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
+      Email
+    </p>
+
+    <p className="text-white leading-relaxed group-hover:text-[#C9A227] transition">
+      performanceprestigeacademy
+      <br />
+      @gmail.com
+    </p>
+  </div>
+</a>
 
       <div className="flex items-start gap-4">
         <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">

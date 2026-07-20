@@ -455,7 +455,7 @@ function About() {
               issus du monde de la compétition automobile et moto, PPA réunit sous un même toit trois pôles
               d'excellence complémentaires.
             </p>
-            <p className="text-[#A8A9AD] leading-relaxed">
+            <p className="text-[#A8A9AD] leading-relaxed text-justify">
               Notre atelier est équipé des dernières technologies de diagnostic et de cartographie ECU,
               permettant d'intervenir sur les véhicules les plus modernes comme sur les préparations
               compétition les plus exigeantes.
