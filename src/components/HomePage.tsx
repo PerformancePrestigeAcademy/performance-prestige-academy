@@ -481,6 +481,9 @@ function About() {
       </div>
     </section>
   );
+
+  <ContactForm />
+  
 }
 
 

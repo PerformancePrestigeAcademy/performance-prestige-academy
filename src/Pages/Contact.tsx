@@ -68,81 +68,9 @@ export default function ContactPage() {
 
           {/* Formulaire */}
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-
           <ContactForm />
 
-            {/* Infos */}
-
-            <div className="space-y-8">
-
-              <div className="gold-border rounded-2xl bg-dark-card p-8">
-
-                <h3 className="font-racing text-3xl mb-8">
-                  PERFORMANCE & PRESTIGE ACADEMY
-                </h3>
-
-                <div className="space-y-5 text-[#A8A9AD]">
-
-                  <div className="flex items-center gap-4">
-                    <Phone className="text-[#C9A227]" />
-                    06 83 87 26 31
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <Mail className="text-[#C9A227]" />
-                    performanceprestigeacademy@gmail.com
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <MapPin className="text-[#C9A227]" />
-                    Nans Les Pins -Var - France
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <Clock className="text-[#C9A227]" />
-                    Sur rendez-vous
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div className="gold-border rounded-2xl bg-dark-card p-8">
-
-                <h3 className="font-racing text-2xl mb-8">
-                  SUIVEZ-NOUS
-                </h3>
-
-                <div className="flex gap-8">
-
-                  <a
-                  href="https://www.instagram.com/performance_prestige_academy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  <Instagram className="text-[#C9A227] w-8 h-8 cursor-pointer hover:scale-110 transition-transform duration-300" />
-                  </a>
-
-                  <a
-                  href="https://www.facebook.com/profile.php?id=61592134912462"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                  <Facebook className="text-[#C9A227] w-8 h-8 cursor-pointer hover:scale-110 transition-transform duration-300" />
-                  </a>
-
-                  {/* <Linkedin className="text-[#C9A227] w-8 h-8 cursor-pointer" /> */}
-
-                </div>
-
-              </div>
-
-            </div>
-
           </div>
-
-        </div>
 
       </section>
 
