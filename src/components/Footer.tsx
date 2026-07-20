@@ -8,17 +8,17 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Contenu principal */}
-        <div className="flex items-start gap-32">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-16 lg:gap-32">
 
           {/* Partie gauche */}
-          <div className="max-w-2xl">
+          <div className="max-w-2xl text-center lg:text-left">
 
-            <div className="flex items-center gap-6 mb-8">
+            <div className="flex flex-col lg:flex-row items-center gap-6 mb-8">
 
               <img
                 src="/images/logo-transparent.png"
                 alt="Performance & Prestige Academy"
-                className="w-72 h-72 object-contain"
+                className="w-48 h-48 lg:w-72 lg:h-72"
               />
 
               <div>
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
 
           {/* Partie droite */}
-         <div className="w-72 flex-shrink-0 flex flex-col items-end text-right gap-12 pt-[205px]"> 
+         <div className="w-full lg:w-72 flex flex-col items-center lg:items-end text-center lg:text-right gap-10 pt-0 lg:pt-[205px]">
 
             <div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
                 NOUS SUIVRE
               </h4>
 
-              <div className="flex justify-end gap-4">
+              <div className="flex justify-center lg:justify-end gap-4">
 
                 <a
                   href="https://www.instagram.com/performance_prestige_academy/"
