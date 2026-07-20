@@ -423,7 +423,7 @@ export default function AProposPage() {
 
       {/* Citation finale */}
 
-      <section className="relative min-h-[650px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[650px] overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/images/about-citation.jpg"
@@ -435,7 +435,7 @@ export default function AProposPage() {
           <div className="absolute inset-0 hero-overlay" />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 py-24 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 pt-80 pb-20 text-center">
           <div className="gold-line mx-auto mb-10" />
 
           <blockquote className="font-racing text-3xl sm:text-4xl lg:text-5xl leading-relaxed text-white">
