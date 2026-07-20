@@ -6,7 +6,7 @@ import MaintenancePage from "./Pages/MaintenancePage";
 import MentionsLegales from "./Pages/MentionsLegales";
 import PolitiqueConfidentialite from "./Pages/PolitiqueConfidentialite";
 import ContactPage from "./Pages/Contact";
-import AboutPage from "./Pages/About";
+import AProposPage from "./Pages/APropos";
 
 export default function App() {
   return (
@@ -26,7 +26,7 @@ export default function App() {
 
         <Route path="/contact" element={<ContactPage />} />
 
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/apropos" element={<AProposPage />} />
 
       </Routes>
 
