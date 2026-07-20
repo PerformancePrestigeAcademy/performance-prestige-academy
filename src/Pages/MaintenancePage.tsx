@@ -794,7 +794,7 @@ VOTRE VÉHICULE
 
 </h2>
 
-<p className="text-[#A8A9AD] leading-relaxed mb-8">
+<p className="text-[#A8A9AD] leading-relaxed mb-8 text-justify">
 
 Entretien, réparation, préparation moteur ou accompagnement en compétition.
 
