@@ -383,7 +383,7 @@ function Formation() {
                 </ul>
 
                 <a
-                  href="/Formations"
+                  href="/Formation"
                   className={`block text-center font-racing font-bold text-sm tracking-widest py-3 rounded transition-all duration-200 ${
                     i === 1
                       ? 'btn-gold text-black'
