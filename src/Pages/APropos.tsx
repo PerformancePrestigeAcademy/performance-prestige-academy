@@ -13,7 +13,7 @@ import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 
-export default function AboutPage() {
+export default function AProposPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
       <SEO
