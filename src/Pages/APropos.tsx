@@ -127,6 +127,7 @@ export default function AProposPage() {
     {/* Fondu central pour le texte */}
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.22)_0%,rgba(0,0,0,0.58)_50%,rgba(0,0,0,0.88)_100%)]" />
   </div>
+  </div>
 
   {/* Ombre centrale desktop */}
   <div
