@@ -435,7 +435,7 @@ export default function AProposPage() {
           <div className="absolute inset-0 hero-overlay" />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 pt-[30rem] pb-20 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 pt-[34rem] pb-20 text-center">
           <div className="gold-line mx-auto mb-10" />
 
           <blockquote className="font-racing text-3xl sm:text-4xl lg:text-5xl leading-relaxed text-white">
