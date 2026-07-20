@@ -194,7 +194,7 @@ export default function AProposPage() {
               <div className="absolute -inset-4 rounded-2xl border border-[rgba(201,162,39,0.15)]" />
 
               <img
-                src="/images/about-data.jpg"
+                src="/images/about-data.png"
                 alt="Analyse de données et acquisition"
                 className="relative w-full h-[420px] sm:h-[540px] object-cover rounded-2xl gold-border"
               />
