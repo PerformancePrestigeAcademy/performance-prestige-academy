@@ -23,7 +23,7 @@ export default function Footer() {
 
               <div>
 
-                 <h3 className="font-racing font-black text-6xl tracking-[0.18em] gold-gradient">
+                 <h3 className="font-racing font-black text-5xl tracking-[0.18em] gold-gradient">
                     PERFORMANCE
                  </h3>
 
@@ -31,9 +31,7 @@ export default function Footer() {
                     & PRESTIGE ACADEMY
                  </p>
 
-                <p className="font-racing text-base tracking-[0.30em] text-white">
-                  & PRESTIGE ACADEMY
-                </p>
+              
 
               </div>
 
