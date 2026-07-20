@@ -260,7 +260,11 @@ function ServiceCard({ service, reversed }: { service: typeof MAINTENANCE[0]; re
 
         <p className="font-racing text-xs tracking-[0.3em] text-[#C9A227] mb-2">{service.subtitle}</p>
         <h3 className="font-racing font-bold text-3xl sm:text-4xl text-white mb-5">{service.title}</h3>
-        <p className="text-[#A8A9AD] leading-relaxed mb-8">{service.description}</p>
+        <p className="text-[#A8A9AD] leading-relaxed mb-8"
+        style={{ textAlign: "justify" }}
+        >
+          {service.description}
+          </p>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
           {service.features.map((f) => (
@@ -414,7 +418,7 @@ function Formation() {
             <h3 className="font-racing font-bold text-3xl sm:text-4xl text-white mb-4">
               L'expertise se transmet par la pratique
             </h3>
-            <p className="text-[#A8A9AD] leading-relaxed mb-6">
+            <p className="text-[#A8A9AD] leading-relaxed mb-6 text-justify">
               Chaque formation est dispensée directement en atelier, sur véhicules réels, avec des formateurs
               issus du monde de la compétition. 
             </p>
@@ -445,7 +449,7 @@ function About() {
               D'ART
             </h2>
             <div className="gold-line mb-8" />
-            <p className="text-[#A8A9AD] leading-relaxed mb-6">
+            <p className="text-[#A8A9AD] leading-relaxed mb-6 text-justify">
               Performance & Prestige Academy est née d'une conviction simple : la mécanique haute performance
               mérite des mains expertes et une transmission du savoir irréprochable. Fondée par des passionnés
               issus du monde de la compétition automobile et moto, PPA réunit sous un même toit trois pôles
