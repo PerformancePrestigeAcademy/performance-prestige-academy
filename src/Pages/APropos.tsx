@@ -26,75 +26,81 @@ export default function AProposPage() {
       {/* Hero À propos — portraits cinématographiques en miroir */}
 <section className="relative min-h-[760px] overflow-hidden bg-[#050505] lg:min-h-screen">
   {/* Fond principal */}
-  <div className="absolute inset-0 bg-[#050505]" />
+  <div className="absolute inset-0 bg-[#070707]" />
 
-  {/* Texture et profondeur */}
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(25,25,25,0.55)_0%,rgba(5,5,5,0.96)_72%)]" />
+  {/* Texture légère — sans grand trou noir au centre */}
+  <div
+    className="
+      absolute inset-0
+      bg-[radial-gradient(ellipse_at_center,rgba(35,35,35,0.42)_0%,rgba(15,15,15,0.32)_48%,rgba(5,5,5,0.78)_100%)]
+    "
+  />
 
   {/* =========================
       VERSION TABLETTE / DESKTOP
   ========================== */}
-  <div className="absolute inset-0 hidden md:flex justify-center">
-    <div className="relative w-full max-w-[1700px] h-full">
-    {/* Portrait gauche — original */}
-    <div
-      className="absolute inset-y-0 left-0 w-[42%] overflow-hidden"
-      style={{
-        WebkitMaskImage:
-          "linear-gradient(to right, black 0%, black 56%, transparent 100%)",
-        maskImage:
-          "linear-gradient(to right, black 0%, black 56%, transparent 100%)",
-      }}
-    >
-      <img
-        src="/images/about-portrait.jpg"
-        alt=""
-        aria-hidden="true"
-        className="
-          absolute
-          bottom-0
-          left-[5%]
-          h-[92%]
-          w-auto
-          max-w-none
-          object-contain
-          opacity-70
-          blur-[0.4px]
-          lg:left-[10%]
-          lg:h-[96%]
-        "
-      />
-    </div>
+  <div className="absolute inset-0 hidden justify-center md:flex">
+    <div className="relative h-full w-full max-w-[1700px]">
+      {/* Portrait gauche — original */}
+      <div
+        className="absolute inset-y-0 left-0 w-[44%] overflow-hidden"
+        style={{
+          WebkitMaskImage:
+            "linear-gradient(to right, black 0%, black 68%, transparent 100%)",
+          maskImage:
+            "linear-gradient(to right, black 0%, black 68%, transparent 100%)",
+        }}
+      >
+        <img
+          src="/images/about-portrait.jpg"
+          alt=""
+          aria-hidden="true"
+          className="
+            absolute
+            bottom-0
+            left-[4%]
+            h-[92%]
+            w-auto
+            max-w-none
+            object-contain
+            opacity-75
+            blur-[0.4px]
+            lg:left-[8%]
+            lg:h-[96%]
+          "
+        />
+      </div>
 
-    {/* Portrait droit — miroir */}
-    <div
-      className="absolute inset-y-0 right-0 w-[42%] overflow-hidden"
-      style={{
-        WebkitMaskImage:
-          "linear-gradient(to left, black 0%, black 56%, transparent 100%)",
-        maskImage:
-          "linear-gradient(to left, black 0%, black 56%, transparent 100%)",
-      }}
-    >
-      <img
-        src="/images/about-portrait.jpg"
-        alt=""
-        aria-hidden="true"
-        className="
-          absolute
-          bottom-0
-          right-[5%]
-          h-[92%]
-          w-auto
-          max-w-none
-          -scale-x-100
-          object-contain
-          opacity-70
-          blur-[0.4px]
-          lg:right-[10%]
-          lg:h-[96%]
-        "
-      />
+      {/* Portrait droit — miroir */}
+      <div
+        className="absolute inset-y-0 right-0 w-[44%] overflow-hidden"
+        style={{
+          WebkitMaskImage:
+            "linear-gradient(to left, black 0%, black 68%, transparent 100%)",
+          maskImage:
+            "linear-gradient(to left, black 0%, black 68%, transparent 100%)",
+        }}
+      >
+        <img
+          src="/images/about-portrait.jpg"
+          alt=""
+          aria-hidden="true"
+          className="
+            absolute
+            bottom-0
+            right-[4%]
+            h-[92%]
+            w-auto
+            max-w-none
+            -scale-x-100
+            object-contain
+            opacity-75
+            blur-[0.4px]
+            lg:right-[8%]
+            lg:h-[96%]
+          "
+        />
+      </div>
     </div>
   </div>
 
@@ -102,7 +108,6 @@ export default function AProposPage() {
       VERSION MOBILE
   ========================== */}
   <div className="absolute inset-0 md:hidden">
-    {/* Portrait principal centré */}
     <img
       src="/images/about-portrait.jpg"
       alt=""
@@ -111,37 +116,49 @@ export default function AProposPage() {
         absolute
         bottom-0
         left-1/2
-        h-[82%]
+        h-[84%]
         w-auto
         max-w-none
         -translate-x-1/2
         object-contain
-        opacity-55
-        blur-[0.5px]
+        opacity-60
+        blur-[0.4px]
       "
     />
 
-    {/* Fondu latéral */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-black/80" />
+    {/* Assombrissement latéral mobile */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/10 to-black/55" />
 
-    {/* Fondu central pour le texte */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.22)_0%,rgba(0,0,0,0.58)_50%,rgba(0,0,0,0.88)_100%)]" />
-  </div>
+    {/* Lisibilité au centre sans cacher complètement la photo */}
+    <div
+      className="
+        absolute inset-0
+        bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.12)_0%,rgba(0,0,0,0.18)_42%,rgba(0,0,0,0.58)_100%)]
+      "
+    />
   </div>
 
-  {/* Ombre centrale desktop */}
+  {/* Voile central desktop beaucoup plus léger */}
   <div
     className="
       absolute inset-0 hidden md:block
-      bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.82)_25%,rgba(0,0,0,0.28)_55%,rgba(0,0,0,0.08)_75%,rgba(0,0,0,0.42)_100%)]
+      bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.18)_0%,rgba(0,0,0,0.12)_26%,rgba(0,0,0,0.08)_48%,rgba(0,0,0,0.24)_76%,rgba(0,0,0,0.45)_100%)]
     "
   />
 
-  {/* Assombrissement supérieur */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-transparent to-[#0A0A0A]" />
+  {/* Assombrissement vertical similaire aux autres Hero */}
+  <div
+    className="
+      absolute inset-0
+      bg-gradient-to-b
+      from-black/55
+      via-transparent
+      to-[#0A0A0A]
+    "
+  />
 
-  {/* Vignette */}
-  <div className="absolute inset-0 shadow-[inset_0_0_160px_rgba(0,0,0,0.9)]" />
+  {/* Vignette douce */}
+  <div className="absolute inset-0 shadow-[inset_0_0_110px_rgba(0,0,0,0.48)]" />
 
   {/* Contenu */}
   <div
@@ -156,52 +173,65 @@ export default function AProposPage() {
       lg:min-h-screen
     "
   >
-    <p
+    {/* Ombre locale uniquement derrière le texte */}
+    <div
+      aria-hidden="true"
       className="
-        mb-5
-        font-racing
-        text-xs
-        tracking-[0.42em]
-        text-[#C9A227]
-        sm:text-sm
+        absolute
+        left-1/2 top-1/2
+        h-[320px] w-[min(90vw,720px)]
+        -translate-x-1/2 -translate-y-1/2
+        rounded-full
+        bg-black/20
+        blur-3xl
       "
-    >
-      L&apos;HISTOIRE
-    </p>
+    />
 
-    <h1
-      className="
-        font-racing
-        text-5xl
-        font-black
-        leading-none
-        tracking-tight
-        text-white
-        sm:text-7xl
-        lg:text-8xl
-      "
-    >
-      À{" "}
-      <span className="gold-gradient">
-        PROPOS
-      </span>
-    </h1>
+    <div className="relative z-10">
+      <p
+        className="
+          mb-5
+          font-racing
+          text-xs
+          tracking-[0.42em]
+          text-[#C9A227]
+          sm:text-sm
+        "
+      >
+        L&apos;HISTOIRE
+      </p>
 
-    <p
-      className="
-        mt-7
-        max-w-xl
-        font-racing
-        text-xs
-        uppercase
-        tracking-[0.2em]
-        text-white/75
-        sm:text-base
-        sm:tracking-[0.24em]
-      "
-    >
-      Une passion devenue métier
-    </p>
+      <h1
+        className="
+          font-racing
+          text-5xl
+          font-black
+          leading-none
+          tracking-tight
+          text-white
+          sm:text-7xl
+          lg:text-8xl
+        "
+      >
+        À <span className="gold-gradient">PROPOS</span>
+      </h1>
+
+      <p
+        className="
+          mt-7
+          max-w-xl
+          font-racing
+          text-xs
+          uppercase
+          tracking-[0.2em]
+          text-white/75
+          sm:text-base
+          sm:tracking-[0.24em]
+        "
+      >
+        Une passion devenue métier
+      </p>
+    </div>
   </div>
 
   {/* Flèche */}
@@ -638,7 +668,7 @@ export default function AProposPage() {
             className="w-full h-full object-cover object-center grayscale"
           />
 
-          <div className="absolute inset-0 bg-black/75" />
+          <div className="absolute inset-0 bg-black/20" />
           <div className="absolute inset-0 hero-overlay" />
         </div>
 
