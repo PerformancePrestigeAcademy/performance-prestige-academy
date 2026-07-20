@@ -418,7 +418,7 @@ function Formation() {
               Chaque formation est dispensée directement en atelier, sur véhicules réels, avec des formateurs
               issus du monde de la compétition. 
             </p>
-            <a href="/Formations" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
+            <a href="/Formation" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
               VOIR TOUTES LES FORMATIONS
             </a>
           </div>
