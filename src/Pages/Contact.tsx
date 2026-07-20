@@ -87,11 +87,13 @@ export default function ContactPage() {
           <div className="rounded-2xl overflow-hidden gold-border">
 
             <iframe
-              src="https://www.google.com/maps/embed?pb="
-              width="100%"
-              height="500"
-              loading="lazy"
-            ></iframe>
+              src="https://www.google.com/maps?q=Var,Bouches-du-Rhône&output=embed"
+               width="100%"
+               height="500"
+               style={{ border: 0 }}
+               loading="lazy"
+               referrerPolicy="no-referrer-when-downgrade"/>
+            </iframe>
 
           </div>
 
