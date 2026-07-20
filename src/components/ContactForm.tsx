@@ -282,7 +282,7 @@ w-full
         <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
           <Phone className="w-5 h-5 text-[#C9A227]" />
         </div>
-        
+
         <div className="flex-1">
           <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
             Téléphone
@@ -301,7 +301,7 @@ w-full
           <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
             Email
           </p>
-          <p className="text-white leading-relaxed">
+          <p className="text-white text-sm sm:text-base leading-relaxed">
             performanceprestigeacademy@gmail.com
           </p>
         </div>

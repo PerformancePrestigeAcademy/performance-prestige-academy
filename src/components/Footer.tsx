@@ -23,7 +23,7 @@ export default function Footer() {
 
               <div>
 
-                 <h3 className="font-racing font-black text-5xl tracking-[0.18em] gold-gradient">
+                 <h3 className="font-racing font-black text-4xl tracking-[0.18em] gold-gradient">
                     PERFORMANCE
                  </h3>
 
