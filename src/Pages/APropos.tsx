@@ -23,101 +23,145 @@ export default function AProposPage() {
 
       <Navbar />
 
-      {/* Hero À propos — portrait en miroir */}
-
-<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-  {/* Fond discret */}
+      {/* Hero À propos — portraits cinématographiques en miroir */}
+<section className="relative min-h-[760px] overflow-hidden bg-[#050505] lg:min-h-screen">
+  {/* Fond principal */}
   <div className="absolute inset-0 bg-[#050505]" />
 
-  {/* Version ordinateur : portrait original à gauche */}
-  <div
-    className="hidden sm:block absolute inset-y-0 left-0 w-1/2 pointer-events-none"
-    style={{
-      maskImage:
-        "linear-gradient(to right, black 0%, black 45%, transparent 100%)",
-      WebkitMaskImage:
-        "linear-gradient(to right, black 0%, black 45%, transparent 100%)",
-    }}
-  >
+  {/* Texture et profondeur */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(25,25,25,0.55)_0%,rgba(5,5,5,0.96)_72%)]" />
+
+  {/* =========================
+      VERSION TABLETTE / DESKTOP
+  ========================== */}
+  <div className="absolute inset-0 hidden md:block">
+    {/* Portrait gauche — original */}
+    <div
+      className="absolute inset-y-0 left-0 w-[48%] overflow-hidden"
+      style={{
+        WebkitMaskImage:
+          "linear-gradient(to right, black 0%, black 56%, transparent 100%)",
+        maskImage:
+          "linear-gradient(to right, black 0%, black 56%, transparent 100%)",
+      }}
+    >
+      <img
+        src="/images/about-portrait.jpg"
+        alt=""
+        aria-hidden="true"
+        className="
+          absolute
+          bottom-0
+          left-[5%]
+          h-[92%]
+          w-auto
+          max-w-none
+          object-contain
+          opacity-70
+          blur-[0.4px]
+          lg:left-[10%]
+          lg:h-[96%]
+        "
+      />
+    </div>
+
+    {/* Portrait droit — miroir */}
+    <div
+      className="absolute inset-y-0 right-0 w-[48%] overflow-hidden"
+      style={{
+        WebkitMaskImage:
+          "linear-gradient(to left, black 0%, black 56%, transparent 100%)",
+        maskImage:
+          "linear-gradient(to left, black 0%, black 56%, transparent 100%)",
+      }}
+    >
+      <img
+        src="/images/about-portrait.jpg"
+        alt=""
+        aria-hidden="true"
+        className="
+          absolute
+          bottom-0
+          right-[5%]
+          h-[92%]
+          w-auto
+          max-w-none
+          -scale-x-100
+          object-contain
+          opacity-70
+          blur-[0.4px]
+          lg:right-[10%]
+          lg:h-[96%]
+        "
+      />
+    </div>
+  </div>
+
+  {/* =========================
+      VERSION MOBILE
+  ========================== */}
+  <div className="absolute inset-0 md:hidden">
+    {/* Portrait principal centré */}
     <img
       src="/images/about-portrait.jpg"
       alt=""
       aria-hidden="true"
       className="
-        absolute bottom-0 left-0
-        h-[92%] w-full
-        object-contain object-left-bottom
-        opacity-60
+        absolute
+        bottom-0
+        left-1/2
+        h-[82%]
+        w-auto
+        max-w-none
+        -translate-x-1/2
+        object-contain
+        opacity-55
         blur-[0.5px]
-        scale-[1.02]
       "
     />
+
+    {/* Fondu latéral */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-black/80" />
+
+    {/* Fondu central pour le texte */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.22)_0%,rgba(0,0,0,0.58)_50%,rgba(0,0,0,0.88)_100%)]" />
   </div>
 
-  {/* Version ordinateur : portrait miroir à droite */}
-  <div
-    className="hidden sm:block absolute inset-y-0 right-0 w-1/2 pointer-events-none"
-    style={{
-      maskImage:
-        "linear-gradient(to left, black 0%, black 45%, transparent 100%)",
-      WebkitMaskImage:
-        "linear-gradient(to left, black 0%, black 45%, transparent 100%)",
-    }}
-  >
-    <img
-      src="/images/about-portrait.jpg"
-      alt=""
-      aria-hidden="true"
-      className="
-        absolute bottom-0 right-0
-        h-[92%] w-full
-        object-contain object-right-bottom
-        opacity-60
-        blur-[0.5px]
-        scale-x-[-1]
-      "
-    />
-  </div>
-
-  {/* Version mobile : un seul portrait en arrière-plan */}
-  <div className="sm:hidden absolute inset-0 pointer-events-none">
-    <img
-      src="/images/about-portrait.jpg"
-      alt=""
-      aria-hidden="true"
-      className="
-        h-full w-full
-        object-cover object-[42%_center]
-        opacity-45
-        grayscale
-      "
-    />
-  </div>
-
-  {/* Assombrissement général */}
-  <div className="absolute inset-0 bg-black/35" />
-
-  {/* Ombre centrale pour préserver la lisibilité */}
+  {/* Ombre centrale desktop */}
   <div
     className="
-      absolute inset-0
-      bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.90)_0%,rgba(0,0,0,0.72)_28%,rgba(0,0,0,0.20)_68%,rgba(0,0,0,0.05)_100%)]
+      absolute inset-0 hidden md:block
+      bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.82)_25%,rgba(0,0,0,0.28)_55%,rgba(0,0,0,0.08)_75%,rgba(0,0,0,0.42)_100%)]
     "
   />
 
-  {/* Dégradés identiques à l’esprit des autres Hero */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#0A0A0A]" />
-  <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20" />
+  {/* Assombrissement supérieur */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-transparent to-[#0A0A0A]" />
+
+  {/* Vignette */}
+  <div className="absolute inset-0 shadow-[inset_0_0_160px_rgba(0,0,0,0.9)]" />
 
   {/* Contenu */}
-  <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-28 text-center">
+  <div
+    className="
+      relative z-10
+      mx-auto
+      flex min-h-[760px] max-w-5xl
+      flex-col items-center justify-center
+      px-6
+      pb-28 pt-36
+      text-center
+      lg:min-h-screen
+    "
+  >
     <p
       className="
-        font-racing
-        text-xs sm:text-sm
-        tracking-[0.4em]
-        text-[#C9A227]
         mb-5
+        font-racing
+        text-xs
+        tracking-[0.42em]
+        text-[#C9A227]
+        sm:text-sm
       "
     >
       L&apos;HISTOIRE
@@ -125,11 +169,14 @@ export default function AProposPage() {
 
     <h1
       className="
-        font-racing font-black
-        text-6xl sm:text-7xl lg:text-8xl
+        font-racing
+        text-5xl
+        font-black
         leading-none
         tracking-tight
         text-white
+        sm:text-7xl
+        lg:text-8xl
       "
     >
       À{" "}
@@ -141,32 +188,36 @@ export default function AProposPage() {
     <p
       className="
         mt-7
+        max-w-xl
         font-racing
-        text-sm sm:text-base
-        tracking-[0.22em]
+        text-xs
         uppercase
-        text-white/80
+        tracking-[0.2em]
+        text-white/75
+        sm:text-base
+        sm:tracking-[0.24em]
       "
     >
       Une passion devenue métier
     </p>
   </div>
 
-  {/* Flèche vers la première section */}
+  {/* Flèche */}
   <a
     href="#histoire"
     aria-label="Découvrir mon histoire"
     className="
       absolute bottom-8 left-1/2 z-20
+      flex h-12 w-12
       -translate-x-1/2
-      flex h-12 w-12 items-center justify-center
+      items-center justify-center
       rounded-full
       border border-[#C9A227]/50
       text-[#C9A227]
       transition-all duration-300
+      hover:translate-y-1
       hover:border-[#C9A227]
       hover:bg-[#C9A227]/10
-      hover:translate-y-1
     "
   >
     <svg
