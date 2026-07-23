@@ -33,6 +33,9 @@ accompanimentDescription?: string;
 accompanimentItems?: string[];
 
 certification: string[];
+accessibility: string;
+  practicalInformation: string;
+  legalNotice: string;
 };
 
 export const initiationMecaniqueFormation: Formation = {
@@ -206,6 +209,8 @@ export const initiationMecaniqueFormation: Formation = {
   legalNotice:
     "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",
 };
+
+              {/* Perfectionnement mécanique INITIE */}
 
 
 export const perfectionnementMecaniqueFormation: Formation = {
@@ -435,4 +440,309 @@ export const perfectionnementMecaniqueFormation: Formation = {
 
   legalNotice:
     "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",
+};
+
+
+
+                            {/* Preparation entrée CAP */}
+
+export const preparationEntreeCAPFormation: Formation = {
+  id: "preparation-entree-cap-maintenance-vehicules",
+  reference: "PPA-PEF-CAP",
+
+  title:
+    "Préparation et accompagnement à l’entrée en CAP Maintenance des véhicules",
+
+  subtitle:
+    "Acquérir les bases nécessaires pour intégrer la formation et consolider les apprentissages essentiels",
+
+  level: "Préformation – Débutant",
+  vehicles: "Automobile & moto",
+  format: "Théorie, pratique & accompagnement",
+
+  nature:
+    "Action de préparation et d’accompagnement pédagogique construite en cohérence avec les compétences professionnelles du CAP Maintenance des véhicules, options véhicules légers et motocycles.",
+
+  audience:
+    "Jeunes ou adultes souhaitant intégrer un CAP dans le domaine de la maintenance automobile ou motocycle, ainsi qu’apprentis ou élèves rencontrant des difficultés et souhaitant consolider leurs connaissances théoriques, pratiques et méthodologiques.",
+
+  prerequisites: [
+    "Aucune connaissance approfondie en mécanique n’est exigée.",
+    "Savoir lire, écrire et comprendre des consignes simples en français.",
+    "Manifester un intérêt réel pour la mécanique automobile ou motocycle.",
+    "Être capable de respecter les consignes de sécurité et le règlement de l’atelier.",
+    "Être disposé à participer aux activités théoriques et pratiques.",
+  ],
+
+  generalObjective:
+    "À l’issue de l’accompagnement, le participant aura acquis ou consolidé les connaissances, les méthodes et les gestes fondamentaux nécessaires pour aborder les compétences professionnelles du CAP Maintenance des véhicules, options véhicules légers et motocycles, et suivre plus sereinement sa progression en établissement et en entreprise.",
+
+  operationalObjectives: [
+    "C1.1 — Organiser un entretien périodique.",
+    "C1.2 — Identifier les anomalies dans le cadre d’un entretien périodique.",
+    "C1.3 — Réaliser les opérations de remplacement, d’ajustement dans le cadre de l’entretien périodique.",
+    "C1.4 — Apporter des conseils techniques à la clientèle sur l’entretien du véhicule.",
+    "C2.1 — Préparer une intervention corrective.",
+    "C2.2 — Réaliser le remplacement ou la réparation des composants.",
+    "C2.3 — Réaliser le réglage des systèmes.",
+    "C2.4 — Réaliser le contrôle qualité d’une intervention corrective.",
+    "C2.5 — Réaliser le diagnostic de premier niveau.",
+  ],
+
+  modules: [
+    {
+      title: "Module 1 — C1.1 Organiser un entretien périodique",
+
+      description:
+        "Apprendre à préparer méthodiquement une intervention d’entretien en respectant les procédures, la sécurité et l’environnement.",
+
+      topics: [
+        "Identifier le véhicule et ses caractéristiques",
+        "Analyser la demande d’intervention",
+        "Rechercher le plan d’entretien et la documentation nécessaire",
+        "Identifier les risques liés à l’intervention",
+        "Choisir les équipements de protection adaptés",
+        "Préparer l’outillage, les pièces et les consommables",
+        "Organiser les différentes étapes de l’intervention",
+        "Préparer le tri et la gestion des déchets",
+      ],
+    },
+
+    {
+      title:
+        "Module 2 — C1.2 Identifier les anomalies dans le cadre d’un entretien périodique",
+
+      description:
+        "Réaliser les contrôles prévus par une procédure et repérer les anomalies visibles ou mesurables.",
+
+      topics: [
+        "Identifier les contrôles à réaliser",
+        "Appliquer une procédure de contrôle",
+        "Utiliser les outils et appareils de mesure adaptés",
+        "Relever et interpréter des valeurs",
+        "Contrôler les systèmes mécaniques, électriques et hydrauliques",
+        "Réaliser les opérations préparatoires au contrôle technique",
+        "Identifier les usures, les défauts et les anomalies",
+        "Retranscrire les anomalies constatées",
+        "Préserver l’intégrité et la propreté du véhicule",
+      ],
+    },
+
+    {
+      title:
+        "Module 3 — C1.3 Réaliser les opérations de remplacement, d’ajustement dans le cadre de l’entretien périodique",
+
+      description:
+        "Effectuer les remplacements et ajustements prévus par le plan d’entretien du véhicule.",
+
+      topics: [
+        "Identifier les opérations prévues par le plan d’entretien",
+        "Remplacer les pièces d’usure",
+        "Remplacer les fluides et les consommables",
+        "Ajuster les différents niveaux",
+        "Contrôler et ajuster les pressions des pneumatiques",
+        "Appliquer les procédures du constructeur",
+        "Utiliser les outils et appareils de mesure adaptés",
+        "Effectuer les apprentissages, paramétrages ou réinitialisations nécessaires",
+        "Mettre à jour les indicateurs de maintenance",
+        "Compléter les documents relatifs à l’intervention",
+      ],
+    },
+
+    {
+      title:
+        "Module 4 — C1.4 Apporter des conseils techniques à la clientèle sur l’entretien du véhicule",
+
+      description:
+        "Présenter clairement les opérations réalisées et transmettre les recommandations d’entretien adaptées au véhicule.",
+
+      topics: [
+        "Présenter les anomalies détectées",
+        "Expliquer les opérations réalisées",
+        "Informer sur les prochaines opérations d’entretien",
+        "Formuler des recommandations d’utilisation",
+        "Adapter les conseils au véhicule et à son usage",
+        "Employer un vocabulaire professionnel compréhensible",
+        "Communiquer clairement à l’oral",
+        "Adopter un comportement professionnel",
+        "Contribuer à la qualité du service rendu",
+      ],
+    },
+
+    {
+      title: "Module 5 — C2.1 Préparer une intervention corrective",
+
+      description:
+        "Préparer une opération de maintenance corrective en identifiant les procédures, les risques et les moyens nécessaires.",
+
+      topics: [
+        "Identifier précisément le véhicule",
+        "Analyser la demande ou l’ordre de réparation",
+        "Identifier le système concerné",
+        "Rechercher les informations techniques nécessaires",
+        "Identifier les risques liés à l’intervention",
+        "Mettre le véhicule et le poste de travail en sécurité",
+        "Choisir l’outillage et les équipements adaptés",
+        "Vérifier la disponibilité et la conformité des pièces",
+        "Définir les différentes étapes de l’intervention",
+      ],
+    },
+
+    {
+      title:
+        "Module 6 — C2.2 Réaliser le remplacement ou la réparation des composants",
+
+      description:
+        "Appliquer une méthode rigoureuse pour déposer, contrôler, remplacer, réparer et remonter des composants.",
+
+      topics: [
+        "Identifier les composants à déposer",
+        "Appliquer une procédure de démontage",
+        "Repérer et ranger les éléments démontés",
+        "Contrôler l’état des composants",
+        "Identifier les éléments défectueux",
+        "Remplacer ou réparer les composants concernés",
+        "Respecter les procédures et les couples de serrage",
+        "Réaliser le remontage sans détérioration",
+        "Gérer les pièces, produits et déchets issus de l’intervention",
+        "Préserver l’intégrité et la propreté du véhicule",
+      ],
+    },
+
+    {
+      title: "Module 7 — C2.3 Réaliser le réglage des systèmes",
+
+      description:
+        "Réaliser les mesures et les réglages nécessaires en respectant les données techniques du constructeur.",
+
+      topics: [
+        "Identifier les réglages nécessaires",
+        "Rechercher les valeurs et les procédures du constructeur",
+        "Choisir les appareils de mesure adaptés",
+        "Réaliser les mesures préalables",
+        "Effectuer les réglages mécaniques",
+        "Effectuer les réglages électriques ou hydrauliques accessibles",
+        "Comparer les résultats aux valeurs de référence",
+        "Contrôler la conformité du réglage",
+        "Respecter les règles de sécurité pendant l’intervention",
+      ],
+    },
+
+    {
+      title:
+        "Module 8 — C2.4 Réaliser le contrôle qualité d’une intervention corrective",
+
+      description:
+        "Vérifier la conformité du travail réalisé et assurer la traçabilité de l’intervention.",
+
+      topics: [
+        "Vérifier la conformité du remontage",
+        "Contrôler le fonctionnement du système",
+        "Vérifier l’absence de fuite",
+        "Identifier un bruit, un défaut ou un comportement anormal",
+        "Effectuer les contrôles finaux prévus",
+        "Vérifier la propreté du véhicule et du poste de travail",
+        "Compléter les documents relatifs à l’intervention",
+        "Signaler les éventuelles réserves",
+        "Rendre compte du travail effectué",
+      ],
+    },
+
+    {
+      title:
+        "Module 9 — C2.5 Réaliser le diagnostic de premier niveau",
+
+      description:
+        "Mettre en œuvre une démarche simple et méthodique permettant de constater une anomalie et d’identifier l’élément probablement défectueux.",
+
+      topics: [
+        "Constater et décrire un dysfonctionnement",
+        "Identifier le système concerné",
+        "Rechercher la documentation nécessaire",
+        "Comprendre le fonctionnement normal attendu",
+        "Appliquer une procédure de diagnostic de premier niveau",
+        "Réaliser des contrôles et des mesures simples",
+        "Interpréter les observations et les valeurs relevées",
+        "Identifier le sous-ensemble ou l’élément probablement défectueux",
+        "Retranscrire les résultats afin d’en assurer la traçabilité",
+        "Communiquer clairement les conclusions obtenues",
+      ],
+    },
+  ],
+
+  methods: [
+    "Entretien initial permettant d’identifier les besoins du participant",
+    "Apports théoriques illustrés et contextualisés",
+    "Présentation et utilisation du vocabulaire professionnel",
+    "Lecture guidée de documents techniques",
+    "Démonstrations réalisées par le formateur",
+    "Observation de véhicules et de composants",
+    "Exercices pratiques progressifs sur automobile et motocycle",
+    "Réalisation d’opérations d’entretien et de maintenance",
+    "Apprentissage des méthodes d’organisation du poste de travail",
+    "Utilisation de fiches d’intervention et de contrôle",
+    "Études de situations professionnelles",
+    "Corrections individualisées et reprise des notions non comprises",
+    "Rappels de mathématiques, de physique ou d’électricité selon les besoins",
+  ],
+
+  resources: [
+    "Supports pédagogiques adaptés aux notions travaillées",
+    "Référentiel du CAP Maintenance des véhicules",
+    "Automobile et motocycle",
+    "Organes et composants mécaniques de démonstration",
+    "Outillage manuel et outillage spécifique",
+    "Équipements de levage et de maintien",
+    "Appareils de mesure et de contrôle",
+    "Multimètre et matériel de diagnostic de premier niveau",
+    "Documentation technique et plans d’entretien",
+    "Fiches de travail et fiches de contrôle",
+    "Produits, fluides, consommables et pièces d’entretien",
+    "Équipements de protection individuelle",
+    "Zone de travail organisée et sécurisée",
+  ],
+
+  trainer: {
+    name: "Schoenenberger Jérémy",
+
+    qualification:
+      "Technicien préparateur compétition, diplômé de l’École de la Performance à Nogaro comme Technicien préparateur développeur de véhicules de compétition, option motocycles.",
+  },
+
+  accompanimentTitle:
+    "Un accompagnement adapté à votre progression",
+
+  accompanimentDescription:
+    "L’accompagnement peut être réalisé avant l’entrée en formation, ponctuellement lorsqu’une difficulté particulière est rencontrée, ou régulièrement pendant toute la durée du CAP.",
+
+  accompanimentItems: [
+    "Entretien initial afin d’identifier le niveau, les besoins et les difficultés du participant",
+    "Accompagnement avant l’entrée en CAP",
+    "Séances de soutien sur les notions étudiées en établissement",
+    "Reprise des connaissances théoriques insuffisamment maîtrisées",
+    "Exercices pratiques adaptés à la progression du participant",
+    "Aide à la compréhension des consignes et de la documentation technique",
+    "Travail sur l’organisation, la méthode et le comportement professionnel",
+    "Retour sur les difficultés rencontrées en cours, en atelier ou en entreprise",
+    "Possibilité de suivi régulier pendant toute la durée de la formation",
+    "Adaptation du contenu à l’option véhicules légers ou motocycles",
+  ],
+
+  certification: [
+    "Supports pédagogiques correspondant aux notions travaillées",
+    "Fiches techniques et méthodologiques",
+    "Exercices complémentaires",
+    "Fiches de révision personnalisées",
+    "Synthèses des séances réalisées",
+    "Attestation de participation sur demande",
+  ],
+
+  accessibility:
+    "Les besoins particuliers ou les situations de handicap sont étudiés avant le début de l’accompagnement afin d’identifier les adaptations pédagogiques, matérielles ou organisationnelles pouvant être mises en place.",
+
+  practicalInformation:
+    "L’accompagnement peut être organisé sous la forme de séances ponctuelles ou d’un suivi régulier pendant toute la durée du CAP. La fréquence, la durée, le contenu, le lieu et le tarif sont définis individuellement selon les besoins et la progression du participant.",
+
+  legalNotice:
+    "Cet accompagnement pédagogique ne se substitue pas à la formation dispensée par un CFA ou un établissement scolaire. Il ne permet pas, à lui seul, de valider une unité, une épreuve ou le diplôme du CAP Maintenance des véhicules.",
 };
