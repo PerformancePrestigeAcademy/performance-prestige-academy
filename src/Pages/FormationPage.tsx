@@ -1,25 +1,15 @@
-import {
-  ArrowLeft,
-  Wrench,
-  Gauge,
-  Flag,
-  GraduationCap,
-  Handshake,
-  School,
-  BookOpen,
-  ClipboardCheck,
-  Award,
-  Building2,
-  Target,
-  Rocket,
-} from "lucide-react";
+import { useState } from "react";
+import { ArrowLeft, Wrench, Gauge, Flag, GraduationCap, Handshake, School, BookOpen, ClipboardCheck, Award, Building2, Target, Rocket,} from "lucide-react";
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
 import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
 import ServiceCard from "../components/ServiceCard";
+import FormationModal from "../components/FormationModal";
+import { initiationMecaniqueFormation } from "../data/formations";
 
 export default function FormationPage() {
+    const [isFormationModalOpen, setIsFormationModalOpen] = useState(false);
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
 
@@ -216,12 +206,13 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
+        <button
+            type="button"
+            onClick={() => setIsFormationModalOpen(true)}
             className="btn-outline-gold inline-block px-6 py-3 rounded"
-        >
+             >
             Découvrir
-        </a>
+        </button>
 
     </div>
 
@@ -872,6 +863,12 @@ Performance & Prestige Academy
 </section>
 
 <Footer />
+
+<FormationModal
+  formation={initiationMecaniqueFormation}
+  isOpen={isFormationModalOpen}
+  onClose={() => setIsFormationModalOpen(false)}
+/>
 
      </div>
 
