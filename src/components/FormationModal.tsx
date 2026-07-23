@@ -274,28 +274,72 @@ export default function FormationModal({
               </p>
             </section>
 
-            <section className="mt-14">
-              <SectionTitle
-                eyebrow="Validation"
-                title="Suivi et évaluation des acquis"
-                description="La validation associe connaissances théoriques, identification des composants et comportement en situation pratique."
-              />
+            {formation.accompanimentItems &&
+  formation.accompanimentItems.length > 0 && (
+    <section className="mt-14">
+      <SectionTitle
+        eyebrow="Accompagnement"
+        title={
+          formation.accompanimentTitle ??
+          "Un accompagnement adapté à votre progression"
+        }
+        description={formation.accompanimentDescription}
+      />
 
-              <div className="grid gap-5 lg:grid-cols-3">
-                <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-5">
-                  <h4 className="font-semibold text-white">Suivi</h4>
-                  <div className="mt-4"><BulletList items={formation.tracking} /></div>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-5">
-                  <h4 className="font-semibold text-white">Évaluation</h4>
-                  <div className="mt-4"><BulletList items={formation.evaluation} /></div>
-                </div>
-                <div className="rounded-2xl border border-amber-400/25 bg-amber-400/[0.06] p-5">
-                  <h4 className="font-semibold text-white">Critères de réussite</h4>
-                  <div className="mt-4"><BulletList items={formation.successCriteria} /></div>
-                </div>
-              </div>
-            </section>
+      <div className="rounded-2xl border border-amber-400/20 bg-gradient-to-br from-amber-400/[0.08] to-transparent p-5 sm:p-7">
+        <BulletList items={formation.accompanimentItems} />
+      </div>
+    </section>
+  )}
+
+{Boolean(
+  formation.tracking?.length ||
+    formation.evaluation?.length ||
+    formation.successCriteria?.length
+) && (
+  <section className="mt-14">
+    <SectionTitle
+      eyebrow="Validation"
+      title="Suivi et évaluation des acquis"
+      description="La validation associe connaissances théoriques, identification des composants et comportement en situation pratique."
+    />
+
+    <div className="grid gap-5 lg:grid-cols-3">
+      {formation.tracking && formation.tracking.length > 0 && (
+        <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-5">
+          <h4 className="font-semibold text-white">Suivi</h4>
+
+          <div className="mt-4">
+            <BulletList items={formation.tracking} />
+          </div>
+        </div>
+      )}
+
+      {formation.evaluation && formation.evaluation.length > 0 && (
+        <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-5">
+          <h4 className="font-semibold text-white">Évaluation</h4>
+
+          <div className="mt-4">
+            <BulletList items={formation.evaluation} />
+          </div>
+        </div>
+      )}
+
+      {formation.successCriteria &&
+        formation.successCriteria.length > 0 && (
+          <div className="rounded-2xl border border-amber-400/25 bg-amber-400/[0.06] p-5">
+            <h4 className="font-semibold text-white">
+              Critères de réussite
+            </h4>
+
+            <div className="mt-4">
+              <BulletList items={formation.successCriteria} />
+            </div>
+          </div>
+        )}
+    </div>
+  </section>
+)}
 
             <section className="mt-14 grid gap-5 lg:grid-cols-[1fr_1fr]">
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-7">

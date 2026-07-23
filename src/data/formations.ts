@@ -24,13 +24,15 @@ export type Formation = {
     name: string;
     qualification: string;
   };
-  tracking: string[];
-  evaluation: string[];
-  successCriteria: string[];
-  certification: string[];
-  accessibility: string;
-  practicalInformation: string;
-  legalNotice: string;
+  tracking?: string[];
+evaluation?: string[];
+successCriteria?: string[];
+
+accompanimentTitle?: string;
+accompanimentDescription?: string;
+accompanimentItems?: string[];
+
+certification: string[];
 };
 
 export const initiationMecaniqueFormation: Formation = {
