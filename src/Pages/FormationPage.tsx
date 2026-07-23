@@ -6,10 +6,12 @@ import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
 import ServiceCard from "../components/ServiceCard";
 import FormationModal from "../components/FormationModal";
-import { initiationMecaniqueFormation } from "../data/formations";
+import {initiationMecaniqueFormation, perfectionnementMecaniqueFormation,} from "../data/formations";
 
 export default function FormationPage() {
     const [isFormationModalOpen, setIsFormationModalOpen] = useState(false);
+    const [selectedFormation, setSelectedFormation] = useState(
+    initiationMecaniqueFormation );
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
 
@@ -865,7 +867,7 @@ Performance & Prestige Academy
 <Footer />
 
 <FormationModal
-  formation={initiationMecaniqueFormation}
+  formation={selectedFormation}
   isOpen={isFormationModalOpen}
   onClose={() => setIsFormationModalOpen(false)}
   onRequestInformation={() => {setIsFormationModalOpen(false); window.location.href = "/contact";}}
