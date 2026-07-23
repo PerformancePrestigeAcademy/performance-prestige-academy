@@ -239,12 +239,16 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <button
+        type="button"
+        onClick={() => {
+        setSelectedFormation(perfectionnementMecaniqueFormation);
+        setIsFormationModalOpen(true);
+        }}
+        className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
             Découvrir
-        </a>
+        </button>
 
     </div>
 
