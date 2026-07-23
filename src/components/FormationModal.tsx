@@ -336,7 +336,7 @@ export default function FormationModal({
                 onClick={() => onRegister?.(formation)}
                 className="min-h-12 rounded-xl bg-amber-400 px-6 py-3 text-sm font-bold uppercase tracking-wider text-black transition hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-zinc-950"
               >
-                S’inscrire à la formation
+                S’inscrire à la formation (à venir)
               </button>
             </div>
           </div>

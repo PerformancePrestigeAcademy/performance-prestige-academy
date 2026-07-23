@@ -868,6 +868,7 @@ Performance & Prestige Academy
   formation={initiationMecaniqueFormation}
   isOpen={isFormationModalOpen}
   onClose={() => setIsFormationModalOpen(false)}
+  onRequestInformation={() => {setIsFormationModalOpen(false); window.location.href = "/contact";}}
 />
 
      </div>
