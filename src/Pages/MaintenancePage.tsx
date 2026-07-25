@@ -98,7 +98,7 @@ export default function MaintenancePage() {
 
 
 <section id="entretien"
-  className="scroll-mt-32 py-24 bg-[#0A0A0A]">
+  className="scroll-mt-32 py-24 bg-[#0D0D0D]">
 
      <div className="max-w-7xl mx-auto px-6">
 
@@ -233,7 +233,7 @@ export default function MaintenancePage() {
 
 <section
 id="revision"
-className="scroll-mt-32 py-24 bg-[#0D0D0D]"
+className="scroll-mt-32 py-24 bg-[#0A0A0A]"
 >
 
 <div className="max-w-7xl mx-auto px-6">
@@ -365,7 +365,7 @@ le bon fonctionnement de l'ensemble du véhicule.
 
 <section
 id="diagnostic"
-className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+className="scroll-mt-32 py-24 bg-[#0D0D0D]"
 >
 
 <div className="max-w-7xl mx-auto px-6">
@@ -494,7 +494,7 @@ Chaque réparation est contrôlée afin de garantir un fonctionnement optimal av
 
 <section
 id="performance"
-className="scroll-mt-32 py-24 bg-[#0D0D0D]"
+className="scroll-mt-32 py-24 bg-[#0A0A0A]"
 >
 
 <div className="max-w-7xl mx-auto px-6">
@@ -623,7 +623,7 @@ Notre expérience du terrain nous permet d'accompagner les projets les plus ambi
 
 <section
 id="restauration"
-className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+className="scroll-mt-32 py-24 bg-[#0D0D0D]"
 >
 
   <div className="max-w-7xl mx-auto px-6">
