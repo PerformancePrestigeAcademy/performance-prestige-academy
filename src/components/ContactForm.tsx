@@ -298,7 +298,7 @@ w-full
 </a>
 
       <a
-  href="mailto:performanceprestigeacademy@gmail.com"
+  href="mailto:contact@performance-prestige-academy.fr"
   className="flex items-start gap-4 group"
 >
   <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center group-hover:bg-[#C9A227]/10 transition">
@@ -311,9 +311,9 @@ w-full
     </p>
 
     <p className="text-white leading-relaxed group-hover:text-[#C9A227] transition">
-      performanceprestigeacademy
+      contact@performance-
       <br />
-      @gmail.com
+      prestige-academy.fr
     </p>
   </div>
 </a>

@@ -38,7 +38,7 @@ export default function MentionsLegales() {
             </p>
 
             <p className="mt-4">
-              performanceprestigeacademy@gmail.com<br />
+              contact@performance-prestige-academy.fr<br />
               +33 6 83 87 26 31
             </p>
           </section>

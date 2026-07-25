@@ -113,7 +113,7 @@ export default function PolitiqueConfidentialite() {
             </p>
 
             <p className="mt-4">
-              performanceprestigeacademy@gmail.com
+              contact@performance-prestige-academy.fr
             </p>
           </section>
 

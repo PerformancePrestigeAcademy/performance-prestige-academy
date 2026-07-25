@@ -12,7 +12,7 @@ export default async function handler(req: any, res: any) {
 
 const result = await resend.emails.send({
   from: "Performance & Prestige Academy <onboarding@resend.dev>",
-  to: "performanceprestigeacademy@gmail.com",
+  to: "contact@performance-prestige-academy.fr",
   subject: `[PPA] ${subject}`,
   replyTo: email,
   text: `
