@@ -747,6 +747,10 @@ export const preparationEntreeCAPFormation: Formation = {
     "Cet accompagnement pédagogique ne se substitue pas à la formation dispensée par un CFA ou un établissement scolaire. Il ne permet pas, à lui seul, de valider une unité, une épreuve ou le diplôme du CAP Maintenance des véhicules.",
 };
 
+
+
+              {/* Préparation entrée Bac Pro */}
+
 export const preparationEntreeBacProFormation: Formation = {
   id: "preparation-entree-bac-pro-maintenance-vehicules",
   reference: "PPA-PEF-BACPRO",
@@ -926,4 +930,212 @@ export const preparationEntreeBacProFormation: Formation = {
 
   legalNotice:
     "Cet accompagnement pédagogique ne se substitue pas à la formation dispensée par un lycée professionnel, un CFA ou un établissement habilité. Il ne permet pas, à lui seul, de valider une unité, une épreuve ou le diplôme du Baccalauréat professionnel Maintenance des véhicules.",
+};
+
+
+          {/* Preparation entrée en formation BTS */}
+
+export const preparationEntreeBTSFormation: Formation = {
+  id: "preparation-entree-bts-maintenance-vehicules",
+  reference: "PPA-PEF-BTS",
+
+  title:
+    "Préparation et accompagnement à l’entrée en BTS Maintenance des véhicules",
+
+  subtitle:
+    "Consolider ses connaissances techniques et développer les méthodes d’analyse nécessaires à la réussite de la formation",
+
+  level: "Préformation – Supérieur",
+  vehicles: "Véhicules légers & motocycles",
+  format: "Théorie, pratique & accompagnement",
+
+  nature:
+    "Action de préparation et d’accompagnement pédagogique construite en cohérence avec les compétences professionnelles du BTS Maintenance des véhicules, options véhicules légers et motocycles.",
+
+  audience:
+    "Étudiants souhaitant intégrer un BTS Maintenance des véhicules, options véhicules légers ou motocycles, ainsi qu’étudiants ou apprentis déjà engagés dans cette formation et désirant consolider leurs connaissances scientifiques et techniques, leurs méthodes d’analyse et leurs compétences pratiques.",
+
+  prerequisites: [
+    "Posséder des connaissances fondamentales en mécanique automobile ou motocycle.",
+    "Comprendre le fonctionnement général des principaux systèmes d’un véhicule.",
+    "Maîtriser les bases de l’électricité et des grandeurs physiques utilisées en maintenance.",
+    "Savoir lire et exploiter des consignes et des documents techniques.",
+    "Maîtriser les calculs mathématiques élémentaires.",
+    "Savoir utiliser l’outillage mécanique de base en respectant les règles de sécurité.",
+    "Être capable de travailler avec méthode et de rendre compte de son raisonnement.",
+    "Pour les étudiants déjà inscrits, apporter les cours, travaux pratiques, schémas ou projets correspondant aux notions à reprendre.",
+  ],
+
+  generalObjective:
+    "À l’issue de l’accompagnement, le participant aura acquis ou consolidé les connaissances scientifiques, techniques et méthodologiques nécessaires pour préparer son entrée ou progresser en BTS Maintenance des véhicules, options véhicules légers ou motocycles. Il sera accompagné dans l’analyse des systèmes, la démarche de diagnostic, l’exploitation de la documentation technique, l’organisation des interventions de maintenance et la communication de conclusions techniques argumentées.",
+
+  operationalObjectives: [
+    "C1.1 — Constater le dysfonctionnement.",
+    "C1.2 — Hiérarchiser les hypothèses.",
+    "C1.3 — Appliquer un protocole d’essais et mesures.",
+    "C1.4 — Proposer des solutions correctives adaptées aux contraintes économiques, environnementales et réglementaires.",
+    "C2.1 — Appliquer les principes de la relation client en après-vente.",
+    "C2.2 — Commercialiser des produits et des services de l’après-vente.",
+    "C3.1 — Assurer la planification et le suivi de l’intervention.",
+    "C3.2 — Suivre les indicateurs de performance de l’après-vente.",
+    "C3.3 — Contribuer au développement professionnel de l’équipe.",
+    "C4.1 — Préparer une intervention corrective.",
+    "C4.2 — Remettre en conformité les systèmes.",
+  ],
+
+  modules: [
+    {
+      title:
+        "Bloc 1 — Réaliser le diagnostic des systèmes des véhicules",
+
+      description:
+        "Analyser un dysfonctionnement complexe, construire une démarche de diagnostic argumentée et proposer des solutions correctives adaptées.",
+
+      topics: [
+        "Constater et caractériser précisément le dysfonctionnement",
+        "Recueillir et exploiter les informations techniques disponibles",
+        "Comprendre les interactions entre les différents systèmes du véhicule",
+        "Formuler et hiérarchiser les hypothèses",
+        "Appliquer un protocole d’essais et de mesures",
+        "Interpréter les relevés et les résultats obtenus",
+        "Proposer des solutions tenant compte des contraintes techniques, économiques, environnementales et réglementaires",
+      ],
+    },
+
+    {
+      title:
+        "Bloc 2 — Assurer la relation clientèle et la commercialisation des produits et services de l’après-vente",
+
+      description:
+        "Développer une communication professionnelle adaptée et participer à la valorisation des prestations de l’après-vente.",
+
+      topics: [
+        "Identifier et reformuler les attentes du client",
+        "Expliquer une intervention ou un diagnostic",
+        "Présenter des conclusions techniques compréhensibles",
+        "Conseiller le client sur l’entretien et l’utilisation du véhicule",
+        "Présenter des produits et services adaptés au besoin",
+        "Participer à la qualité de la relation client",
+        "Adopter une communication professionnelle à l’oral et à l’écrit",
+      ],
+    },
+
+    {
+      title:
+        "Bloc 3 — Organiser les activités de maintenance des véhicules",
+
+      description:
+        "Planifier et suivre les interventions, analyser les résultats de l’activité et contribuer au développement des compétences de l’équipe.",
+
+      topics: [
+        "Planifier les différentes étapes d’une intervention",
+        "Répartir et suivre les activités à réaliser",
+        "Prendre en compte les moyens humains, matériels et documentaires",
+        "Suivre l’avancement et la qualité des travaux",
+        "Exploiter les indicateurs de performance de l’après-vente",
+        "Identifier les écarts et proposer des améliorations",
+        "Participer à la transmission des connaissances",
+        "Contribuer au développement professionnel de l’équipe",
+      ],
+    },
+
+    {
+      title:
+        "Bloc 4 — Réaliser la maintenance corrective des véhicules",
+
+      description:
+        "Préparer et réaliser des opérations de maintenance corrective permettant de remettre les systèmes du véhicule en conformité.",
+
+      topics: [
+        "Analyser la demande et préparer l’intervention",
+        "Rechercher les procédures et les données techniques nécessaires",
+        "Identifier les risques et sécuriser la zone de travail",
+        "Choisir les moyens, les outils et les équipements adaptés",
+        "Déposer, contrôler, réparer ou remplacer des composants",
+        "Réaliser les réglages, paramétrages ou programmations nécessaires",
+        "Contrôler la conformité et le fonctionnement des systèmes",
+        "Assurer la traçabilité et rendre compte de l’intervention",
+      ],
+    },
+  ],
+
+  methods: [
+    "Entretien initial pour identifier le parcours, l’option et les besoins de l’étudiant",
+    "Apports théoriques adaptés aux notions étudiées en établissement",
+    "Reprise et reformulation des connaissances scientifiques et techniques",
+    "Lecture et analyse de schémas, de courbes et de documents constructeur",
+    "Études de cas et de situations professionnelles",
+    "Démonstrations réalisées par le formateur",
+    "Exercices pratiques sur véhicule léger ou motocycle",
+    "Utilisation d’appareils de mesure et de diagnostic",
+    "Accompagnement dans la construction d’un raisonnement technique",
+    "Aide à la rédaction et à la présentation de conclusions argumentées",
+    "Corrections individualisées",
+    "Création de supports de révision adaptés aux difficultés rencontrées",
+  ],
+
+  resources: [
+    "Supports pédagogiques adaptés aux notions travaillées",
+    "Référentiel du BTS Maintenance des véhicules",
+    "Documentation technique constructeur",
+    "Schémas mécaniques, électriques et électroniques",
+    "Courbes, relevés et données de fonctionnement",
+    "Véhicule léger et motocycle",
+    "Composants mécaniques, électriques et électroniques de démonstration",
+    "Outillage manuel et outillage spécifique",
+    "Multimètre et appareils de mesure",
+    "Outil de diagnostic électronique",
+    "Moyens de contrôle mécanique",
+    "Fiches méthodologiques et études de cas",
+    "Équipements de protection individuelle",
+    "Zone de travail organisée et sécurisée",
+  ],
+
+  trainer: {
+    name: "Schoenenberger Jérémy",
+
+    qualification:
+      "Technicien préparateur compétition, diplômé de l’École de la Performance à Nogaro comme Technicien préparateur développeur de véhicules de compétition, option motocycles.",
+  },
+
+  accompanimentTitle:
+    "Un accompagnement adapté à votre progression",
+
+  accompanimentDescription:
+    "L’accompagnement peut être organisé avant l’entrée en BTS, ponctuellement lorsqu’une difficulté particulière est rencontrée, ou régulièrement pendant les deux années de formation.",
+
+  accompanimentItems: [
+    "Entretien initial pour identifier le parcours, l’option, le niveau et les besoins de l’étudiant",
+    "Préparation à l’entrée en BTS Maintenance des véhicules",
+    "Consolidation des connaissances scientifiques et techniques",
+    "Reprise des notions étudiées en établissement",
+    "Soutien sur l’analyse des systèmes mécaniques, électriques et électroniques",
+    "Accompagnement dans la construction d’une démarche de diagnostic",
+    "Aide à l’exploitation des schémas, courbes, mesures et documents constructeur",
+    "Exercices pratiques adaptés à la progression de l’étudiant",
+    "Aide à la rédaction de comptes rendus et de conclusions techniques",
+    "Retour sur les difficultés rencontrées en cours, en travaux pratiques ou en entreprise",
+    "Possibilité de suivi régulier pendant toute la durée du BTS",
+    "Adaptation à l’option véhicules légers ou motocycles",
+  ],
+
+  certification: [
+    "Supports pédagogiques correspondant aux notions travaillées",
+    "Fiches techniques et méthodologiques",
+    "Exercices et études de cas complémentaires",
+    "Schémas et documents annotés",
+    "Fiches de révision personnalisées",
+    "Synthèses des séances réalisées",
+    "Aides méthodologiques pour le diagnostic",
+    "Attestation de participation sur demande",
+  ],
+
+  accessibility:
+    "Les besoins particuliers ou les situations de handicap sont étudiés avant le début de l’accompagnement afin d’identifier les adaptations pédagogiques, matérielles ou organisationnelles pouvant être mises en place.",
+
+  practicalInformation:
+    "L’accompagnement peut être organisé sous la forme de séances ponctuelles ou d’un suivi régulier pendant les deux années du BTS. La fréquence, la durée, le contenu, le lieu et le tarif sont définis individuellement selon les besoins, l’option et la progression de l’étudiant.",
+
+  legalNotice:
+    "Cet accompagnement pédagogique ne se substitue pas à la formation dispensée par un lycée, un CFA ou un établissement habilité. Il ne permet pas, à lui seul, de valider un bloc de compétences, une unité, une épreuve ou le diplôme du BTS Maintenance des véhicules.",
 };
