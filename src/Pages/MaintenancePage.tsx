@@ -712,7 +712,8 @@ className="scroll-mt-32 py-24 bg-[#0D0D0D]"
          <li>✔ Transmission</li>
          <li>✔ Freinage</li>
          <li>✔ Trains roulants</li>
-         <li>✔ Alimentation & carburation</li>
+         <li>✔ Electricité</li>
+         <li>✔ Carburation</li>
 
          </ul>
 
@@ -740,8 +741,8 @@ className="scroll-mt-32 py-24 bg-[#0D0D0D]"
          <li>✔ Respect de la configuration d'origine</li>
          <li>✔ Recherche de pièces adaptées</li>
          <li>✔ Conservation des éléments</li>
-         <li>✔ Fiabilisation ciblée</li>
-         <li>✔ Suivi du projet</li>
+         <li>✔ Fiabilisation</li>
+         <li>✔ Suivi à long terme</li>
 
          </ul>
 
