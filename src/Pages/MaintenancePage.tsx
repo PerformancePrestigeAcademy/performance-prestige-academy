@@ -77,7 +77,9 @@ export default function MaintenancePage() {
         <h3 className="font-racing text-xl">
           Restauration
         <br />
-          de c ollection
+          véhicules de
+        <br />
+          collection
         </h3>
       </a>
 
