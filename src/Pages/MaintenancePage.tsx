@@ -618,6 +618,137 @@ Notre expérience du terrain nous permet d'accompagner les projets les plus ambi
 
 
 {/* ===========================
+    RESTAURATION DE COLLECTION
+=========================== */}
+
+<section
+id="restauration"
+className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+>
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-20">
+
+     <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+     RESTAURATION
+     </p>
+
+     <h2 className="font-racing text-5xl mb-6">
+     RESTAURATION
+     <br />
+     <span className="gold-gradient">
+     DE COLLECTION
+     </span>
+     </h2>
+
+     <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+      Chaque véhicule de collection porte une histoire et mérite une attention particulière.
+      Nous réalisons sa restauration mécanique avec méthode et précision, dans le respect
+      de sa conception d'origine, afin de lui redonner fiabilité, agrément et longévité.
+     </p>
+
+    </div>
+
+      <div className="grid lg:grid-cols-3 gap-8">
+
+{/* Carte 13 */}
+
+        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+
+         <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             13
+             </p>
+
+         <h3 className="font-racing text-3xl mb-6 text-center">
+         Remise en route
+         </h3>
+
+         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+         <li>✔ Diagnostic général</li>
+         <li>✔ Remplacement des fluides</li>
+         <li>✔ Remise en état des circuits</li>
+         <li>✔ Contrôle de l'alimentation</li>
+         <li>✔ Essais progressifs</li>
+
+         </ul>
+
+         <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+         Une remise en route méthodique permet de préserver la mécanique et de sécuriser
+         la reprise d'utilisation après une longue immobilisation.
+         </p>
+
+        </div>
+
+{/* Carte 14 */}
+
+        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+
+         <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             14
+             </p>
+
+         <h3 className="font-racing text-3xl mb-6 text-center">
+         Restauration mécanique
+         </h3>
+
+         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+         <li>✔ Moteur</li>
+         <li>✔ Transmission</li>
+         <li>✔ Freinage</li>
+         <li>✔ Trains roulants</li>
+         <li>✔ Alimentation & carburation</li>
+
+         </ul>
+
+         <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+         Chaque ensemble mécanique est contrôlé et remis en état selon les besoins réels
+         du véhicule et les objectifs définis pour le projet.
+         </p>
+
+        </div>
+
+{/* Carte 15 */}
+
+        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+
+         <p className="text-7xl font-black text-[#C9A22720] mb-6">
+             15
+             </p>
+
+         <h3 className="font-racing text-3xl mb-6 text-center">
+         Authenticité & fiabilité
+         </h3>
+
+         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+
+         <li>✔ Respect de la configuration d'origine</li>
+         <li>✔ Recherche de pièces adaptées</li>
+         <li>✔ Conservation des éléments</li>
+         <li>✔ Fiabilisation ciblée</li>
+         <li>✔ Suivi du projet</li>
+
+         </ul>
+
+         <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+         L'objectif est de préserver l'identité du véhicule tout en garantissant
+         un fonctionnement fiable, durable et adapté à son utilisation.
+         </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+</section>
+
+
+
+
+{/* ===========================
     LA MÉTHODE PPA
 =========================== */}
 
