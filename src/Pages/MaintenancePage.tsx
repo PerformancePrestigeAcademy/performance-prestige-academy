@@ -37,7 +37,7 @@ export default function MaintenancePage() {
 
   <div className="max-w-7xl mx-auto px-6 translate-x-4">
 
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8">
 
       <a
   href="#entretien"
@@ -67,6 +67,17 @@ export default function MaintenancePage() {
       >
         <h3 className="font-racing text-xl">
           Diagnostic
+        </h3>
+      </a>
+
+      <a
+        href="#restauration"
+        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+      >
+        <h3 className="font-racing text-xl">
+          Restauration
+        <br />
+          de c ollection
         </h3>
       </a>
 
