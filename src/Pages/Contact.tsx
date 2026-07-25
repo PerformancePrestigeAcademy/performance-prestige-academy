@@ -28,50 +28,9 @@ export default function ContactPage() {
 
       <section id="contact" className="py-24 scroll-mt-28">
 
-        <div className="max-w-7xl mx-auto px-6">
-
-          <div className="text-center mb-16">
-
-            <p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-4">
-              RESTONS EN CONTACT
-            </p>
-
-            <h2 className="font-racing text-5xl mb-6">
-              UNE QUESTION ?
-              <br />
-              <span className="gold-gradient">
-                UN PROJET ?
-              </span>
-            </h2>
-
-            <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-              Notre équipe vous accompagne pour toute demande concernant
-              les formations, les prestations automobiles ou un projet personnalisé.
-            </p>
-
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-5 mb-20">
-
-            <div className="gold-border rounded-xl px-6 py-4 bg-dark-card">
-              ✔ Réponse sous 24h
-            </div>
-
-            <div className="gold-border rounded-xl px-6 py-4 bg-dark-card">
-              ✔ Devis gratuit
-            </div>
-
-            <div className="gold-border rounded-xl px-6 py-4 bg-dark-card">
-              ✔ Sans engagement
-            </div>
-
-          </div>
-
           {/* Formulaire */}
 
           <ContactForm />
-
-          </div>
 
       </section>
 
