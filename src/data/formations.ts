@@ -210,6 +210,219 @@ export const initiationMecaniqueFormation: Formation = {
     "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",
 };
 
+
+              {/* Mecanique au feminin */}
+
+export const mecaniqueAuFemininFormation: Formation = {
+  id: "mecanique-au-feminin",
+  reference: "PPA-MAF-CPA",
+  title: "Mécanique au féminin",
+  subtitle:
+    "Comprendre son véhicule, identifier les pratiques abusives et défendre ses intérêts",
+  level: "Débutant",
+  vehicles: "Automobile",
+  format: "Théorie, démonstrations et mises en situation",
+
+  nature:
+    "Action d’acquisition et de développement des connaissances permettant de mieux comprendre son véhicule, d’analyser les interventions proposées par un professionnel et d’identifier certaines pratiques abusives.",
+
+  audience:
+    "Femmes souhaitant acquérir davantage d’autonomie dans la gestion, l’entretien et la réparation de leur véhicule, même sans connaissance préalable en mécanique.",
+
+  prerequisites: [
+    "Aucune connaissance préalable en mécanique n’est exigée.",
+    "Savoir lire et comprendre des consignes simples en français.",
+    "Aucune expérience technique ou pratique n’est nécessaire.",
+  ],
+
+  generalObjective:
+    "À l’issue de la formation, la participante sera capable de mieux comprendre le fonctionnement et l’entretien de son véhicule, de décrypter un devis ou une facture, de poser les bonnes questions et d’identifier certaines pratiques abusives.",
+
+  operationalObjectives: [
+    "Identifier les principaux organes d’un véhicule.",
+    "Comprendre les opérations d’entretien les plus courantes.",
+    "Reconnaître les principaux témoins d’alerte et symptômes mécaniques.",
+    "Décrire précisément un dysfonctionnement à un professionnel.",
+    "Comprendre la composition d’un devis et d’une facture.",
+    "Distinguer une intervention nécessaire d’une prestation insuffisamment justifiée.",
+    "Identifier certains signaux pouvant révéler une pratique abusive.",
+    "Demander des explications, des preuves ou un second avis.",
+    "Prendre une décision sans subir de pression commerciale.",
+    "Conserver la maîtrise des interventions réalisées sur son véhicule.",
+  ],
+
+  modules: [
+    {
+      title: "Module 1 — Comprendre les principaux éléments de son véhicule",
+      description:
+        "Acquérir les bases indispensables pour comprendre le rôle des principaux organes mécaniques et dialoguer plus facilement avec un professionnel.",
+      topics: [
+        "Organisation générale d’un véhicule",
+        "Moteur, transmission, freinage, direction et suspension",
+        "Batterie, alternateur et démarreur",
+        "Pneumatiques et équipements de sécurité",
+        "Principaux fluides et consommables",
+      ],
+    },
+
+    {
+      title: "Module 2 — Comprendre l’entretien courant",
+      description:
+        "Identifier les opérations réellement nécessaires pour assurer la sécurité, la fiabilité et la longévité du véhicule.",
+      topics: [
+        "Programme d’entretien du constructeur",
+        "Vidange et remplacement des filtres",
+        "Freinage et pneumatiques",
+        "Distribution et pièces d’usure",
+        "Contrôle des niveaux",
+        "Différence entre entretien préventif et réparation",
+      ],
+    },
+
+    {
+      title: "Module 3 — Reconnaître les symptômes et les alertes",
+      description:
+        "Apprendre à observer son véhicule et à décrire clairement un problème avant de consulter un professionnel.",
+      topics: [
+        "Voyants du tableau de bord",
+        "Bruits et vibrations inhabituels",
+        "Fuites et odeurs anormales",
+        "Difficultés de démarrage",
+        "Perte de puissance",
+        "Comportement anormal du freinage ou de la direction",
+      ],
+    },
+
+    {
+      title: "Module 4 — Décrypter un devis et une facture",
+      description:
+        "Comprendre les différentes lignes d’un document commercial afin d’évaluer plus sereinement les prestations proposées.",
+      topics: [
+        "Pièces, main-d’œuvre et consommables",
+        "Temps de travail facturé",
+        "Pièces neuves, échange standard et pièces d’occasion",
+        "Références et quantités",
+        "Prestations complémentaires",
+        "Comparaison entre devis et facture finale",
+        "Repérage des lignes imprécises ou insuffisamment expliquées",
+      ],
+    },
+
+    {
+      title: "Module 5 — Identifier les pratiques abusives",
+      description:
+        "Reconnaître certaines situations anormales ou insuffisamment justifiées afin d’éviter les mauvaises surprises.",
+      topics: [
+        "Interventions proposées sans diagnostic précis",
+        "Remplacement systématique de pièces",
+        "Prestations ajoutées sans explication claire",
+        "Surfacturation ou doublons",
+        "Travaux engagés sans accord préalable",
+        "Pression pour accepter immédiatement une réparation",
+        "Refus d’expliquer ou de montrer les éléments remplacés",
+        "Évolution importante du montant sans justification",
+      ],
+    },
+
+    {
+      title: "Module 6 — Poser les bonnes questions et défendre ses intérêts",
+      description:
+        "Adopter une communication claire et structurée pour conserver la maîtrise des décisions concernant son véhicule.",
+      topics: [
+        "Demander un diagnostic expliqué",
+        "Exiger un devis suffisamment détaillé",
+        "Faire préciser le caractère urgent ou non d’une réparation",
+        "Demander à voir les pièces remplacées",
+        "Demander un second avis",
+        "Refuser une prestation insuffisamment justifiée",
+        "Vérifier la facture avant le règlement",
+        "Conserver les documents relatifs au véhicule",
+      ],
+    },
+
+    {
+      title: "Module 7 — Études de cas et mises en situation",
+      description:
+        "Mettre en pratique les connaissances acquises à partir de situations inspirées de cas réels.",
+      topics: [
+        "Analyse de devis",
+        "Analyse de factures",
+        "Identification de prestations incohérentes",
+        "Simulation d’un échange avec un professionnel",
+        "Formulation des questions à poser",
+        "Décision entre réparation, second avis ou refus",
+      ],
+    },
+  ],
+
+  methods: [
+    "Apports théoriques illustrés",
+    "Présentation de composants mécaniques",
+    "Démonstrations sur véhicule",
+    "Analyse de devis et de factures",
+    "Études de situations concrètes",
+    "Mises en situation et jeux de rôle",
+    "Échanges avec le formateur",
+    "Questionnaire de validation des acquis",
+  ],
+
+  resources: [
+    "Support de cours remis à chaque participante",
+    "Véhicule automobile",
+    "Composants mécaniques de démonstration",
+    "Exemples de devis et de factures",
+    "Documents d’entretien constructeur",
+    "Outillage manuel",
+    "Équipements de protection",
+    "Zone de travail sécurisée",
+  ],
+
+  trainer: {
+    name: "Schoenenberger Jérémy",
+    qualification:
+      "Technicien préparateur compétition, diplômé de l’École de la Performance à Nogaro comme Technicien préparateur développeur de véhicules de compétition, option motocycles.",
+  },
+
+  tracking: [
+    "Émargement ou preuve de présence",
+    "Participation aux activités",
+    "Réalisation des études de cas",
+    "Participation aux mises en situation",
+    "Traçabilité des évaluations",
+  ],
+
+  evaluation: [
+    "Questionnaire théorique",
+    "Identification des principaux organes d’un véhicule",
+    "Analyse d’un devis",
+    "Analyse d’une facture",
+    "Identification de pratiques potentiellement abusives",
+    "Mise en situation face à une proposition de réparation",
+  ],
+
+  successCriteria: [
+    "Obtenir au minimum 70 % de bonnes réponses au contrôle théorique.",
+    "Identifier correctement les informations principales d’un devis.",
+    "Repérer les anomalies essentielles dans une situation proposée.",
+    "Formuler les questions permettant d’obtenir des explications claires.",
+    "Adopter une démarche adaptée face à une intervention insuffisamment justifiée.",
+  ],
+
+  certification: [
+    "Attestation de participation remise à chaque participante.",
+    "Certificat interne de réussite lorsque les évaluations sont validées.",
+  ],
+
+  accessibility:
+    "Les besoins particuliers ou situations de handicap sont étudiés avant l’inscription afin d’évaluer les adaptations possibles.",
+
+  practicalInformation:
+    "La durée, les dates, le lieu, le tarif et l’effectif seront communiqués lors de l’ouverture des prochaines sessions.",
+
+  legalNotice:
+    "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",
+};
+
               {/* Perfectionnement mécanique INITIE */}
 
 

@@ -6,7 +6,7 @@ import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
 import ServiceCard from "../components/ServiceCard";
 import FormationModal from "../components/FormationModal";
-import {initiationMecaniqueFormation, perfectionnementMecaniqueFormation, 
+import {initiationMecaniqueFormation, mecaniqueAuFemininFormation, perfectionnementMecaniqueFormation, 
     preparationEntreeCAPFormation, preparationEntreeBacProFormation, preparationEntreeBTSFormation,
     preparationExamensCAPFormation, preparationExamensBacProFormation, preparationExamensBTSFormation,
     } from "../data/formations";
@@ -190,7 +190,7 @@ Performance & Prestige Academy
 
          </div>
 
-     <div className="grid lg:grid-cols-3 gap-8">
+     <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
 
      {/* DÉBUTANT */}
          <ServiceCard
@@ -224,6 +224,34 @@ Performance & Prestige Academy
 
     </div>
 
+</ServiceCard>
+
+{/* AU FÉMININ */}
+<ServiceCard
+  number="04"
+  subtitle="AU FÉMININ"
+  title="Comprendre & se protéger"
+>
+  <ul className="space-y-3 text-[#A8A9AD]">
+    <li>✔ Comprendre son véhicule</li>
+    <li>✔ Décrypter devis & factures</li>
+    <li>✔ Identifier les pratiques abusives</li>
+    <li>✔ Poser les bonnes questions</li>
+    <li>✔ Défendre ses intérêts</li>
+  </ul>
+
+  <div className="mt-auto pt-8">
+    <button
+      type="button"
+      onClick={() => {
+        setSelectedFormation(mecaniqueAuFemininFormation);
+        setIsFormationModalOpen(true);
+      }}
+      className="btn-outline-gold inline-block px-6 py-3 rounded"
+    >
+      Découvrir
+    </button>
+  </div>
 </ServiceCard>
 
      {/* INITIE */}
