@@ -283,7 +283,7 @@ Performance & Prestige Academy
             href="#"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-            ( A venir ))
+            ( A venir )
         </a>
 
     </div>
@@ -666,7 +666,7 @@ Performance & Prestige Academy
             href="#"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-            A venir
+            ( A venir )
         </a>
 
     </div>
@@ -697,7 +697,7 @@ Performance & Prestige Academy
             href="#"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-            A venir
+            ( A venir )
         </a>
 
     </div>
@@ -728,7 +728,7 @@ Performance & Prestige Academy
             href="#"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-            A venir
+            ( A venir )
         </a>
 
     </div>
