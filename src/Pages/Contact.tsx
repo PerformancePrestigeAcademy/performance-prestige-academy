@@ -24,15 +24,11 @@ export default function ContactPage() {
         scrollTarget="contact"
       />
 
-      {/* Présentation */}
-
-      <section id="contact" className="py-24 scroll-mt-28">
-
-          {/* Formulaire */}
-
-          <ContactForm />
-
-      </section>
+      <section className="pb-24">
+  <div id="contact" className="scroll-mt-28">
+    <ContactForm />
+  </div>
+</section>
 
       {/* Google Maps */}
 
