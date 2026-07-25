@@ -746,3 +746,184 @@ export const preparationEntreeCAPFormation: Formation = {
   legalNotice:
     "Cet accompagnement pédagogique ne se substitue pas à la formation dispensée par un CFA ou un établissement scolaire. Il ne permet pas, à lui seul, de valider une unité, une épreuve ou le diplôme du CAP Maintenance des véhicules.",
 };
+
+export const preparationEntreeBacProFormation: Formation = {
+  id: "preparation-entree-bac-pro-maintenance-vehicules",
+  reference: "PPA-PEF-BACPRO",
+
+  title:
+    "Préparation et accompagnement à l’entrée en Bac professionnel Maintenance des véhicules",
+
+  subtitle:
+    "Acquérir les bases nécessaires pour intégrer la formation et consolider progressivement les compétences professionnelles attendues",
+
+  level: "Préformation – Perfectionnement",
+  vehicles: "Véhicules légers & motocycles",
+  format: "Théorie, pratique & accompagnement",
+
+  nature:
+    "Action de préparation et d’accompagnement pédagogique construite en cohérence avec les compétences professionnelles du Baccalauréat professionnel Maintenance des véhicules, options véhicules légers et motocycles.",
+
+  audience:
+    "Jeunes ou adultes souhaitant intégrer un Baccalauréat professionnel Maintenance des véhicules, options véhicules légers ou motocycles, ainsi qu’élèves et apprentis déjà engagés dans cette formation et souhaitant consolider leurs connaissances théoriques, leurs méthodes de travail et leurs compétences pratiques.",
+
+  prerequisites: [
+    "Savoir lire, écrire et comprendre des consignes techniques simples en français.",
+    "Maîtriser les opérations mathématiques élémentaires.",
+    "Manifester un intérêt réel pour la maintenance automobile ou motocycle.",
+    "Être capable de respecter les consignes de sécurité et le règlement d’un atelier.",
+    "Être disposé à participer aux activités théoriques et pratiques.",
+    "Pour les participants déjà en Bac Pro, apporter autant que possible les cours, travaux pratiques ou documents correspondant aux notions à reprendre.",
+  ],
+
+  generalObjective:
+    "À l’issue de l’accompagnement, le participant aura acquis ou consolidé les connaissances, les méthodes et les gestes professionnels nécessaires pour aborder les compétences du Baccalauréat professionnel Maintenance des véhicules, options véhicules légers ou motocycles. Il sera préparé à progresser dans les activités d’entretien périodique, de maintenance corrective et de diagnostic des systèmes mécaniques, électriques et électroniques, sur des véhicules à motorisation thermique, hybride ou électrique.",
+
+  operationalObjectives: [
+    "C1.1 — Organiser un entretien périodique.",
+    "C1.2 — Identifier les anomalies dans le cadre d’un entretien périodique.",
+    "C1.3 — Réaliser les opérations de remplacement, d’ajustement dans le cadre de l’entretien périodique.",
+    "C1.4 — Apporter des conseils techniques à la clientèle sur l’entretien du véhicule.",
+    "C2.1 — Préparer une intervention corrective.",
+    "C2.2 — Réaliser le remplacement ou la réparation des composants.",
+    "C2.3 — Réaliser le réglage ou le paramétrage des systèmes.",
+    "C2.4 — Réaliser le contrôle qualité d’une intervention corrective.",
+    "C3.1 — Constater un dysfonctionnement.",
+    "C3.2 — Hiérarchiser les hypothèses.",
+    "C3.3 — Mettre en œuvre un protocole d’intervention existant ou à définir.",
+    "C3.4 — Identifier les solutions correctives.",
+  ],
+
+  modules: [
+    {
+      title:
+        "Bloc 1 — Réaliser l’entretien périodique des véhicules",
+
+      description:
+        "Préparer, réaliser et contrôler les opérations d’entretien périodique d’un véhicule léger ou d’un motocycle, puis communiquer les observations et recommandations utiles.",
+
+      topics: [
+        "Organiser une intervention à partir des données du véhicule et du plan d’entretien",
+        "Contrôler les systèmes mécaniques, électriques et hydrauliques",
+        "Identifier et signaler les anomalies constatées",
+        "Remplacer les pièces d’usure, les fluides et les consommables",
+        "Effectuer les ajustements, paramétrages et réinitialisations nécessaires",
+        "Apporter des conseils techniques adaptés à l’entretien et à l’utilisation du véhicule",
+      ],
+    },
+
+    {
+      title:
+        "Bloc 2 — Réaliser la maintenance corrective des véhicules",
+
+      description:
+        "Préparer et réaliser une intervention corrective en respectant les procédures techniques, les exigences de sécurité et les critères de qualité.",
+
+      topics: [
+        "Analyser la demande et préparer l’intervention",
+        "Rechercher les informations et les procédures techniques nécessaires",
+        "Déposer, contrôler, réparer ou remplacer des composants",
+        "Réaliser les réglages ou les paramétrages des systèmes",
+        "Respecter les méthodes et les données du constructeur",
+        "Contrôler le fonctionnement et la conformité de l’intervention",
+        "Assurer la traçabilité et rendre compte du travail effectué",
+      ],
+    },
+
+    {
+      title:
+        "Bloc 3 — Réaliser le diagnostic des systèmes des véhicules",
+
+      description:
+        "Mettre en œuvre une démarche structurée permettant d’identifier l’origine d’un dysfonctionnement mécanique, électrique ou électronique.",
+
+      topics: [
+        "Constater et caractériser un dysfonctionnement",
+        "Recueillir les informations et les observations nécessaires",
+        "Comprendre le fonctionnement normal du système concerné",
+        "Formuler et hiérarchiser les hypothèses de panne",
+        "Définir ou appliquer un protocole de diagnostic",
+        "Utiliser les appareils de mesure et les outils de diagnostic",
+        "Interpréter les valeurs et les résultats obtenus",
+        "Identifier les solutions correctives adaptées",
+      ],
+    },
+  ],
+
+  methods: [
+    "Entretien initial pour identifier le niveau, l’option suivie et les besoins du participant",
+    "Apports théoriques illustrés et adaptés à sa progression",
+    "Reprise et reformulation des notions étudiées en établissement",
+    "Lecture guidée de documents et de schémas techniques",
+    "Analyse de situations professionnelles",
+    "Démonstrations réalisées par le formateur",
+    "Exercices pratiques progressifs sur véhicule léger ou motocycle",
+    "Utilisation d’appareils de mesure et de diagnostic",
+    "Accompagnement dans la méthode de recherche de panne",
+    "Travail sur l’organisation et le comportement professionnel en atelier",
+    "Corrections individualisées",
+    "Création de fiches de révision selon les difficultés rencontrées",
+  ],
+
+  resources: [
+    "Supports pédagogiques adaptés aux notions travaillées",
+    "Référentiel du Bac professionnel Maintenance des véhicules",
+    "Documentation technique constructeur",
+    "Schémas mécaniques, électriques et électroniques",
+    "Véhicule léger et motocycle",
+    "Composants mécaniques, électriques et électroniques de démonstration",
+    "Outillage manuel et outillage spécifique",
+    "Équipements de levage et de maintien",
+    "Multimètre et appareils de mesure",
+    "Outil de diagnostic électronique",
+    "Fiches d’intervention et supports méthodologiques",
+    "Équipements de protection individuelle",
+    "Zone de travail organisée et sécurisée",
+  ],
+
+  trainer: {
+    name: "Schoenenberger Jérémy",
+
+    qualification:
+      "Technicien préparateur compétition, diplômé de l’École de la Performance à Nogaro comme Technicien préparateur développeur de véhicules de compétition, option motocycles.",
+  },
+
+  accompanimentTitle:
+    "Un accompagnement adapté à votre progression",
+
+  accompanimentDescription:
+    "L’accompagnement peut être organisé avant l’entrée en Bac professionnel, ponctuellement lorsqu’une difficulté particulière apparaît, ou régulièrement pendant toute la durée de la formation.",
+
+  accompanimentItems: [
+    "Entretien initial pour identifier le niveau, l’option et les besoins du participant",
+    "Préparation à l’entrée en Bac professionnel",
+    "Reprise des notions étudiées en établissement",
+    "Soutien sur les systèmes mécaniques, électriques et électroniques",
+    "Accompagnement dans l’apprentissage du diagnostic",
+    "Exercices pratiques adaptés à la progression",
+    "Aide à la lecture des schémas et de la documentation technique",
+    "Travail sur l’organisation et la méthode en atelier",
+    "Retour sur les difficultés rencontrées en cours, en atelier ou en entreprise",
+    "Possibilité de suivi régulier pendant toute la durée du Bac professionnel",
+    "Adaptation à l’option véhicules légers ou motocycles",
+  ],
+
+  certification: [
+    "Supports pédagogiques correspondant aux notions travaillées",
+    "Fiches techniques et méthodologiques",
+    "Exercices complémentaires",
+    "Schémas annotés",
+    "Fiches de révision personnalisées",
+    "Synthèses des séances réalisées",
+    "Attestation de participation sur demande",
+  ],
+
+  accessibility:
+    "Les besoins particuliers ou les situations de handicap sont étudiés avant le début de l’accompagnement afin d’identifier les adaptations pédagogiques, matérielles ou organisationnelles pouvant être mises en place.",
+
+  practicalInformation:
+    "L’accompagnement peut être organisé sous la forme de séances ponctuelles ou d’un suivi régulier pendant toute la durée du Bac professionnel. La fréquence, la durée, le contenu, le lieu et le tarif sont définis individuellement selon les besoins, l’option et la progression du participant.",
+
+  legalNotice:
+    "Cet accompagnement pédagogique ne se substitue pas à la formation dispensée par un lycée professionnel, un CFA ou un établissement habilité. Il ne permet pas, à lui seul, de valider une unité, une épreuve ou le diplôme du Baccalauréat professionnel Maintenance des véhicules.",
+};

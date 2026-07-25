@@ -6,7 +6,7 @@ import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
 import ServiceCard from "../components/ServiceCard";
 import FormationModal from "../components/FormationModal";
-import {initiationMecaniqueFormation, perfectionnementMecaniqueFormation, preparationEntreeCAPFormation,} from "../data/formations";
+import {initiationMecaniqueFormation, perfectionnementMecaniqueFormation, preparationEntreeCAPFormation, preparationEntreeBacProFormation,} from "../data/formations";
 
 export default function FormationPage() {
     const [isFormationModalOpen, setIsFormationModalOpen] = useState(false);
@@ -389,12 +389,15 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <button
+            type="button"
+            onClick={() => {
+            setSelectedFormation(preparationEntreeBacProFormation);setIsFormationModalOpen(true);
+        }}
+        className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
-            DÉCOUVRIR
-        </a>
+            Découvrir
+</button>
 
     </div>
 
