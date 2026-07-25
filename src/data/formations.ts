@@ -1139,3 +1139,197 @@ export const preparationEntreeBTSFormation: Formation = {
   legalNotice:
     "Cet accompagnement pédagogique ne se substitue pas à la formation dispensée par un lycée, un CFA ou un établissement habilité. Il ne permet pas, à lui seul, de valider un bloc de compétences, une unité, une épreuve ou le diplôme du BTS Maintenance des véhicules.",
 };
+
+
+          {/* Préparation aux examens CAP */}
+
+export const preparationExamensCAPFormation: Formation = {
+  id: "preparation-examens-cap-maintenance-vehicules",
+  reference: "PPA-PEX-CAP",
+
+  title:
+    "Préparation aux épreuves du CAP Maintenance des véhicules",
+
+  subtitle:
+    "Mobiliser ses acquis, maîtriser les attendus des épreuves et se préparer dans les conditions de l’examen",
+
+  level: "Fin de formation – Préparation à l’examen",
+  vehicles: "Véhicules légers & motocycles",
+  format: "Préparation pratique, orale & méthodologique",
+
+  nature:
+    "Action de préparation aux épreuves professionnelles du CAP Maintenance des véhicules, adaptée à l’option, au mode d’évaluation et au référentiel applicable à la session d’examen du candidat.",
+
+  audience:
+    "Élèves, apprentis et candidats individuels préparant les épreuves du CAP Maintenance des véhicules, options véhicules légers ou motocycles, et souhaitant renforcer leur maîtrise des compétences professionnelles attendues, se préparer aux situations d’examen et corriger leurs dernières difficultés avant la session.",
+
+  prerequisites: [
+    "Préparer les épreuves du CAP Maintenance des véhicules.",
+    "Connaître l’option présentée : véhicules légers ou motocycles.",
+    "Avoir déjà travaillé tout ou partie des compétences professionnelles du diplôme.",
+    "Maîtriser les règles essentielles de santé et de sécurité en atelier.",
+    "Savoir utiliser l’outillage mécanique courant.",
+    "Être capable de comprendre une documentation technique et des consignes d’intervention.",
+    "Apporter, lorsqu’ils sont disponibles, les cours, travaux pratiques ou documents permettant d’identifier les difficultés.",
+  ],
+
+  generalObjective:
+    "À l’issue de la préparation, le candidat sera en mesure de mobiliser ses connaissances et ses compétences professionnelles dans les conditions attendues lors des épreuves du CAP Maintenance des véhicules, option véhicules légers ou motocycles. Il sera préparé à organiser son intervention, appliquer les procédures techniques, réaliser les opérations demandées, respecter les règles de sécurité, contrôler la qualité de son travail et présenter clairement sa démarche à l’évaluateur ou au jury.",
+
+  operationalObjectives: [
+    "C1.1 — Organiser un entretien périodique.",
+    "C1.2 — Identifier les anomalies dans le cadre d’un entretien périodique.",
+    "C1.3 — Réaliser les opérations de remplacement, d’ajustement dans le cadre de l’entretien périodique.",
+    "C1.4 — Apporter des conseils techniques à la clientèle sur l’entretien du véhicule.",
+    "C2.1 — Préparer une intervention corrective.",
+    "C2.2 — Réaliser le remplacement ou la réparation des composants.",
+    "C2.3 — Réaliser le réglage des systèmes.",
+    "C2.4 — Réaliser le contrôle qualité d’une intervention corrective.",
+    "C2.5 — Réaliser le diagnostic de premier niveau.",
+    "Analyser un sujet et identifier les opérations demandées.",
+    "Organiser son intervention et gérer le temps disponible.",
+    "Justifier ses choix techniques et expliquer sa démarche.",
+    "Adopter une posture professionnelle face à l’évaluateur.",
+  ],
+
+  modules: [
+    {
+      title:
+        "Préparation à l’épreuve EP1 — Réalisation de l’entretien périodique des véhicules",
+
+      description:
+        "Se préparer à organiser et réaliser une intervention d’entretien périodique dans les conditions attendues lors de l’épreuve.",
+
+      topics: [
+        "Analyser le sujet et les documents techniques fournis",
+        "Identifier le véhicule et les opérations demandées",
+        "Organiser le poste de travail et préparer l’outillage",
+        "Effectuer les contrôles prévus par la procédure",
+        "Identifier et signaler les anomalies constatées",
+        "Réaliser les remplacements et les ajustements demandés",
+        "Respecter les règles de sécurité et de protection de l’environnement",
+        "Contrôler la qualité de l’intervention",
+        "Présenter les opérations réalisées et formuler des conseils techniques",
+      ],
+    },
+
+    {
+      title:
+        "Préparation à l’épreuve EP2 — Réalisation de la maintenance corrective des véhicules",
+
+      description:
+        "Se préparer à réaliser une intervention corrective, à contrôler son résultat et à présenter sa démarche professionnelle.",
+
+      topics: [
+        "Analyser la demande d’intervention",
+        "Rechercher et exploiter la documentation technique",
+        "Préparer et sécuriser l’intervention",
+        "Déposer, contrôler, réparer ou remplacer des composants",
+        "Réaliser les réglages nécessaires",
+        "Mettre en œuvre un diagnostic de premier niveau",
+        "Vérifier le fonctionnement et la conformité du système",
+        "Compléter les documents de suivi",
+        "Expliquer les contrôles, les choix techniques et les résultats obtenus",
+      ],
+    },
+
+    {
+      title:
+        "Méthodologie, gestion du temps et examens blancs",
+
+      description:
+        "Apprendre à mobiliser efficacement ses compétences dans un temps limité et dans des conditions proches de l’examen.",
+
+      topics: [
+        "Comprendre les attendus et les critères des épreuves",
+        "Lire rapidement un sujet et repérer les informations essentielles",
+        "Organiser son intervention avant de commencer",
+        "Gérer le temps disponible",
+        "Adopter une posture professionnelle face à l’évaluateur",
+        "Justifier ses choix avec un vocabulaire technique adapté",
+        "S’entraîner sur des situations pratiques chronométrées",
+        "Réaliser des examens blancs",
+        "Analyser les erreurs et cibler les dernières notions à consolider",
+      ],
+    },
+  ],
+
+  methods: [
+    "Entretien initial pour identifier la session, l’option et les difficultés du candidat",
+    "Analyse des attendus des épreuves professionnelles",
+    "Étude de sujets, de consignes et de documents techniques",
+    "Rappels ciblés sur les connaissances indispensables",
+    "Démonstrations réalisées par le formateur",
+    "Exercices pratiques proches des situations d’examen",
+    "Entraînement à l’organisation du poste et à la gestion du temps",
+    "Préparation à la présentation orale de la démarche",
+    "Mises en situation chronométrées",
+    "Examens blancs",
+    "Analyse des erreurs et corrections individualisées",
+    "Conseils méthodologiques pour le jour de l’épreuve",
+  ],
+
+  resources: [
+    "Référentiel et documents applicables à la session préparée",
+    "Sujets et situations professionnelles d’entraînement",
+    "Automobile ou motocycle selon l’option du candidat",
+    "Documentation technique constructeur",
+    "Ordres de réparation et fiches d’intervention",
+    "Outillage manuel et outillage spécifique",
+    "Appareils de mesure et de contrôle",
+    "Matériel de diagnostic de premier niveau",
+    "Pièces, fluides et consommables nécessaires aux exercices",
+    "Équipements de levage et de maintien",
+    "Équipements de protection individuelle",
+    "Zone de travail organisée et sécurisée",
+    "Grilles d’observation permettant d’analyser les entraînements",
+  ],
+
+  trainer: {
+    name: "Schoenenberger Jérémy",
+
+    qualification:
+      "Technicien préparateur compétition, diplômé de l’École de la Performance à Nogaro comme Technicien préparateur développeur de véhicules de compétition, option motocycles.",
+  },
+
+  accompanimentTitle:
+    "Une préparation adaptée à votre session d’examen",
+
+  accompanimentDescription:
+    "Le contenu de la préparation est défini à partir de l’option présentée, du référentiel applicable, du mode d’évaluation, du temps restant avant les épreuves et des difficultés identifiées chez le candidat.",
+
+  accompanimentItems: [
+    "Entretien initial pour identifier la session, l’option et les besoins prioritaires",
+    "Analyse des compétences et des notions restant à consolider",
+    "Préparation ciblée à l’épreuve EP1",
+    "Préparation ciblée à l’épreuve EP2",
+    "Entraînement à l’utilisation de la documentation technique",
+    "Travail sur l’organisation du poste et la gestion du temps",
+    "Préparation à la présentation orale de la démarche",
+    "Mises en situation pratiques chronométrées",
+    "Examens blancs dans des conditions proches de l’épreuve",
+    "Analyse des erreurs et correction des dernières lacunes",
+    "Possibilité d’un suivi régulier jusqu’à la session d’examen",
+    "Adaptation à l’option véhicules légers ou motocycles",
+  ],
+
+  certification: [
+    "Fiches méthodologiques de préparation aux épreuves",
+    "Supports de révision ciblés",
+    "Sujets et situations d’entraînement",
+    "Fiches techniques et documents annotés",
+    "Synthèses personnalisées des notions à consolider",
+    "Conseils d’organisation pour le jour de l’examen",
+    "Bilans des examens blancs réalisés",
+    "Attestation de participation sur demande",
+  ],
+
+  accessibility:
+    "Les besoins particuliers ou les situations de handicap sont étudiés avant le début de la préparation afin d’identifier les adaptations pédagogiques, matérielles ou organisationnelles pouvant être mises en place.",
+
+  practicalInformation:
+    "La préparation peut être organisée sous la forme de séances ciblées, d’examens blancs ou d’un suivi régulier jusqu’aux épreuves. La durée, la fréquence, le contenu, le lieu et le tarif sont définis individuellement selon l’option, la session d’examen, le mode d’évaluation et les besoins du candidat.",
+
+  legalNotice:
+    "Cette préparation ne se substitue pas à la formation dispensée par un lycée professionnel, un CFA ou un établissement habilité. Les entraînements et examens blancs organisés par Performance & Prestige Academy ne constituent pas les épreuves officielles du CAP et ne garantissent pas l’obtention du diplôme.",
+};
