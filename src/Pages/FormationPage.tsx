@@ -228,7 +228,7 @@ Performance & Prestige Academy
 
 {/* AU FÉMININ */}
 <ServiceCard
-  number="04"
+  number="02"
   subtitle="AU FÉMININ"
   title="Comprendre & se protéger"
 >
@@ -256,7 +256,7 @@ Performance & Prestige Academy
 
      {/* INITIE */}
          <ServiceCard
-    number="02"
+    number="03"
     subtitle="INITIÉ"
     title="Développer son expertise"
 >
@@ -290,7 +290,7 @@ Performance & Prestige Academy
 
      {/* COMPETITION */}
          <ServiceCard
-    number="03"
+    number="04"
     subtitle="EXPERT"
     title="Performance & préparation"
 >

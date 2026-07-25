@@ -220,7 +220,7 @@ export const mecaniqueAuFemininFormation: Formation = {
   subtitle:
     "Comprendre son véhicule, identifier les pratiques abusives et défendre ses intérêts",
   level: "Débutant",
-  vehicles: "Automobile",
+  vehicles: "Automobile & moto",
   format: "Théorie, démonstrations et mises en situation",
 
   nature:
