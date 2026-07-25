@@ -8,7 +8,7 @@ import ServiceCard from "../components/ServiceCard";
 import FormationModal from "../components/FormationModal";
 import {initiationMecaniqueFormation, perfectionnementMecaniqueFormation, 
     preparationEntreeCAPFormation, preparationEntreeBacProFormation, preparationEntreeBTSFormation,
-    preparationExamensCAPFormation,
+    preparationExamensCAPFormation, preparationExamensBacProFormation,
     } from "../data/formations";
 
 export default function FormationPage() {
@@ -466,14 +466,14 @@ Performance & Prestige Academy
          <div className="text-center mb-20">
 
          <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-            PRÉPARATION AUX EXAMENS
+            CONSOLIDER SES ACQUIS
          </p>
 
          <h2 className="font-racing text-5xl mb-6">
-            CONSOLIDER
+            PREPARATION
             <br />
             <span className="gold-gradient">
-                SES ACQUIS
+                AUX EXAMENS
             </span>
          </h2>
 
@@ -543,12 +543,16 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+       <button
+        type="button"
+        onClick={() => {
+        setSelectedFormation(preparationExamensBacProFormation);
+        setIsFormationModalOpen(true);
+        }}
+        className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
             Découvrir
-        </a>
+</button>
 
     </div>
 

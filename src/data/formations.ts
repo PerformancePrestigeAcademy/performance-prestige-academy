@@ -1333,3 +1333,231 @@ export const preparationExamensCAPFormation: Formation = {
   legalNotice:
     "Cette préparation ne se substitue pas à la formation dispensée par un lycée professionnel, un CFA ou un établissement habilité. Les entraînements et examens blancs organisés par Performance & Prestige Academy ne constituent pas les épreuves officielles du CAP et ne garantissent pas l’obtention du diplôme.",
 };
+
+          {/* Préparation aux examens BACPRO */}
+
+export const preparationExamensBacProFormation: Formation = {
+  id: "preparation-examens-bac-pro-maintenance-vehicules",
+  reference: "PPA-PEX-BACPRO",
+
+  title:
+    "Préparation aux épreuves du Bac professionnel Maintenance des véhicules",
+
+  subtitle:
+    "Mobiliser ses compétences, maîtriser les attendus des épreuves et se préparer dans les conditions de l’examen",
+
+  level: "Fin de formation – Préparation à l’examen",
+  vehicles: "Véhicules légers & motocycles",
+  format: "Préparation pratique, orale, écrite & méthodologique",
+
+  nature:
+    "Action de préparation aux épreuves professionnelles du Bac professionnel Maintenance des véhicules, adaptée à l’option, au mode d’évaluation et au référentiel applicable à la session d’examen du candidat.",
+
+  audience:
+    "Élèves, apprentis et candidats individuels préparant les épreuves du Bac professionnel Maintenance des véhicules dans le domaine de l’automobile ou du motocycle, et souhaitant consolider leurs compétences, maîtriser les attendus des épreuves et corriger leurs dernières difficultés avant la session d’examen.",
+
+  prerequisites: [
+    "Préparer les épreuves du Bac professionnel Maintenance des véhicules.",
+    "Connaître l’option et la session d’examen présentées.",
+    "Avoir déjà travaillé tout ou partie des compétences professionnelles du diplôme.",
+    "Maîtriser les règles essentielles de santé et de sécurité en atelier.",
+    "Savoir utiliser l’outillage ainsi que les principaux appareils de mesure et de contrôle.",
+    "Être capable de lire une documentation technique, un schéma et des consignes d’intervention.",
+    "Pouvoir expliquer une démarche technique à l’oral ou à l’écrit.",
+    "Apporter, lorsqu’ils sont disponibles, les cours, travaux pratiques, livrets de suivi ou documents permettant d’identifier les difficultés.",
+  ],
+
+  generalObjective:
+    "À l’issue de la préparation, le candidat sera en mesure de mobiliser ses connaissances et ses compétences professionnelles dans les conditions attendues lors des épreuves du Bac professionnel Maintenance des véhicules. Il sera préparé à analyser une situation professionnelle, organiser son intervention, exploiter la documentation technique, réaliser les contrôles et opérations demandés, mettre en œuvre une démarche de diagnostic, contrôler la qualité de son travail et présenter clairement ses choix et ses conclusions.",
+
+  operationalObjectives: [
+    "C1.1 — Organiser un entretien périodique.",
+    "C1.2 — Identifier les anomalies dans le cadre d’un entretien périodique.",
+    "C1.3 — Réaliser les opérations de remplacement, d’ajustement dans le cadre de l’entretien périodique.",
+    "C1.4 — Apporter des conseils techniques à la clientèle sur l’entretien du véhicule.",
+    "C2.1 — Préparer une intervention corrective.",
+    "C2.2 — Réaliser le remplacement ou la réparation des composants.",
+    "C2.3 — Réaliser le réglage ou le paramétrage des systèmes.",
+    "C2.4 — Réaliser le contrôle qualité d’une intervention corrective.",
+    "C3.1 — Constater un dysfonctionnement.",
+    "C3.2 — Hiérarchiser les hypothèses.",
+    "C3.3 — Mettre en œuvre un protocole d’intervention existant ou à définir.",
+    "C3.4 — Identifier les solutions correctives.",
+    "Analyser un sujet et identifier les compétences évaluées.",
+    "Organiser son intervention et gérer le temps imparti.",
+    "Exploiter les dossiers, schémas et documents techniques.",
+    "Justifier ses hypothèses, ses mesures et ses choix techniques.",
+    "Présenter une démarche structurée à l’oral et à l’écrit.",
+    "Adopter une posture professionnelle face aux évaluateurs.",
+  ],
+
+  modules: [
+    {
+      title:
+        "Préparation à l’épreuve E2 — Réalisation de l’entretien périodique des véhicules",
+
+      description:
+        "Se préparer à organiser, réaliser et contrôler une intervention d’entretien périodique dans les conditions attendues à l’examen.",
+
+      topics: [
+        "Analyser le sujet, la demande et les documents techniques",
+        "Identifier le véhicule et les opérations d’entretien demandées",
+        "Organiser le poste de travail et préparer les moyens nécessaires",
+        "Réaliser les contrôles prévus par la procédure",
+        "Repérer, interpréter et signaler les anomalies",
+        "Effectuer les remplacements, ajustements et réinitialisations nécessaires",
+        "Respecter les règles de sécurité et de protection de l’environnement",
+        "Contrôler la qualité de l’intervention",
+        "Présenter les opérations réalisées et formuler des conseils techniques",
+      ],
+    },
+
+    {
+      title:
+        "Préparation à l’épreuve E31 — Réalisation de la maintenance corrective des véhicules",
+
+      description:
+        "Se préparer à remettre un système en conformité en appliquant une méthode d’intervention rigoureuse, sûre et conforme aux données techniques.",
+
+      topics: [
+        "Analyser la demande et identifier le système concerné",
+        "Rechercher les procédures et les données constructeur",
+        "Préparer et sécuriser l’intervention",
+        "Choisir les outils, appareils et équipements adaptés",
+        "Déposer, contrôler, réparer ou remplacer les composants",
+        "Réaliser les réglages ou paramétrages nécessaires",
+        "Contrôler le fonctionnement et la conformité du système",
+        "Assurer la traçabilité de l’intervention",
+        "Rendre compte du travail réalisé",
+      ],
+    },
+
+    {
+      title:
+        "Préparation à l’épreuve E32 — Réalisation du diagnostic des systèmes des véhicules",
+
+      description:
+        "Se préparer à construire et présenter une démarche de diagnostic cohérente face à un dysfonctionnement mécanique, électrique ou électronique.",
+
+      topics: [
+        "Constater et caractériser le dysfonctionnement",
+        "Recueillir les informations nécessaires",
+        "Analyser le fonctionnement du système concerné",
+        "Formuler et hiérarchiser les hypothèses",
+        "Définir ou appliquer un protocole de diagnostic",
+        "Sélectionner les contrôles et les appareils de mesure",
+        "Interpréter les valeurs et les résultats obtenus",
+        "Identifier et justifier les solutions correctives",
+        "Présenter clairement le raisonnement suivi",
+      ],
+    },
+
+    {
+      title:
+        "Méthodologie, communication et examens blancs",
+
+      description:
+        "Apprendre à mobiliser ses compétences avec méthode, dans un temps limité et dans des conditions proches de celles de l’examen.",
+
+      topics: [
+        "Comprendre les attendus et les critères des épreuves",
+        "Lire et analyser efficacement un sujet",
+        "Repérer les compétences réellement évaluées",
+        "Organiser son intervention avant de commencer",
+        "Gérer le temps imparti",
+        "Exploiter correctement les documents techniques",
+        "Justifier ses hypothèses, ses mesures et ses choix",
+        "Présenter une démarche structurée à l’oral et à l’écrit",
+        "Réaliser des mises en situation chronométrées",
+        "Participer à des examens blancs",
+        "Analyser les erreurs et corriger les dernières lacunes",
+      ],
+    },
+  ],
+
+  methods: [
+    "Entretien initial pour identifier la session, l’option et les difficultés prioritaires",
+    "Analyse des attendus des épreuves professionnelles",
+    "Étude de sujets, de consignes, de dossiers techniques et de schémas",
+    "Rappels ciblés sur les connaissances indispensables",
+    "Démonstrations techniques réalisées par le formateur",
+    "Exercices pratiques proches des situations d’examen",
+    "Entraînement à la démarche de diagnostic",
+    "Utilisation méthodique des appareils de mesure et de diagnostic",
+    "Travail sur l’organisation du poste et la gestion du temps",
+    "Préparation à la justification des choix techniques",
+    "Entraînement à la restitution orale et écrite",
+    "Mises en situation chronométrées",
+    "Examens blancs",
+    "Analyse des erreurs et corrections individualisées",
+  ],
+
+  resources: [
+    "Référentiel et documents applicables à la session préparée",
+    "Sujets et situations professionnelles d’entraînement",
+    "Véhicule léger ou motocycle selon l’option",
+    "Documentation technique constructeur",
+    "Schémas mécaniques, électriques et électroniques",
+    "Ordres de réparation, fiches d’intervention et dossiers techniques",
+    "Outillage manuel et outillage spécifique",
+    "Multimètre et appareils de mesure",
+    "Outil de diagnostic électronique",
+    "Moyens de contrôle mécanique",
+    "Équipements de levage et de maintien",
+    "Pièces, produits et consommables nécessaires aux exercices",
+    "Équipements de protection individuelle",
+    "Zone de travail organisée et sécurisée",
+    "Grilles d’observation permettant d’analyser les mises en situation",
+  ],
+
+  trainer: {
+    name: "Schoenenberger Jérémy",
+
+    qualification:
+      "Technicien préparateur compétition, diplômé de l’École de la Performance à Nogaro comme Technicien préparateur développeur de véhicules de compétition, option motocycles.",
+  },
+
+  accompanimentTitle:
+    "Une préparation adaptée à votre session d’examen",
+
+  accompanimentDescription:
+    "Le contenu de la préparation est défini selon l’option présentée, le référentiel applicable, le mode d’évaluation, le temps restant avant les épreuves et les difficultés prioritaires du candidat.",
+
+  accompanimentItems: [
+    "Entretien initial pour identifier la session, l’option et le mode d’évaluation",
+    "Analyse des compétences restant à consolider",
+    "Préparation ciblée aux épreuves professionnelles concernées",
+    "Rappels théoriques adaptés aux lacunes constatées",
+    "Entraînement à l’exploitation des dossiers et documents techniques",
+    "Travail sur la démarche de diagnostic",
+    "Préparation à la justification des hypothèses et des choix techniques",
+    "Entraînement à la communication orale et écrite",
+    "Travail sur l’organisation du poste et la gestion du temps",
+    "Mises en situation pratiques chronométrées",
+    "Examens blancs dans des conditions proches des épreuves",
+    "Analyse des erreurs et correction des dernières difficultés",
+    "Possibilité d’un suivi régulier jusqu’à la session d’examen",
+    "Adaptation à l’option véhicules légers ou motocycles",
+  ],
+
+  certification: [
+    "Fiches méthodologiques de préparation aux épreuves",
+    "Supports de révision ciblés",
+    "Sujets et situations professionnelles d’entraînement",
+    "Dossiers techniques et schémas annotés",
+    "Fiches consacrées à la démarche de diagnostic",
+    "Synthèses personnalisées des notions à consolider",
+    "Conseils d’organisation pour le jour des épreuves",
+    "Bilans des mises en situation et examens blancs",
+    "Attestation de participation sur demande",
+  ],
+
+  accessibility:
+    "Les besoins particuliers ou les situations de handicap sont étudiés avant le début de la préparation afin d’identifier les adaptations pédagogiques, matérielles ou organisationnelles pouvant être mises en place.",
+
+  practicalInformation:
+    "La préparation peut être organisée sous la forme de séances ciblées, de mises en situation, d’examens blancs ou d’un suivi régulier jusqu’aux épreuves. La durée, la fréquence, le contenu, le lieu et le tarif sont définis individuellement selon l’option, la session, le mode d’évaluation et les besoins du candidat.",
+
+  legalNotice:
+    "Cette préparation ne se substitue pas à la formation dispensée par un lycée professionnel, un CFA ou un établissement habilité. Les entraînements et examens blancs organisés par Performance & Prestige Academy ne constituent pas les épreuves officielles du Bac professionnel et ne garantissent pas l’obtention du diplôme.",
+};
