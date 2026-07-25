@@ -1561,3 +1561,255 @@ export const preparationExamensBacProFormation: Formation = {
   legalNotice:
     "Cette préparation ne se substitue pas à la formation dispensée par un lycée professionnel, un CFA ou un établissement habilité. Les entraînements et examens blancs organisés par Performance & Prestige Academy ne constituent pas les épreuves officielles du Bac professionnel et ne garantissent pas l’obtention du diplôme.",
 };
+
+          {/* Préparation aux examens BTS*/}
+
+export const preparationExamensBTSFormation: Formation = {
+  id: "preparation-examens-bts-maintenance-vehicules",
+  reference: "PPA-PEX-BTS",
+
+  title:
+    "Préparation aux épreuves du BTS Maintenance des véhicules",
+
+  subtitle:
+    "Mobiliser ses compétences techniques, structurer son analyse et se préparer aux exigences des épreuves",
+
+  level: "Fin d’études supérieures – Préparation à l’examen",
+  vehicles: "Véhicules légers & motocycles",
+  format: "Préparation technique, pratique, orale, écrite & méthodologique",
+
+  nature:
+    "Action de préparation aux épreuves professionnelles du BTS Maintenance des véhicules, adaptée à l’option, aux épreuves présentées, au mode d’évaluation et au référentiel applicable à la session d’examen du candidat.",
+
+  audience:
+    "Étudiants, apprentis et candidats individuels préparant les épreuves du BTS Maintenance des véhicules dans le domaine des véhicules légers ou des motocycles, et souhaitant consolider leurs compétences techniques, structurer leur raisonnement et corriger leurs dernières difficultés avant la session d’examen.",
+
+  prerequisites: [
+    "Préparer les épreuves du BTS Maintenance des véhicules.",
+    "Connaître l’option et la session d’examen présentées.",
+    "Avoir déjà travaillé tout ou partie des compétences professionnelles du diplôme.",
+    "Posséder de solides connaissances en mécanique automobile ou motocycle.",
+    "Maîtriser les bases de l’électricité, de l’électronique et des grandeurs physiques utilisées en maintenance.",
+    "Savoir exploiter une documentation constructeur, un schéma, une courbe et des données de mesure.",
+    "Être capable de mettre en œuvre une démarche de diagnostic.",
+    "Pouvoir expliquer et justifier un raisonnement technique à l’oral comme à l’écrit.",
+    "Apporter, lorsqu’ils sont disponibles, les cours, travaux pratiques, dossiers, projets ou documents permettant d’identifier les difficultés.",
+  ],
+
+  generalObjective:
+    "À l’issue de la préparation, le candidat sera en mesure de mobiliser ses connaissances scientifiques, techniques et professionnelles dans les conditions attendues lors des épreuves du BTS Maintenance des véhicules. Il sera préparé à analyser un dysfonctionnement, construire et justifier une démarche de diagnostic, exploiter les essais et les mesures, proposer des solutions correctives adaptées, organiser une intervention et présenter des conclusions techniques structurées à l’oral comme à l’écrit.",
+
+  operationalObjectives: [
+    "C1.1 — Constater le dysfonctionnement.",
+    "C1.2 — Hiérarchiser les hypothèses.",
+    "C1.3 — Appliquer un protocole d’essais et mesures.",
+    "C1.4 — Proposer des solutions correctives adaptées aux contraintes économiques, environnementales et réglementaires.",
+    "C2.1 — Appliquer les principes de la relation client en après-vente.",
+    "C2.2 — Commercialiser des produits et des services de l’après-vente.",
+    "C3.1 — Assurer la planification et le suivi de l’intervention.",
+    "C3.2 — Suivre les indicateurs de performance de l’après-vente.",
+    "C3.3 — Contribuer au développement professionnel de l’équipe.",
+    "C4.1 — Préparer une intervention corrective.",
+    "C4.2 — Remettre en conformité les systèmes.",
+    "Analyser efficacement un sujet et un dossier technique.",
+    "Construire et justifier une démarche de diagnostic.",
+    "Sélectionner les essais, les mesures et les outils adaptés.",
+    "Interpréter des schémas, des courbes, des relevés et des résultats.",
+    "Proposer des solutions techniques argumentées.",
+    "Organiser son travail et gérer le temps imparti.",
+    "Présenter clairement ses conclusions à l’oral et à l’écrit.",
+    "Adopter une posture professionnelle face aux évaluateurs.",
+  ],
+
+  modules: [
+    {
+      title:
+        "Préparation à l’épreuve E5 — Réalisation du diagnostic des systèmes des véhicules",
+
+      description:
+        "Se préparer à construire, conduire et présenter une démarche de diagnostic complète, argumentée et fondée sur des essais et des mesures.",
+
+      topics: [
+        "Constater et caractériser précisément un dysfonctionnement",
+        "Réaliser l’analyse fonctionnelle et structurelle du système",
+        "Formuler et hiérarchiser des hypothèses",
+        "Définir les essais et les mesures nécessaires",
+        "Exploiter les schémas, les courbes et les données constructeur",
+        "Interpréter les résultats obtenus",
+        "Écarter ou valider les différentes hypothèses",
+        "Proposer des solutions correctives argumentées",
+        "Structurer le dossier technique et préparer sa présentation orale",
+      ],
+    },
+
+    {
+      title:
+        "Préparation à l’épreuve E6 — Gestion de la relation clientèle et commercialisation des services de l’après-vente",
+
+      description:
+        "Se préparer à présenter des situations professionnelles, expliquer une prestation technique et construire une communication adaptée à la clientèle.",
+
+      topics: [
+        "Sélectionner des situations professionnelles pertinentes",
+        "Présenter le contexte, le besoin et les attentes du client",
+        "Expliquer clairement une intervention ou un diagnostic",
+        "Formuler des recommandations techniques compréhensibles",
+        "Présenter des produits et services adaptés",
+        "Argumenter une proposition commerciale",
+        "Structurer le dossier professionnel",
+        "Préparer une présentation orale claire et dynamique",
+        "Répondre avec précision aux questions du jury",
+      ],
+    },
+
+    {
+      title:
+        "Préparation à l’épreuve E7 — Organisation des activités de maintenance des véhicules",
+
+      description:
+        "Se préparer à analyser, planifier et suivre une activité d’après-vente en tenant compte des moyens disponibles et des objectifs de performance.",
+
+      topics: [
+        "Analyser une situation d’organisation d’atelier",
+        "Planifier et suivre une intervention",
+        "Prendre en compte les moyens humains, matériels et documentaires",
+        "Identifier les priorités et les contraintes",
+        "Exploiter des indicateurs de performance",
+        "Analyser les écarts constatés",
+        "Proposer des actions d’amélioration",
+        "Participer au développement des compétences de l’équipe",
+        "Présenter une analyse critique et argumentée",
+      ],
+    },
+
+    {
+      title:
+        "Préparation à l’épreuve E8 — Réalisation de la maintenance corrective des véhicules",
+
+      description:
+        "Se préparer à conduire une intervention corrective complexe en respectant les procédures, la sécurité et les exigences de qualité.",
+
+      topics: [
+        "Analyser la demande et identifier le système concerné",
+        "Rechercher les données et les procédures techniques",
+        "Évaluer les risques et sécuriser l’intervention",
+        "Choisir l’outillage et les appareils adaptés",
+        "Déposer, contrôler, réparer ou remplacer des composants",
+        "Réaliser les réglages, paramétrages ou programmations nécessaires",
+        "Contrôler la conformité et le fonctionnement du système",
+        "Assurer la traçabilité de l’intervention",
+        "Présenter et justifier les choix techniques réalisés",
+      ],
+    },
+
+    {
+      title:
+        "Dossiers, soutenances et examens blancs",
+
+      description:
+        "Apprendre à valoriser son travail, à défendre son raisonnement et à maîtriser les différentes formes de présentation attendues lors des épreuves.",
+
+      topics: [
+        "Comprendre les attendus et les critères des épreuves",
+        "Sélectionner les activités professionnelles les plus pertinentes",
+        "Organiser un dossier clair, structuré et techniquement justifié",
+        "Construire des supports visuels efficaces",
+        "Présenter une démarche sans réciter son dossier",
+        "Employer un vocabulaire professionnel précis",
+        "Argumenter ses hypothèses et ses solutions",
+        "Répondre aux questions et défendre ses choix",
+        "Gérer son temps pendant une présentation",
+        "Réaliser des soutenances et des mises en situation blanches",
+        "Analyser ses erreurs et améliorer progressivement sa prestation",
+      ],
+    },
+  ],
+
+  methods: [
+    "Entretien initial pour identifier la session, l’option et les épreuves préparées",
+    "Analyse des attendus et des critères des épreuves professionnelles",
+    "Étude de sujets, de dossiers techniques et de situations professionnelles",
+    "Rappels ciblés sur les connaissances scientifiques et techniques indispensables",
+    "Analyse de schémas, de courbes, de relevés et de données constructeur",
+    "Accompagnement dans la construction d’une démarche de diagnostic",
+    "Exercices pratiques et études de cas complexes",
+    "Préparation et amélioration des dossiers professionnels",
+    "Travail sur l’argumentation et la justification des choix techniques",
+    "Entraînement à la présentation orale et à la réponse aux questions",
+    "Mises en situation et soutenances chronométrées",
+    "Examens blancs",
+    "Analyse des erreurs et corrections individualisées",
+    "Conseils méthodologiques pour chaque épreuve présentée",
+  ],
+
+  resources: [
+    "Référentiel et documents applicables à la session préparée",
+    "Sujets et situations professionnelles d’entraînement",
+    "Dossiers techniques et supports professionnels",
+    "Documentation technique constructeur",
+    "Schémas mécaniques, électriques et électroniques",
+    "Courbes, relevés et données de fonctionnement",
+    "Véhicule léger ou motocycle selon l’option",
+    "Composants mécaniques, électriques et électroniques",
+    "Outillage manuel et outillage spécifique",
+    "Multimètre et appareils de mesure",
+    "Outil de diagnostic électronique",
+    "Moyens de contrôle mécanique",
+    "Outils de préparation et de présentation des dossiers",
+    "Équipements de protection individuelle",
+    "Zone de travail organisée et sécurisée",
+    "Grilles d’observation pour analyser les soutenances et les mises en situation",
+  ],
+
+  trainer: {
+    name: "Schoenenberger Jérémy",
+
+    qualification:
+      "Technicien préparateur compétition, diplômé de l’École de la Performance à Nogaro comme Technicien préparateur développeur de véhicules de compétition, option motocycles.",
+  },
+
+  accompanimentTitle:
+    "Une préparation adaptée à votre session d’examen",
+
+  accompanimentDescription:
+    "Le contenu de la préparation est défini selon l’option, les épreuves présentées, le référentiel applicable, le mode d’évaluation, le temps restant avant les examens et les difficultés prioritaires du candidat.",
+
+  accompanimentItems: [
+    "Entretien initial pour identifier la session, l’option et les épreuves préparées",
+    "Analyse des compétences et des connaissances restant à consolider",
+    "Préparation ciblée aux épreuves professionnelles concernées",
+    "Accompagnement dans la construction du raisonnement de diagnostic",
+    "Aide à l’analyse des schémas, courbes, mesures et dossiers techniques",
+    "Préparation ou amélioration des dossiers professionnels",
+    "Travail sur la justification des hypothèses et des solutions proposées",
+    "Entraînement à la présentation orale et à la réponse aux questions",
+    "Préparation à la gestion du temps pendant les épreuves",
+    "Études de cas et mises en situation chronométrées",
+    "Soutenances et examens blancs",
+    "Analyse des erreurs et amélioration progressive de la prestation",
+    "Possibilité d’un suivi régulier jusqu’à la session d’examen",
+    "Adaptation à l’option véhicules légers ou motocycles",
+  ],
+
+  certification: [
+    "Fiches méthodologiques de préparation aux épreuves",
+    "Supports de révision ciblés",
+    "Études de cas et sujets d’entraînement",
+    "Schémas, courbes et documents techniques annotés",
+    "Fiches consacrées à la démarche de diagnostic",
+    "Conseils pour la construction et la présentation des dossiers",
+    "Trames de préparation aux soutenances",
+    "Synthèses personnalisées des connaissances à consolider",
+    "Bilans des soutenances et examens blancs",
+    "Attestation de participation sur demande",
+  ],
+
+  accessibility:
+    "Les besoins particuliers ou les situations de handicap sont étudiés avant le début de la préparation afin d’identifier les adaptations pédagogiques, matérielles ou organisationnelles pouvant être mises en place.",
+
+  practicalInformation:
+    "La préparation peut être organisée sous la forme de séances ciblées, d’études de cas, d’un accompagnement des dossiers, de soutenances blanches ou d’un suivi régulier jusqu’aux épreuves. La durée, la fréquence, le contenu, le lieu et le tarif sont définis individuellement selon l’option, la session, les épreuves présentées et les besoins du candidat.",
+
+  legalNotice:
+    "Cette préparation ne se substitue pas à la formation dispensée par un lycée, un CFA ou un établissement habilité. Les entraînements, études de cas, soutenances et examens blancs organisés par Performance & Prestige Academy ne constituent pas les épreuves officielles du BTS et ne garantissent pas l’obtention du diplôme.",
+};
