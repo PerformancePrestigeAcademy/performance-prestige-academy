@@ -199,14 +199,13 @@ function Hero() {
           PERFORMANCE &amp; PRESTIGE ACADEMY
         </p>
 
-        <h1 className="font-racing font-bold text-5xl sm:text-7xl lg:text-8xl leading-none mb-6 animate-fade-in-up animate-delay-200">
-          <span className="gold-gradient">L'ART DE LA</span>
-          <br />
-          <span className="text-white">MÉCANIQUE</span>
-          <br />
-          <span className="text-[#A8A9AD]">D'EXCELLENCE</span>
-        </h1>
-
+       <h1 className="font-racing font-bold text-5xl sm:text-7xl lg:text-8xl leading-none mb-6 animate-fade-in-up animate-delay-200">
+  <span className="gold-gradient">L'ART DE LA</span>
+  <br />
+  <span className="text-white">MÉCANIQUE AUTO &amp; MOTO</span>
+  <br />
+  <span className="text-[#A8A9AD]">DANS LE VAR</span>
+</h1>
         <p className="text-[#A8A9AD] text-base sm:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed animate-fade-in-up animate-delay-300">
           Préparation performance, formation professionnelle et maintenance de précision
           pour véhicules 2 et 4 roues. Parce que la passion mérite l'excellence.
