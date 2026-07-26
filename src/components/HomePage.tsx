@@ -492,9 +492,6 @@ function About() {
 
 export default function App() {
   return (
- <>
- export default function App() {
-  return (
     <>
       <SEO
         title="Performance & Prestige Academy | Mécanique auto dans le Var"
