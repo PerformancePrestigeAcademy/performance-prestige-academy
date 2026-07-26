@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://performance-prestige-academy.fr/sitemap.xml
+Sitemap: https://www.performance-prestige-academy.fr/sitemap.xml
