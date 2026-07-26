@@ -493,6 +493,28 @@ function About() {
 export default function App() {
   return (
  <>
+ export default function App() {
+  return (
+    <>
+      <SEO
+        title="Performance & Prestige Academy | Mécanique auto dans le Var"
+        description="Maintenance automobile, diagnostic électronique, formation mécanique et préparation compétition dans le Var. Contactez Performance & Prestige Academy."
+      />
+
+      <Navbar />
+
+      <main>
+        <Hero />
+        <Maintenance />
+        <Formation />
+        <About />
+        <ContactForm />
+      </main>
+
+      <Footer />
+    </>
+  );
+}
  <Navbar />
       <main>
         <Hero />
