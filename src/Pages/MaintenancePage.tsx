@@ -8,7 +8,7 @@ export default function MaintenancePage() {
   return (
         <div className="min-h-screen bg-[#0A0A0A] text-white">
 <SEO
-    title="Maintenance Auto moto | Performance & Prestige Academy"
+    title="Maintenance Auto & Moto | Performance & Prestige Academy"
     description="Entretien, révision constructeur, diagnostic électronique, préparation moteur et optimisation des performances dans le Var."
     keywords="garage automobile, révision, entretien, diagnostic, préparation moteur, performance automobile"
 />
