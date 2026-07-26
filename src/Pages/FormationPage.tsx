@@ -22,8 +22,7 @@ export default function FormationPage() {
 
         <SEO
             title="Formation Mécanique Auto & Moto | Performance & Prestige Academy"
-            description="Découvrez nos formations automobiles spécialisées en préparation moteur, maintenance et diagnostic dans le Var."
-            keywords="
+description="Formations en mécanique auto et moto dans le Var pour particuliers, apprentis et CFA : cours théoriques, pratique, maintenance et diagnostic."            keywords="
 formation automobile,
 préparation moteur,
 maintenance automobile,
