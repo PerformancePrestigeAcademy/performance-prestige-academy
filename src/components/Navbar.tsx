@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="/" className="flex items-center gap-3 group">
           <img
-            src="/images/logo-ecusson-transparent.png"
+            src="/images/favicon-ppa-v3-512.png"
             alt="Performance & Prestige Academy"
             className="h-20 w-20 object-contain transition-transform duration-300 group-hover:scale-105"
           />
