@@ -21,7 +21,7 @@ export default function FormationPage() {
         <Navbar />
 
         <SEO
-            title="Formations Automobile | Performance & Prestige Academy"
+            title="Formation Mécanique Auto & Moto | Performance & Prestige Academy"
             description="Découvrez nos formations automobiles spécialisées en préparation moteur, maintenance et diagnostic dans le Var."
             keywords="
 formation automobile,
