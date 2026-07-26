@@ -484,11 +484,7 @@ function About() {
       </div>
     </section>
   );
-
-  <ContactForm />
-  
 }
-
 
 export default function App() {
   return (
@@ -508,18 +504,6 @@ export default function App() {
         <ContactForm />
       </main>
 
-      <Footer />
-    </>
-  );
-}
- <Navbar />
-      <main>
-        <Hero />
-        <Maintenance />
-        <Formation />
-        <About />
-        <ContactForm />
-      </main>
       <Footer />
     </>
   );
