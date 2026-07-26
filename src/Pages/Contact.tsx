@@ -11,8 +11,7 @@ export default function ContactPage() {
 
       <SEO
         title="Contact | Performance & Prestige Academy"
-        description="Contactez Performance & Prestige Academy pour toute demande concernant les formations ou les prestations automobiles."
-      />
+description="Contactez Performance & Prestige Academy dans le Var pour vos besoins en mécanique auto-moto, diagnostic, préparation et formation."      />
 
       <Navbar />
 
