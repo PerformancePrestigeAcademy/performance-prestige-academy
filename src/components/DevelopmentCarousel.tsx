@@ -69,11 +69,10 @@ export default function DevelopmentCarousel() {
   };
 
   const handlePointerDown = (
-    event: PointerEvent<HTMLDivElement>
-  ) => {
-    pointerStartX.current = event.clientX;
-    event.currentTarget.setPointerCapture(event.pointerId);
-  };
+  event: PointerEvent<HTMLDivElement>
+) => {
+  pointerStartX.current = event.clientX;
+};
 
   const handlePointerUp = (
     event: PointerEvent<HTMLDivElement>
@@ -100,11 +99,11 @@ export default function DevelopmentCarousel() {
       <style>
         {`
           .development-coverflow {
-            --card-width: min(31vw, 400px);
-            --card-height: 280px;
+            --card-width: min(46vw, 600px);
+            --card-height: 420px;
 
             position: relative;
-            height: 350px;
+            height: 500px;
             overflow: hidden;
             perspective: 1400px;
             touch-action: pan-y;
