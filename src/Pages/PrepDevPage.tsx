@@ -28,7 +28,7 @@ export default function PrepDevPage() {
   className="py-20 bg-[#0A0A0A] scroll-mt-28"
 >
   <div className="max-w-7xl mx-auto px-6">
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
       <a
         href="#preparation-mecanique"
@@ -38,17 +38,6 @@ export default function PrepDevPage() {
           Préparation
           <br />
           mécanique
-        </h3>
-      </a>
-
-      <a
-        href="#reglages"
-        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-      >
-        <h3 className="font-racing text-xl">
-          Réglages
-          <br />
-          & mise au point
         </h3>
       </a>
 
@@ -223,7 +212,118 @@ export default function PrepDevPage() {
 
 
 
-                    {/* titre */}
+                    {/* Conception & Developpement */}
+
+
+
+<section
+  id="developpement-pieces"
+  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+>
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-20">
+
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        SOLUTIONS SUR MESURE
+      </p>
+
+      <h2 className="font-racing text-5xl mb-6">
+        CONCEPTION
+        <br />
+        <span className="gold-gradient">
+          & DÉVELOPPEMENT
+        </span>
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        En compétition, les solutions standards ne répondent pas toujours aux
+        contraintes du véhicule, de l’équipe ou du paddock. Chaque besoin est
+        étudié afin de concevoir une nouvelle solution ou de développer une
+        pièce existante pour l’adapter aux exigences réelles du terrain.
+      </p>
+
+    </div>
+
+    <div className="grid lg:grid-cols-3 gap-8">
+
+      {/* Carte 1 */}
+
+      <ServiceCard
+        number="01"
+        title="Étude"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Analyse de la réglementation</li>
+          <li>✔ Définition du cahier des charges</li>
+          <li>✔ Prise de mesures</li>
+          <li>✔ Étude de faisabilité du projet</li>
+          <li>✔ Solutions pour le véhicule, le technicien ou le paddock</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            EN PISTE !
+          </a>
+        </div>
+      </ServiceCard>
+
+      {/* Carte 2 */}
+
+      <ServiceCard
+        number="02"
+        title="CAO & prototypage"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Modélisation et plans 3D</li>
+          <li>✔ Modification de composants existants</li>
+          <li>✔ Création de composants spécifiques</li>
+          <li>✔ Prototypage par impression 3D</li>
+          <li>✔ Ajustements avant fabrication</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            EN PISTE !
+          </a>
+        </div>
+      </ServiceCard>
+
+      {/* Carte 3 */}
+
+      <ServiceCard
+        number="03"
+        title="Fabrication & validation"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Fabrication et ajustage manuel</li>
+          <li>✔ Développement d’outillages</li>
+          <li>✔ Assemblage, soudure ou sous-traitance spécialisée</li>
+          <li>✔ Montage sur le véhicule ou l’équipement</li>
+          <li>✔ Validation en conditions réelles</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            EN PISTE !
+          </a>
+        </div>
+      </ServiceCard>
+
+    </div>
+
+  </div>
+</section>
+
 
 
       <Footer />
