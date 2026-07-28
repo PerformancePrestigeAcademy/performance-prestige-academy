@@ -323,31 +323,8 @@ export default function PrepDevPage() {
     </div>
 
   </div>
-  <div className="mt-24">
-
-  <div className="text-center mb-12">
-
-    <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-      EXEMPLES DE RÉALISATIONS
-    </p>
-
-    <h3 className="font-racing text-4xl md:text-5xl mb-6">
-      DE L’IDÉE
-      <br />
-      <span className="gold-gradient">
-        À LA RÉALITÉ
-      </span>
-    </h3>
-
-    <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-      Découvrez quelques exemples de pièces, d’outillages et de solutions
-      techniques développés pour le véhicule, le technicien et le paddock.
-    </p>
-
-  </div>
-
+  <div className="mt-16">
   <DevelopmentCarousel />
-
 </div>
 </section>
 
