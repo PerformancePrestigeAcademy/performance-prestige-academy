@@ -18,7 +18,7 @@ export default function PrepDevPage() {
         surTitre="PRÉPARATION & DÉVELOPPEMENT"
         titre="L'EXIGENCE DE LA"
         titreGold="PERFORMANCE"
-        image="/images/preparation.png"
+        image="/images/prep.png"
         scrollTarget="preparation-developpement"
       />
 
@@ -100,7 +100,7 @@ export default function PrepDevPage() {
 
                     {/* Preparation mecanique */}
 
-                    
+
 
 <section
   id="preparation-mecanique"
