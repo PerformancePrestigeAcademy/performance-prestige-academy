@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
+import ServiceCard from "../components/ServiceCard";
 
 export default function PrepDevPage() {
   return (
@@ -104,78 +105,124 @@ export default function PrepDevPage() {
 
 <section
   id="preparation-mecanique"
-  className="py-24 bg-[#111111] scroll-mt-28"
+  className="scroll-mt-32 py-24 bg-[#0D0D0D]"
 >
   <div className="max-w-7xl mx-auto px-6">
 
-    <div className="max-w-4xl mb-14">
-      <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">
-        Préparation compétition
+    <div className="text-center mb-20">
+
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        PRÉPARATION COMPÉTITION
       </p>
 
-      <h2 className="font-racing text-4xl md:text-5xl mb-6">
+      <h2 className="font-racing text-5xl mb-6">
         PRÉPARATION
-        <span className="text-gold"> MÉCANIQUE</span>
+        <br />
+        <span className="gold-gradient">
+          MÉCANIQUE
+        </span>
       </h2>
 
-      <p className="text-gray-300 text-lg leading-relaxed">
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
         Chaque préparation est étudiée en fonction du véhicule, de son
         utilisation, du règlement applicable et des objectifs recherchés.
         L’objectif est d’obtenir un ensemble performant, fiable et cohérent,
         adapté aux contraintes de la compétition.
       </p>
+
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="grid lg:grid-cols-3 gap-8">
 
-      <div className="bg-dark-card gold-border rounded-2xl p-8">
-        <h3 className="font-racing text-2xl mb-4">
-          Moteur
-        </h3>
+      {/* Carte 1 */}
 
-        <p className="text-gray-400 leading-relaxed">
-          Préparation, optimisation, assemblage et fiabilisation des organes
-          mécaniques selon le niveau de performance recherché.
-        </p>
-      </div>
+      <ServiceCard
+        number="01"
+        title="Moteur"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Étude de la configuration</li>
+          <li>✔ Préparation des composants</li>
+          <li>✔ Optimisation mécanique</li>
+          <li>✔ Assemblage</li>
+          <li>✔ Fiabilisation</li>
+        </ul>
 
-      <div className="bg-dark-card gold-border rounded-2xl p-8">
-        <h3 className="font-racing text-2xl mb-4">
-          Châssis & partie-cycle
-        </h3>
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            Étudier mon projet
+          </a>
+        </div>
+      </ServiceCard>
 
-        <p className="text-gray-400 leading-relaxed">
-          Adaptation du comportement du véhicule afin d’améliorer sa stabilité,
-          sa précision et son efficacité dynamique.
-        </p>
-      </div>
+      {/* Carte 2 */}
 
-      <div className="bg-dark-card gold-border rounded-2xl p-8">
-        <h3 className="font-racing text-2xl mb-4">
-          Transmission & freinage
-        </h3>
+      <ServiceCard
+        number="02"
+        title="Châssis & partie-cycle"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Géométrie</li>
+          <li>✔ Suspensions</li>
+          <li>✔ Direction</li>
+          <li>✔ Stabilité du véhicule</li>
+          <li>✔ Comportement dynamique</li>
+        </ul>
 
-        <p className="text-gray-400 leading-relaxed">
-          Étude et adaptation des différents composants pour répondre aux
-          contraintes d’utilisation et aux performances attendues.
-        </p>
-      </div>
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            Étudier mon projet
+          </a>
+        </div>
+      </ServiceCard>
 
-      <div className="bg-dark-card gold-border rounded-2xl p-8">
-        <h3 className="font-racing text-2xl mb-4">
-          Fiabilisation
-        </h3>
+      {/* Carte 3 */}
 
-        <p className="text-gray-400 leading-relaxed">
-          Contrôle des points sensibles, amélioration de la résistance des
-          composants et prévention des défaillances en utilisation intensive.
-        </p>
-      </div>
+      <ServiceCard
+        number="03"
+        title="Transmission & freinage"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Transmission</li>
+          <li>✔ Embrayage</li>
+          <li>✔ Système de freinage</li>
+          <li>✔ Adaptation des composants</li>
+          <li>✔ Prévention des défaillances</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            Étudier mon projet
+          </a>
+        </div>
+      </ServiceCard>
 
     </div>
 
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+                    {/* titre */}
+
 
       <Footer />
     </div>
