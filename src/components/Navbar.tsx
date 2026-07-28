@@ -31,9 +31,12 @@ export default function Navbar() {
           </div>
         </a>
 
-        <ul className="hidden lg:flex items-center gap-8">
+        <ul className="hidden lg:flex flex-1 items-center justify-center mx-6">
           {NAV_LINKS.map((l) => (
-            <li key={l.href}>
+            <li
+  key={l.href}
+  className="flex flex-1 justify-center px-2"
+>
               <a
                 href={l.href}
                className="font-racing font-extrabold text-sm tracking-[0.22em] uppercase text-white text-center leading-relaxed drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227] transition-colors duration-200"
