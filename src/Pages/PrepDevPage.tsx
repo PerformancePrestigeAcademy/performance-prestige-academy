@@ -144,7 +144,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            EN PISTE !
+            À L’ATELIER !
           </a>
         </div>
       </ServiceCard>
@@ -168,7 +168,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            EN PISTE !
+            À L’ATELIER !
           </a>
         </div>
       </ServiceCard>
@@ -192,7 +192,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            EN PISTE !
+            À L’ATELIER !
           </a>
         </div>
       </ServiceCard>
@@ -266,7 +266,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            EN PISTE !
+            CREONS ENSEMBLE !
           </a>
         </div>
       </ServiceCard>
@@ -290,7 +290,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            EN PISTE !
+            CREONS ENSEMBLE !
           </a>
         </div>
       </ServiceCard>
@@ -314,6 +314,252 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
+            CREONS ENSEMBLE !
+          </a>
+        </div>
+      </ServiceCard>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+                    {/* Acquisition & analyse de données */}
+
+
+
+<section
+  id="acquisition-donnees"
+  className="scroll-mt-32 py-24 bg-[#0D0D0D]"
+>
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-20">
+
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        TÉLÉMÉTRIE & PERFORMANCE
+      </p>
+
+      <h2 className="font-racing text-5xl mb-6">
+        ACQUISITION
+        <br />
+        <span className="gold-gradient">
+          & ANALYSE DE DONNÉES
+        </span>
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Les données télémétriques permettent de comprendre précisément le
+        fonctionnement du véhicule et son comportement en piste. Spécialisée
+        dans l’analyse appliquée à la moto de compétition, Performance &
+        Prestige Academy intervient également dans le domaine automobile,
+        depuis l’installation des capteurs jusqu’à l’exploitation des données
+        recueillies.
+      </p>
+
+    </div>
+
+    <div className="grid lg:grid-cols-3 gap-8">
+
+      {/* Carte 1 */}
+
+      <ServiceCard
+        number="01"
+        title="Instrumentation & acquisition"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Définition des données à mesurer</li>
+          <li>✔ Choix et implantation des capteurs</li>
+          <li>✔ Installation et raccordement</li>
+          <li>✔ Configuration du système d’acquisition</li>
+          <li>✔ Enregistrement des données en roulage</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            ANALYSONS !
+          </a>
+        </div>
+      </ServiceCard>
+
+      {/* Carte 2 */}
+
+      <ServiceCard
+        number="02"
+        title="Analyse télémétrique"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Lecture et interprétation des courbes</li>
+          <li>✔ Identification des bons réglages</li>
+          <li>✔ Mise en relation des différents canaux</li>
+          <li>✔ Identification des anomalies</li>
+          <li>✔ Comparaison des tours et des sessions</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            ANALYSONS !
+          </a>
+        </div>
+      </ServiceCard>
+
+      {/* Carte 3 */}
+
+      <ServiceCard
+        number="03"
+        title="Exploitation & optimisation"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Identification des axes d’amélioration</li>
+          <li>✔ Recommandations de réglages</li>
+          <li>✔ Corrections mécaniques ou électroniques</li>
+          <li>✔ Comparaison des différentes configurations</li>
+          <li>✔ Validation lors de nouveaux essais</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            ANALYSONS !
+          </a>
+        </div>
+      </ServiceCard>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+                    {/* Assistance compétition */}
+
+<section
+  id="assistance-competition"
+  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
+>
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-20">
+
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        ACCOMPAGNEMENT SUR CIRCUIT
+      </p>
+
+      <h2 className="font-racing text-5xl mb-6">
+        ASSISTANCE
+        <br />
+        <span className="gold-gradient">
+          COMPÉTITION
+        </span>
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        De la préparation du véhicule avant l’épreuve jusqu’au suivi technique
+        sur circuit, Performance & Prestige Academy accompagne les pilotes et
+        les équipes afin de garantir la fiabilité du matériel, d’adapter les
+        réglages aux conditions de roulage et d’exploiter chaque séance pour
+        progresser.
+      </p>
+
+    </div>
+
+    <div className="grid lg:grid-cols-3 gap-8">
+
+      {/* Carte 1 */}
+
+      <ServiceCard
+        number="01"
+        title="Préparation avant épreuve"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Contrôle général du véhicule</li>
+          <li>✔ Vérification des éléments de sécurité</li>
+          <li>✔ Préparation des pièces, consommables et outillages</li>
+          <li>✔ Réglages de base selon le circuit</li>
+          <li>✔ Organisation technique de l’intervention</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            EN PISTE !
+          </a>
+        </div>
+      </ServiceCard>
+
+      {/* Carte 2 */}
+
+      <ServiceCard
+        number="02"
+        title="Assistance sur circuit"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Assistance mécanique dans le paddock ou les stands</li>
+          <li>✔ Contrôles entre les séances</li>
+          <li>✔ Entretien et réparations rapides</li>
+          <li>✔ Ajustement des réglages</li>
+          <li>✔ Accompagnement technique de l’équipe et du pilote</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
+            EN PISTE !
+          </a>
+        </div>
+      </ServiceCard>
+
+      {/* Carte 3 */}
+
+      <ServiceCard
+        number="03"
+        title="Suivi & exploitation"
+      >
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Analyse des retours du pilote</li>
+          <li>✔ Exploitation des données recueillies</li>
+          <li>✔ Identification des anomalies</li>
+          <li>✔ Bilan technique après roulage</li>
+          <li>✔ Préconisations pour les prochaines séances</li>
+        </ul>
+
+        <div className="mt-auto pt-8">
+          <a
+            href="/contact"
+            className="btn-outline-gold inline-block px-6 py-3 rounded"
+          >
             EN PISTE !
           </a>
         </div>
@@ -323,6 +569,7 @@ export default function PrepDevPage() {
 
   </div>
 </section>
+
 
 
 
