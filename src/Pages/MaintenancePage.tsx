@@ -538,8 +538,7 @@ destinée à la compétition.
 
 {/* Carte 10 */}
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
+<a href="/preparation-developpement" className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer">
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
              10
              </p>
@@ -562,12 +561,11 @@ Développement moteur
 Chaque préparation est développée selon vos objectifs et votre utilisation.
 </p>
 
-</div>
+</a>
 
 {/* Carte 11 */}
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
+<a href="/preparation-developpement" className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer">
 <p className="text-7xl font-black text-[#C9A22720] mb-6">
              11
              </p>
@@ -590,13 +588,15 @@ Mise au point
 Chaque réglage vise à exploiter pleinement le potentiel du véhicule.
 </p>
 
-</div>
+</a>
 
 {/* Carte 12 */}
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
+<a
+  href="/preparation-developpement"
+  className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer"
+>
+            <p className="text-7xl font-black text-[#C9A22720] mb-6">
              12
              </p>
 
@@ -618,7 +618,7 @@ Sport mécanique
 Notre expérience du terrain nous permet d'accompagner les projets les plus ambitieux.
 </p>
 
-</div>
+</a>
 
 </div>
 
