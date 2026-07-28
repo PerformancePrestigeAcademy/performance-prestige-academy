@@ -10,11 +10,13 @@ import {initiationMecaniqueFormation, mecaniqueAuFemininFormation, perfectionnem
     preparationEntreeCAPFormation, preparationEntreeBacProFormation, preparationEntreeBTSFormation,
     preparationExamensCAPFormation, preparationExamensBacProFormation, preparationExamensBTSFormation,
     } from "../data/formations";
+    import CFAModal from "../components/CFAModal";
 
 export default function FormationPage() {
     const [isFormationModalOpen, setIsFormationModalOpen] = useState(false);
     const [selectedFormation, setSelectedFormation] = useState(
     initiationMecaniqueFormation );
+    const [isCFAModalOpen, setIsCFAModalOpen] = useState(false);
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
 
@@ -929,7 +931,11 @@ Performance & Prestige Academy
   onClose={() => setIsFormationModalOpen(false)}
   onRequestInformation={() => {setIsFormationModalOpen(false); window.location.href = "/contact";}}
 />
-
+<CFAModal
+  isOpen={isCFAModalOpen}
+  onClose={() => setIsCFAModalOpen(false)}
+  onContact={() => { setIsCFAModalOpen(false); window.location.href = "/contact";}}
+/>
      </div>
 
   );
