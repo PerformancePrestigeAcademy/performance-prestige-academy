@@ -141,11 +141,13 @@ export default function PrepDevPage() {
         title="Moteur"
       >
         <ul className="space-y-3 text-[#A8A9AD]">
-          <li>✔ Étude de la configuration</li>
-          <li>✔ Préparation des composants</li>
-          <li>✔ Optimisation mécanique</li>
           <li>✔ Assemblage</li>
           <li>✔ Fiabilisation</li>
+          <li>✔ Transmission</li>
+          <li>✔ Optimisation mécanique et électronique</li>
+          <li>✔ Étude du règlement</li>
+
+
         </ul>
 
         <div className="mt-auto pt-8">
@@ -153,7 +155,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            Étudier mon projet
+            EN PISTE !
           </a>
         </div>
       </ServiceCard>
@@ -162,13 +164,13 @@ export default function PrepDevPage() {
 
       <ServiceCard
         number="02"
-        title="Châssis & partie-cycle"
+        title="Châssis / Partie-cycle"
       >
         <ul className="space-y-3 text-[#A8A9AD]">
           <li>✔ Géométrie</li>
           <li>✔ Suspensions</li>
           <li>✔ Direction</li>
-          <li>✔ Stabilité du véhicule</li>
+          <li>✔ Ergonomie</li>
           <li>✔ Comportement dynamique</li>
         </ul>
 
@@ -177,7 +179,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            Étudier mon projet
+            EN PISTE !
           </a>
         </div>
       </ServiceCard>
@@ -186,14 +188,14 @@ export default function PrepDevPage() {
 
       <ServiceCard
         number="03"
-        title="Transmission & freinage"
+        title="Alimentation / Accessoires"
       >
         <ul className="space-y-3 text-[#A8A9AD]">
-          <li>✔ Transmission</li>
-          <li>✔ Embrayage</li>
+          <li>✔ Faisceaux électriques</li>
+          <li>✔ Circuit carburant</li>
           <li>✔ Système de freinage</li>
-          <li>✔ Adaptation des composants</li>
-          <li>✔ Prévention des défaillances</li>
+          <li>✔ Poste de pilotage</li>
+          <li>✔ Reporting Set-up</li>
         </ul>
 
         <div className="mt-auto pt-8">
@@ -201,7 +203,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            Étudier mon projet
+            EN PISTE !
           </a>
         </div>
       </ServiceCard>
