@@ -895,7 +895,13 @@ Performance & Prestige Academy
       </div>
 
     </div>
-
+<button
+  type="button"
+  onClick={() => setIsCFAModalOpen(true)}
+  className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
+>
+  DÉCOUVRIR LES INTERVENTIONS
+</button>
     {/* Appel à l'action */}
 
     <div className="text-center mt-20">
