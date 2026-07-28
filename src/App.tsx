@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import FormationPage from "./Pages/FormationPage";
 import MaintenancePage from "./Pages/MaintenancePage";
+import PrepDevPage from "./Pages/PrepDevPage";
 import MentionsLegales from "./Pages/MentionsLegales";
 import PolitiqueConfidentialite from "./Pages/PolitiqueConfidentialite";
 import ContactPage from "./Pages/Contact";
