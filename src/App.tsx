@@ -21,6 +21,8 @@ export default function App() {
 
         <Route path="/maintenance" element={<MaintenancePage />} />
 
+        <Route path="/preparation-developpement" element={<PrepDevPage />} />
+
         <Route path="/mentions-legales" element={<MentionsLegales />} />
 
         <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
