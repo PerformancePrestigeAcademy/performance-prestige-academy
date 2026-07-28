@@ -36,7 +36,7 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-               className="font-racing font-extrabold text-sm tracking-[0.22em] uppercase text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227] transition-colors duration-200"
+               className="font-racing font-extrabold text-sm tracking-[0.22em] uppercase text-white text-center leading-relaxed drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227] transition-colors duration-200"
               >
                 {l.label}
               </a>
@@ -45,11 +45,11 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="/contact"
-          className="hidden lg:flex btn-gold text-black font-racing font-bold text-sm tracking-widest px-9 py-3.5 rounded shadow-[0_0_20px_rgba(201,162,39,0.35)]"
-        >
-          DEVIS GRATUIT
-        </a>
+  href="/contact"
+  className="hidden lg:flex items-center justify-center text-center leading-relaxed ml-8 shrink-0 btn-gold text-black font-racing font-bold text-sm tracking-widest px-9 py-3.5 rounded shadow-[0_0_20px_rgba(201,162,39,0.35)]"
+>
+  DEVIS GRATUIT
+</a>
 
         <button
           className="lg:hidden text-[#C9A227] p-2"
