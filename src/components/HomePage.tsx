@@ -341,8 +341,6 @@ export default function App() {
       <main>
         <Hero />
         <Maintenance />
-        <Formation />
-        <About />
         <ContactForm />
       </main>
 
