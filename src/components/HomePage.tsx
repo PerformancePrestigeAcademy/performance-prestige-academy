@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   Menu, X, ChevronDown, Phone, Mail, MapPin,
-  Wrench, Gauge, BookOpen, Trophy, Shield, Zap,
+  Wrench, Gauge, BookOpen, Trophy, Shield, Zap, History
   CheckCircle, ArrowRight, Instagram, Facebook
 } from 'lucide-react';
 import Navbar from "./Navbar";
@@ -45,6 +45,17 @@ const MAINTENANCE = [
     features: ['Optimisation Moteur', 'Châssis & Suspensions', 'Cartographie ECU', 'Conformité Règlements Compétition'],
     icon: <Gauge className="w-6 h-6" />,
   },
+  {
+  id: 'restauration',
+  image: '/images/restauration.png',
+  tag: 'Restauration',
+  title: 'Restauration de véhicules anciens',
+  subtitle: 'PRÉSERVER · RESTAURER · TRANSMETTRE',
+  description:
+    'Chaque véhicule ancien possède une histoire et des particularités qui méritent une attention spécifique. Du diagnostic initial à la remise en état, chaque intervention est réalisée avec méthode afin de préserver son authenticité, restaurer son fonctionnement et assurer sa fiabilité.',
+  features: [ 'Mécanique', 'Faisceau électrique', 'Carrosserie', 'Intérieur', ],
+  icon: <History className="w-6 h-6" />,
+},
 ];
 
 const VALUES = [
@@ -293,13 +304,14 @@ function Maintenance() {
         <div className="text-center mb-20">
           <p className="font-racing text-xs tracking-[0.5em] text-[#C9A227] mb-4">NOS EXPERTISES</p>
           <h2 className="font-racing font-bold text-4xl sm:text-5xl lg:text-6xl text-white mb-6">
-            TROIS PILIERS
+            QUATRE PILIERS
             <span className="gold-gradient"> D'EXCELLENCE</span>
           </h2>
           <div className="gold-line mx-auto mb-6" />
           <p className="text-[#A8A9AD] max-w-2xl mx-auto leading-relaxed">
-            De la préparation compétition à la formation professionnelle, en passant par la maintenance de précision,
-            nous couvrons l'intégralité de vos besoins mécaniques.
+            De la maintenance quotidienne à la restauration de véhicules anciens,
+en passant par la formation et la préparation compétition, chaque projet
+bénéficie de la même exigence, de la même précision et du même engagement.
           </p>
         </div>
 
@@ -313,178 +325,8 @@ function Maintenance() {
   );
 }
 
-function Formation() {
-  const PROGRAMS = [
-    {
-      level: 'DÉBUTANT',
-      title: 'Initiation Mécanique',
-      audience: 'Particuliers',
-      modules: ['Bases de la mécanique', 'Entretien courant', 'Lecture diagnostic', 'Sécurité atelier'],
-    },
-    {
-      level: 'INTERMÉDIAIRE',
-      title: 'Mécanique courante',
-      audience: 'Apprentis & Pro',
-      modules: ['Diagnostic avancé', 'Moteur & Distribution', 'Électronique embarquée', 'Méthodologie pro'],
-    },
-    {
-      level: 'AVANCÉ',
-      title: 'Technicien préparateur',
-      audience: 'Professionnels',
-      modules: ['Cartographie ECU', 'Préparation moteur', 'Châssis compétition', 'Développement circuit'],
-    },
-  ];
 
-  return (
-    <section id="formation" className="py-24 sm:py-32 bg-[#0D0D0D]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="section-divider mb-24" />
 
-        <div className="text-center mb-20">
-          <p className="font-racing text-xs tracking-[0.5em] text-[#C9A227] mb-4">FORMATIONS PPA</p>
-          <h2 className="font-racing font-bold text-4xl sm:text-5xl lg:text-6xl text-white mb-6">
-            ON APPREND AVEC
-            <span className="gold-gradient"> UN PROFESSIONNEL</span>
-          </h2>
-          <div className="gold-line mx-auto mb-6" />
-          <p className="text-[#A8A9AD] max-w-2xl mx-auto leading-relaxed">
-            Nos programmes de formation sont construits par des professionnels du sport automobile,
-            adaptés à tous les niveaux pour un apprentissage concret et immédiat.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-          {PROGRAMS.map((p, i) => (
-            <div
-              key={p.title}
-              className={`relative rounded-2xl overflow-hidden gold-border service-card ${
-                i === 1 ? 'md:-mt-6 md:mb-6' : ''
-              }`}
-            >
-              {i === 1 && (
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#9B7A1A] via-[#E8C55A] to-[#9B7A1A]" />
-              )}
-              <div className="bg-dark-card p-8">
-                <div className="flex items-center justify-between mb-6">
-                  <span className={`font-racing text-xs font-bold tracking-widest px-3 py-1 rounded ${
-                    i === 1 ? 'bg-[#C9A227] text-black' : 'border border-[rgba(201,162,39,0.4)] text-[#C9A227]'
-                  }`}>
-                    {p.level}
-                  </span>
-                </div>
-
-                <h3 className="font-racing font-bold text-2xl text-white mb-2">{p.title}</h3>
-                <p className="text-[#C9A227] text-xs tracking-wider mb-6">{p.audience}</p>
-
-                <ul className="space-y-3 mb-8">
-                  {p.modules.map((m) => (
-                    <li key={m} className="flex items-center gap-2 text-sm text-[#A8A9AD]">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#C9A227] flex-shrink-0" />
-                      {m}
-                    </li>
-                  ))}
-                </ul>
-
-                <a
-                  href="/Formation"
-                  className={`block text-center font-racing font-bold text-sm tracking-widest py-3 rounded transition-all duration-200 ${
-                    i === 1
-                      ? 'btn-gold text-black'
-                      : 'btn-outline-gold text-[#C9A227]'
-                  }`}
-                >
-                  DECOUVRIR LA FORMATION
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="relative rounded-2xl overflow-hidden bg-dark-card gold-border flex flex-col sm:flex-row items-center">
-          <div className="sm:w-2/5 flex items-center justify-center p-4 sm:p-12 mt-8">
-            <img
-              src="/images/logo-transparent.png"
-              alt="PPA Logo"
-              className=" w-[400px]
-            h-[400px]
-            object-contain
-            drop-shadow-[0_0_35px_rgba(201,162,39,0.25)]
-        "
-            />
-          </div>
-          <div className="sm:w-3/5 p-8 sm:pr-12">
-            <p className="font-racing text-xs tracking-[0.4em] text-[#C9A227] mb-3">NOTRE PHILOSOPHIE</p>
-            <h3 className="font-racing font-bold text-3xl sm:text-4xl text-white mb-4">
-              L'expertise se transmet par la pratique
-            </h3>
-            <p className="text-[#A8A9AD] leading-relaxed mb-6 text-justify">
-              Chaque formation est dispensée directement en atelier, sur véhicules réels, avec des formateurs
-              issus du monde de la compétition. 
-            </p>
-            <a href="/Formation" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-8 py-3 rounded inline-block">
-              VOIR TOUTES LES FORMATIONS
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function About() {
-  return (
-    <section id="apropos" className="py-24 sm:py-32 bg-[#0A0A0A]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="section-divider mb-24" />
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-          <div>
-            <p className="font-racing text-xs tracking-[0.5em] text-[#C9A227] mb-4">À PROPOS DE PPA</p>
-            <h2 className="font-racing font-bold text-4xl sm:text-5xl text-white mb-6">
-              LA PASSION,
-              <br />
-              <span className="gold-gradient">ÉLEVÉE AU RANG</span>
-              <br />
-              D'ART
-            </h2>
-            <div className="gold-line mb-8" />
-            <p className="text-[#A8A9AD] leading-relaxed mb-6 text-justify">
-              Performance & Prestige Academy est née d'une conviction simple : la mécanique haute performance
-              mérite des mains expertes et une transmission du savoir irréprochable. Fondée par des passionnés
-              issus du monde de la compétition automobile et moto, PPA réunit sous un même toit trois pôles
-              d'excellence complémentaires.
-            </p>
-            <p className="text-[#A8A9AD] leading-relaxed text-justify">
-              Notre atelier est équipé des dernières technologies de diagnostic et de cartographie ECU,
-              permettant d'intervenir sur les véhicules les plus modernes comme sur les préparations
-              compétition les plus exigeantes.
-            </p>
-          </div>
-
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-2xl border border-[rgba(201,162,39,0.15)]" />
-            <img
-              src="/images/hero.png"
-              alt="Atelier PPA"
-              className="rounded-xl w-full h-auto object-cover"
-            />
-            
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {VALUES.map((v) => (
-            <div key={v.title} className="bg-dark-card rounded-2xl p-8 gold-border service-card text-center">
-              <div className="text-[#C9A227] icon-gold flex justify-center mb-4">{v.icon}</div>
-              <h3 className="font-racing font-bold text-2xl text-white mb-3">{v.title}</h3>
-              <p className="text-[#A8A9AD] text-sm leading-relaxed">{v.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function App() {
   return (
