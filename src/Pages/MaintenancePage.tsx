@@ -622,6 +622,15 @@ Notre expérience du terrain nous permet d'accompagner les projets les plus ambi
 
 </div>
 
+<div className="text-center mt-16">
+  <a
+    href="/preparation-developpement"
+    className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded inline-block"
+  >
+    VOIR LA PAGE DÉDIÉE
+  </a>
+</div>
+
 </div>
 
 </section>
