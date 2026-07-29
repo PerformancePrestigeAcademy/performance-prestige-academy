@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   Menu, X, ChevronDown, Phone, Mail, MapPin,
-  Wrench, Gauge, BookOpen, Trophy, Shield, Zap, History
+  Wrench, Gauge, BookOpen, Trophy, Shield, Zap, History,
   CheckCircle, ArrowRight, Instagram, Facebook
 } from 'lucide-react';
 import Navbar from "./Navbar";
