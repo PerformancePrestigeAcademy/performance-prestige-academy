@@ -34,6 +34,7 @@ accompanimentItems?: string[];
 
 certification: string[];
 accessibility: string;
+price?: string;
   practicalInformation: string;
   legalNotice: string;
 };
@@ -204,8 +205,9 @@ export const initiationMecaniqueFormation: Formation = {
   ],
   accessibility:
     "Les besoins particuliers ou situations de handicap sont étudiés avant l’inscription afin d’évaluer les adaptations possibles.",
+  price: "175 € / personne",
   practicalInformation:
-    "La durée, les dates, le lieu, le tarif et l’effectif seront communiqués lors de l’ouverture des prochaines sessions.",
+    "Les dates, le lieu et l’effectif seront communiqués lors de l’ouverture des prochaines sessions.",
   legalNotice:
     "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",
 };
@@ -415,9 +417,9 @@ export const mecaniqueAuFemininFormation: Formation = {
 
   accessibility:
     "Les besoins particuliers ou situations de handicap sont étudiés avant l’inscription afin d’évaluer les adaptations possibles.",
-
+  price: "175 € / personne",
   practicalInformation:
-    "La durée, les dates, le lieu, le tarif et l’effectif seront communiqués lors de l’ouverture des prochaines sessions.",
+    "Les dates, le lieu et l’effectif seront communiqués lors de l’ouverture des prochaines sessions.",
 
   legalNotice:
     "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",
