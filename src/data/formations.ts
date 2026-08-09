@@ -209,7 +209,7 @@ export const initiationMecaniqueFormation: Formation = {
     "Les besoins particuliers ou situations de handicap sont étudiés avant l’inscription afin d’évaluer les adaptations possibles.",
   price: "175 € / personne",
   duration: "1.5 jours",
-  durationNote: "La durée est adaptée au niveau du groupe, au rythme d’apprentissage et aux échanges avec le formateur. Prévoir 2 jours"
+  durationNote: "La durée est adaptée au niveau du groupe, au rythme d’apprentissage et aux échanges avec le formateur. Prévoir 2 jours",
   practicalInformation:
     "Les dates et le lieu seront communiqués lors de la réservation.",
   legalNotice:
