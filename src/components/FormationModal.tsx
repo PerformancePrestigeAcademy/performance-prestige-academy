@@ -205,13 +205,20 @@ export default function FormationModal({
                   </div>
                 </div>
                 <div className="rounded-2xl border border-amber-400/20 bg-amber-400/[0.06] p-5">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">
-                    Informations pratiques
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-zinc-300">
-                    {formation.practicalInformation}
-                  </p>
-                </div>
+  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">
+    Informations pratiques
+  </p>
+
+  {formation.price && (
+    <p className="mt-3 text-2xl font-bold text-amber-400">
+      {formation.price}
+    </p>
+  )}
+
+  <p className="mt-3 text-sm leading-6 text-zinc-300">
+    {formation.practicalInformation}
+  </p>
+</div>
               </aside>
             </section>
 
