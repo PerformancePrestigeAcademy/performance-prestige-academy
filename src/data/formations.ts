@@ -35,6 +35,8 @@ accompanimentItems?: string[];
 certification: string[];
 accessibility: string;
 price?: string;
+duration?: string;
+durationNote?: string;
   practicalInformation: string;
   legalNotice: string;
 };
@@ -206,8 +208,10 @@ export const initiationMecaniqueFormation: Formation = {
   accessibility:
     "Les besoins particuliers ou situations de handicap sont étudiés avant l’inscription afin d’évaluer les adaptations possibles.",
   price: "175 € / personne",
+  duration: "1.5 jours",
+  durationNote: "La durée est adaptée au niveau du groupe, au rythme d’apprentissage et aux échanges avec le formateur. Prévoir 2 jours"
   practicalInformation:
-    "Les dates, le lieu et l’effectif seront communiqués lors de l’ouverture des prochaines sessions.",
+    "Les dates et le lieu seront communiqués lors de la réservation.",
   legalNotice:
     "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",
 };
@@ -418,8 +422,10 @@ export const mecaniqueAuFemininFormation: Formation = {
   accessibility:
     "Les besoins particuliers ou situations de handicap sont étudiés avant l’inscription afin d’évaluer les adaptations possibles.",
   price: "175 € / personne",
+  duration: "1.5 jours",
+  durationNote: "La durée est adaptée au niveau du groupe, au rythme d’apprentissage et aux échanges avec le formateur. Prévoir 2 jours",
   practicalInformation:
-    "Les dates, le lieu et l’effectif seront communiqués lors de l’ouverture des prochaines sessions.",
+    "Les dates et le lieu seront communiqués lors de la réservation.",
 
   legalNotice:
     "Le certificat remis atteste la réussite aux évaluations internes organisées par Performance & Prestige Academy. Il ne constitue ni un diplôme d’État, ni un titre professionnel, ni une certification enregistrée au RNCP ou au Répertoire spécifique, ni une habilitation professionnelle.",

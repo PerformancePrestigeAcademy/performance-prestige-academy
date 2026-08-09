@@ -210,14 +210,28 @@ export default function FormationModal({
   </p>
 
   {formation.price && (
-    <p className="mt-3 text-2xl font-bold text-amber-400">
-      {formation.price}
-    </p>
-  )}
-
-  <p className="mt-3 text-sm leading-6 text-zinc-300">
-    {formation.practicalInformation}
+  <p className="mt-3 text-2xl font-bold text-amber-400">
+    {formation.price}
   </p>
+)}
+
+{formation.duration && (
+  <div className="mt-4">
+    <p className="text-sm font-semibold text-white">
+      Durée indicative : {formation.duration}
+    </p>
+
+    {formation.durationNote && (
+      <p className="mt-1 text-sm leading-6 text-zinc-400">
+        {formation.durationNote}
+      </p>
+    )}
+  </div>
+)}
+
+<p className="mt-4 text-sm leading-6 text-zinc-300">
+  {formation.practicalInformation}
+</p>
 </div>
               </aside>
             </section>
