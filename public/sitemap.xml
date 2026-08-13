@@ -4,22 +4,30 @@
 
     <url>
         <loc>https://www.performance-prestige-academy.fr/</loc>
-        <priority>1.0</priority>
     </url>
 
     <url>
         <loc>https://www.performance-prestige-academy.fr/maintenance</loc>
-        <priority>0.9</priority>
     </url>
 
     <url>
         <loc>https://www.performance-prestige-academy.fr/formation</loc>
-        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.performance-prestige-academy.fr/preparation-developpement</loc>
+    </url>
+
+    <url>
+        <loc>https://www.performance-prestige-academy.fr/a-propos</loc>
+    </url>
+
+    <url>
+        <loc>https://www.performance-prestige-academy.fr/contact</loc>
     </url>
 
     <url>
         <loc>https://www.performance-prestige-academy.fr/mentions-legales</loc>
-        <priority>0.8</priority>
     </url>
 
     <url>
