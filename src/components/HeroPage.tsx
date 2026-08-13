@@ -15,8 +15,7 @@ export default function HeroPage({
   image,
   scrollTarget = "objectif"
 }: HeroPageProps) {
-  console.log("HeroPage chargé");
-  return (
+    return (
    <section className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden">
 
   <div className="absolute inset-0">

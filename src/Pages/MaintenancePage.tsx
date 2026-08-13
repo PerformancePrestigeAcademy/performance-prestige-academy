@@ -7,10 +7,12 @@ import ServiceCard from "../components/ServiceCard";
 export default function MaintenancePage() {
   return (
         <div className="min-h-screen bg-[#0A0A0A] text-white">
+
+          <SEO
 title="Maintenance Auto & Moto dans le Var | Performance & Prestige Academy"
   description="Entretien, révision constructeur, diagnostic électronique et réparation mécanique auto & moto dans le Var. Une approche rigoureuse et adaptée à votre véhicule."
   keywords="garage automobile, révision, entretien, diagnostic, préparation moteur, performance automobile"
-
+/>
 
       <Navbar />
 
@@ -162,6 +164,9 @@ title="Maintenance Auto & Moto dans le Var | Performance & Prestige Academy"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
             En savoir plus
+<span className="block text-xs mt-1 opacity-70">
+  (En cours de création)
+</span>
         </a>
 
     </div>
@@ -192,6 +197,9 @@ title="Maintenance Auto & Moto dans le Var | Performance & Prestige Academy"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
             En savoir plus
+<span className="block text-xs mt-1 opacity-70">
+  (En cours de création)
+</span>
         </a>
 
     </div>
@@ -223,6 +231,9 @@ title="Maintenance Auto & Moto dans le Var | Performance & Prestige Academy"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
         >
             En savoir plus
+<span className="block text-xs mt-1 opacity-70">
+  (En cours de création)
+</span>
         </a>
 
     </div>
@@ -967,7 +978,7 @@ DEMANDER UN DEVIS
 </a>
 
 <a
-href="tel:+33600000000"
+href="tel:+33683872631"
 className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded text-center"
 >
 
