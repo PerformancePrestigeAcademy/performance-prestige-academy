@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/apropos",
+      "destination": "/a-propos",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!api).*)",
