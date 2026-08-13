@@ -59,7 +59,7 @@ export default function App() {
 
         <Route path="/contact" element={<ContactPage />} />
 
-        <Route path="/apropos" element={<AProposPage />} />
+        <Route path="/a-propos" element={<AProposPage />} />
 
       </Routes>
 
