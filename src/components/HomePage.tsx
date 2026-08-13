@@ -9,11 +9,12 @@ import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
 import { NAV_LINKS } from "../data/navigation";
 import ContactForm from "../components/ContactForm";
-
+import { Link } from "react-router-dom";
 
 const MAINTENANCE = [
   {
     id: 'maintenance',
+    href: '/maintenance',
     image: '/images/maintenance.png',
     tag: 'Maintenance',
     title: 'Maintenance Véhicules',
@@ -25,6 +26,7 @@ const MAINTENANCE = [
   },
   {
     id: 'formation',
+    href: '/formation',
     image: '/images/formation.png',
     tag: 'Formation',
     title: 'Formation mécanique et technique',
@@ -36,6 +38,7 @@ const MAINTENANCE = [
   },
   {
     id: 'preparation',
+    href: '/preparation-developpement',
     image: '/images/preparation.png',
     tag: 'Performance',
     title: 'Préparation & Développement',
@@ -47,6 +50,7 @@ const MAINTENANCE = [
   },
   {
   id: 'restauration',
+  href: '/maintenance',
   image: '/images/restauration.png',
   tag: 'Restauration',
   title: 'Restauration de véhicules anciens',
@@ -83,22 +87,7 @@ function useScrollSpy() {
   return active;
 }
 
-<SEO
-   title="Mécanique Auto & Moto dans le Var | Performance & Prestige Academy"
-  description="Maintenance, diagnostic, restauration, formation et préparation auto & moto dans le Var. Performance & Prestige Academy, mécanique exigeante et passionnée."
 
-    keywords="
-préparation moteur,
-garage performance,
-maintenance automobile,
-diagnostic automobile,
-cartographie moteur,
-formation mécanique,
-Nans-les-Pins,
-Var,
-Performance & Prestige Academy
-"
-/>
 /*
 function Navbar() {
   const active = useScrollSpy();
@@ -218,9 +207,9 @@ function Hero() {
   <span className="text-[#A8A9AD]">DANS LE VAR</span>
 </h1>
         <p className="text-[#A8A9AD] text-base sm:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed animate-fade-in-up animate-delay-300">
-          Préparation performance, formation professionnelle et maintenance de précision
-          pour véhicules 2 et 4 roues. Parce que la passion mérite l'excellence.
-        </p>
+  Formation, maintenance, diagnostic, restauration, et préparation performance
+  pour véhicules auto et moto. Parce que la passion mérite l'excellence.
+</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-300">
           <a href="#maintenance" className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded">
@@ -245,9 +234,11 @@ function Hero() {
 
 function ServiceCard({ service, reversed }: { service: typeof MAINTENANCE[0]; reversed: boolean }) {
   return (
-    <div
-      className={`flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-0 overflow-hidden rounded-2xl gold-border service-card`}
-    >
+  
+  <Link
+    to={service.href}
+    className={`group flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-0 overflow-hidden rounded-2xl gold-border service-card`}
+  >
       <div className="lg:w-1/2 relative overflow-hidden">
         <img
           src={service.image}
@@ -285,15 +276,14 @@ function ServiceCard({ service, reversed }: { service: typeof MAINTENANCE[0]; re
           ))}
         </ul>
 
-        <a
-          href="/contact"
-          className="inline-flex items-center gap-2 text-[#C9A227] font-racing font-semibold text-sm tracking-widest hover:gap-4 transition-all duration-200 group"
-        >
-          DEMANDER UN DEVIS
-          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-        </a>
+        <span
+  className="inline-flex items-center gap-2 text-[#C9A227] font-racing font-semibold text-sm tracking-widest group-hover:gap-4 transition-all duration-200"
+>
+  DÉCOUVRIR LE SERVICE
+  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+</span>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -332,9 +322,10 @@ export default function App() {
   return (
     <>
       <SEO
-        title="Performance & Prestige Academy | Mécanique auto dans le Var"
-        description="Maintenance automobile, diagnostic électronique, formation mécanique et préparation compétition dans le Var. Contactez Performance & Prestige Academy."
-      />
+  title="Mécanique Auto & Moto dans le Var | Performance & Prestige Academy"
+  description="Maintenance, diagnostic, restauration, formation et préparation auto & moto dans le Var. Performance & Prestige Academy, mécanique exigeante et passionnée."
+  keywords="préparation moteur, garage performance, maintenance automobile, diagnostic automobile, cartographie moteur, formation mécanique, Nans-les-Pins, Var, Performance & Prestige Academy"
+/>
 
       <Navbar />
 
