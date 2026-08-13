@@ -503,7 +503,7 @@ Performance & Prestige Academy
          </p>
 
          <h2 className="font-racing text-5xl mb-6">
-            PREPARATION
+            PRÉPARATION
             <br />
             <span className="gold-gradient">
                 AUX EXAMENS
@@ -645,7 +645,7 @@ Performance & Prestige Academy
 
 <section
   id="perfectionnement"
-  className="scroll-mt-32 py-24 bg-[#0A0A0A"
+  className="scroll-mt-32 py-24 bg-[#0A0A0A]"
 >
 
   <div className="max-w-7xl mx-auto px-6">
