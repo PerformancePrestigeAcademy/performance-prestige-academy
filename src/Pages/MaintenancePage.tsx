@@ -72,6 +72,17 @@ title="Maintenance Auto & Moto dans le Var | Performance & Prestige Academy"
       </a>
 
       <a
+        href="#performance"
+        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+      >
+        <h3 className="font-racing text-xl">
+          Préparation
+          <br />
+          & Optimisation
+        </h3>
+      </a>
+
+      <a
         href="#restauration"
         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
       >
@@ -83,18 +94,7 @@ title="Maintenance Auto & Moto dans le Var | Performance & Prestige Academy"
           collection
         </h3>
       </a>
-
-      <a
-        href="#performance"
-        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-      >
-        <h3 className="font-racing text-xl">
-          Préparation
-          <br />
-          & Optimisation
-        </h3>
-      </a>
-
+ 
     </div>
 
   </div>
