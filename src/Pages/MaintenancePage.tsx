@@ -667,10 +667,10 @@ className="scroll-mt-32 py-24 bg-[#0D0D0D]"
      </p>
 
      <h2 className="font-racing text-5xl mb-6">
-     RESTAURATION
+     RESTAURATION DE VÉHICULES
      <br />
      <span className="gold-gradient">
-     DE COLLECTION
+      DE COLLECTION
      </span>
      </h2>
 
