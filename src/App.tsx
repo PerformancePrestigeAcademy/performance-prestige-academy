@@ -16,22 +16,6 @@ import ContactPage from "./Pages/Contact";
 import AProposPage from "./Pages/APropos";
 
 
-function GoogleAnalyticsTracker() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (typeof (window as any).gtag === "function") {
-      (window as any).gtag("event", "page_view", {
-        page_location: window.location.href,
-        page_path: location.pathname + location.search,
-        page_title: document.title,
-      });
-    }
-  }, [location]);
-
-  return null;
-}
-
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -48,7 +32,6 @@ export default function App() {
   return (
     <BrowserRouter>
 
-      <GoogleAnalyticsTracker />
       <ScrollToTop />
 
       <Routes>
