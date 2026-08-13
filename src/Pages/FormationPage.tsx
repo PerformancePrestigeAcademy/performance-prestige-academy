@@ -23,12 +23,16 @@ export default function FormationPage() {
         <Navbar />
 
         <SEO
-            title="Formation Mécanique Auto & Moto | Performance & Prestige Academy"
-description="Formations en mécanique auto et moto dans le Var pour particuliers, apprentis et CFA : cours théoriques, pratique, maintenance et diagnostic."            keywords="
+            title="Formation Mécanique Auto & Moto dans le Var | Performance & Prestige Academy"
+  description="Formations mécaniques pour particuliers, apprentis et CFA : initiation, diagnostic, perfectionnement et accompagnement pratique dans le Var."
+  keywords="
+formation mécanique auto,
+formation mécanique moto,
 formation automobile,
-préparation moteur,
-maintenance automobile,
+formation CFA,
+cours mécanique,
 diagnostic automobile,
+maintenance automobile,
 Nans-les-Pins,
 Var,
 Performance & Prestige Academy

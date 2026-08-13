@@ -9,9 +9,9 @@ export default function PrepDevPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
       <SEO
-        title="Préparation & Développement Compétition | Performance & Prestige Academy"
-        description="Préparation mécanique, développement de pièces, réglages, acquisition de données et assistance compétition automobile et motocycle dans le Var."
-        keywords="préparation compétition, développement mécanique, développement de pièces, réglages moteur, acquisition de données, assistance circuit, automobile, motocycle"
+       title="Préparation Auto & Moto Compétition | Performance & Prestige Academy"
+  description="Préparation moteur, châssis, réglages, développement de pièces et acquisition de données pour projets auto et moto de compétition dans le Var."
+  keywords="préparation compétition, préparation moteur, préparation châssis, développement mécanique, développement de pièces, réglages moteur, acquisition de données, assistance compétition, automobile, moto, Var"
       />
 
       <Navbar />

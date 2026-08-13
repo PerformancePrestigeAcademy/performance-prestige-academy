@@ -17,8 +17,9 @@ export default function AProposPage() {
     <div className="min-h-screen bg-[#0A0A0A] text-white">
       <SEO
         title="À propos | Performance & Prestige Academy"
-description="Découvrez le parcours, l’expérience en compétition et la philosophie de Performance & Prestige Academy : mécanique et formation auto-moto dans le Var."        keywords="Performance Prestige Academy, mécanique automobile, mécanique moto, compétition automobile, préparation moteur, formation mécanique, Nans-les-Pins"
-      />
+  description="Découvrez le parcours, l’expérience en mécanique et compétition ainsi que la philosophie de Performance & Prestige Academy dans le Var."
+  keywords="Performance Prestige Academy, mécanique automobile, mécanique moto, compétition automobile, préparation moteur, formation mécanique, Nans-les-Pins, Var"
+/>
 
       <Navbar />
 

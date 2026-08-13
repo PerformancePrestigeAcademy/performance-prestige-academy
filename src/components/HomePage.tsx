@@ -84,8 +84,8 @@ function useScrollSpy() {
 }
 
 <SEO
-    title="Performance & Prestige Academy | Préparation, Formation & Maintenance Automobile"
-    description="Performance & Prestige Academy est spécialisée dans la préparation moteur, la maintenance automobile, le diagnostic électronique et la formation professionnelle dans le Var."
+   title="Mécanique Auto & Moto dans le Var | Performance & Prestige Academy"
+  description="Maintenance, diagnostic, restauration, formation et préparation auto & moto dans le Var. Performance & Prestige Academy, mécanique exigeante et passionnée."
 
     keywords="
 préparation moteur,
