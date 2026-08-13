@@ -2,13 +2,96 @@
 <html lang="fr">
   <head>
     <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCBNCHVNKQ"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  window.gtag = gtag;
+
   gtag('js', new Date());
 
-  gtag('config', 'G-NCBNCHVNKQ', {});
+  // On désactive les page_view automatiques.
+  // Ils sont gérés manuellement ci-dessous.
+  gtag('config', 'G-NCBNCHVNKQ', {
+    send_page_view: false
+  });
+
+
+  (function () {
+
+    let lastPath = null;
+    let previousUrl = document.referrer || "";
+
+    function sendPageView() {
+
+      const currentPath =
+        window.location.pathname +
+        window.location.search;
+
+      const currentUrl = window.location.href;
+
+      // Empêche de compter deux fois exactement la même page
+      if (currentPath === lastPath) {
+        return;
+      }
+
+      const referrer = previousUrl;
+
+      lastPath = currentPath;
+      previousUrl = currentUrl;
+
+      // Petit délai pour laisser React + Helmet
+      // mettre à jour le titre de la nouvelle page
+      setTimeout(function () {
+
+        gtag('event', 'page_view', {
+          send_to: 'G-NCBNCHVNKQ',
+          page_title: document.title,
+          page_location: currentUrl,
+          page_referrer: referrer
+        });
+
+      }, 100);
+    }
+
+
+    // Première page visitée
+    sendPageView();
+
+
+    // Navigation React avec <Link>
+    const originalPushState = history.pushState;
+
+    history.pushState = function () {
+
+      originalPushState.apply(this, arguments);
+
+      sendPageView();
+    };
+
+
+    const originalReplaceState = history.replaceState;
+
+    history.replaceState = function () {
+
+      originalReplaceState.apply(this, arguments);
+
+      sendPageView();
+    };
+
+
+    // Boutons précédent / suivant du navigateur
+    window.addEventListener('popstate', function () {
+      sendPageView();
+    });
+
+  })();
 </script>
       <!-- Google tag (gtag.js) -->
 
