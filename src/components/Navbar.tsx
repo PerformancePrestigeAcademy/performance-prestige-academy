@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "../data/navigation";
 
@@ -19,7 +20,7 @@ export default function Navbar() {
              transition-all duration-500 py-4"
 >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-3 group">
+        <Link to="/" className="flex items-center gap-3 group">
           <img
             src="/images/favicon-ppa-v3-512.png"
             alt="Performance & Prestige Academy"
@@ -29,7 +30,7 @@ export default function Navbar() {
             <div className="font-racing font-black text-xl tracking-[0.18em] gold-gradient">PERFORMANCE</div>
             <div className="font-racing text-sm tracking-[0.32em] text-white/90">&amp; PRESTIGE ACADEMY</div>
           </div>
-        </a>
+        </Link>
 
         <ul className="hidden lg:flex flex-1 items-center justify-center mx-6">
           {NAV_LINKS.map((l) => (
@@ -37,22 +38,22 @@ export default function Navbar() {
   key={l.href}
   className="flex flex-1 justify-center px-2"
 >
-              <a
-                href={l.href}
-               className="font-racing font-extrabold text-sm tracking-[0.22em] uppercase text-white text-center leading-relaxed drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227] transition-colors duration-200"
-              >
-                {l.label}
-              </a>
+              <Link
+  to={l.href}
+  className="font-racing font-extrabold text-sm tracking-[0.22em] uppercase text-white text-center leading-relaxed drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] hover:text-[#C9A227] transition-colors duration-200"
+>
+  {l.label}
+</Link>
             </li>
           ))}
         </ul>
 
-        <a
-  href="/contact"
+        <Link
+  to="/contact"
   className="hidden lg:flex items-center justify-center text-center leading-relaxed ml-8 shrink-0 btn-gold text-black font-racing font-bold text-sm tracking-widest px-9 py-3.5 rounded shadow-[0_0_20px_rgba(201,162,39,0.35)]"
 >
   DEVIS GRATUIT
-</a>
+</Link>
 
         <button
           className="lg:hidden text-[#C9A227] p-2"
@@ -66,22 +67,22 @@ export default function Navbar() {
       {open && (
         <div className="lg:hidden bg-black/95 border-t border-[rgba(201,162,39,0.2)] px-4 py-4 flex flex-col gap-4">
           {NAV_LINKS.map((l) => (
-            <a
+            <Link
               key={l.href}
-              href={l.href}
+              to={l.href}
               onClick={() => setOpen(false)}
               className="font-racing text-sm tracking-widest uppercase text-[#A8A9AD] hover:text-[#C9A227] transition-colors py-2"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             onClick={() => setOpen(false)}
             className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-6 py-3 rounded text-center mt-2"
           >
             DEVIS GRATUIT
-          </a>
+          </Link>
         </div>
       )}
     </nav>
