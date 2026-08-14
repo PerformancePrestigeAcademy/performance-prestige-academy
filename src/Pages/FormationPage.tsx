@@ -312,12 +312,11 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <span
+            className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
         >
-            ( A venir )
-        </a>
+            EN COURS DE CRÉATION
+        </span>
 
     </div>
 
@@ -695,12 +694,11 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
-        >
-            ( A venir )
-        </a>
+        <span
+  className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
+>
+  EN COURS DE CRÉATION
+</span>
 
     </div>
 
@@ -726,12 +724,12 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
-        >
-            ( A venir )
-        </a>
+        <span
+  className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
+>
+  EN COURS DE CRÉATION
+</span>
+
 
     </div>
 
@@ -757,12 +755,11 @@ Performance & Prestige Academy
 
     <div className="mt-auto pt-8">
 
-        <a
-            href="#"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
-        >
-            ( A venir )
-        </a>
+        <span
+  className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
+>
+  EN COURS DE CRÉATION
+</span>
 
     </div>
 
