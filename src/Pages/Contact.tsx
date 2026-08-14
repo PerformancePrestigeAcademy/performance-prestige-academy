@@ -10,8 +10,8 @@ export default function ContactPage() {
     <div className="min-h-screen bg-[#0A0A0A] text-white">
 
       <SEO
-       title="Contact | Performance & Prestige Academy – Var"
-  description="Contactez Performance & Prestige Academy pour vos besoins en maintenance, diagnostic, restauration, formation ou préparation auto & moto dans le Var."
+  title="Contact | Performance & Prestige Academy"
+  description="Contactez Performance & Prestige Academy pour vos besoins en maintenance, diagnostic, restauration, formation ou préparation auto & moto."
 />
       <Navbar />
 

@@ -322,9 +322,9 @@ export default function App() {
   return (
     <>
       <SEO
-  title="Mécanique Auto & Moto dans le Var | Performance & Prestige Academy"
-  description="Maintenance, diagnostic, restauration, formation et préparation auto & moto dans le Var. Performance & Prestige Academy, mécanique exigeante et passionnée."
-  keywords="préparation moteur, garage performance, maintenance automobile, diagnostic automobile, cartographie moteur, formation mécanique, Nans-les-Pins, Var, Performance & Prestige Academy"
+ title="Mécanique Auto & Moto | Performance & Prestige Academy"
+description="Maintenance, diagnostic, restauration, formation et préparation auto & moto. Performance & Prestige Academy accompagne particuliers, professionnels et compétiteurs."
+keywords="préparation moteur, garage performance, maintenance automobile, diagnostic automobile, cartographie moteur, formation mécanique, Nans-les-Pins, Var, Performance & Prestige Academy"
 />
 
       <Navbar />

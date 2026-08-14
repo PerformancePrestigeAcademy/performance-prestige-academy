@@ -9,9 +9,9 @@ export default function PrepDevPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
       <SEO
-       title="Préparation Auto & Moto Compétition | Performance & Prestige Academy"
-  description="Préparation moteur, châssis, réglages, développement de pièces et acquisition de données pour projets auto et moto de compétition dans le Var."
-  keywords="préparation compétition, préparation moteur, préparation châssis, développement mécanique, développement de pièces, réglages moteur, acquisition de données, assistance compétition, automobile, moto, Var"
+      title="Préparation Auto & Moto Compétition | Performance & Prestige Academy"
+description="Préparation moteur, châssis, développement de pièces, réglages et acquisition de données pour projets auto et moto de compétition."
+keywords="préparation compétition, préparation moteur, préparation châssis, développement mécanique, développement de pièces, réglages moteur, acquisition de données, assistance compétition, automobile, moto, Var"
       />
 
       <Navbar />
@@ -267,7 +267,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            CREONS ENSEMBLE !
+            CRÉONS ENSEMBLE !
           </a>
         </div>
       </ServiceCard>
@@ -291,7 +291,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            CREONS ENSEMBLE !
+             CRÉONS ENSEMBLE !
           </a>
         </div>
       </ServiceCard>
@@ -315,7 +315,7 @@ export default function PrepDevPage() {
             href="/contact"
             className="btn-outline-gold inline-block px-6 py-3 rounded"
           >
-            CREONS ENSEMBLE !
+            CRÉONS ENSEMBLE !
           </a>
         </div>
       </ServiceCard>

@@ -9,9 +9,9 @@ export default function MaintenancePage() {
         <div className="min-h-screen bg-[#0A0A0A] text-white">
 
           <SEO
-title="Maintenance Auto & Moto dans le Var | Performance & Prestige Academy"
-  description="Entretien, révision constructeur, diagnostic électronique et réparation mécanique auto & moto dans le Var. Une approche rigoureuse et adaptée à votre véhicule."
-  keywords="garage automobile, révision, entretien, diagnostic, préparation moteur, performance automobile"
+title="Maintenance Auto & Moto | Performance & Prestige Academy"
+description="Entretien, révision constructeur, diagnostic électronique et réparation mécanique auto & moto avec une approche rigoureuse et adaptée à chaque véhicule."
+keywords="garage automobile, révision, entretien, diagnostic, préparation moteur, performance automobile"
 />
 
       <Navbar />
