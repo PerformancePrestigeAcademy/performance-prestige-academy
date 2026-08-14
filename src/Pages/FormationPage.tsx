@@ -315,7 +315,7 @@ Performance & Prestige Academy
         <span
             className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
         >
-            "En cours de création"
+            "A venir"
         </span>
 
     </div>
@@ -697,7 +697,7 @@ Performance & Prestige Academy
         <span
   className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
 >
-  "En cours de création"
+  "A venir"
 </span>
 
     </div>
@@ -727,7 +727,7 @@ Performance & Prestige Academy
         <span
   className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
 >
-  "En cours de création"
+  "A venir"
 </span>
 
 
@@ -758,7 +758,7 @@ Performance & Prestige Academy
         <span
   className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
 >
-  "En cours de création"
+  "A venir"
 </span>
 
     </div>
