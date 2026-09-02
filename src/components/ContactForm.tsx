@@ -24,15 +24,17 @@ export default function ContactForm() {
   const [sent, setSent] = useState(false);
 
   const SUBJECTS = [
-    "Préparation & Développement",
     "Formation",
-    "Maintenance Véhicule",
+    "Préparation & Développement",
+    "Maintenance Auto & Moto",
+    "Restauration de véhicules anciens",
     "Autre demande",
   ];
 
     const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    setSent(false);
     setSending(true);
 
     try {
@@ -72,7 +74,7 @@ export default function ContactForm() {
 
   return (
 
-    <section id="contact" className="py-24 bg-[#0D0D0D]">
+    <section id="contact" className="scroll-mt-28 py-24 bg-[#0D0D0D]">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -133,7 +135,21 @@ flex-col
 w-full
 "
 >
+{sent && (
+  <div className="gold-border rounded-xl bg-[#C9A227]/10 px-5 py-4 flex items-center gap-3">
+    <CheckCircle className="w-6 h-6 text-[#C9A227] flex-shrink-0" />
 
+    <div>
+      <p className="font-racing text-[#C9A227] tracking-wider">
+        MESSAGE ENVOYÉ
+      </p>
+
+      <p className="text-sm text-[#A8A9AD] mt-1">
+        Votre demande a bien été envoyée. Nous vous répondrons dans les meilleurs délais.
+      </p>
+    </div>
+  </div>
+)}
 
 {/* Colonne gauche */}
 
