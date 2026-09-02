@@ -279,7 +279,7 @@ export default function AProposPage() {
             </div>
 
             <div>
-              <p className="font-racing text-sm tracking-[0.4em] text-[#C9A227] mb-4">
+              <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
                 MON HISTOIRE
               </p>
 
@@ -323,7 +323,7 @@ export default function AProposPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 lg:order-1">
-              <p className="font-racing text-sm tracking-[0.4em] text-[#C9A227] mb-4">
+              <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
                 L’EXPÉRIENCE
               </p>
 
@@ -429,7 +429,7 @@ export default function AProposPage() {
             </div>
 
             <div>
-              <p className="font-racing text-sm tracking-[0.4em] text-[#C9A227] mb-4">
+              <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
                 TECHNOLOGIE & EXPERTISE
               </p>
 
@@ -471,7 +471,7 @@ export default function AProposPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 lg:order-1">
-              <p className="font-racing text-sm tracking-[0.4em] text-[#C9A227] mb-4">
+              <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
                 LA TRANSMISSION
               </p>
 
@@ -522,7 +522,7 @@ export default function AProposPage() {
       <section className="py-24 sm:py-32 bg-[#0A0A0A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <p className="font-racing text-sm tracking-[0.4em] text-[#C9A227] mb-4">
+            <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
               UNE EXPERTISE PLURIDISCIPLINAIRE
             </p>
 
@@ -593,7 +593,7 @@ export default function AProposPage() {
       <section className="py-24 sm:py-32 bg-[#0D0D0D]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <p className="font-racing text-sm tracking-[0.4em] text-[#C9A227] mb-4">
+            <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
               MA PHILOSOPHIE
             </p>
 
