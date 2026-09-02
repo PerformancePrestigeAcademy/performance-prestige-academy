@@ -192,7 +192,7 @@ export default function AProposPage() {
         className="
           mb-5
           font-racing
-          text-xs
+          text-xl
           tracking-[0.42em]
           text-[#C9A227]
           sm:text-sm
