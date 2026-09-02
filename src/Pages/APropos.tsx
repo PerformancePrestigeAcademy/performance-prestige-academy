@@ -188,18 +188,9 @@ export default function AProposPage() {
     />
 
     <div className="relative z-10">
-      <p
-        className="
-          mb-5
-          font-racing
-          text-xl
-          tracking-[0.42em]
-          text-[#C9A227]
-          sm:text-sm
-        "
-      >
-        L&apos;HISTOIRE
-      </p>
+      <p className="mb-5 font-racing text-xl tracking-[0.42em] text-[#C9A227]">
+  L&apos;HISTOIRE
+</p>
 
       <h1
         className="
