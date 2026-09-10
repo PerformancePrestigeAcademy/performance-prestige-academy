@@ -214,51 +214,54 @@ Performance & Prestige Academy
 
   <div className="mt-auto pt-8">
     <button
-      type="button"
-      onClick={() => {
-        setSelectedFormation(initiationMecaniqueFormation);
-        setIsFormationModalOpen(true);
-      }}
-      className="
-        group relative inline-flex items-center justify-center gap-3
-        px-6 py-3
-        rounded-md
-        bg-[#0A0A0A]
-        border border-red-500
-        text-white
-        font-medium
-        overflow-hidden
-        transition-all duration-300
-        shadow-[0_0_5px_rgba(239,68,68,0.55)]
-        hover:border-red-400
-        hover:shadow-[0_0_8px_rgba(239,68,68,0.9),0_0_22px_rgba(239,68,68,0.45)]
-      "
-    >
-      <span className="relative z-10">
-        Découvrir
-      </span>
+  type="button"
+  onClick={() => {
+    setSelectedFormation(initiationMecaniqueFormation);
+    setIsFormationModalOpen(true);
+  }}
+  className="
+    group
+    relative
+    inline-flex
+    items-center
+    justify-center
+    gap-3
+    px-6
+    py-3
+    rounded-md
+    bg-[#0A0A0A]
+    border
+    border-red-500
+    text-white
+    font-medium
+    overflow-hidden
+    transition-all
+    duration-300
+    ease-out
+    hover:bg-red-500/10
+    hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+    active:bg-red-500
+    active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+  "
+>
+  <span className="relative z-10">
+    Découvrir
+  </span>
 
-      <span
-        className="
-          relative z-10 text-lg
-          transition-transform duration-300
-          group-hover:translate-x-1
-        "
-      >
-        →
-      </span>
-
-      <span
-        className="
-          absolute bottom-0 left-0
-          h-[3px] w-[45%]
-          bg-red-500
-          shadow-[0_0_7px_rgba(239,68,68,1)]
-          transition-all duration-300
-          group-hover:w-full
-        "
-      />
-    </button>
+  <span
+    className="
+      relative
+      z-10
+      text-lg
+      leading-none
+      transition-transform
+      duration-300
+      group-hover:translate-x-1
+    "
+  >
+    →
+  </span>
+</button>
   </div>
 </ServiceCard>
 
