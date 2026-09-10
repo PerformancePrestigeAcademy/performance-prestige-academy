@@ -226,6 +226,7 @@ Performance & Prestige Academy
     items-center
     justify-center
     gap-3
+    mx-auto
     px-6
     py-3
     rounded-md
