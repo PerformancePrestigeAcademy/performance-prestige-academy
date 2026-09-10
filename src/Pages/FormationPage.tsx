@@ -268,6 +268,7 @@ Performance & Prestige Academy
 </ServiceCard>
 
 {/* AU FÉMININ */}
+
 <ServiceCard
   number="02"
   subtitle="AU FÉMININ"
@@ -288,45 +289,122 @@ Performance & Prestige Academy
         setSelectedFormation(mecaniqueAuFemininFormation);
         setIsFormationModalOpen(true);
       }}
-      className="btn-outline-gold inline-block px-6 py-3 rounded"
+      className="
+        group
+        relative
+        flex
+        w-fit
+        mx-auto
+        items-center
+        justify-center
+        gap-3
+        px-6
+        py-3
+        rounded-md
+        bg-[#0A0A0A]
+        border
+        border-red-500
+        text-white
+        font-medium
+        overflow-hidden
+        transition-all
+        duration-300
+        ease-out
+        hover:bg-red-500/10
+        hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+        active:bg-red-500
+        active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+      "
     >
-      Découvrir
+      <span className="relative z-10">
+        Découvrir
+      </span>
+
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
     </button>
   </div>
 </ServiceCard>
 
-     {/* INITIE */}
-         <ServiceCard
-    number="03"
-    subtitle="INITIÉ"
-    title="Développer son expertise"
+    {/* INITIÉ */}
+
+<ServiceCard
+  number="03"
+  subtitle="INITIÉ"
+  title="Développer son expertise"
 >
+  <ul className="space-y-3 text-[#A8A9AD]">
+    <li>✔ Diagnostic avancé</li>
+    <li>✔ Méthodes constructeur</li>
+    <li>✔ Électronique embarquée</li>
+    <li>✔ Organisation d'atelier</li>
+    <li>✔ Perfectionnement technique</li>
+  </ul>
 
-    <ul className="space-y-3 text-[#A8A9AD]">
-
-        <li>✔ Diagnostic avancé</li>
-        <li>✔ Méthodes constructeur</li>
-        <li>✔ Électronique embarquée</li>
-        <li>✔ Organisation d'atelier</li>
-        <li>✔ Perfectionnement technique</li>
-
-    </ul>
-
-    <div className="mt-auto pt-8">
-
-        <button
-        type="button"
-        onClick={() => {
+  <div className="mt-auto pt-8">
+    <button
+      type="button"
+      onClick={() => {
         setSelectedFormation(perfectionnementMecaniqueFormation);
         setIsFormationModalOpen(true);
-        }}
-        className="btn-outline-gold inline-block px-6 py-3 rounded"
-        >
-            Découvrir
-        </button>
+      }}
+      className="
+        group
+        relative
+        flex
+        w-fit
+        mx-auto
+        items-center
+        justify-center
+        gap-3
+        px-6
+        py-3
+        rounded-md
+        bg-[#0A0A0A]
+        border
+        border-red-500
+        text-white
+        font-medium
+        overflow-hidden
+        transition-all
+        duration-300
+        ease-out
+        hover:bg-red-500/10
+        hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+        active:bg-red-500
+        active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+      "
+    >
+      <span className="relative z-10">
+        Découvrir
+      </span>
 
-    </div>
-
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
+    </button>
+  </div>
 </ServiceCard>
 
      {/* COMPETITION */}
