@@ -220,29 +220,29 @@ Performance & Prestige Academy
     setIsFormationModalOpen(true);
   }}
   className="
-    group
-    relative
-    inline-flex
-    items-center
-    justify-center
-    gap-3
-    mx-auto
-    px-6
-    py-3
-    rounded-md
-    bg-[#0A0A0A]
-    border
-    border-red-500
-    text-white
-    font-medium
-    overflow-hidden
-    transition-all
-    duration-300
-    ease-out
-    hover:bg-red-500/10
-    hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
-    active:bg-red-500
-    active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+     group
+      relative
+      inline-flex
+      items-center
+      justify-center
+      gap-3
+      mx-auto
+      px-6
+      py-3
+      rounded-md
+      bg-[#0A0A0A]
+      border
+      border-red-500
+      text-white
+      font-medium
+      overflow-hidden
+      transition-all
+      duration-300
+      ease-out
+      hover:bg-red-500/10
+      hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+      active:bg-red-500
+      active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
   "
 >
   <span className="relative z-10">
