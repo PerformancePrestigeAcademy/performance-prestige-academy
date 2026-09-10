@@ -197,38 +197,69 @@ Performance & Prestige Academy
 
      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
 
-     {/* DÉBUTANT */}
-         <ServiceCard
-    number="01"
-    subtitle="DÉBUTANT"
-    title="Découvrir la mécanique"
+{/* DÉBUTANT */}
+
+<ServiceCard
+  number="01"
+  subtitle="DÉBUTANT"
+  title="Découvrir la mécanique"
 >
+  <ul className="space-y-3 text-[#A8A9AD]">
+    <li>✔ Entretien courant</li>
+    <li>✔ Fonctionnement d'un moteur</li>
+    <li>✔ Contrôles essentiels</li>
+    <li>✔ Utilisation de l'outillage</li>
+    <li>✔ Premières interventions</li>
+  </ul>
 
-        <ul className="space-y-3 text-[#A8A9AD]">
-
-        <li>✔ Entretien courant</li>
-        <li>✔ Fonctionnement d'un moteur</li>
-        <li>✔ Contrôles essentiels</li>
-        <li>✔ Utilisation de l'outillage</li>
-        <li>✔ Premières interventions</li>
-
-    </ul>
-
-    <div className="mt-auto pt-8">
-
-        <button
-        type="button"
-        onClick={() => {
+  <div className="mt-auto pt-8">
+    <button
+      type="button"
+      onClick={() => {
         setSelectedFormation(initiationMecaniqueFormation);
         setIsFormationModalOpen(true);
-        }}
-        className="btn-outline-gold inline-block px-6 py-3 rounded"
-        >
-            Découvrir
-        </button>
+      }}
+      className="
+        group relative inline-flex items-center justify-center gap-3
+        px-6 py-3
+        rounded-md
+        bg-[#0A0A0A]
+        border border-red-500
+        text-white
+        font-medium
+        overflow-hidden
+        transition-all duration-300
+        shadow-[0_0_5px_rgba(239,68,68,0.55)]
+        hover:border-red-400
+        hover:shadow-[0_0_8px_rgba(239,68,68,0.9),0_0_22px_rgba(239,68,68,0.45)]
+      "
+    >
+      <span className="relative z-10">
+        Découvrir
+      </span>
 
-    </div>
+      <span
+        className="
+          relative z-10 text-lg
+          transition-transform duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
 
+      <span
+        className="
+          absolute bottom-0 left-0
+          h-[3px] w-[45%]
+          bg-red-500
+          shadow-[0_0_7px_rgba(239,68,68,1)]
+          transition-all duration-300
+          group-hover:w-full
+        "
+      />
+    </button>
+  </div>
 </ServiceCard>
 
 {/* AU FÉMININ */}
