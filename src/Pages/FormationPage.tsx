@@ -222,7 +222,8 @@ Performance & Prestige Academy
   className="
      group
       relative
-      inline-flex
+      flex
+      w-fit
       items-center
       justify-center
       gap-3
