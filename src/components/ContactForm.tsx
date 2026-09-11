@@ -257,6 +257,9 @@ w-full
     placeholder="Décrivez votre projet..."
     className="contact-input w-full px-4 py-3 rounded-lg text-sm resize-none"
   />
+<p className="text-xs text-[#A8A9AD] mt-1">
+  <span className="text-[#C9A227]">*</span> Mention obligatoire
+</p>
 
 </div>
 
