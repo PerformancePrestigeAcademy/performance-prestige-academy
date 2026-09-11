@@ -107,7 +107,7 @@ function Hero() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-32">
-        <p className="font-racing text-sm sm:text-base tracking-[0.5em] text-[#C9A227] mb-4 animate-fade-in-up animate-delay-100">
+        <p className="font-racing text-base sm:text-lg tracking-[0.5em] text-[#C9A227] mb-4 animate-fade-in-up animate-delay-100">
           PERFORMANCE &amp; PRESTIGE ACADEMY
         </p>
 
