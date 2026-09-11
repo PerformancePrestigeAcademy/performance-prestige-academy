@@ -44,7 +44,7 @@ Performance & Prestige Academy
          surTitre="FORMATIONS"
          titre="TRANSMETTRE"
          titreGold="L'EXCELLENCE"
-         image="/images/hero.png"
+         image="/images/formationhero.png"
          />
 
 
