@@ -124,18 +124,19 @@ function Hero() {
 </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-300">
-  <a
-    href="#maintenance"
-    className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
-  >
-    DÉCOUVRIR NOS SERVICES
-  </a>
-
+  
   <a
     href="/a-propos"
     className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
   >
     À PROPOS DE PPA
+  </a>
+  
+  <a
+    href="#maintenance"
+    className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
+  >
+    DÉCOUVRIR NOS SERVICES
   </a>
 
   <a
