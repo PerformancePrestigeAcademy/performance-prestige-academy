@@ -1358,29 +1358,87 @@ Performance & Prestige Academy
     pédagogique ? Échangeons ensemble sur votre projet.
   </p>
 
-  <a
-    href="/contact"
-    className="group relative inline-flex items-center justify-between
-               w-full sm:w-auto min-w-[340px]
-               px-7 py-4 rounded-xl
-               font-racing font-bold text-base tracking-widest
-               text-white
-               bg-gradient-to-r from-red-600 via-red-700 to-black
-               border border-red-500
-               shadow-[0_0_20px_rgba(220,38,38,0.20)]
-               transition-all duration-300
-               hover:from-red-500 hover:via-red-600 hover:to-black
-               hover:border-red-400
-               hover:shadow-[0_0_30px_rgba(220,38,38,0.40)]
-               active:scale-95"
-  >
-    <span className="flex items-center gap-4">
-      <Users className="w-6 h-6 flex-shrink-0" />
-      <span>ÉCHANGER SUR VOTRE PROJET</span>
-    </span>
+ <a
+  href="/contact"
+  className="
+    group relative overflow-hidden
+    inline-flex items-center justify-between
+    w-full sm:w-auto min-w-[360px] h-[72px]
+    px-7
+    rounded-2xl
+    font-sans text-white
+    border border-[#A81B22]/80
+    bg-[#0C0204]
+    shadow-[0_0_20px_rgba(168,27,34,0.4)]
+    transition-all duration-300
+    hover:border-[#d62832] hover:shadow-[0_0_25px_rgba(214,40,50,0.55)]
+    active:scale-[0.99]
+  "
+>
+  {/* 1. Dégradé de fond global */}
+  <span
+    className="
+      absolute inset-0
+      bg-gradient-to-r from-[#690D13] via-[#240407] to-[#0A0203]
+    "
+  />
 
-    <ArrowRight className="w-6 h-6 ml-6 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
-  </a>
+  {/* 2. Texture hachurée diagonale */}
+  <span
+    className="
+      absolute inset-0 opacity-20 pointer-events-none
+      bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
+    "
+  />
+
+  {/* 3. Reflet brillant en haut (effet gloss) */}
+  <span
+    className="
+      absolute inset-x-0 top-0 h-[45%] pointer-events-none
+      bg-gradient-to-b from-white/15 via-white/5 to-transparent
+    "
+  />
+
+  {/* 4. Ombre portée sous la bande rouge */}
+  <span
+    className="
+      absolute -top-3 -bottom-3 right-[20.5%] w-5
+      bg-black/60 blur-[2px]
+      -skew-x-[22deg] z-10
+    "
+  />
+
+  {/* 5. Bande rouge diagonale (Dégradé : Clair en haut -> Sombre en bas) */}
+  <span
+    className="
+      absolute -top-3 -bottom-3 right-[19%] w-4
+      bg-gradient-to-b from-[#F23038] via-[#A61218] to-[#2B0305]
+      -skew-x-[22deg] z-10
+      shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
+    "
+  />
+
+  {/* 6. Contenu Gauche (Icône Users + Texte sur deux lignes) */}
+  <span className="relative z-10 flex items-center gap-4">
+    <Users className="w-8 h-8 text-white flex-shrink-0 stroke-[1.75]" />
+
+    <span className="text-left font-bold tracking-wider text-sm sm:text-base leading-tight">
+      ÉCHANGER SUR<br />
+      VOTRE PROJET
+    </span>
+  </span>
+
+  {/* 7. Flèche à droite */}
+  <span className="relative z-10 flex items-center justify-center pr-1">
+    <ArrowRight
+      className="
+        w-[28px] h-[28px] text-white stroke-[2.25]
+        transition-transform duration-300
+        group-hover:translate-x-1.5
+      "
+    />
+  </span>
+</a>
 
 </div>
 
