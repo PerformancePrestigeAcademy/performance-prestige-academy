@@ -143,72 +143,72 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
        <div className="mt-auto pt-8 w-full flex justify-center">
 
-  <button
-    type="button"
-    onClick={() => {
-      // Action du bouton à définir
-    }}
-    className="
-      group relative
-      w-full max-w-[340px]
-      h-[150px]
-      overflow-hidden
-      transition-transform duration-300
-      hover:scale-[1.01]
-      active:scale-[0.99]
-    "
-  >
+          <button
+            type="button"
+            onClick={() => {
+              // Action du bouton à définir
+            }}
+            className="
+              group relative
+              w-full max-w-[340px]
+              h-[150px]
+              overflow-hidden
+              transition-transform duration-300
+              hover:scale-[1.01]
+              active:scale-[0.99]
+            "
+          >
 
     {/* Image du bouton */}
-    <img
-  src="/images/BoutonPrepDev.png"
-  alt=""
-  className="
-    absolute inset-0
-    w-full h-full
-    object-fill
-    pointer-events-none
-  "
-/>
+          <img
+            src="/images/BoutonPrepDev.png"
+            alt=""
+            className="
+              absolute inset-0
+              w-full h-full
+              object-fill
+              pointer-events-none
+            "
+          />
 
     {/* Texte */}
-    <span
-      className="
-        absolute
-        left-[43%]
-        top-[45%]
-        -translate-y-1/2
-        z-10
-        text-white
-        font-bold
-        tracking-widest
-        text-sm sm:text-base
-        uppercase
-        whitespace-nowrap
-      "
-    >
-      À L’ATELIER !
-    </span>
+          <span
+            className="
+              absolute
+              left-[43%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              text-white
+              font-bold
+              tracking-widest
+              text-sm sm:text-base
+              uppercase
+              whitespace-nowrap
+            "
+            >
+            À L’ATELIER !
+          </span>
 
     {/* Flèche */}
-    <ArrowRight
-      className="
-        absolute
-        right-[7%]
-        top-[45%]
-        -translate-y-1/2
-        z-10
-        w-7 h-7
-        text-white
-        stroke-[2]
-        transition-transform duration-300
-        group-hover:translate-x-1.5
-      "
-    />
+          <ArrowRight
+            className="
+              absolute
+              right-[7%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              w-7 h-7
+              text-white
+              stroke-[2]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
 
-  </button>
+          </button>
 
-</div>
+        </div>
       </ServiceCard>
 
       {/* Carte 2 */}
@@ -225,13 +225,73 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
           <li>✔ Comportement dynamique</li>
         </ul>
 
-        <div className="mt-auto pt-8">
-          <a
-            href="/contact"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+          <button
+            type="button"
+            onClick={() => {
+              // Action du bouton à définir
+            }}
+            className="
+              group relative
+              w-full max-w-[340px]
+              h-[150px]
+              overflow-hidden
+              transition-transform duration-300
+              hover:scale-[1.01]
+              active:scale-[0.99]
+            "
           >
+
+    {/* Image du bouton */}
+          <img
+            src="/images/BoutonPrepDev.png"
+            alt=""
+            className="
+              absolute inset-0
+              w-full h-full
+              object-fill
+              pointer-events-none
+            "
+          />
+
+    {/* Texte */}
+          <span
+            className="
+              absolute
+              left-[43%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              text-white
+              font-bold
+              tracking-widest
+              text-sm sm:text-base
+              uppercase
+              whitespace-nowrap
+            "
+            >
             À L’ATELIER !
-          </a>
+          </span>
+
+    {/* Flèche */}
+          <ArrowRight
+            className="
+              absolute
+              right-[7%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              w-7 h-7
+              text-white
+              stroke-[2]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+
+          </button>
+
         </div>
       </ServiceCard>
 
@@ -249,13 +309,73 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
           <li>✔ Reporting Set-up</li>
         </ul>
 
-        <div className="mt-auto pt-8">
-          <a
-            href="/contact"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+          <button
+            type="button"
+            onClick={() => {
+              // Action du bouton à définir
+            }}
+            className="
+              group relative
+              w-full max-w-[340px]
+              h-[150px]
+              overflow-hidden
+              transition-transform duration-300
+              hover:scale-[1.01]
+              active:scale-[0.99]
+            "
           >
+
+    {/* Image du bouton */}
+          <img
+            src="/images/BoutonPrepDev.png"
+            alt=""
+            className="
+              absolute inset-0
+              w-full h-full
+              object-fill
+              pointer-events-none
+            "
+          />
+
+    {/* Texte */}
+          <span
+            className="
+              absolute
+              left-[43%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              text-white
+              font-bold
+              tracking-widest
+              text-sm sm:text-base
+              uppercase
+              whitespace-nowrap
+            "
+            >
             À L’ATELIER !
-          </a>
+          </span>
+
+    {/* Flèche */}
+          <ArrowRight
+            className="
+              absolute
+              right-[7%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              w-7 h-7
+              text-white
+              stroke-[2]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+
+          </button>
+
         </div>
       </ServiceCard>
 
