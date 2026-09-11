@@ -204,7 +204,7 @@ function Maintenance() {
     <section id="maintenance" className="py-24 sm:py-32 bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-20">
-          <p className="font-racing text-xs tracking-[0.5em] text-[#C9A227] mb-4">NOS EXPERTISES</p>
+          <p className="font-racing text-sm sm:text-base tracking-[0.5em] text-[#C9A227] mb-4">NOS EXPERTISES</p>
           <h2 className="font-racing font-bold text-4xl sm:text-5xl lg:text-6xl text-white mb-6">
             QUATRE PILIERS
             <span className="gold-gradient"> D'EXCELLENCE</span>
