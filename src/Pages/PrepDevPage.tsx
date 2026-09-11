@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import ServiceCard from "../components/ServiceCard";
 import DevelopmentCarousel from "../components/DevelopmentCarousel";
+import { ArrowRight } from "lucide-react";
 
 export default function PrepDevPage() {
   return (
@@ -140,14 +141,188 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         </ul>
 
-        <div className="mt-auto pt-8">
-          <a
-            href="/contact"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
-          >
-            À L’ATELIER !
-          </a>
-        </div>
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+  <button
+    type="button"
+    onClick={() => {
+      // À remplacer par ton action
+    }}
+    className="
+      group relative overflow-hidden
+      inline-flex items-center justify-between
+      w-full max-w-[340px] h-[60px]
+      px-6
+      rounded-2xl
+      font-sans text-white
+      border border-[#D5D5D5]/80
+      bg-[#080808]
+      shadow-[0_0_20px_rgba(255,255,255,0.15)]
+      transition-all duration-300
+      hover:border-white
+      hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]
+      active:scale-[0.99]
+    "
+  >
+
+    {/* 1. Fond noir */}
+    <span
+      className="
+        absolute inset-0
+        bg-gradient-to-r
+        from-[#151515]
+        via-[#090909]
+        to-[#030303]
+      "
+    />
+
+    {/* 2. Damier de compétition à gauche */}
+    <span
+      className="
+        absolute
+        inset-y-0
+        left-0
+        w-[42%]
+        pointer-events-none
+        opacity-80
+        bg-[linear-gradient(45deg,#ffffff_25%,transparent_25%,transparent_75%,#ffffff_75%),linear-gradient(45deg,#ffffff_25%,transparent_25%,transparent_75%,#ffffff_75%)]
+        bg-[length:22px_22px]
+        bg-[position:0_0,11px_11px]
+      "
+    />
+
+    {/* 3. Fondu noir par-dessus le damier */}
+    <span
+      className="
+        absolute
+        inset-y-0
+        left-[20%]
+        w-[32%]
+        pointer-events-none
+        bg-gradient-to-r
+        from-transparent
+        via-[#080808]/75
+        to-[#080808]
+      "
+    />
+
+    {/* 4. Texture métallique diagonale */}
+    <span
+      className="
+        absolute
+        inset-y-0
+        left-[12%]
+        w-[28%]
+        pointer-events-none
+        opacity-25
+        bg-[repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent_3px,
+          rgba(255,255,255,0.20)_4px,
+          transparent_5px
+        )]
+      "
+    />
+
+    {/* 5. Bande noire avant le rouge */}
+    <span
+      className="
+        absolute
+        -top-3
+        -bottom-3
+        left-[38%]
+        w-4
+        bg-[#030303]
+        -skew-x-[22deg]
+        z-10
+      "
+    />
+
+    {/* 6. Bande rouge diagonale */}
+    <span
+      className="
+        absolute
+        -top-3
+        -bottom-3
+        left-[40%]
+        w-2
+        bg-gradient-to-b
+        from-[#F23038]
+        via-[#D51F28]
+        to-[#7A0B11]
+        -skew-x-[22deg]
+        z-10
+        shadow-[0_0_6px_rgba(220,30,40,0.45)]
+      "
+    />
+
+    {/* 7. Reflet rouge */}
+    <span
+      className="
+        absolute
+        -top-3
+        -bottom-3
+        left-[41%]
+        w-[2px]
+        bg-[#FF5960]/60
+        -skew-x-[22deg]
+        z-10
+      "
+    />
+
+    {/* 8. Texte */}
+    <span
+      className="
+        relative z-10
+        absolute
+        left-[43%]
+        -translate-x-[0%]
+        font-bold
+        tracking-widest
+        text-sm sm:text-base
+        uppercase
+        whitespace-nowrap
+      "
+    >
+      DÉCOUVRIR
+    </span>
+
+    {/* 9. Séparateur */}
+    <span
+      className="
+        absolute
+        right-[48px]
+        top-1/2
+        -translate-y-1/2
+        h-8
+        border-l border-white/30
+        z-10
+      "
+    />
+
+    {/* 10. Flèche */}
+    <span
+      className="
+        relative z-20
+        ml-auto
+        flex items-center justify-center
+      "
+    >
+      <ArrowRight
+        className="
+          w-[24px] h-[24px]
+          text-white
+          stroke-[2.25]
+          transition-transform duration-300
+          group-hover:translate-x-1.5
+        "
+      />
+    </span>
+
+  </button>
+
+</div>
       </ServiceCard>
 
       {/* Carte 2 */}
