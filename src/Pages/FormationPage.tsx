@@ -212,7 +212,7 @@ Performance & Prestige Academy
     <li>✔ Premières interventions</li>
   </ul>
 
-  <div className="mt-auto pt-8">
+ <div className="mt-auto pt-8 w-full flex justify-center">
   <button
     type="button"
     onClick={() => {
@@ -222,7 +222,7 @@ Performance & Prestige Academy
     className="
       group relative overflow-hidden
       inline-flex items-center justify-between
-      w-full sm:w-auto min-w-[240px] h-[64px]
+      w-full max-w-[260px] h-[60px]
       px-6
       rounded-2xl
       font-sans text-white
@@ -261,16 +261,16 @@ Performance & Prestige Academy
     {/* 4. Ombre portée sous la bande rouge */}
     <span
       className="
-        absolute -top-3 -bottom-3 right-[24%] w-5
+        absolute -top-3 -bottom-3 right-[28%] w-5
         bg-black/60 blur-[2px]
         -skew-x-[22deg] z-10
       "
     />
 
-    {/* 5. Bande rouge diagonale (Dégradé : Clair en haut -> Sombre en bas) */}
+    {/* 5. Bande rouge diagonale */}
     <span
       className="
-        absolute -top-3 -bottom-3 right-[22%] w-3.5
+        absolute -top-3 -bottom-3 right-[26%] w-3.5
         bg-gradient-to-b from-[#F23038] via-[#A61218] to-[#2B0305]
         -skew-x-[22deg] z-10
         shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
@@ -286,7 +286,7 @@ Performance & Prestige Academy
     <span className="relative z-10 flex items-center justify-center">
       <ArrowRight
         className="
-          w-[26px] h-[26px] text-white stroke-[2.25]
+          w-[24px] h-[24px] text-white stroke-[2.25]
           transition-transform duration-300
           group-hover:translate-x-1.5
         "
