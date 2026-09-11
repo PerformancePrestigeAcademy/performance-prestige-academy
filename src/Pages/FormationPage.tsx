@@ -508,12 +508,56 @@ Performance & Prestige Academy
     <div className="mt-auto pt-8">
 
         <button
-            type="button"
-            onClick={() => {setSelectedFormation(preparationEntreeCAPFormation);setIsFormationModalOpen(true);}}
-  className="btn-outline-gold inline-block px-6 py-3 rounded"
->
-  Découvrir
-</button>
+      type="button"
+      onClick={() => {
+        setSelectedFormation(perfectionnementMecaniqueFormation);
+        setIsFormationModalOpen(true);
+      }}
+      className="
+        group
+        relative
+        flex
+        w-fit
+        mx-auto
+        items-center
+        justify-center
+        gap-3
+        px-6
+        py-3
+        rounded-md
+        bg-[#0A0A0A]
+        border
+        border-red-500
+        text-white
+        font-medium
+        overflow-hidden
+        transition-all
+        duration-300
+        ease-out
+        hover:bg-red-500/10
+        hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+        active:bg-red-500
+        active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+      "
+    >
+      <span className="relative z-10">
+        Découvrir
+      </span>
+
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
+    </button>
 
     </div>
 
@@ -543,7 +587,32 @@ Performance & Prestige Academy
             onClick={() => {
             setSelectedFormation(preparationEntreeBacProFormation);setIsFormationModalOpen(true);
         }}
-        className="btn-outline-gold inline-block px-6 py-3 rounded"
+        className="
+          group
+          relative
+          flex
+          w-fit
+          mx-auto
+          items-center
+          justify-center
+          gap-3
+          px-6
+          py-3
+          rounded-md
+          bg-[#0A0A0A]
+          border
+          border-red-500
+          text-white
+          font-medium
+          overflow-hidden
+          transition-all
+          duration-300
+          ease-out
+          hover:bg-red-500/10
+          hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+          active:bg-red-500
+          active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+        "
         >
         Découvrir
 </button>
@@ -576,7 +645,32 @@ Performance & Prestige Academy
         setSelectedFormation(preparationEntreeBTSFormation);
         setIsFormationModalOpen(true);
         }}
-        className="btn-outline-gold inline-block px-6 py-3 rounded"
+        className="
+          group
+          relative
+          flex
+          w-fit
+          mx-auto
+          items-center
+          justify-center
+          gap-3
+          px-6
+          py-3
+          rounded-md
+          bg-[#0A0A0A]
+          border
+          border-red-500
+          text-white
+          font-medium
+          overflow-hidden
+          transition-all
+          duration-300
+          ease-out
+          hover:bg-red-500/10
+          hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+          active:bg-red-500
+          active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+        "
         >
             Découvrir
 </button>
@@ -660,7 +754,32 @@ Performance & Prestige Academy
         setSelectedFormation(preparationExamensCAPFormation);
         setIsFormationModalOpen(true);
         }}
-        className="btn-outline-gold inline-block px-6 py-3 rounded"
+        className="
+          group
+          relative
+          flex
+          w-fit
+          mx-auto
+          items-center
+          justify-center
+          gap-3
+          px-6
+          py-3
+          rounded-md
+          bg-[#0A0A0A]
+          border
+          border-red-500
+          text-white
+          font-medium
+          overflow-hidden
+          transition-all
+          duration-300
+          ease-out
+          hover:bg-red-500/10
+          hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+          active:bg-red-500
+          active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+        "
         >
             Découvrir
 </button>
@@ -695,7 +814,32 @@ Performance & Prestige Academy
         setSelectedFormation(preparationExamensBacProFormation);
         setIsFormationModalOpen(true);
         }}
-        className="btn-outline-gold inline-block px-6 py-3 rounded"
+        className="
+          group
+          relative
+          flex
+          w-fit
+          mx-auto
+          items-center
+          justify-center
+          gap-3
+          px-6
+          py-3
+          rounded-md
+          bg-[#0A0A0A]
+          border
+          border-red-500
+          text-white
+          font-medium
+          overflow-hidden
+          transition-all
+          duration-300
+          ease-out
+          hover:bg-red-500/10
+          hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+          active:bg-red-500
+          active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+        "
         >
             Découvrir
 </button>
@@ -730,7 +874,32 @@ Performance & Prestige Academy
         setSelectedFormation(preparationExamensBTSFormation);
         setIsFormationModalOpen(true);
          }}
-        className="btn-outline-gold inline-block px-6 py-3 rounded"
+        className="
+          group
+          relative
+          flex
+          w-fit
+          mx-auto
+          items-center
+          justify-center
+          gap-3
+          px-6
+          py-3
+          rounded-md
+          bg-[#0A0A0A]
+          border
+          border-red-500
+          text-white
+          font-medium
+          overflow-hidden
+          transition-all
+          duration-300
+          ease-out
+          hover:bg-red-500/10
+          hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
+          active:bg-red-500
+          active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
+        "
         >
             Découvrir
 </button>
@@ -806,7 +975,7 @@ Performance & Prestige Academy
 
     </ul>
 
-    <div className="mt-auto pt-8">
+    <div className="mt-auto pt-8 text-center">
 
         <span
   className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
@@ -836,7 +1005,7 @@ Performance & Prestige Academy
 
     </ul>
 
-    <div className="mt-auto pt-8">
+    <div className="mt-auto pt-8 text-center">
 
         <span
   className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
@@ -867,7 +1036,7 @@ Performance & Prestige Academy
 
     </ul>
 
-    <div className="mt-auto pt-8">
+    <div className="mt-auto pt-8 text-center">
 
         <span
   className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
@@ -1014,7 +1183,7 @@ Performance & Prestige Academy
       <button
       type="button"
       onClick={() => setIsCFAModalOpen(true)}
-      className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
+      className="btn-gold text-black font-racing font-bold text-base tracking-widest px-10 py-4 rounded"
       >
           DÉCOUVRIR LES INTERVENTIONS
       </button>
@@ -1035,7 +1204,7 @@ Performance & Prestige Academy
 
       <a
         href="/contact"
-        className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
+        className="btn-gold text-black font-racing font-bold text-base tracking-widest px-10 py-4 rounded"
       >
         ÉCHANGER SUR VOTRE PROJET
       </a>
