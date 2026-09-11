@@ -151,7 +151,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
     className="
       group relative
       w-full max-w-[340px]
-      h-[75px]
+      h-[90px]
       overflow-hidden
       transition-transform duration-300
       hover:scale-[1.01]
