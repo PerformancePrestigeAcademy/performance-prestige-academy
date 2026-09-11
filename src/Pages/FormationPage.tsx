@@ -1264,26 +1264,53 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => setIsCFAModalOpen(true)}
-    className="group relative inline-flex items-center justify-between
-               w-full sm:w-auto min-w-[340px]
-               px-7 py-4 rounded-xl
-               font-racing font-bold text-base tracking-widest
-               text-white
-               bg-gradient-to-r from-red-600 via-red-700 to-black
-               border border-red-500
-               shadow-[0_0_20px_rgba(220,38,38,0.20)]
-               transition-all duration-300
-               hover:from-red-500 hover:via-red-600 hover:to-black
-               hover:border-red-400
-               hover:shadow-[0_0_30px_rgba(220,38,38,0.40)]
-               active:scale-95"
+    className="
+      group relative overflow-hidden
+      inline-flex items-center justify-between
+      w-full sm:w-auto min-w-[340px]
+      px-7 py-4 rounded-xl
+      font-racing font-bold text-base tracking-widest
+      text-white
+      border border-red-700/80
+      bg-gradient-to-r from-red-900 via-red-800 to-black
+      shadow-[0_0_18px_rgba(127,29,29,0.20)]
+      transition-all duration-300
+      hover:border-red-500
+      hover:shadow-[0_0_28px_rgba(220,38,38,0.30)]
+      active:scale-[0.98]
+    "
   >
-    <span className="flex items-center gap-4">
+
+    {/* Bande diagonale métallisée */}
+    <span
+      className="
+        absolute inset-y-0 right-[18%] w-12
+        bg-gradient-to-r from-transparent via-red-700/50 to-transparent
+        skew-x-[-25deg]
+        opacity-70
+        transition-all duration-300
+        group-hover:opacity-100
+      "
+    />
+
+    <span className="relative z-10 flex items-center gap-4">
       <BookOpen className="w-6 h-6 flex-shrink-0" />
-      <span>DÉCOUVRIR LES INTERVENTIONS</span>
+
+      <span>
+        DÉCOUVRIR LES INTERVENTIONS
+      </span>
     </span>
 
-    <ArrowRight className="w-6 h-6 ml-6 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
+    <span className="relative z-10 flex items-center ml-6 pl-5 border-l border-white/30">
+      <ArrowRight
+        className="
+          w-6 h-6
+          transition-transform duration-300
+          group-hover:translate-x-1
+        "
+      />
+    </span>
+
   </button>
 
 </div>
