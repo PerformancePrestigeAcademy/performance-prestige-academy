@@ -1076,13 +1076,73 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
           <li>✔ Organisation technique de l’intervention</li>
         </ul>
 
-        <div className="mt-auto pt-8">
-          <a
-            href="/contact"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+          <button
+            type="button"
+            onClick={() => {
+              // Action du bouton à définir
+            }}
+            className="
+              group relative
+              w-full max-w-[340px]
+              h-[150px]
+              overflow-hidden
+              transition-transform duration-300
+              hover:scale-[1.01]
+              active:scale-[0.99]
+            "
           >
+
+    {/* Image du bouton */}
+          <img
+            src="/images/BoutonPrepDev.png"
+            alt=""
+            className="
+              absolute inset-0
+              w-full h-full
+              object-fill
+              pointer-events-none
+            "
+          />
+
+    {/* Texte */}
+          <span
+            className="
+              absolute
+              left-[43%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              text-white
+              font-bold
+              tracking-widest
+              text-sm sm:text-base
+              uppercase
+              whitespace-nowrap
+            "
+            >
             EN PISTE !
-          </a>
+          </span>
+
+    {/* Flèche */}
+          <ArrowRight
+            className="
+              absolute
+              right-[7%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              w-7 h-7
+              text-white
+              stroke-[2]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+
+          </button>
+
         </div>
       </ServiceCard>
 
@@ -1100,13 +1160,73 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
           <li>✔ Accompagnement technique de l’équipe et du pilote</li>
         </ul>
 
-        <div className="mt-auto pt-8">
-          <a
-            href="/contact"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+          <button
+            type="button"
+            onClick={() => {
+              // Action du bouton à définir
+            }}
+            className="
+              group relative
+              w-full max-w-[340px]
+              h-[150px]
+              overflow-hidden
+              transition-transform duration-300
+              hover:scale-[1.01]
+              active:scale-[0.99]
+            "
           >
+
+    {/* Image du bouton */}
+          <img
+            src="/images/BoutonPrepDev.png"
+            alt=""
+            className="
+              absolute inset-0
+              w-full h-full
+              object-fill
+              pointer-events-none
+            "
+          />
+
+    {/* Texte */}
+          <span
+            className="
+              absolute
+              left-[43%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              text-white
+              font-bold
+              tracking-widest
+              text-sm sm:text-base
+              uppercase
+              whitespace-nowrap
+            "
+            >
             EN PISTE !
-          </a>
+          </span>
+
+    {/* Flèche */}
+          <ArrowRight
+            className="
+              absolute
+              right-[7%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              w-7 h-7
+              text-white
+              stroke-[2]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+
+          </button>
+
         </div>
       </ServiceCard>
 
@@ -1124,13 +1244,73 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
           <li>✔ Préconisations pour les prochaines séances</li>
         </ul>
 
-        <div className="mt-auto pt-8">
-          <a
-            href="/contact"
-            className="btn-outline-gold inline-block px-6 py-3 rounded"
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+          <button
+            type="button"
+            onClick={() => {
+              // Action du bouton à définir
+            }}
+            className="
+              group relative
+              w-full max-w-[340px]
+              h-[150px]
+              overflow-hidden
+              transition-transform duration-300
+              hover:scale-[1.01]
+              active:scale-[0.99]
+            "
           >
+
+    {/* Image du bouton */}
+          <img
+            src="/images/BoutonPrepDev.png"
+            alt=""
+            className="
+              absolute inset-0
+              w-full h-full
+              object-fill
+              pointer-events-none
+            "
+          />
+
+    {/* Texte */}
+          <span
+            className="
+              absolute
+              left-[43%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              text-white
+              font-bold
+              tracking-widest
+              text-sm sm:text-base
+              uppercase
+              whitespace-nowrap
+            "
+            >
             EN PISTE !
-          </a>
+          </span>
+
+    {/* Flèche */}
+          <ArrowRight
+            className="
+              absolute
+              right-[7%]
+              top-[45%]
+              -translate-y-1/2
+              z-10
+              w-7 h-7
+              text-white
+              stroke-[2]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+
+          </button>
+
         </div>
       </ServiceCard>
 
