@@ -48,13 +48,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <Link
-  to="/contact"
-  className="hidden lg:flex items-center justify-center text-center leading-relaxed ml-8 shrink-0 btn-gold text-black font-racing font-bold text-sm tracking-widest px-9 py-3.5 rounded shadow-[0_0_20px_rgba(201,162,39,0.35)]"
->
-  DEVIS GRATUIT
-</Link>
-
         <button
           className="lg:hidden text-[#C9A227] p-2"
           onClick={() => setOpen(!open)}
@@ -76,13 +69,7 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <Link
-            to="/contact"
-            onClick={() => setOpen(false)}
-            className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-6 py-3 rounded text-center mt-2"
-          >
-            DEVIS GRATUIT
-          </Link>
+          
         </div>
       )}
     </nav>
