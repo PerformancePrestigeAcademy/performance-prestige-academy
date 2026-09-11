@@ -292,7 +292,7 @@ export default function AProposPage() {
               <p className="text-[#A8A9AD] leading-relaxed text-justify mb-6">
                 Depuis mon plus jeune âge, la mécanique occupe une place
                 essentielle dans ma vie. Très tôt, je passe des heures à
-                démonter, comprendre et réparer tout ce qui possède un moteur.
+                démonter, comprendre et réparer tout ce qui possède un moteur ou non.
                 Chaque panne devient une énigme, chaque remontage une nouvelle
                 occasion d’apprendre.
               </p>
