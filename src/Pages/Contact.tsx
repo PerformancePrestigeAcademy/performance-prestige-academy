@@ -18,7 +18,7 @@ export default function ContactPage() {
         surTitre="CONTACT"
         titre="PARLONS"
         titreGold="DE VOTRE PROJET"
-        image="/images/hero.png"
+        image="/images/herocontact.png"
         scrollTarget="contact"
       />
 
