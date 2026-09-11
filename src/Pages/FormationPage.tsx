@@ -1266,77 +1266,100 @@ Performance & Prestige Academy
     onClick={() => setIsCFAModalOpen(true)}
     className="
       group relative overflow-hidden
-      inline-flex items-center justify-between
+      inline-flex items-center
       w-full sm:w-auto min-w-[340px]
       h-[74px]
-      px-7
+      px-6
       rounded-xl
       font-racing font-bold text-base tracking-widest
       text-white
-      border border-[#8E252B]
-      bg-gradient-to-r from-[#74151B] via-[#310B0E] to-[#090909]
+      border border-[#7E252A]
+      bg-gradient-to-r
+      from-[#8B1A20]
+      via-[#3A0B0F]
+      to-[#080808]
       transition-all duration-300
-      hover:border-[#B52D34]
+      hover:border-[#A92B32]
     "
   >
 
-    {/* Zone technique hachurée */}
+    {/* Légère texture métallique sur toute la surface */}
     <span
       className="
-        absolute
-        inset-y-0
-        right-[18%]
-        w-[105px]
-        opacity-40
+        absolute inset-0
+        opacity-25
         bg-[repeating-linear-gradient(
-          -55deg,
+          115deg,
           transparent 0px,
-          transparent 4px,
-          rgba(255,255,255,0.12) 5px,
-          transparent 6px
+          transparent 5px,
+          rgba(255,255,255,0.07) 6px,
+          transparent 7px,
+          transparent 12px
         )]
       "
     />
 
-    {/* Bande noire derrière la bande rouge */}
+    {/* Zone technique sombre avant la bande */}
     <span
       className="
         absolute
-        top-[-30%]
-        right-[11%]
-        h-[160%]
-        w-[34px]
-        rotate-[25deg]
+        top-0 bottom-0
+        right-[48px]
+        w-[82px]
+        opacity-80
+        bg-[repeating-linear-gradient(
+          115deg,
+          transparent 0px,
+          transparent 5px,
+          rgba(255,255,255,0.08) 6px,
+          transparent 7px,
+          transparent 11px
+        )]
+      "
+    />
+
+    {/* Large bande noire diagonale */}
+    <span
+      className="
+        absolute
+        -top-[35%]
+        right-[54px]
+        w-[42px]
+        h-[170%]
+        rotate-[24deg]
         bg-[#050505]
-        border-l border-[#222]
-        border-r border-[#111]
+        border-l border-[#171717]
+        border-r border-[#252525]
       "
     />
 
-    {/* Grande bande rouge diagonale */}
+    {/* Bande rouge principale */}
     <span
       className="
         absolute
-        top-[-30%]
-        right-[14%]
-        h-[160%]
-        w-[18px]
-        rotate-[25deg]
-        bg-gradient-to-b from-[#D9363E] via-[#A91F27] to-[#641017]
-        shadow-[0_0_8px_rgba(180,30,40,0.35)]
+        -top-[35%]
+        right-[72px]
+        w-[15px]
+        h-[170%]
+        rotate-[24deg]
+        bg-gradient-to-b
+        from-[#D83A42]
+        via-[#A91F27]
+        to-[#681117]
+        shadow-[0_0_7px_rgba(190,35,45,0.35)]
       "
     />
 
-    {/* Petit reflet de la bande */}
+    {/* Petit filet rouge clair */}
     <span
       className="
         absolute
-        top-[-30%]
-        right-[12.5%]
-        h-[160%]
+        -top-[35%]
+        right-[88px]
         w-[3px]
-        rotate-[25deg]
-        bg-[#E34A50]/70
+        h-[170%]
+        rotate-[24deg]
+        bg-[#D94A50]/60
       "
     />
 
@@ -1354,26 +1377,31 @@ Performance & Prestige Academy
 
     </span>
 
-    {/* Séparateur + flèche */}
+    {/* Séparateur fixe */}
     <span
       className="
-        relative z-10
-        flex items-center
-        ml-6 pl-5
-        border-l border-white/30
+        absolute
+        right-[43px]
+        top-1/2
+        -translate-y-1/2
         h-8
+        border-l border-white/30
       "
-    >
+    />
 
-      <ArrowRight
-        className="
-          w-7 h-7
-          transition-transform duration-300
-          group-hover:translate-x-1
-        "
-      />
-
-    </span>
+    {/* Flèche indépendante */}
+    <ArrowRight
+      className="
+        absolute
+        right-4
+        top-1/2
+        -translate-y-1/2
+        z-20
+        w-7 h-7
+        transition-transform duration-300
+        group-hover:translate-x-1
+      "
+    />
 
   </button>
 
