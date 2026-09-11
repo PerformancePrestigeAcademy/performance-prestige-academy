@@ -424,7 +424,7 @@ Performance & Prestige Academy
 
     </ul>
 
-    <div className="mt-auto pt-8">
+    <div className="mt-auto pt-8 text-center">
 
         <span
             className="btn-outline-gold inline-block px-6 py-3 rounded cursor-default"
