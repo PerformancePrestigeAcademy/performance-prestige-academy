@@ -879,10 +879,13 @@ Notre expérience du terrain nous permet d'accompagner les projets les plus ambi
         tracking-widest
         text-sm sm:text-base
         uppercase
-        whitespace-nowrap
+        leading-tight
+        text-center
       "
     >
-      VOIR LA PAGE DÉDIÉE
+      VOIR LA PAGE
+      <br />
+      DÉDIÉE
     </span>
 
     {/* Flèche */}
