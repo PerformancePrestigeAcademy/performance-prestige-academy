@@ -141,124 +141,102 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         </ul>
 
-        <div className="w-full max-w-[500px] mx-auto text-white">
-  {/* En-tête (08 VERSION PREMIUM) */}
-  <div className="flex items-center gap-3 mb-2 font-mono">
-    <span className="text-xl font-bold text-[#EAB308]">08</span>
-    <span className="text-xs tracking-[0.25em] text-slate-300 uppercase">
-      Version Premium
+        <button
+  type="button"
+  className="
+    group relative overflow-hidden
+    w-full max-w-[480px] h-[68px]
+    rounded-2xl
+    bg-[#0a0a0a]
+    border border-slate-300/80
+    shadow-[0_0_15px_rgba(255,255,255,0.08),inset_0_1px_1px_rgba(255,255,255,0.4)]
+    transition-all duration-300
+    hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]
+    active:scale-[0.99]
+    flex items-center justify-between
+  "
+>
+  {/* 1. DRAPEAU À DAMIER ONDULÉ (GAUCHE) */}
+  <div className="absolute top-0 bottom-0 left-0 w-[36%] overflow-hidden z-0">
+    {/* Damier de base */}
+    <div
+      className="
+        absolute -inset-6 scale-125
+        bg-[conic-gradient(#050505_25%,#e5e5e5_0_50%,#050505_0_75%,#e5e5e5_0)]
+        bg-[size:18px_18px]
+        -skew-x-[22deg] -translate-x-2
+      "
+    />
+
+    {/* Ondulations et plis de tissu (Ombres obliques fortes) */}
+    <div
+      className="
+        absolute -inset-6
+        bg-[repeating-linear-gradient(110deg,rgba(0,0,0,0.85)_0px,rgba(0,0,0,0.15)_14px,rgba(255,255,255,0.4)_24px,rgba(0,0,0,0.85)_38px)]
+        mix-blend-multiply
+        -skew-x-[22deg] -translate-x-2
+      "
+    />
+
+    {/* Relief et brillance des plis */}
+    <div
+      className="
+        absolute -inset-6
+        bg-[radial-gradient(ellipse_at_30%_50%,rgba(255,255,255,0.35),transparent_70%)]
+        mix-blend-overlay
+        -skew-x-[22deg] -translate-x-2
+      "
+    />
+
+    {/* Fondu sombre vers la droite */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/90 pointer-events-none" />
+  </div>
+
+  {/* 2. BANDE ROUGE DIAGONALE + LUEUR */}
+  <div
+    className="
+      absolute top-0 bottom-0 left-[31%] w-10
+      bg-red-600/40 blur-md
+      -skew-x-[22deg] z-10 pointer-events-none
+    "
+  />
+  <div
+    className="
+      absolute top-0 bottom-0 left-[33%] w-[3.5px]
+      bg-gradient-to-b from-[#ff2a34] via-[#dc2626] to-[#7f1d1d]
+      -skew-x-[22deg] z-10
+      shadow-[0_0_10px_rgba(239,68,68,0.9)]
+    "
+  />
+
+  {/* 3. REFLET LUMINEUX EN HAUT (EFFET GLOSS) */}
+  <div
+    className="
+      absolute inset-x-0 top-0 h-[42%] pointer-events-none z-20
+      bg-gradient-to-b from-white/20 via-white/5 to-transparent
+    "
+  />
+
+  {/* 4. CONTENU : TEXTE */}
+  <div className="w-[33%] shrink-0" />
+  <div className="relative z-20 flex-1 text-center pr-2">
+    <span className="font-sans font-extrabold tracking-[0.25em] text-white text-base sm:text-lg uppercase">
+      DÉCOUVRIR
     </span>
   </div>
 
-  {/* BOUTON PRINCIPAL */}
-  <button
-    type="button"
-    className="
-      group relative overflow-hidden
-      w-full h-[68px]
-      rounded-xl
-      bg-gradient-to-b from-[#1a1a1a] via-[#0d0d0d] to-[#050505]
-      border border-slate-300/80
-      shadow-[0_0_15px_rgba(255,255,255,0.08),inset_0_1px_1px_rgba(255,255,255,0.4)]
-      transition-all duration-300
-      hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]
-      active:scale-[0.99]
-      flex items-center justify-between
-    "
-  >
-    {/* 1. ZONE GAUCHE : DRAPEAU À DAMIER EN CSS */}
-    <div className="absolute top-0 bottom-0 left-0 w-[35%] overflow-hidden z-0">
-      {/* Motif Damier */}
-      <div
-        className="
-          absolute -inset-4 scale-125
-          bg-[conic-gradient(#0a0a0a_25%,#f5f5f5_0_50%,#0a0a0a_0_75%,#f5f5f5_0)]
-          bg-[size:20px_20px]
-          -skew-x-[22deg] -translate-x-3
-        "
-      />
-      {/* Ombrage 3D (Effet drapeau ondulé) */}
-      <div
-        className="
-          absolute inset-0
-          bg-gradient-to-r from-black/80 via-transparent to-black/90
-          -skew-x-[22deg] -translate-x-3
-        "
-      />
-      <div
-        className="
-          absolute inset-0
-          bg-gradient-to-b from-white/30 via-transparent to-black/60
-          -skew-x-[22deg] -translate-x-3
-        "
-      />
-    </div>
-
-    {/* 2. LIGNE ROUGE DIAGONALE + HALO DE LUMIÈRE */}
-    {/* Halo rouge diffus */}
-    <div
+  {/* 5. SÉPARATEUR VERTICAL + FLÈCHE */}
+  <div className="relative z-20 flex items-center gap-5 pr-6 shrink-0">
+    <div className="h-7 w-[1px] bg-white/30" />
+    <ArrowRight
       className="
-        absolute top-0 bottom-0 left-[30%] w-10
-        bg-red-600/35 blur-md
-        -skew-x-[22deg] z-10 pointer-events-none
+        w-6 h-6 text-white stroke-[2.25]
+        transition-transform duration-300
+        group-hover:translate-x-1.5
       "
     />
-    {/* Ligne rouge nette */}
-    <div
-      className="
-        absolute top-0 bottom-0 left-[32%] w-[3px]
-        bg-gradient-to-b from-[#ff2a34] via-[#dc2626] to-[#881337]
-        -skew-x-[22deg] z-10
-        shadow-[0_0_8px_rgba(239,68,68,0.9)]
-      "
-    />
-
-    {/* 3. REFLET LUMINEUX EN HAUT (EFFET METALLIQUE / GLOSS) */}
-    <div
-      className="
-        absolute inset-x-0 top-0 h-[40%] pointer-events-none z-20
-        bg-gradient-to-b from-white/20 via-white/5 to-transparent
-      "
-    />
-
-    {/* Spot de lumière discret (Haut droit) */}
-    <div
-      className="
-        absolute -top-10 right-10 w-32 h-20 pointer-events-none z-10
-        bg-white/10 blur-xl rounded-full
-      "
-    />
-
-    {/* 4. CONTENU DU BOUTON */}
-    {/* Espace réservé pour ne pas chevaucher le drapeau */}
-    <div className="w-[32%] shrink-0" />
-
-    {/* Texte Centré */}
-    <div className="relative z-20 flex-1 text-center pr-2">
-      <span className="font-sans font-extrabold tracking-[0.25em] text-white text-base sm:text-lg uppercase">
-        DÉCOUVRIR
-      </span>
-    </div>
-
-    {/* Séparateur vertical + Flèche à droite */}
-    <div className="relative z-20 flex items-center gap-5 pr-6 shrink-0">
-      <div className="h-7 w-[1px] bg-white/30" />
-
-      <ArrowRight
-        className="
-          w-6 h-6 text-white stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1.5
-        "
-      />
-    </div>
-  </button>
-
-  {/* Description bas de carte */}
-  <p className="mt-3 text-xs tracking-wide text-slate-400">
-    Un rendu haut de gamme et dynamique.
-  </p>
-</div>
+  </div>
+</button>
       </ServiceCard>
 
       {/* Carte 2 */}
