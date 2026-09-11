@@ -141,7 +141,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         </ul>
 
-        <div className="mt-auto pt-8 w-full flex justify-center">
+       <div className="mt-auto pt-8 w-full flex justify-center">
 
   <button
     type="button"
@@ -150,8 +150,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
     }}
     className="
       group relative
-      w-full max-w-[340px]
-      h-[76px]
+      w-full max-w-[380px]
+      h-[82px]
       overflow-hidden
       transition-transform duration-300
       hover:scale-[1.01]
@@ -187,8 +187,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         whitespace-nowrap
       "
     >
-       À L’ATELIER !
-
+      À L’ATELIER !
     </span>
 
     {/* Flèche */}
