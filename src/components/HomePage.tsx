@@ -129,7 +129,7 @@ function Hero() {
     href="/a-propos"
     className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
   >
-    À PROPOS DE PPA
+    NOTRE HISTOIRE
   </a>
   
   <a
