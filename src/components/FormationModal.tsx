@@ -138,7 +138,7 @@ export default function FormationModal({
         aria-modal="true"
         aria-labelledby={titleId}
         aria-describedby={descriptionId}
-        className="relative flex h-full w-full max-w-6xl flex-col overflow-hidden border border-white/10 bg-zinc-950 shadow-2xl shadow-black/70 sm:h-[92vh] sm:rounded-3xl"
+        className="relative flex h-full w-full max-w-6xl flex-col overflow-y-auto border border-white/10 bg-zinc-950 shadow-2xl shadow-black/70 sm:h-[92vh] sm:rounded-3xl sm:overflow-hidden"
       >
         <header className="relative shrink-0 overflow-hidden border-b border-white/10 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black px-5 py-6 sm:px-8 sm:py-8 lg:px-10">
           <div className="pointer-events-none absolute -right-20 -top-28 h-72 w-72 rounded-full bg-amber-400/10 blur-3xl" />
@@ -181,7 +181,7 @@ export default function FormationModal({
           </div>
         </header>
 
-        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+        <div className="min-h-0 flex-1 overscroll-contain sm:overflow-y-auto">
           <main className="px-5 py-8 sm:px-8 sm:py-10 lg:px-10">
             <section className="grid gap-5 lg:grid-cols-[1.45fr_0.55fr]">
               <div className="rounded-2xl border border-white/10 bg-white/[0.035] p-5 sm:p-7">
