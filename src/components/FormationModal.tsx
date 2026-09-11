@@ -183,7 +183,7 @@ export default function FormationModal({
 
         <div className="min-h-0 flex-1 overscroll-contain sm:overflow-y-auto">
           <main className="px-5 py-8 sm:px-8 sm:py-10 lg:px-10">
-            <section className="grid gap-5 lg:grid-cols-[1.45fr_0.55fr]">
+            <section className="grid gap-5 lg:grid-cols-[1.6fr_1fr]">
               <div className="rounded-2xl border border-white/10 bg-white/[0.035] p-5 sm:p-7">
                 <p className="text-justify text-base leading-8 text-zinc-300">
                   {formation.audience}
