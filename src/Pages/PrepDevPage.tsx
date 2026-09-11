@@ -646,18 +646,22 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             className="
               absolute
               left-[43%]
-              top-[45%]
+              top-[55%]
               -translate-y-1/2
+              -translate-x-1/2
               z-10
               text-white
               font-bold
               tracking-widest
               text-sm sm:text-base
               uppercase
+              text-center
+              leading-tight
               whitespace-nowrap
             "
-            >
-            CRÉONS ENSEMBLE !
+          >
+          <span className="block">CRÉONS</span>
+          <span className="block">ENSEMBLE</span>
           </span>
 
     {/* Flèche */}
