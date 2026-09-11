@@ -1335,7 +1335,7 @@ Performance & Prestige Academy
     <span className="relative z-10 flex items-center justify-center pr-1">
       <ArrowRight
         className="
-          w-6 h-6 text-white stroke-[2]
+          w-[28px] h-[28px] text-white stroke-[2.25]
           transition-transform duration-300
           group-hover:translate-x-1
         "
