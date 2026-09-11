@@ -142,96 +142,72 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         </ul>
 
         <div className="mt-auto pt-8 w-full flex justify-center">
+
   <button
     type="button"
+    onClick={() => {
+      // Action du bouton à définir
+    }}
     className="
-      group relative overflow-hidden
-      w-full max-w-[270px] h-[58px]
-      rounded-xl
-      bg-[#0a0a0a]
-      border border-slate-300/80
-      shadow-[0_0_15px_rgba(255,255,255,0.08),inset_0_1px_1px_rgba(255,255,255,0.4)]
-      transition-all duration-300
-      hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]
+      group relative
+      w-full max-w-[340px]
+      h-[60px]
+      overflow-hidden
+      transition-transform duration-300
+      hover:scale-[1.01]
       active:scale-[0.99]
-      flex items-center justify-between
     "
   >
-    {/* 1. CONTENEUR MASQUÉ DU DAMIER (Découpe stricte en diagonale) */}
-    <div className="absolute top-0 bottom-0 -left-4 w-[32%] -skew-x-[22deg] overflow-hidden z-0">
-      {/* Intérieur redressé pour garder les carrés droits */}
-      <div className="absolute -inset-8 skew-x-[22deg]">
-        {/* Damier */}
-        <div
-          className="
-            absolute inset-0
-            bg-[conic-gradient(#050505_25%,#e5e5e5_0_50%,#050505_0_75%,#e5e5e5_0)]
-            bg-[size:14px_14px]
-          "
-        />
-        {/* Plis / Ondulations de tissu */}
-        <div
-          className="
-            absolute inset-0
-            bg-[repeating-linear-gradient(110deg,rgba(0,0,0,0.85)_0px,rgba(0,0,0,0.15)_10px,rgba(255,255,255,0.35)_18px,rgba(0,0,0,0.85)_28px)]
-            mix-blend-multiply
-          "
-        />
-        {/* Reflet de surface */}
-        <div
-          className="
-            absolute inset-0
-            bg-[radial-gradient(ellipse_at_30%_50%,rgba(255,255,255,0.3),transparent_70%)]
-            mix-blend-overlay
-          "
-        />
-      </div>
-    </div>
 
-    {/* 2. HALO ET LIGNE ROUGE DIAGONALE */}
-    <div
+    {/* Image du bouton */}
+    <img
+      src="/images/BoutonPrepDev.png"
+      alt=""
       className="
-        absolute top-0 bottom-0 left-[22%] w-6
-        bg-red-600/40 blur-sm
-        -skew-x-[22deg] z-10 pointer-events-none
-      "
-    />
-    <div
-      className="
-        absolute top-0 bottom-0 left-[24%] w-[3px]
-        bg-gradient-to-b from-[#ff2a34] via-[#dc2626] to-[#7f1d1d]
-        -skew-x-[22deg] z-10
-        shadow-[0_0_8px_rgba(239,68,68,0.9)]
+        absolute inset-0
+        w-full h-full
+        object-fill
+        pointer-events-none
       "
     />
 
-    {/* 3. REFLET LUMINEUX SUPÉRIEUR (EFFET GLOSS) */}
-    <div
+    {/* Texte */}
+    <span
       className="
-        absolute inset-x-0 top-0 h-[40%] pointer-events-none z-20
-        bg-gradient-to-b from-white/20 via-white/5 to-transparent
+        absolute
+        left-[43%]
+        top-1/2
+        -translate-y-1/2
+        z-10
+        text-white
+        font-bold
+        tracking-widest
+        text-sm sm:text-base
+        uppercase
+        whitespace-nowrap
+      "
+    >
+      DÉCOUVRIR
+    </span>
+
+    {/* Flèche */}
+    <ArrowRight
+      className="
+        absolute
+        right-[7%]
+        top-1/2
+        -translate-y-1/2
+        z-10
+        w-7 h-7
+        text-white
+        stroke-[2]
+        transition-transform duration-300
+        group-hover:translate-x-1.5
       "
     />
 
-    {/* 4. TEXTE DÉCOUVRIR (Parfaitement dégagé du damier) */}
-    <div className="relative z-20 flex-1 text-center pl-10 pr-2">
-      <span className="font-sans font-extrabold tracking-[0.2em] text-white text-xs sm:text-sm uppercase">
-        DÉCOUVRIR
-      </span>
-    </div>
-
-    {/* 5. SÉPARATEUR VERTICAL ET FLÈCHE */}
-    <div className="relative z-20 flex items-center gap-3 pr-4 shrink-0">
-      <div className="h-5 w-[1px] bg-white/30" />
-      <ArrowRight
-        className="
-          w-5 h-5 text-white stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1
-        "
-      />
-    </div>
   </button>
+
 </div>
       </ServiceCard>
 
