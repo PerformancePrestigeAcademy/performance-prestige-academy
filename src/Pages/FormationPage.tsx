@@ -614,7 +614,23 @@ Performance & Prestige Academy
           active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
         "
         >
+        <span className="relative z-10">
         Découvrir
+      </span>
+
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
 </button>
 
     </div>
@@ -672,7 +688,23 @@ Performance & Prestige Academy
           active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
         "
         >
-            Découvrir
+             <span className="relative z-10">
+        Découvrir
+      </span>
+
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
 </button>
 
     </div>
@@ -781,7 +813,23 @@ Performance & Prestige Academy
           active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
         "
         >
-            Découvrir
+             <span className="relative z-10">
+        Découvrir
+      </span>
+
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
 </button>
 
     </div>
@@ -841,7 +889,23 @@ Performance & Prestige Academy
           active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
         "
         >
-            Découvrir
+             <span className="relative z-10">
+        Découvrir
+      </span>
+
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
 </button>
 
     </div>
@@ -901,7 +965,23 @@ Performance & Prestige Academy
           active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
         "
         >
-            Découvrir
+             <span className="relative z-10">
+        Découvrir
+      </span>
+
+      <span
+        className="
+          relative
+          z-10
+          text-lg
+          leading-none
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        →
+      </span>
 </button>
 
     </div>
