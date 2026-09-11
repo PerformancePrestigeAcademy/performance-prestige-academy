@@ -21,7 +21,7 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
         surTitre="MAINTENANCE"
         titre="PRENDRE SOIN"
         titreGold="DE VOTRE PASSION"
-        image="/images/hero.png"
+        image="/images/heromaintenance.png"
         scrollTarget="maintenance"
       />
 
