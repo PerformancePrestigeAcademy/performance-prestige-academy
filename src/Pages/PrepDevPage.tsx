@@ -150,8 +150,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
     }}
     className="
       group relative
-      w-full max-w-[380px]
-      h-[82px]
+      w-full max-w-[340px]
       overflow-hidden
       transition-transform duration-300
       hover:scale-[1.01]
@@ -164,9 +163,10 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       src="/images/BoutonPrepDev.png"
       alt=""
       className="
-        absolute inset-0
-        w-full h-full
-        object-contain
+        relative
+        block
+        w-full
+        h-auto
         pointer-events-none
       "
     />
