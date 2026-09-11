@@ -176,7 +176,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       className="
         absolute
         left-[43%]
-        top-[55%]
+        top-[40%]
         -translate-y-1/2
         z-10
         text-white
