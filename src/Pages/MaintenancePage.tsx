@@ -3,6 +3,7 @@ import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import ServiceCard from "../components/ServiceCard";
+import { ArrowRight } from "lucide-react";
 
 export default function MaintenancePage() {
   return (
