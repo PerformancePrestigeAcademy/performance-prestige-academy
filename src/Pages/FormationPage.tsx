@@ -1261,6 +1261,8 @@ Performance & Prestige Academy
 
    <div className="text-center mt-20">
 
+  <div className="text-center mt-20">
+
   <button
     type="button"
     onClick={() => setIsCFAModalOpen(true)}
@@ -1271,37 +1273,97 @@ Performance & Prestige Academy
       px-7 py-4 rounded-xl
       font-racing font-bold text-base tracking-widest
       text-white
-      border border-red-700/80
-      bg-gradient-to-r from-red-900 via-red-800 to-black
-      shadow-[0_0_18px_rgba(127,29,29,0.20)]
+
+      bg-gradient-to-r
+      from-[#7f171c]
+      via-[#3f0d10]
+      to-[#080808]
+
+      border border-[#8f2428]
+
+      shadow-[0_0_15px_rgba(120,20,25,0.18)]
+
       transition-all duration-300
-      hover:border-red-500
-      hover:shadow-[0_0_28px_rgba(220,38,38,0.30)]
+
+      hover:border-[#b52b31]
+      hover:shadow-[0_0_25px_rgba(150,25,30,0.30)]
+
       active:scale-[0.98]
     "
   >
 
-    {/* Bande diagonale métallisée */}
+    {/* Texture métallique */}
     <span
       className="
-        absolute inset-y-0 right-[18%] w-12
-        bg-gradient-to-r from-transparent via-red-700/50 to-transparent
-        skew-x-[-25deg]
-        opacity-70
-        transition-all duration-300
-        group-hover:opacity-100
+        absolute inset-0
+        opacity-20
+        bg-[repeating-linear-gradient(
+          115deg,
+          transparent 0px,
+          transparent 3px,
+          rgba(255,255,255,0.08) 4px,
+          transparent 5px,
+          transparent 10px
+        )]
       "
     />
 
+    {/* Bande diagonale principale */}
+    <span
+      className="
+        absolute
+        top-[-30%]
+        right-[18%]
+        w-[55px]
+        h-[160%]
+        rotate-[25deg]
+        bg-gradient-to-r
+        from-transparent
+        via-[#8f2428]
+        to-[#1a0506]
+        opacity-80
+        border-l border-[#b52b31]/40
+        border-r border-black/60
+        transition-all duration-300
+        group-hover:right-[16%]
+      "
+    />
+
+    {/* Reflet métallique de la bande */}
+    <span
+      className="
+        absolute
+        top-[-20%]
+        right-[20%]
+        w-[3px]
+        h-[140%]
+        rotate-[25deg]
+        bg-[#c94a4f]/60
+        blur-[1px]
+      "
+    />
+
+    {/* Contenu */}
     <span className="relative z-10 flex items-center gap-4">
+
       <BookOpen className="w-6 h-6 flex-shrink-0" />
 
       <span>
         DÉCOUVRIR LES INTERVENTIONS
       </span>
+
     </span>
 
-    <span className="relative z-10 flex items-center ml-6 pl-5 border-l border-white/30">
+    {/* Séparation + flèche */}
+    <span
+      className="
+        relative z-10
+        flex items-center
+        ml-6 pl-5
+        border-l border-white/30
+      "
+    >
+
       <ArrowRight
         className="
           w-6 h-6
@@ -1309,6 +1371,7 @@ Performance & Prestige Academy
           group-hover:translate-x-1
         "
       />
+
     </span>
 
   </button>
