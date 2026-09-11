@@ -141,102 +141,98 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         </ul>
 
-        <button
-  type="button"
-  className="
-    group relative overflow-hidden
-    w-full max-w-[480px] h-[68px]
-    rounded-2xl
-    bg-[#0a0a0a]
-    border border-slate-300/80
-    shadow-[0_0_15px_rgba(255,255,255,0.08),inset_0_1px_1px_rgba(255,255,255,0.4)]
-    transition-all duration-300
-    hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]
-    active:scale-[0.99]
-    flex items-center justify-between
-  "
->
-  {/* 1. DRAPEAU À DAMIER ONDULÉ (GAUCHE) */}
-  <div className="absolute top-0 bottom-0 left-0 w-[36%] overflow-hidden z-0">
-    {/* Damier de base */}
+        <div className="mt-auto pt-8 w-full flex justify-center">
+  <button
+    type="button"
+    className="
+      group relative overflow-hidden
+      w-full max-w-[270px] h-[58px]
+      rounded-xl
+      bg-[#0a0a0a]
+      border border-slate-300/80
+      shadow-[0_0_15px_rgba(255,255,255,0.08),inset_0_1px_1px_rgba(255,255,255,0.4)]
+      transition-all duration-300
+      hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]
+      active:scale-[0.99]
+      flex items-center justify-between
+    "
+  >
+    {/* 1. CONTENEUR MASQUÉ DU DAMIER (Découpe stricte en diagonale) */}
+    <div className="absolute top-0 bottom-0 -left-4 w-[32%] -skew-x-[22deg] overflow-hidden z-0">
+      {/* Intérieur redressé pour garder les carrés droits */}
+      <div className="absolute -inset-8 skew-x-[22deg]">
+        {/* Damier */}
+        <div
+          className="
+            absolute inset-0
+            bg-[conic-gradient(#050505_25%,#e5e5e5_0_50%,#050505_0_75%,#e5e5e5_0)]
+            bg-[size:14px_14px]
+          "
+        />
+        {/* Plis / Ondulations de tissu */}
+        <div
+          className="
+            absolute inset-0
+            bg-[repeating-linear-gradient(110deg,rgba(0,0,0,0.85)_0px,rgba(0,0,0,0.15)_10px,rgba(255,255,255,0.35)_18px,rgba(0,0,0,0.85)_28px)]
+            mix-blend-multiply
+          "
+        />
+        {/* Reflet de surface */}
+        <div
+          className="
+            absolute inset-0
+            bg-[radial-gradient(ellipse_at_30%_50%,rgba(255,255,255,0.3),transparent_70%)]
+            mix-blend-overlay
+          "
+        />
+      </div>
+    </div>
+
+    {/* 2. HALO ET LIGNE ROUGE DIAGONALE */}
     <div
       className="
-        absolute -inset-6 scale-125
-        bg-[conic-gradient(#050505_25%,#e5e5e5_0_50%,#050505_0_75%,#e5e5e5_0)]
-        bg-[size:18px_18px]
-        -skew-x-[22deg] -translate-x-2
+        absolute top-0 bottom-0 left-[22%] w-6
+        bg-red-600/40 blur-sm
+        -skew-x-[22deg] z-10 pointer-events-none
       "
     />
-
-    {/* Ondulations et plis de tissu (Ombres obliques fortes) */}
     <div
       className="
-        absolute -inset-6
-        bg-[repeating-linear-gradient(110deg,rgba(0,0,0,0.85)_0px,rgba(0,0,0,0.15)_14px,rgba(255,255,255,0.4)_24px,rgba(0,0,0,0.85)_38px)]
-        mix-blend-multiply
-        -skew-x-[22deg] -translate-x-2
+        absolute top-0 bottom-0 left-[24%] w-[3px]
+        bg-gradient-to-b from-[#ff2a34] via-[#dc2626] to-[#7f1d1d]
+        -skew-x-[22deg] z-10
+        shadow-[0_0_8px_rgba(239,68,68,0.9)]
       "
     />
 
-    {/* Relief et brillance des plis */}
+    {/* 3. REFLET LUMINEUX SUPÉRIEUR (EFFET GLOSS) */}
     <div
       className="
-        absolute -inset-6
-        bg-[radial-gradient(ellipse_at_30%_50%,rgba(255,255,255,0.35),transparent_70%)]
-        mix-blend-overlay
-        -skew-x-[22deg] -translate-x-2
+        absolute inset-x-0 top-0 h-[40%] pointer-events-none z-20
+        bg-gradient-to-b from-white/20 via-white/5 to-transparent
       "
     />
 
-    {/* Fondu sombre vers la droite */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/90 pointer-events-none" />
-  </div>
+    {/* 4. TEXTE DÉCOUVRIR (Parfaitement dégagé du damier) */}
+    <div className="relative z-20 flex-1 text-center pl-10 pr-2">
+      <span className="font-sans font-extrabold tracking-[0.2em] text-white text-xs sm:text-sm uppercase">
+        DÉCOUVRIR
+      </span>
+    </div>
 
-  {/* 2. BANDE ROUGE DIAGONALE + LUEUR */}
-  <div
-    className="
-      absolute top-0 bottom-0 left-[31%] w-10
-      bg-red-600/40 blur-md
-      -skew-x-[22deg] z-10 pointer-events-none
-    "
-  />
-  <div
-    className="
-      absolute top-0 bottom-0 left-[33%] w-[3.5px]
-      bg-gradient-to-b from-[#ff2a34] via-[#dc2626] to-[#7f1d1d]
-      -skew-x-[22deg] z-10
-      shadow-[0_0_10px_rgba(239,68,68,0.9)]
-    "
-  />
-
-  {/* 3. REFLET LUMINEUX EN HAUT (EFFET GLOSS) */}
-  <div
-    className="
-      absolute inset-x-0 top-0 h-[42%] pointer-events-none z-20
-      bg-gradient-to-b from-white/20 via-white/5 to-transparent
-    "
-  />
-
-  {/* 4. CONTENU : TEXTE */}
-  <div className="w-[33%] shrink-0" />
-  <div className="relative z-20 flex-1 text-center pr-2">
-    <span className="font-sans font-extrabold tracking-[0.25em] text-white text-base sm:text-lg uppercase">
-      DÉCOUVRIR
-    </span>
-  </div>
-
-  {/* 5. SÉPARATEUR VERTICAL + FLÈCHE */}
-  <div className="relative z-20 flex items-center gap-5 pr-6 shrink-0">
-    <div className="h-7 w-[1px] bg-white/30" />
-    <ArrowRight
-      className="
-        w-6 h-6 text-white stroke-[2.25]
-        transition-transform duration-300
-        group-hover:translate-x-1.5
-      "
-    />
-  </div>
-</button>
+    {/* 5. SÉPARATEUR VERTICAL ET FLÈCHE */}
+    <div className="relative z-20 flex items-center gap-3 pr-4 shrink-0">
+      <div className="h-5 w-[1px] bg-white/30" />
+      <ArrowRight
+        className="
+          w-5 h-5 text-white stroke-[2.25]
+          transition-transform duration-300
+          group-hover:translate-x-1
+        "
+      />
+    </div>
+  </button>
+</div>
       </ServiceCard>
 
       {/* Carte 2 */}
