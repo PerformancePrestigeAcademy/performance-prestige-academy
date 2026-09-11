@@ -151,7 +151,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
     className="
       group relative
       w-full max-w-[340px]
-      h-[60px]
+      h-[76px]
       overflow-hidden
       transition-transform duration-300
       hover:scale-[1.01]
@@ -166,7 +166,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       className="
         absolute inset-0
         w-full h-full
-        object-fill
+        object-contain
         pointer-events-none
       "
     />
@@ -187,7 +187,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         whitespace-nowrap
       "
     >
-      DÉCOUVRIR
+       À L’ATELIER !
+
     </span>
 
     {/* Flèche */}
