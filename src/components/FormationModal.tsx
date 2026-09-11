@@ -31,7 +31,7 @@ function BulletList({ items }: { items: string[] }) {
   return (
     <ul className="space-y-3">
       {items.map((item) => (
-        <li key={item} className="flex items-start gap-3 text-sm leading-6 text-zinc-300 sm:text-[15px]">
+        <li key={item} className="flex items-start gap-3 text-justify text-sm leading-6 text-zinc-300 sm:text-[15px]">
           <span className="text-amber-400"><CheckIcon /></span>
           <span>{item}</span>
         </li>
@@ -229,7 +229,7 @@ export default function FormationModal({
   </div>
 )}
 
-<p className="mt-4 text-sm leading-6 text-zinc-300">
+<p className="mt-4 text-justify text-sm leading-6 text-zinc-300">
   {formation.practicalInformation}
 </p>
 </div>
