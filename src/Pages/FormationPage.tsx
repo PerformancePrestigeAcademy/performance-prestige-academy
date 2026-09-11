@@ -315,9 +315,9 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
-      setIsFormationModalOpen(true);
-    }}
+  setSelectedFormation(mecaniqueAuFemininFormation);
+  setIsFormationModalOpen(true);
+}}
     className="
       group relative overflow-hidden
       inline-flex items-center justify-between
@@ -414,9 +414,9 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
-      setIsFormationModalOpen(true);
-    }}
+  setSelectedFormation(perfectionnementMecaniqueFormation);
+  setIsFormationModalOpen(true);
+}}
     className="
       group relative overflow-hidden
       inline-flex items-center justify-between
