@@ -1270,31 +1270,31 @@ Performance & Prestige Academy
       px-7
       rounded-2xl
       font-sans text-white
-      border border-[#9E1B22]/70
-      bg-[#0a0a0a]
-      shadow-[0_0_20px_rgba(158,27,34,0.35)]
+      border border-[#A81B22]/80
+      bg-[#0C0204]
+      shadow-[0_0_20px_rgba(168,27,34,0.4)]
       transition-all duration-300
-      hover:border-[#c8242e] hover:shadow-[0_0_25px_rgba(200,36,46,0.5)]
+      hover:border-[#d62832] hover:shadow-[0_0_25px_rgba(214,40,50,0.55)]
       active:scale-[0.99]
     "
   >
-    {/* 1. Dégradé rouge foncé vers noir à gauche */}
+    {/* 1. Dégradé de fond global (Du rouge bordeaux à gauche au noir/rouge très sombre à droite) */}
     <span
       className="
         absolute inset-0
-        bg-gradient-to-r from-[#4A080E] via-[#200407] to-[#0D0D0D]
+        bg-gradient-to-r from-[#690D13] via-[#240407] to-[#0A0203]
       "
     />
 
     {/* 2. Texture hachurée diagonale */}
     <span
       className="
-        absolute inset-0 opacity-25 pointer-events-none
-        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.15)_2px,rgba(255,255,255,0.15)_3px)]
+        absolute inset-0 opacity-20 pointer-events-none
+        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
       "
     />
 
-    {/* 3. Reflet brillant en haut (effet bombement / verre) */}
+    {/* 3. Reflet brillant en haut (effet bombement / gloss) */}
     <span
       className="
         absolute inset-x-0 top-0 h-[45%] pointer-events-none
@@ -1302,23 +1302,22 @@ Performance & Prestige Academy
       "
     />
 
-    {/* 4. Bande rouge diagonale */}
+    {/* 4. Ombre portée sous la bande rouge pour donner du relief */}
     <span
       className="
-        absolute -top-2 -bottom-2 right-[20%] w-3.5
-        bg-gradient-to-b from-[#D32F2F] via-[#A81B22] to-[#680C11]
+        absolute -top-3 -bottom-3 right-[20.5%] w-5
+        bg-black/60 blur-[2px]
         -skew-x-[22deg] z-10
-        shadow-[-3px_0_12px_rgba(0,0,0,0.8)]
       "
     />
 
-    {/* 5. Zone noire à droite pour la flèche */}
+    {/* 5. Bande rouge diagonale (Dégradé : Clair en haut -> Sombre en bas) */}
     <span
       className="
-        absolute top-0 bottom-0 right-0 w-[21%]
-        bg-[#090909]
-        -skew-x-[22deg] translate-x-3 z-0
-        border-l border-black/50
+        absolute -top-3 -bottom-3 right-[19%] w-4
+        bg-gradient-to-b from-[#F23038] via-[#A61218] to-[#2B0305]
+        -skew-x-[22deg] z-10
+        shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
       "
     />
 
@@ -1332,7 +1331,7 @@ Performance & Prestige Academy
       </span>
     </span>
 
-    {/* 7. Flèche à droite */}
+    {/* 7. Flèche à droite (repose sur la fin sombre du dégradé) */}
     <span className="relative z-10 flex items-center justify-center pr-1">
       <ArrowRight
         className="
