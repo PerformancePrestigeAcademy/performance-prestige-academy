@@ -151,6 +151,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
     className="
       group relative
       w-full max-w-[340px]
+      h-[75px]
       overflow-hidden
       transition-transform duration-300
       hover:scale-[1.01]
@@ -160,16 +161,15 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
     {/* Image du bouton */}
     <img
-      src="/images/BoutonPrepDev.png"
-      alt=""
-      className="
-        relative
-        block
-        w-full
-        h-auto
-        pointer-events-none
-      "
-    />
+  src="/images/BoutonPrepDev.png"
+  alt=""
+  className="
+    absolute inset-0
+    w-full h-full
+    object-fill
+    pointer-events-none
+  "
+/>
 
     {/* Texte */}
     <span
