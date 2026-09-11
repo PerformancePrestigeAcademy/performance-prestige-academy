@@ -32,7 +32,7 @@ export default function HeroPage({
       {/* Contenu */}
       <div className="relative z-10 text-center">
 
-        <p className="font-racing text-sm sm:text-base tracking-[0.5em] text-[#C9A227] mb-4">
+        <p className="font-racing text-base sm:text-base tracking-[0.5em] text-[#C9A227] mb-4">
           {surTitre}
         </p>
 
