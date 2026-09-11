@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, Wrench, Gauge, Flag, GraduationCap, Handshake, School, BookOpen, ClipboardCheck, Award, Building2, Target, Rocket,} from "lucide-react";
+import { ArrowLeft, ArrowRight, Wrench, Gauge, Flag, GraduationCap, Handshake, School, BookOpen, ClipboardCheck, Award, Building2, Target, Rocket, Users,} from "lucide-react";
 import Navbar from "../components/Navbar";
 import HeroPage from "../components/HeroPage.tsx";
 import Footer from "../components/Footer.tsx";
@@ -1258,38 +1258,74 @@ Performance & Prestige Academy
 
       </div>
 
-    </div>
-    <div className="text-center mt-20">
-      <button
-      type="button"
-      onClick={() => setIsCFAModalOpen(true)}
-      className="btn-gold text-black font-racing font-bold text-base tracking-widest px-10 py-4 rounded"
-      >
-          DÉCOUVRIR LES INTERVENTIONS
-      </button>
-    </div>
-    {/* Appel à l'action */}
+   <div className="text-center mt-20">
 
-    <div className="text-center mt-20">
+  <button
+    type="button"
+    onClick={() => setIsCFAModalOpen(true)}
+    className="group relative inline-flex items-center justify-between
+               w-full sm:w-auto min-w-[340px]
+               px-7 py-4 rounded-xl
+               font-racing font-bold text-base tracking-widest
+               text-white
+               bg-gradient-to-r from-red-600 via-red-700 to-black
+               border border-red-500
+               shadow-[0_0_20px_rgba(220,38,38,0.20)]
+               transition-all duration-300
+               hover:from-red-500 hover:via-red-600 hover:to-black
+               hover:border-red-400
+               hover:shadow-[0_0_30px_rgba(220,38,38,0.40)]
+               active:scale-95"
+  >
+    <span className="flex items-center gap-4">
+      <BookOpen className="w-6 h-6 flex-shrink-0" />
+      <span>DÉCOUVRIR LES INTERVENTIONS</span>
+    </span>
 
-      <h3 className="font-racing text-4xl mb-6">
-        Vous représentez un établissement ?
-      </h3>
+    <ArrowRight className="w-6 h-6 ml-6 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
+  </button>
 
-      <p className="max-w-2xl mx-auto text-[#A8A9AD] mb-10 leading-relaxed">
-        Vous souhaitez développer une offre de formation en mécanique,
-        organiser des interventions techniques ou mettre en place un partenariat
-        pédagogique ? Échangeons ensemble sur votre projet.
-      </p>
+</div>
 
-      <a
-        href="/contact"
-        className="btn-gold text-black font-racing font-bold text-base tracking-widest px-10 py-4 rounded"
-      >
-        ÉCHANGER SUR VOTRE PROJET
-      </a>
 
-    </div>
+{/* Appel à l'action */}
+<div className="text-center mt-20">
+
+  <h3 className="font-racing text-4xl mb-6">
+    Vous représentez un établissement ?
+  </h3>
+
+  <p className="max-w-2xl mx-auto text-[#A8A9AD] mb-10 leading-relaxed">
+    Vous souhaitez développer une offre de formation en mécanique,
+    organiser des interventions techniques ou mettre en place un partenariat
+    pédagogique ? Échangeons ensemble sur votre projet.
+  </p>
+
+  <a
+    href="/contact"
+    className="group relative inline-flex items-center justify-between
+               w-full sm:w-auto min-w-[340px]
+               px-7 py-4 rounded-xl
+               font-racing font-bold text-base tracking-widest
+               text-white
+               bg-gradient-to-r from-red-600 via-red-700 to-black
+               border border-red-500
+               shadow-[0_0_20px_rgba(220,38,38,0.20)]
+               transition-all duration-300
+               hover:from-red-500 hover:via-red-600 hover:to-black
+               hover:border-red-400
+               hover:shadow-[0_0_30px_rgba(220,38,38,0.40)]
+               active:scale-95"
+  >
+    <span className="flex items-center gap-4">
+      <Users className="w-6 h-6 flex-shrink-0" />
+      <span>ÉCHANGER SUR VOTRE PROJET</span>
+    </span>
+
+    <ArrowRight className="w-6 h-6 ml-6 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
+  </a>
+
+</div>
 
   </div>
 
