@@ -1260,193 +1260,89 @@ Performance & Prestige Academy
     </div>
 
    <div className="text-center mt-20">
-
   <button
     type="button"
     onClick={() => setIsCFAModalOpen(true)}
     className="
       group relative overflow-hidden
       inline-flex items-center justify-between
-      w-full sm:w-auto min-w-[340px]
-      h-[74px]
+      w-full sm:w-auto min-w-[360px] h-[72px]
       px-7
-      rounded-xl
-      font-racing font-bold text-base tracking-widest
-      text-white
-      border border-[#8E252B]
-      bg-[#080808]
+      rounded-2xl
+      font-sans text-white
+      border border-[#9E1B22]/70
+      bg-[#0a0a0a]
+      shadow-[0_0_20px_rgba(158,27,34,0.35)]
       transition-all duration-300
-      hover:border-[#B52D35]
+      hover:border-[#c8242e] hover:shadow-[0_0_25px_rgba(200,36,46,0.5)]
+      active:scale-[0.99]
     "
   >
-
-    {/* =========================================
-        FOND ROUGE → NOIR
-       ========================================= */}
-
+    {/* 1. Dégradé rouge foncé vers noir à gauche */}
     <span
       className="
         absolute inset-0
-        bg-gradient-to-r
-        from-[#8B171E]
-        via-[#551016]
-        to-[#080808]
+        bg-gradient-to-r from-[#4A080E] via-[#200407] to-[#0D0D0D]
       "
     />
 
-    {/* Lumière rouge diffuse à gauche */}
+    {/* 2. Texture hachurée diagonale */}
     <span
       className="
-        absolute inset-0
-        bg-[radial-gradient(
-          ellipse_at_15%_50%,
-          rgba(190,35,45,0.55),
-          rgba(120,15,22,0.20) 38%,
-          transparent 68%
-        )]
+        absolute inset-0 opacity-25 pointer-events-none
+        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.15)_2px,rgba(255,255,255,0.15)_3px)]
       "
     />
 
-    {/* =========================================
-        TEXTURE DIAGONALE
-       ========================================= */}
-
+    {/* 3. Reflet brillant en haut (effet bombement / verre) */}
     <span
       className="
-        absolute
-        top-0 bottom-0
-        right-[20%]
-        w-[125px]
-        opacity-45
-        bg-[repeating-linear-gradient(
-          -55deg,
-          transparent 0px,
-          transparent 3px,
-          rgba(255,255,255,0.12) 4px,
-          transparent 5px,
-          transparent 8px
-        )]
+        absolute inset-x-0 top-0 h-[45%] pointer-events-none
+        bg-gradient-to-b from-white/15 via-white/5 to-transparent
       "
     />
 
-    {/* =========================================
-        BANDE NOIRE LARGE
-       ========================================= */}
-
+    {/* 4. Bande rouge diagonale */}
     <span
       className="
-        absolute
-        -top-[20%]
-        right-[17%]
-        w-[52px]
-        h-[140%]
-        rotate-[25deg]
-        bg-gradient-to-b
-        from-[#050505]
-        via-[#111111]
-        to-[#020202]
-        border-l border-[#222]
-        border-r border-[#000]
+        absolute -top-2 -bottom-2 right-[20%] w-3.5
+        bg-gradient-to-b from-[#D32F2F] via-[#A81B22] to-[#680C11]
+        -skew-x-[22deg] z-10
+        shadow-[-3px_0_12px_rgba(0,0,0,0.8)]
       "
     />
 
-    {/* =========================================
-        BANDE ROUGE PRINCIPALE
-       ========================================= */}
-
+    {/* 5. Zone noire à droite pour la flèche */}
     <span
       className="
-        absolute
-        -top-[20%]
-        right-[19%]
-        w-[16px]
-        h-[140%]
-        rotate-[25deg]
-        bg-gradient-to-b
-        from-[#E3484F]
-        via-[#B82029]
-        to-[#7C1118]
+        absolute top-0 bottom-0 right-0 w-[21%]
+        bg-[#090909]
+        -skew-x-[22deg] translate-x-3 z-0
+        border-l border-black/50
       "
     />
 
-    {/* Reflet lumineux de la bande */}
-    <span
-      className="
-        absolute
-        -top-[20%]
-        right-[18.3%]
-        w-[3px]
-        h-[140%]
-        rotate-[25deg]
-        bg-[#F06A70]/70
-      "
-    />
+    {/* 6. Contenu Gauche (Icône + Texte) */}
+    <span className="relative z-10 flex items-center gap-4">
+      <BookOpen className="w-8 h-8 text-white flex-shrink-0 stroke-[1.75]" />
 
-    {/* Petite bande noire après le rouge */}
-    <span
-      className="
-        absolute
-        -top-[20%]
-        right-[16.2%]
-        w-[7px]
-        h-[140%]
-        rotate-[25deg]
-        bg-[#030303]
-      "
-    />
-
-    {/* =========================================
-        CONTENU
-       ========================================= */}
-
-    <span className="relative z-10 flex items-center gap-5">
-
-      <BookOpen
-        className="w-8 h-8 flex-shrink-0"
-      />
-
-      <span className="text-left leading-tight">
+      <span className="text-left font-bold tracking-wider text-sm sm:text-base leading-tight">
         DÉCOUVRIR LES<br />
         INTERVENTIONS
       </span>
-
     </span>
 
-    {/* =========================================
-        SÉPARATEUR
-       ========================================= */}
-
-    <span
-      className="
-        absolute
-        right-[48px]
-        top-1/2
-        -translate-y-1/2
-        h-8
-        border-l border-white/30
-        z-10
-      "
-    />
-
-    {/* =========================================
-        FLÈCHE
-       ========================================= */}
-
-    <ArrowRight
-      className="
-        absolute
-        right-4
-        top-1/2
-        -translate-y-1/2
-        z-20
-        w-7 h-7
-        transition-transform duration-300
-        group-hover:translate-x-1
-      "
-    />
-
+    {/* 7. Flèche à droite */}
+    <span className="relative z-10 flex items-center justify-center pr-1">
+      <ArrowRight
+        className="
+          w-6 h-6 text-white stroke-[2]
+          transition-transform duration-300
+          group-hover:translate-x-1
+        "
+      />
+    </span>
   </button>
-
 </div>
 
 
