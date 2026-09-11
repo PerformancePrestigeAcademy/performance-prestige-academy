@@ -21,7 +21,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         surTitre="PRÉPARATION & DÉVELOPPEMENT"
         titre="L'EXIGENCE DE LA"
         titreGold="PERFORMANCE"
-        image="/images/prep.png"
+        image="/images/heropreparation.png"
         scrollTarget="preparation-developpement"
       />
 
