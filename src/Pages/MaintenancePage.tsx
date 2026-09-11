@@ -159,6 +159,7 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
     </ul>
 
     <div className="mt-auto pt-8 w-full flex justify-center">
+
       <button
         type="button"
         className="
@@ -170,138 +171,75 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
           font-sans text-white
           border border-[#C95A0A]/80
           bg-[#080402]
-          shadow-[0_0_20px_rgba(201,90,10,0.35)]
+          shadow-[0_0_20px_rgba(201,90,10,0.4)]
           transition-all duration-300
-          hover:border-[#F47B18]
-          hover:shadow-[0_0_25px_rgba(244,123,24,0.50)]
+          hover:border-[#F47B18] hover:shadow-[0_0_25px_rgba(244,123,24,0.55)]
           active:scale-[0.99]
         "
       >
 
-    {/* 1. Dégradé de fond global */}
-    <span
-      className="
-        absolute inset-0
-        bg-gradient-to-r
-        from-[#B84A05]
-        via-[#351305]
-        to-[#080402]
-      "
-    />
+        {/* 1. Dégradé de fond global */}
+        <span
+          className="
+            absolute inset-0
+            bg-gradient-to-r from-[#B84A05] via-[#351305] to-[#080402]
+          "
+        />
 
-    {/* 2. Texture hachurée diagonale */}
-    <span
-      className="
-        absolute inset-0
-        opacity-20
-        pointer-events-none
-        bg-[repeating-linear-gradient(
-          -45deg,
-          transparent,
-          transparent_2px,
-          rgba(255,255,255,0.18)_2px,
-          rgba(255,255,255,0.18)_3px
-        )]
-      "
-    />
+        {/* 2. Texture hachurée diagonale */}
+        <span
+          className="
+            absolute inset-0 opacity-20 pointer-events-none
+            bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
+          "
+        />
 
-    {/* 3. Reflet brillant en haut */}
-    <span
-      className="
-        absolute inset-x-0 top-0 h-[45%]
-        pointer-events-none
-        bg-gradient-to-b
-        from-white/15
-        via-white/5
-        to-transparent
-      "
-    />
+        {/* 3. Reflet brillant en haut (effet gloss) */}
+        <span
+          className="
+            absolute inset-x-0 top-0 h-[45%] pointer-events-none
+            bg-gradient-to-b from-white/15 via-white/5 to-transparent
+          "
+        />
 
-    {/* 4. Ombre portée sous la bande orange */}
-    <span
-      className="
-        absolute
-        -top-3
-        -bottom-3
-        right-[28%]
-        w-5
-        bg-black/70
-        blur-[2px]
-        -skew-x-[22deg]
-        z-10
-      "
-    />
+        {/* 4. Ombre portée sous la bande orange */}
+        <span
+          className="
+            absolute -top-3 -bottom-3 right-[28%] w-5
+            bg-black/60 blur-[2px]
+            -skew-x-[22deg] z-10
+          "
+        />
 
-    {/* 5. Bande orange diagonale */}
-    <span
-      className="
-        absolute
-        -top-3
-        -bottom-3
-        right-[26%]
-        w-3.5
-        bg-gradient-to-b
-        from-[#FF9A2E]
-        via-[#F26A0A]
-        to-[#7A2603]
-        -skew-x-[22deg]
-        z-10
-        shadow-[-2px_0_8px_rgba(0,0,0,0.65)]
-      "
-    />
+        {/* 5. Bande orange diagonale */}
+        <span
+          className="
+            absolute -top-3 -bottom-3 right-[26%] w-3.5
+            bg-gradient-to-b from-[#FF9A2E] via-[#F26A0A] to-[#7A2603]
+            -skew-x-[22deg] z-10
+            shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
+          "
+        />
 
-    {/* 6. Texte */}
-    <span
-      className="
-        relative z-10
-        flex flex-col
-        items-start
-        text-left
-      "
-    >
-      <span
-        className="
-          font-bold
-          tracking-wider
-          text-sm sm:text-base
-          uppercase
-          leading-tight
-        "
-      >
-        EN SAVOIR PLUS
-      </span>
+        {/* 6. Contenu Gauche (Texte) */}
+        <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+          EN SAVOIR PLUS
+        </span>
 
-      <span
-        className="
-          text-[10px] sm:text-xs
-          text-[#A8A9AD]
-          font-normal
-          tracking-wide
-          leading-tight
-          mt-1
-        "
-      >
-        (En cours de création)
-      </span>
-    </span>
+        {/* 7. Flèche à droite */}
+        <span className="relative z-10 flex items-center justify-center">
+          <ArrowRight
+            className="
+              w-[24px] h-[24px] text-white stroke-[2.25]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+        </span>
 
-    {/* 7. Flèche à droite */}
-    <span className="relative z-10 flex items-center justify-center">
+      </button>
 
-      <ArrowRight
-        className="
-          w-[24px] h-[24px]
-          text-white
-          stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1.5
-        "
-      />
-
-    </span>
-
-  </button>
-</div>
+    </div>
 </ServiceCard>
 
     {/* Carte 2 */}
@@ -322,6 +260,7 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
     </ul>
 
     <div className="mt-auto pt-8 w-full flex justify-center">
+
       <button
         type="button"
         className="
@@ -333,138 +272,75 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
           font-sans text-white
           border border-[#C95A0A]/80
           bg-[#080402]
-          shadow-[0_0_20px_rgba(201,90,10,0.35)]
+          shadow-[0_0_20px_rgba(201,90,10,0.4)]
           transition-all duration-300
-          hover:border-[#F47B18]
-          hover:shadow-[0_0_25px_rgba(244,123,24,0.50)]
+          hover:border-[#F47B18] hover:shadow-[0_0_25px_rgba(244,123,24,0.55)]
           active:scale-[0.99]
         "
       >
 
-    {/* 1. Dégradé de fond global */}
-    <span
-      className="
-        absolute inset-0
-        bg-gradient-to-r
-        from-[#B84A05]
-        via-[#351305]
-        to-[#080402]
-      "
-    />
+        {/* 1. Dégradé de fond global */}
+        <span
+          className="
+            absolute inset-0
+            bg-gradient-to-r from-[#B84A05] via-[#351305] to-[#080402]
+          "
+        />
 
-    {/* 2. Texture hachurée diagonale */}
-    <span
-      className="
-        absolute inset-0
-        opacity-20
-        pointer-events-none
-        bg-[repeating-linear-gradient(
-          -45deg,
-          transparent,
-          transparent_2px,
-          rgba(255,255,255,0.18)_2px,
-          rgba(255,255,255,0.18)_3px
-        )]
-      "
-    />
+        {/* 2. Texture hachurée diagonale */}
+        <span
+          className="
+            absolute inset-0 opacity-20 pointer-events-none
+            bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
+          "
+        />
 
-    {/* 3. Reflet brillant en haut */}
-    <span
-      className="
-        absolute inset-x-0 top-0 h-[45%]
-        pointer-events-none
-        bg-gradient-to-b
-        from-white/15
-        via-white/5
-        to-transparent
-      "
-    />
+        {/* 3. Reflet brillant en haut (effet gloss) */}
+        <span
+          className="
+            absolute inset-x-0 top-0 h-[45%] pointer-events-none
+            bg-gradient-to-b from-white/15 via-white/5 to-transparent
+          "
+        />
 
-    {/* 4. Ombre portée sous la bande orange */}
-    <span
-      className="
-        absolute
-        -top-3
-        -bottom-3
-        right-[28%]
-        w-5
-        bg-black/70
-        blur-[2px]
-        -skew-x-[22deg]
-        z-10
-      "
-    />
+        {/* 4. Ombre portée sous la bande orange */}
+        <span
+          className="
+            absolute -top-3 -bottom-3 right-[28%] w-5
+            bg-black/60 blur-[2px]
+            -skew-x-[22deg] z-10
+          "
+        />
 
-    {/* 5. Bande orange diagonale */}
-    <span
-      className="
-        absolute
-        -top-3
-        -bottom-3
-        right-[26%]
-        w-3.5
-        bg-gradient-to-b
-        from-[#FF9A2E]
-        via-[#F26A0A]
-        to-[#7A2603]
-        -skew-x-[22deg]
-        z-10
-        shadow-[-2px_0_8px_rgba(0,0,0,0.65)]
-      "
-    />
+        {/* 5. Bande orange diagonale */}
+        <span
+          className="
+            absolute -top-3 -bottom-3 right-[26%] w-3.5
+            bg-gradient-to-b from-[#FF9A2E] via-[#F26A0A] to-[#7A2603]
+            -skew-x-[22deg] z-10
+            shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
+          "
+        />
 
-    {/* 6. Texte */}
-    <span
-      className="
-        relative z-10
-        flex flex-col
-        items-start
-        text-left
-      "
-    >
-      <span
-        className="
-          font-bold
-          tracking-wider
-          text-sm sm:text-base
-          uppercase
-          leading-tight
-        "
-      >
-        EN SAVOIR PLUS
-      </span>
+        {/* 6. Contenu Gauche (Texte) */}
+        <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+          EN SAVOIR PLUS
+        </span>
 
-      <span
-        className="
-          text-[10px] sm:text-xs
-          text-[#A8A9AD]
-          font-normal
-          tracking-wide
-          leading-tight
-          mt-1
-        "
-      >
-        (En cours de création)
-      </span>
-    </span>
+        {/* 7. Flèche à droite */}
+        <span className="relative z-10 flex items-center justify-center">
+          <ArrowRight
+            className="
+              w-[24px] h-[24px] text-white stroke-[2.25]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+        </span>
 
-    {/* 7. Flèche à droite */}
-    <span className="relative z-10 flex items-center justify-center">
+      </button>
 
-      <ArrowRight
-        className="
-          w-[24px] h-[24px]
-          text-white
-          stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1.5
-        "
-      />
-
-    </span>
-
-  </button>
-</div>
+    </div>
 
 </ServiceCard>
 
@@ -488,92 +364,92 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
     <div className="mt-auto pt-8 w-full flex justify-center">
 
-  <button
-    type="button"
-    className="
-      group relative overflow-hidden
-      inline-flex items-center justify-between
-      w-full max-w-[260px] h-[60px]
-      px-6
-      rounded-2xl
-      font-sans text-white
-      border border-[#C95A0A]/80
-      bg-[#080402]
-      shadow-[0_0_20px_rgba(201,90,10,0.4)]
-      transition-all duration-300
-      hover:border-[#F47B18] hover:shadow-[0_0_25px_rgba(244,123,24,0.55)]
-      active:scale-[0.99]
-    "
-  >
-
-    {/* 1. Dégradé de fond global */}
-    <span
-      className="
-        absolute inset-0
-        bg-gradient-to-r from-[#B84A05] via-[#351305] to-[#080402]
-      "
-    />
-
-    {/* 2. Texture hachurée diagonale */}
-    <span
-      className="
-        absolute inset-0 opacity-20 pointer-events-none
-        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
-      "
-    />
-
-    {/* 3. Reflet brillant en haut (effet gloss) */}
-    <span
-      className="
-        absolute inset-x-0 top-0 h-[45%] pointer-events-none
-        bg-gradient-to-b from-white/15 via-white/5 to-transparent
-      "
-    />
-
-    {/* 4. Ombre portée sous la bande orange */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[28%] w-5
-        bg-black/60 blur-[2px]
-        -skew-x-[22deg] z-10
-      "
-    />
-
-    {/* 5. Bande orange diagonale */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[26%] w-3.5
-        bg-gradient-to-b from-[#FF9A2E] via-[#F26A0A] to-[#7A2603]
-        -skew-x-[22deg] z-10
-        shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
-      "
-    />
-
-    {/* 6. Contenu Gauche (Texte) */}
-    <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
-      EN SAVOIR PLUS
-    </span>
-
-    {/* 7. Flèche à droite */}
-    <span className="relative z-10 flex items-center justify-center">
-      <ArrowRight
+      <button
+        type="button"
         className="
-          w-[24px] h-[24px] text-white stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1.5
+          group relative overflow-hidden
+          inline-flex items-center justify-between
+          w-full max-w-[260px] h-[60px]
+          px-6
+          rounded-2xl
+          font-sans text-white
+          border border-[#C95A0A]/80
+          bg-[#080402]
+          shadow-[0_0_20px_rgba(201,90,10,0.4)]
+          transition-all duration-300
+          hover:border-[#F47B18] hover:shadow-[0_0_25px_rgba(244,123,24,0.55)]
+          active:scale-[0.99]
         "
-      />
-    </span>
+      >
 
-  </button>
+        {/* 1. Dégradé de fond global */}
+        <span
+          className="
+            absolute inset-0
+            bg-gradient-to-r from-[#B84A05] via-[#351305] to-[#080402]
+          "
+        />
 
-</div>
+        {/* 2. Texture hachurée diagonale */}
+        <span
+          className="
+            absolute inset-0 opacity-20 pointer-events-none
+            bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
+          "
+        />
 
-</ServiceCard>
+        {/* 3. Reflet brillant en haut (effet gloss) */}
+        <span
+          className="
+            absolute inset-x-0 top-0 h-[45%] pointer-events-none
+            bg-gradient-to-b from-white/15 via-white/5 to-transparent
+          "
+        />
+
+        {/* 4. Ombre portée sous la bande orange */}
+        <span
+          className="
+            absolute -top-3 -bottom-3 right-[28%] w-5
+            bg-black/60 blur-[2px]
+            -skew-x-[22deg] z-10
+          "
+        />
+
+        {/* 5. Bande orange diagonale */}
+        <span
+          className="
+            absolute -top-3 -bottom-3 right-[26%] w-3.5
+            bg-gradient-to-b from-[#FF9A2E] via-[#F26A0A] to-[#7A2603]
+            -skew-x-[22deg] z-10
+            shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
+          "
+        />
+
+        {/* 6. Contenu Gauche (Texte) */}
+        <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+          EN SAVOIR PLUS
+        </span>
+
+        {/* 7. Flèche à droite */}
+        <span className="relative z-10 flex items-center justify-center">
+          <ArrowRight
+            className="
+              w-[24px] h-[24px] text-white stroke-[2.25]
+              transition-transform duration-300
+              group-hover:translate-x-1.5
+            "
+          />
+        </span>
+
+      </button>
+
+    </div>
+
+  </ServiceCard>
 
      </div>
 
- </div>
+  </div>
 
 </section>
 
