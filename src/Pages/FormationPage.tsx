@@ -1261,7 +1261,6 @@ Performance & Prestige Academy
 
    <div className="text-center mt-20">
 
-  <div className="text-center mt-20">
 
   <button
     type="button"
