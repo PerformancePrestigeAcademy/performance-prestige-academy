@@ -657,7 +657,6 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
               uppercase
               text-center
               leading-tight
-              whitespace-nowrap
             "
           >
           <span className="block">CRÉONS</span>
