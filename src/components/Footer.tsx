@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
 
             <p className="text-[#C9A227] font-racing tracking-[0.18em] text-base mb-5">
-              Préparation • Formation • Maintenance
+              Formation • Préparation • Maintenance
             </p>
 
             <p className="text-[#A8A9AD] italic text-lg max-w-3xl leading-relaxed">

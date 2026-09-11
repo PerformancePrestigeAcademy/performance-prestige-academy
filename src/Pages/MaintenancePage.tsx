@@ -843,9 +843,63 @@ Notre expérience du terrain nous permet d'accompagner les projets les plus ambi
 <div className="text-center mt-16">
   <a
     href="/preparation-developpement"
-    className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded inline-block"
+    className="
+      group relative
+      w-full max-w-[340px]
+      h-[150px]
+      overflow-hidden
+      inline-block
+      transition-transform duration-300
+      hover:scale-[1.01]
+      active:scale-[0.99]
+    "
   >
-    VOIR LA PAGE DÉDIÉE
+    {/* Image du bouton */}
+    <img
+      src="/images/BoutonPrepDev.png"
+      alt=""
+      className="
+        absolute inset-0
+        w-full h-full
+        object-fill
+        pointer-events-none
+      "
+    />
+
+    {/* Texte */}
+    <span
+      className="
+        absolute
+        left-[43%]
+        top-[45%]
+        -translate-y-1/2
+        z-10
+        text-white
+        font-bold
+        tracking-widest
+        text-sm sm:text-base
+        uppercase
+        whitespace-nowrap
+      "
+    >
+      VOIR LA PAGE DÉDIÉE
+    </span>
+
+    {/* Flèche */}
+    <ArrowRight
+      className="
+        absolute
+        right-[7%]
+        top-[45%]
+        -translate-y-1/2
+        z-10
+        w-7 h-7
+        text-white
+        stroke-[2]
+        transition-transform duration-300
+        group-hover:translate-x-1.5
+      "
+    />
   </a>
 </div>
 
