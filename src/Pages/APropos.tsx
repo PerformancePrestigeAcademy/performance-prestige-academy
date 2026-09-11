@@ -434,7 +434,7 @@ export default function AProposPage() {
               </p>
 
               <h2 className="font-racing font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-8">
-                LA DONNÉE
+                LES DONNÉES
                 <br />
                 <span className="gold-gradient">AU SERVICE DU TERRAIN</span>
               </h2>
