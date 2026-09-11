@@ -1261,7 +1261,6 @@ Performance & Prestige Academy
 
    <div className="text-center mt-20">
 
-
   <button
     type="button"
     onClick={() => setIsCFAModalOpen(true)}
@@ -1269,103 +1268,106 @@ Performance & Prestige Academy
       group relative overflow-hidden
       inline-flex items-center justify-between
       w-full sm:w-auto min-w-[340px]
-      px-7 py-4 rounded-xl
+      h-[74px]
+      px-7
+      rounded-xl
       font-racing font-bold text-base tracking-widest
       text-white
-
-      bg-gradient-to-r
-      from-[#7f171c]
-      via-[#3f0d10]
-      to-[#080808]
-
-      border border-[#8f2428]
-
-      shadow-[0_0_15px_rgba(120,20,25,0.18)]
-
+      border border-[#8E252B]
+      bg-gradient-to-r from-[#74151B] via-[#310B0E] to-[#090909]
       transition-all duration-300
-
-      hover:border-[#b52b31]
-      hover:shadow-[0_0_25px_rgba(150,25,30,0.30)]
-
-      active:scale-[0.98]
+      hover:border-[#B52D34]
     "
   >
 
-    {/* Texture métallique */}
+    {/* Zone technique hachurée */}
     <span
       className="
-        absolute inset-0
-        opacity-20
+        absolute
+        inset-y-0
+        right-[18%]
+        w-[105px]
+        opacity-40
         bg-[repeating-linear-gradient(
-          115deg,
+          -55deg,
           transparent 0px,
-          transparent 3px,
-          rgba(255,255,255,0.08) 4px,
-          transparent 5px,
-          transparent 10px
+          transparent 4px,
+          rgba(255,255,255,0.12) 5px,
+          transparent 6px
         )]
       "
     />
 
-    {/* Bande diagonale principale */}
+    {/* Bande noire derrière la bande rouge */}
     <span
       className="
         absolute
         top-[-30%]
-        right-[18%]
-        w-[55px]
+        right-[11%]
         h-[160%]
+        w-[34px]
         rotate-[25deg]
-        bg-gradient-to-r
-        from-transparent
-        via-[#8f2428]
-        to-[#1a0506]
-        opacity-80
-        border-l border-[#b52b31]/40
-        border-r border-black/60
-        transition-all duration-300
-        group-hover:right-[16%]
+        bg-[#050505]
+        border-l border-[#222]
+        border-r border-[#111]
       "
     />
 
-    {/* Reflet métallique de la bande */}
+    {/* Grande bande rouge diagonale */}
     <span
       className="
         absolute
-        top-[-20%]
-        right-[20%]
-        w-[3px]
-        h-[140%]
+        top-[-30%]
+        right-[14%]
+        h-[160%]
+        w-[18px]
         rotate-[25deg]
-        bg-[#c94a4f]/60
-        blur-[1px]
+        bg-gradient-to-b from-[#D9363E] via-[#A91F27] to-[#641017]
+        shadow-[0_0_8px_rgba(180,30,40,0.35)]
       "
     />
 
-    {/* Contenu */}
-    <span className="relative z-10 flex items-center gap-4">
+    {/* Petit reflet de la bande */}
+    <span
+      className="
+        absolute
+        top-[-30%]
+        right-[12.5%]
+        h-[160%]
+        w-[3px]
+        rotate-[25deg]
+        bg-[#E34A50]/70
+      "
+    />
 
-      <BookOpen className="w-6 h-6 flex-shrink-0" />
+    {/* Contenu gauche */}
+    <span className="relative z-10 flex items-center gap-5">
 
-      <span>
-        DÉCOUVRIR LES INTERVENTIONS
+      <BookOpen
+        className="w-8 h-8 flex-shrink-0"
+      />
+
+      <span className="text-left leading-tight">
+        DÉCOUVRIR LES<br />
+        INTERVENTIONS
       </span>
 
     </span>
 
-    {/* Séparation + flèche */}
+    {/* Séparateur + flèche */}
     <span
       className="
         relative z-10
         flex items-center
         ml-6 pl-5
         border-l border-white/30
+        h-8
       "
     >
 
       <ArrowRight
         className="
-          w-6 h-6
+          w-7 h-7
           transition-transform duration-300
           group-hover:translate-x-1
         "
