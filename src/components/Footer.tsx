@@ -22,22 +22,22 @@ export default function Footer() {
               />
 
               <div>
+                <h3 className="font-racing font-black text-4xl tracking-[0.18em] gold-gradient leading-none">
+                  PERFORMANCE
+                </h3>
 
-                 <h3 className="font-racing font-black text-4xl tracking-[0.18em] gold-gradient">
-                    PERFORMANCE
-                 </h3>
+                <h3 className="font-racing font-black text-4xl tracking-[0.18em] text-[#A8A9AD] leading-none mt-1">
+                  & PRESTIGE
+                </h3>
 
-                 <p className="font-racing text-xl tracking-[0.32em] text-white">
-                    & PRESTIGE ACADEMY
-                 </p>
-
-              
-
+                <h3 className="font-racing font-black text-4xl tracking-[0.18em] gold-gradient leading-none mt-1">
+                  ACADEMY
+                </h3>
               </div>
 
             </div>
 
-            <p className="text-[#C9A227] font-racing tracking-[0.18em] text-sm mb-5">
+            <p className="text-[#C9A227] font-racing tracking-[0.18em] text-base mb-5">
               Préparation • Formation • Maintenance
             </p>
 
@@ -54,7 +54,7 @@ export default function Footer() {
 
             <div>
 
-              <h4 className="font-racing text-sm tracking-[0.30em] text-[#C9A227] mb-4">
+              <h4 className="font-racing text-base tracking-[0.30em] text-[#C9A227] mb-4">
                 NOUS SUIVRE
               </h4>
 
@@ -84,7 +84,7 @@ export default function Footer() {
 
             <div>
 
-              <h4 className="font-racing text-sm tracking-[0.30em] text-[#C9A227] mb-4">
+              <h4 className="font-racing text-base tracking-[0.30em] text-[#C9A227] mb-4">
                 INFORMATIONS
               </h4>
 
@@ -122,7 +122,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Performance & Prestige Academy
           </p>
 
-          <p className="font-racing tracking-[0.35em] text-[#C9A227] text-xs">
+          <p className="font-racing tracking-[0.35em] text-[#C9A227] text-base">
             PERFORMANCE • FIABILITÉ • COMPÉTITION
           </p>
 
