@@ -1266,104 +1266,139 @@ Performance & Prestige Academy
     onClick={() => setIsCFAModalOpen(true)}
     className="
       group relative overflow-hidden
-      inline-flex items-center
+      inline-flex items-center justify-between
       w-full sm:w-auto min-w-[340px]
       h-[74px]
-      px-6
+      px-7
       rounded-xl
       font-racing font-bold text-base tracking-widest
       text-white
-      border border-[#7E252A]
-      bg-gradient-to-r
-      from-[#8B1A20]
-      via-[#3A0B0F]
-      to-[#080808]
+      border border-[#8E252B]
+      bg-[#080808]
       transition-all duration-300
-      hover:border-[#A92B32]
+      hover:border-[#B52D35]
     "
   >
 
-    {/* Légère texture métallique sur toute la surface */}
+    {/* =========================================
+        FOND ROUGE → NOIR
+       ========================================= */}
+
     <span
       className="
         absolute inset-0
-        opacity-25
-        bg-[repeating-linear-gradient(
-          115deg,
-          transparent 0px,
-          transparent 5px,
-          rgba(255,255,255,0.07) 6px,
-          transparent 7px,
-          transparent 12px
+        bg-gradient-to-r
+        from-[#8B171E]
+        via-[#551016]
+        to-[#080808]
+      "
+    />
+
+    {/* Lumière rouge diffuse à gauche */}
+    <span
+      className="
+        absolute inset-0
+        bg-[radial-gradient(
+          ellipse_at_15%_50%,
+          rgba(190,35,45,0.55),
+          rgba(120,15,22,0.20) 38%,
+          transparent 68%
         )]
       "
     />
 
-    {/* Zone technique sombre avant la bande */}
+    {/* =========================================
+        TEXTURE DIAGONALE
+       ========================================= */}
+
     <span
       className="
         absolute
         top-0 bottom-0
-        right-[48px]
-        w-[82px]
-        opacity-80
+        right-[20%]
+        w-[125px]
+        opacity-45
         bg-[repeating-linear-gradient(
-          115deg,
+          -55deg,
           transparent 0px,
+          transparent 3px,
+          rgba(255,255,255,0.12) 4px,
           transparent 5px,
-          rgba(255,255,255,0.08) 6px,
-          transparent 7px,
-          transparent 11px
+          transparent 8px
         )]
       "
     />
 
-    {/* Large bande noire diagonale */}
-    <span
-      className="
-        absolute
-        -top-[35%]
-        right-[54px]
-        w-[42px]
-        h-[170%]
-        rotate-[24deg]
-        bg-[#050505]
-        border-l border-[#171717]
-        border-r border-[#252525]
-      "
-    />
+    {/* =========================================
+        BANDE NOIRE LARGE
+       ========================================= */}
 
-    {/* Bande rouge principale */}
     <span
       className="
         absolute
-        -top-[35%]
-        right-[72px]
-        w-[15px]
-        h-[170%]
-        rotate-[24deg]
+        -top-[20%]
+        right-[17%]
+        w-[52px]
+        h-[140%]
+        rotate-[25deg]
         bg-gradient-to-b
-        from-[#D83A42]
-        via-[#A91F27]
-        to-[#681117]
-        shadow-[0_0_7px_rgba(190,35,45,0.35)]
+        from-[#050505]
+        via-[#111111]
+        to-[#020202]
+        border-l border-[#222]
+        border-r border-[#000]
       "
     />
 
-    {/* Petit filet rouge clair */}
+    {/* =========================================
+        BANDE ROUGE PRINCIPALE
+       ========================================= */}
+
     <span
       className="
         absolute
-        -top-[35%]
-        right-[88px]
-        w-[3px]
-        h-[170%]
-        rotate-[24deg]
-        bg-[#D94A50]/60
+        -top-[20%]
+        right-[19%]
+        w-[16px]
+        h-[140%]
+        rotate-[25deg]
+        bg-gradient-to-b
+        from-[#E3484F]
+        via-[#B82029]
+        to-[#7C1118]
       "
     />
 
-    {/* Contenu gauche */}
+    {/* Reflet lumineux de la bande */}
+    <span
+      className="
+        absolute
+        -top-[20%]
+        right-[18.3%]
+        w-[3px]
+        h-[140%]
+        rotate-[25deg]
+        bg-[#F06A70]/70
+      "
+    />
+
+    {/* Petite bande noire après le rouge */}
+    <span
+      className="
+        absolute
+        -top-[20%]
+        right-[16.2%]
+        w-[7px]
+        h-[140%]
+        rotate-[25deg]
+        bg-[#030303]
+      "
+    />
+
+    {/* =========================================
+        CONTENU
+       ========================================= */}
+
     <span className="relative z-10 flex items-center gap-5">
 
       <BookOpen
@@ -1377,19 +1412,26 @@ Performance & Prestige Academy
 
     </span>
 
-    {/* Séparateur fixe */}
+    {/* =========================================
+        SÉPARATEUR
+       ========================================= */}
+
     <span
       className="
         absolute
-        right-[43px]
+        right-[48px]
         top-1/2
         -translate-y-1/2
         h-8
         border-l border-white/30
+        z-10
       "
     />
 
-    {/* Flèche indépendante */}
+    {/* =========================================
+        FLÈCHE
+       ========================================= */}
+
     <ArrowRight
       className="
         absolute
