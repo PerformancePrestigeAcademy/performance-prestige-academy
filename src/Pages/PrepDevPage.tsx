@@ -141,187 +141,123 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         </ul>
 
-        <div className="mt-auto pt-8 w-full flex justify-center">
+        <div className="w-full max-w-[500px] mx-auto text-white">
+  {/* En-tête (08 VERSION PREMIUM) */}
+  <div className="flex items-center gap-3 mb-2 font-mono">
+    <span className="text-xl font-bold text-[#EAB308]">08</span>
+    <span className="text-xs tracking-[0.25em] text-slate-300 uppercase">
+      Version Premium
+    </span>
+  </div>
 
+  {/* BOUTON PRINCIPAL */}
   <button
     type="button"
-    onClick={() => {
-      // À remplacer par ton action
-    }}
     className="
       group relative overflow-hidden
-      inline-flex items-center justify-between
-      w-full max-w-[340px] h-[60px]
-      px-6
-      rounded-2xl
-      font-sans text-white
-      border border-[#D5D5D5]/80
-      bg-[#080808]
-      shadow-[0_0_20px_rgba(255,255,255,0.15)]
+      w-full h-[68px]
+      rounded-xl
+      bg-gradient-to-b from-[#1a1a1a] via-[#0d0d0d] to-[#050505]
+      border border-slate-300/80
+      shadow-[0_0_15px_rgba(255,255,255,0.08),inset_0_1px_1px_rgba(255,255,255,0.4)]
       transition-all duration-300
-      hover:border-white
-      hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]
+      hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]
       active:scale-[0.99]
+      flex items-center justify-between
     "
   >
+    {/* 1. ZONE GAUCHE : DRAPEAU À DAMIER EN CSS */}
+    <div className="absolute top-0 bottom-0 left-0 w-[35%] overflow-hidden z-0">
+      {/* Motif Damier */}
+      <div
+        className="
+          absolute -inset-4 scale-125
+          bg-[conic-gradient(#0a0a0a_25%,#f5f5f5_0_50%,#0a0a0a_0_75%,#f5f5f5_0)]
+          bg-[size:20px_20px]
+          -skew-x-[22deg] -translate-x-3
+        "
+      />
+      {/* Ombrage 3D (Effet drapeau ondulé) */}
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-r from-black/80 via-transparent to-black/90
+          -skew-x-[22deg] -translate-x-3
+        "
+      />
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-b from-white/30 via-transparent to-black/60
+          -skew-x-[22deg] -translate-x-3
+        "
+      />
+    </div>
 
-    {/* 1. Fond noir */}
-    <span
+    {/* 2. LIGNE ROUGE DIAGONALE + HALO DE LUMIÈRE */}
+    {/* Halo rouge diffus */}
+    <div
       className="
-        absolute inset-0
-        bg-gradient-to-r
-        from-[#151515]
-        via-[#090909]
-        to-[#030303]
+        absolute top-0 bottom-0 left-[30%] w-10
+        bg-red-600/35 blur-md
+        -skew-x-[22deg] z-10 pointer-events-none
+      "
+    />
+    {/* Ligne rouge nette */}
+    <div
+      className="
+        absolute top-0 bottom-0 left-[32%] w-[3px]
+        bg-gradient-to-b from-[#ff2a34] via-[#dc2626] to-[#881337]
+        -skew-x-[22deg] z-10
+        shadow-[0_0_8px_rgba(239,68,68,0.9)]
       "
     />
 
-    {/* 2. Damier de compétition à gauche */}
-    <span
+    {/* 3. REFLET LUMINEUX EN HAUT (EFFET METALLIQUE / GLOSS) */}
+    <div
       className="
-        absolute
-        inset-y-0
-        left-0
-        w-[42%]
-        pointer-events-none
-        opacity-80
-        bg-[linear-gradient(45deg,#ffffff_25%,transparent_25%,transparent_75%,#ffffff_75%),linear-gradient(45deg,#ffffff_25%,transparent_25%,transparent_75%,#ffffff_75%)]
-        bg-[length:22px_22px]
-        bg-[position:0_0,11px_11px]
+        absolute inset-x-0 top-0 h-[40%] pointer-events-none z-20
+        bg-gradient-to-b from-white/20 via-white/5 to-transparent
       "
     />
 
-    {/* 3. Fondu noir par-dessus le damier */}
-    <span
+    {/* Spot de lumière discret (Haut droit) */}
+    <div
       className="
-        absolute
-        inset-y-0
-        left-[20%]
-        w-[32%]
-        pointer-events-none
-        bg-gradient-to-r
-        from-transparent
-        via-[#080808]/75
-        to-[#080808]
+        absolute -top-10 right-10 w-32 h-20 pointer-events-none z-10
+        bg-white/10 blur-xl rounded-full
       "
     />
 
-    {/* 4. Texture métallique diagonale */}
-    <span
-      className="
-        absolute
-        inset-y-0
-        left-[12%]
-        w-[28%]
-        pointer-events-none
-        opacity-25
-        bg-[repeating-linear-gradient(
-          -45deg,
-          transparent,
-          transparent_3px,
-          rgba(255,255,255,0.20)_4px,
-          transparent_5px
-        )]
-      "
-    />
+    {/* 4. CONTENU DU BOUTON */}
+    {/* Espace réservé pour ne pas chevaucher le drapeau */}
+    <div className="w-[32%] shrink-0" />
 
-    {/* 5. Bande noire avant le rouge */}
-    <span
-      className="
-        absolute
-        -top-3
-        -bottom-3
-        left-[38%]
-        w-4
-        bg-[#030303]
-        -skew-x-[22deg]
-        z-10
-      "
-    />
+    {/* Texte Centré */}
+    <div className="relative z-20 flex-1 text-center pr-2">
+      <span className="font-sans font-extrabold tracking-[0.25em] text-white text-base sm:text-lg uppercase">
+        DÉCOUVRIR
+      </span>
+    </div>
 
-    {/* 6. Bande rouge diagonale */}
-    <span
-      className="
-        absolute
-        -top-3
-        -bottom-3
-        left-[40%]
-        w-2
-        bg-gradient-to-b
-        from-[#F23038]
-        via-[#D51F28]
-        to-[#7A0B11]
-        -skew-x-[22deg]
-        z-10
-        shadow-[0_0_6px_rgba(220,30,40,0.45)]
-      "
-    />
+    {/* Séparateur vertical + Flèche à droite */}
+    <div className="relative z-20 flex items-center gap-5 pr-6 shrink-0">
+      <div className="h-7 w-[1px] bg-white/30" />
 
-    {/* 7. Reflet rouge */}
-    <span
-      className="
-        absolute
-        -top-3
-        -bottom-3
-        left-[41%]
-        w-[2px]
-        bg-[#FF5960]/60
-        -skew-x-[22deg]
-        z-10
-      "
-    />
-
-    {/* 8. Texte */}
-    <span
-      className="
-        relative z-10
-        absolute
-        left-[43%]
-        -translate-x-[0%]
-        font-bold
-        tracking-widest
-        text-sm sm:text-base
-        uppercase
-        whitespace-nowrap
-      "
-    >
-      DÉCOUVRIR
-    </span>
-
-    {/* 9. Séparateur */}
-    <span
-      className="
-        absolute
-        right-[48px]
-        top-1/2
-        -translate-y-1/2
-        h-8
-        border-l border-white/30
-        z-10
-      "
-    />
-
-    {/* 10. Flèche */}
-    <span
-      className="
-        relative z-20
-        ml-auto
-        flex items-center justify-center
-      "
-    >
       <ArrowRight
         className="
-          w-[24px] h-[24px]
-          text-white
-          stroke-[2.25]
+          w-6 h-6 text-white stroke-[2.25]
           transition-transform duration-300
           group-hover:translate-x-1.5
         "
       />
-    </span>
-
+    </div>
   </button>
 
+  {/* Description bas de carte */}
+  <p className="mt-3 text-xs tracking-wide text-slate-400">
+    Un rendu haut de gamme et dynamique.
+  </p>
 </div>
       </ServiceCard>
 
