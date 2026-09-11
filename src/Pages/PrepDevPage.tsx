@@ -195,7 +195,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       className="
         absolute
         right-[7%]
-        top-1/2
+        top-[45%]
         -translate-y-1/2
         z-10
         w-7 h-7
