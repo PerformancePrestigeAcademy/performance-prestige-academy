@@ -213,58 +213,87 @@ Performance & Prestige Academy
   </ul>
 
   <div className="mt-auto pt-8">
-    <button
-  type="button"
-  onClick={() => {
-    setSelectedFormation(initiationMecaniqueFormation);
-    setIsFormationModalOpen(true);
-  }}
-  className="
-     group
-      relative
-      flex
-      w-fit
-      items-center
-      justify-center
-      gap-3
-      mx-auto
-      px-6
-      py-3
-      rounded-md
-      bg-[#0A0A0A]
-      border
-      border-red-500
-      text-white
-      font-medium
-      overflow-hidden
-      transition-all
-      duration-300
-      ease-out
-      hover:bg-red-500/10
-      hover:shadow-[0_0_15px_rgba(239,68,68,0.6),0_0_30px_rgba(239,68,68,0.4)]
-      active:bg-red-500
-      active:shadow-[0_0_25px_rgba(239,68,68,0.9),0_0_45px_rgba(239,68,68,0.6)]
-  "
->
-  <span className="relative z-10">
-    Découvrir
-  </span>
-
-  <span
+  <button
+    type="button"
+    onClick={() => {
+      setSelectedFormation(initiationMecaniqueFormation);
+      setIsFormationModalOpen(true);
+    }}
     className="
-      relative
-      z-10
-      text-lg
-      leading-none
-      transition-transform
-      duration-300
-      group-hover:translate-x-1
+      group relative overflow-hidden
+      inline-flex items-center justify-between
+      w-full sm:w-auto min-w-[240px] h-[64px]
+      px-6
+      rounded-2xl
+      font-sans text-white
+      border border-[#A81B22]/80
+      bg-[#0C0204]
+      shadow-[0_0_20px_rgba(168,27,34,0.4)]
+      transition-all duration-300
+      hover:border-[#d62832] hover:shadow-[0_0_25px_rgba(214,40,50,0.55)]
+      active:scale-[0.99]
     "
   >
-    →
-  </span>
-</button>
-  </div>
+    {/* 1. Dégradé de fond global */}
+    <span
+      className="
+        absolute inset-0
+        bg-gradient-to-r from-[#690D13] via-[#240407] to-[#0A0203]
+      "
+    />
+
+    {/* 2. Texture hachurée diagonale */}
+    <span
+      className="
+        absolute inset-0 opacity-20 pointer-events-none
+        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
+      "
+    />
+
+    {/* 3. Reflet brillant en haut (effet gloss) */}
+    <span
+      className="
+        absolute inset-x-0 top-0 h-[45%] pointer-events-none
+        bg-gradient-to-b from-white/15 via-white/5 to-transparent
+      "
+    />
+
+    {/* 4. Ombre portée sous la bande rouge */}
+    <span
+      className="
+        absolute -top-3 -bottom-3 right-[24%] w-5
+        bg-black/60 blur-[2px]
+        -skew-x-[22deg] z-10
+      "
+    />
+
+    {/* 5. Bande rouge diagonale (Dégradé : Clair en haut -> Sombre en bas) */}
+    <span
+      className="
+        absolute -top-3 -bottom-3 right-[22%] w-3.5
+        bg-gradient-to-b from-[#F23038] via-[#A61218] to-[#2B0305]
+        -skew-x-[22deg] z-10
+        shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
+      "
+    />
+
+    {/* 6. Contenu Gauche (Texte) */}
+    <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+      Découvrir
+    </span>
+
+    {/* 7. Flèche à droite */}
+    <span className="relative z-10 flex items-center justify-center">
+      <ArrowRight
+        className="
+          w-[26px] h-[26px] text-white stroke-[2.25]
+          transition-transform duration-300
+          group-hover:translate-x-1.5
+        "
+      />
+    </span>
+  </button>
+</div>
 </ServiceCard>
 
 {/* AU FÉMININ */}
