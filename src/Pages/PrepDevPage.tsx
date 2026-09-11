@@ -475,22 +475,30 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
     {/* Texte */}
           <span
-            className="
-              absolute
-              left-[43%]
-              top-[45%]
-              -translate-y-1/2
-              z-10
-              text-white
-              font-bold
-              tracking-widest
-              text-sm sm:text-base
-              uppercase
-              whitespace-nowrap
-            "
-            >
-            CRÉONS ENSEMBLE !
-          </span>
+  className="
+    absolute
+    left-[40%]
+    right-[17%]
+    top-[55%]
+    -translate-y-1/2
+    z-10
+    flex
+    items-center
+    justify-center
+    text-center
+    text-white
+    font-bold
+    tracking-widest
+    text-sm sm:text-base
+    uppercase
+    leading-tight
+  "
+>
+  <span>
+    CRÉONS<br />
+    ENSEMBLE
+  </span>
+</span>
 
     {/* Flèche */}
           <ArrowRight
@@ -562,18 +570,21 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             className="
               absolute
               left-[43%]
-              top-[45%]
+              top-[55%]
               -translate-y-1/2
+              -translate-x-1/2
               z-10
               text-white
               font-bold
               tracking-widest
               text-sm sm:text-base
               uppercase
-              whitespace-nowrap
+              text-center
+              leading-tight
             "
-            >
-            CRÉONS ENSEMBLE !
+          >
+          <span className="block">CRÉONS</span>
+          <span className="block">ENSEMBLE</span>
           </span>
 
     {/* Flèche */}
