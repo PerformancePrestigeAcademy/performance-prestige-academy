@@ -596,7 +596,7 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
+      setSelectedFormation(preparationEntreeCAPFormation);
       setIsFormationModalOpen(true);
     }}
     className="
@@ -698,7 +698,7 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
+      setSelectedFormation(preparationEntreeBacProFormation);
       setIsFormationModalOpen(true);
     }}
     className="
@@ -799,7 +799,7 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
+      setSelectedFormation(preparationEntreeBTSFormation);
       setIsFormationModalOpen(true);
     }}
     className="
@@ -951,7 +951,7 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
+      setSelectedFormation(preparationExamensCAPFormation);
       setIsFormationModalOpen(true);
     }}
     className="
@@ -1054,7 +1054,7 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
+      setSelectedFormation(preparationExamensBacProFormation);
       setIsFormationModalOpen(true);
     }}
     className="
@@ -1157,7 +1157,7 @@ Performance & Prestige Academy
   <button
     type="button"
     onClick={() => {
-      setSelectedFormation(initiationMecaniqueFormation);
+      setSelectedFormation(preparationExamensBTSFormation);
       setIsFormationModalOpen(true);
     }}
     className="
