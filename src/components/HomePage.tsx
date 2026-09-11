@@ -171,7 +171,7 @@ function ServiceCard({ service, reversed }: { service: typeof MAINTENANCE[0]; re
           <div className="gold-line" />
         </div>
 
-        <p className="font-racing text-sm tracking-[0.3em] text-[#C9A227] mb-2">{service.subtitle}</p>
+        <p className="font-racing text-base tracking-[0.3em] text-[#C9A227] mb-2">{service.subtitle}</p>
         <h3 className="font-racing font-bold text-3xl sm:text-4xl text-white mb-5">{service.title}</h3>
         <p className="text-[#A8A9AD] leading-relaxed mb-8"
         style={{ textAlign: "justify" }}
