@@ -1257,6 +1257,7 @@ Performance & Prestige Academy
         </ul>
 
       </div>
+    </div>
 
    <div className="text-center mt-20">
 
