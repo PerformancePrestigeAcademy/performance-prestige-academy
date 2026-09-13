@@ -36,7 +36,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         href="#preparation-mecanique"
         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
       >
-        <h3 className="font-racing text-4xl">
+        <h3 className="font-racing text-2xl">
           Préparation
           <br />
           mécanique
@@ -47,7 +47,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         href="#developpement-pieces"
         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
       >
-        <h3 className="font-racing text-xl">
+        <h3 className="font-racing text-2xl">
           Développement
           <br />
           de pièces
@@ -58,7 +58,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         href="#acquisition-donnees"
         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
       >
-        <h3 className="font-racing text-xl">
+        <h3 className="font-racing text-2xl">
           Acquisition
           <br />
           & analyse de données
@@ -69,7 +69,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
         href="#assistance-competition"
         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
       >
-        <h3 className="font-racing text-xl">
+        <h3 className="font-racing text-2xl">
           Assistance
           <br />
           compétition
