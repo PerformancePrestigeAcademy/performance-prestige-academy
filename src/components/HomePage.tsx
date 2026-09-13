@@ -100,7 +100,7 @@ function Hero() {
         <img
           src="/images/hero.png"
           alt="Hero background"
-          className="w-full h-full object-cover object-center opacity-40"
+          className="w-full h-full object-cover object-center opacity-80"
         />
         <div className="hero-overlay absolute inset-0" />
         <div className="absolute inset-0 checkered-accent opacity-20" />
