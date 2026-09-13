@@ -143,11 +143,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
        <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -206,7 +203,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -227,11 +224,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -290,7 +284,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -311,11 +305,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -374,7 +365,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -445,11 +436,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -516,7 +504,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -537,11 +525,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
          <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -608,7 +593,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -629,11 +614,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
          <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -700,7 +682,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -777,11 +759,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -840,7 +819,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -861,11 +840,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -924,7 +900,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -945,11 +921,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -1008,7 +981,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -1078,11 +1051,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -1141,7 +1111,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -1162,11 +1132,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -1225,7 +1192,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>
@@ -1246,11 +1213,8 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
         <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <button
-            type="button"
-            onClick={() => {
-              // Action du bouton à définir
-            }}
+          <a
+            href="/contact"
             className="
               group relative
               w-full max-w-[340px]
@@ -1309,7 +1273,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           />
 
-          </button>
+          </a>
 
         </div>
       </ServiceCard>

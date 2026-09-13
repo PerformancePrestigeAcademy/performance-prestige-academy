@@ -160,8 +160,8 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
     <div className="mt-auto pt-8 w-full flex justify-center">
 
-      <button
-        type="button"
+      <a
+        href="/contact"
         className="
           group relative overflow-hidden
           inline-flex items-center justify-between
@@ -237,7 +237,7 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
           />
         </span>
 
-      </button>
+      </a>
 
     </div>
 </ServiceCard>
@@ -261,8 +261,8 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
     <div className="mt-auto pt-8 w-full flex justify-center">
 
-      <button
-        type="button"
+      <a
+        href="/contact"
         className="
           group relative overflow-hidden
           inline-flex items-center justify-between
@@ -338,7 +338,7 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
           />
         </span>
 
-      </button>
+      </a>
 
     </div>
 
@@ -364,8 +364,8 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
     <div className="mt-auto pt-8 w-full flex justify-center">
 
-      <button
-        type="button"
+      <a
+        href="/contact"
         className="
           group relative overflow-hidden
           inline-flex items-center justify-between
@@ -441,7 +441,7 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
           />
         </span>
 
-      </button>
+      </a>
 
     </div>
 
