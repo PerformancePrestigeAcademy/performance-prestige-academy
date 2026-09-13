@@ -22,7 +22,7 @@ export default function HeroPage({
     <img
       src={image}
       alt="Hero background"
-      className="w-full h-full object-cover object-center opacity-75"
+      className="w-full h-full object-cover object-center opacity-25"
     />
     <div className="hero-overlay absolute inset-0" />
 <div className="absolute inset-0 checkered-accent opacity-20" />
