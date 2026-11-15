@@ -194,7 +194,7 @@ function ContactBanner() {
   return (
     <section
       id="contact"
-      className="relative isolate flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-1 lg:py-0 overflow-hidden min-h-0"
+      className="relative isolate flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-0 overflow-hidden min-h-0"
     >
 
       {/* Texture damier */}
@@ -258,7 +258,7 @@ export default function App() {
 
       <Navbar />
 
-      <main className="lg:h-[calc(100svh-68px)] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_40%_5%] lg:overflow-hidden">
+      <main className="lg:h-[calc(100svh-68px)] lg:min-h-[636px] lg:grid lg:grid-rows-[minmax(0,1.25fr)_minmax(0,1fr)_auto] lg:overflow-hidden">
 
         <Hero />
 
