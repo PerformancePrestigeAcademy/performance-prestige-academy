@@ -383,7 +383,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
   href="/contact"
   className="
     group relative overflow-hidden
-    inline-flex items-center justify-between
+    inline-flex items-center justify-start gap-4
     w-full max-w-[260px] h-[60px]
     px-6
     rounded-2xl
