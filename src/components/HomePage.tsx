@@ -274,7 +274,7 @@ export default function App() {
 
     <span className="text-[#C9A227]">•</span>
 
-    <Link to="/confidentialite" className="hover:text-[#C9A227] transition-colors">
+    <Link to="/politique-confidentialite" className="hover:text-[#C9A227] transition-colors">
       CONFIDENTIALITÉ
     </Link>
 
@@ -282,7 +282,7 @@ export default function App() {
 
     <Link to="/cookies" className="hover:text-[#C9A227] transition-colors">
       COOKIES
-    </Link>
+    </Link> 
 
     <span className="text-[#C9A227]">•</span>
 
