@@ -258,7 +258,8 @@ export default function App() {
 
       <Navbar />
 
-      <main className="lg:h-[calc(100svh-68px)] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)_64px] lg:overflow-hidden border-2 border-red-500">
+      <main className="lg:min-h-[calc(100svh-68px)] lg:grid lg:grid-rows-[55%_minmax(0,1fr)_64px]"
+              >
         <Hero />
         <ServicePanels />
         <ContactBanner />
