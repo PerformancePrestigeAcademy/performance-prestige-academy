@@ -119,7 +119,7 @@ Performance & Prestige Academy
       {FORMATION_OBJECTIVES.map((objective, index) => (
         <div
           key={objective.id}
-          className={`relative min-h-[300px] sm:min-h-[320px] lg:h-full lg:flex-[0_0_22%] lg:-ml-[2.5%] ${
+          className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-[400px] lg:flex-[0_0_22%] lg:-ml-[2.5%] ${
             index === 0 ? "lg:ml-0" : ""
           }`}
           style={{ zIndex: index + 1 }}
@@ -127,7 +127,7 @@ Performance & Prestige Academy
           <a
             href={objective.href}
             aria-label={`Accéder à la section ${objective.title.replace(/\n/g, " ")}`}
-            className={`group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:h-full flex-col justify-end overflow-hidden ${FORMATION_PANEL_CLIPS[index]}`}
+            className={`group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-[400px] flex-col justify-end overflow-hidden ${FORMATION_PANEL_CLIPS[index]}`}
           >
 
             {/* Photographie */}
