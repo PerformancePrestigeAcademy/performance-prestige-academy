@@ -40,7 +40,7 @@ Performance & Prestige Academy
         />
 
              {/* Premier écran : Hero + navigation + bandeau légal */}
-        <main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)_64px] lg:overflow-hidden">
+        <main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
           <div className="min-h-0 overflow-hidden [&>section]:!h-full [&>section]:!min-h-0 [&>section]:!max-h-full">
             <HeroPage
               surTitre="FORMATIONS"
@@ -159,13 +159,6 @@ Performance & Prestige Academy
 
 </section>
 
-          <div className="hidden lg:flex items-center justify-center gap-6 border-t border-white/10 bg-[#050505] px-6 text-xs tracking-wide text-[#A8A9AD]">
-            <span className="text-[#C9A227] font-semibold tracking-[0.18em]">PERFORMANCE & PRESTIGE ACADEMY</span>
-            <span className="text-white/25">|</span>
-            <a href="/mentions-legales" className="hover:text-[#C9A227] transition-colors">Mentions légales</a>
-            <a href="/politique-de-confidentialite" className="hover:text-[#C9A227] transition-colors">Politique de confidentialité</a>
-            <a href="/cgv" className="hover:text-[#C9A227] transition-colors">CGV</a>
-          </div>
         </main>
 
 
@@ -1708,9 +1701,8 @@ Performance & Prestige Academy
 
 </section>
 
-<div className="lg:hidden">
   <Footer />
-</div>
+
 
 <FormationModal
   formation={selectedFormation}
