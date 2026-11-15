@@ -32,7 +32,7 @@ const SERVICES = [
   {
     id: 'restauration',
     href: '/maintenance',
-    image: '/images/accueilmaintenance.png',
+    image: '/images/accueilrestauration.png',
     number: '04',
     title: 'RESTAURATION',
     description: 'Véhicules anciens\net de caractère',
