@@ -463,7 +463,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
   "/>
 
   {/* 7. Texte */}
-  <span className="relative z-10 ml-4 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+  <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
     EN SAVOIR PLUS
   </span>
 
