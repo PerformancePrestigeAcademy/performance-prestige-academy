@@ -110,7 +110,7 @@ Performance & Prestige Academy
 
 <section
   id="objectif"
-  className="scroll-mt-32 py-20 bg-[#0A0A0A] lg:py-0 lg:min-h-0 lg:flex lg:items-center lg:overflow-hidden"
+  className="scroll-mt-32 py-20 bg-[#0A0A0A] lg:py-0 lg:min-h-0 lg:flex lg:items-stretch lg:overflow-hidden"
 >
   <div className="w-full px-0 lg:py-3">
 
