@@ -153,11 +153,10 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
     px-6
     rounded-2xl
     font-sans text-white
-    border border-[#C95A0A]/80
-    bg-[#080402]
-    shadow-[0_0_20px_rgba(201,90,10,0.4)]
+    border border-transparent
+    bg-transparent
+    shadow-none
     transition-all duration-300
-    hover:border-[#F47B18] hover:shadow-[0_0_25px_rgba(244,123,24,0.55)]
     active:scale-[0.99]
   "
 >
