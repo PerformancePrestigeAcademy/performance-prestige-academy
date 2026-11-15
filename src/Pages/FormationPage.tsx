@@ -165,7 +165,7 @@ Performance & Prestige Academy
     </div>
   </div>
 </section>
-
+</main>
 
 
 
