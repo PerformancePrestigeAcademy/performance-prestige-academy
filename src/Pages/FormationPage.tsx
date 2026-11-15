@@ -39,13 +39,16 @@ Performance & Prestige Academy
 "
         />
 
-             {/* Hero */}
-        <HeroPage
-         surTitre="FORMATIONS"
-         titre="TRANSMETTRE"
-         titreGold="L'EXCELLENCE"
-         image="/images/heroformation.png"
-         />
+             {/* Premier écran : Hero + navigation + bandeau légal */}
+        <main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)_64px] lg:overflow-hidden">
+          <div className="min-h-0 overflow-hidden [&>section]:!h-full [&>section]:!min-h-0 [&>section]:!max-h-full">
+            <HeroPage
+              surTitre="FORMATIONS"
+              titre="TRANSMETTRE"
+              titreGold="L'EXCELLENCE"
+              image="/images/heroformation.png"
+            />
+          </div>
 
 
 
@@ -70,17 +73,17 @@ Performance & Prestige Academy
 
 
 
-<section id="objectif" className="scroll-mt-32 py-20 bg-[#0A0A0A]">
+<section id="objectif" className="scroll-mt-32 py-20 bg-[#0A0A0A] lg:py-0 lg:min-h-0 lg:flex lg:items-center lg:overflow-hidden">
 
-     <div className="max-w-7xl mx-auto px-6">
+     <div className="max-w-7xl mx-auto w-full px-6 lg:py-3">
 
-         <div className="text-center mb-14">
+         <div className="text-center mb-14 lg:mb-5">
 
          <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
          VOTRE OBJECTIF
          </p>
 
-         <h2 className="font-racing text-5xl">
+         <h2 className="font-racing text-5xl lg:text-3xl xl:text-4xl">
          TROUVEZ LA
          <br />
          <span className="gold-gradient">
@@ -91,11 +94,11 @@ Performance & Prestige Academy
          </div>
 
          
-         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-3">
 
          <a
          href="#formation-mecanique"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Débuter
@@ -106,7 +109,7 @@ Performance & Prestige Academy
 
          <a
          href="#preparation"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Préparation
@@ -119,7 +122,7 @@ Performance & Prestige Academy
 
          <a
          href="#examens"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Préparation
@@ -130,7 +133,7 @@ Performance & Prestige Academy
 
          <a
          href="#perfectionnement"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
          Perfectionnement
@@ -141,7 +144,7 @@ Performance & Prestige Academy
 
          <a
          href="#cfa"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
+         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
          >
          <h3 className="font-racing text-xl">
           CFA &
@@ -155,6 +158,15 @@ Performance & Prestige Academy
      </div>
 
 </section>
+
+          <div className="hidden lg:flex items-center justify-center gap-6 border-t border-white/10 bg-[#050505] px-6 text-xs tracking-wide text-[#A8A9AD]">
+            <span className="text-[#C9A227] font-semibold tracking-[0.18em]">PERFORMANCE & PRESTIGE ACADEMY</span>
+            <span className="text-white/25">|</span>
+            <a href="/mentions-legales" className="hover:text-[#C9A227] transition-colors">Mentions légales</a>
+            <a href="/politique-de-confidentialite" className="hover:text-[#C9A227] transition-colors">Politique de confidentialité</a>
+            <a href="/cgv" className="hover:text-[#C9A227] transition-colors">CGV</a>
+          </div>
+        </main>
 
 
 
@@ -1696,7 +1708,9 @@ Performance & Prestige Academy
 
 </section>
 
-<Footer />
+<div className="lg:hidden">
+  <Footer />
+</div>
 
 <FormationModal
   formation={selectedFormation}
