@@ -147,107 +147,100 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 <a
   href="/contact"
   className="
-    group relative isolate
-    w-full max-w-[340px] h-[68px]
-    inline-flex items-center justify-center
-    overflow-hidden
-    transition-transform duration-300
-    hover:scale-[1.01]
+    group relative overflow-hidden
+    inline-flex items-center justify-between
+    w-full max-w-[260px] h-[60px]
+    px-6
+    rounded-2xl
+    font-sans text-white
+    border border-[#C95A0A]/80
+    bg-[#080402]
+    shadow-[0_0_20px_rgba(201,90,10,0.4)]
+    transition-all duration-300
+    hover:border-[#F47B18] hover:shadow-[0_0_25px_rgba(244,123,24,0.55)]
     active:scale-[0.99]
   "
-  style={{
-    clipPath: "polygon(9% 0, 100% 0, 91% 100%, 0 100%)"
-  }}
 >
-  {/* Fond aluminium brossé */}
+  {/* 1. Fond aluminium brossé */}
   <span className="
     absolute inset-0
     bg-gradient-to-b
     from-[#E5E6E6] via-[#AEB2B5] to-[#55595D]
     transition-all duration-300
-    group-hover:from-[#F0E7CF]
-    group-hover:via-[#B9B8B2]
-    group-hover:to-[#625C4F]
+    group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]
   "/>
 
-  {/* Texture métallique */}
+  {/* 2. Texture métallique horizontale */}
   <span className="
     absolute inset-0 pointer-events-none opacity-25
     bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]
   "/>
 
-  {/* Reflet supérieur */}
+  {/* 3. Reflet supérieur métallique */}
   <span className="
-    absolute inset-x-0 top-0 h-1/2
-    pointer-events-none
+    absolute inset-x-0 top-0 h-1/2 pointer-events-none
     bg-gradient-to-b from-white/45 via-white/10 to-transparent
   "/>
 
-  {/* Bordure métallique */}
+  {/* 4. Bordure métallique */}
   <span className="
-    absolute inset-0 pointer-events-none
+    absolute inset-0
     border border-[#777B7D]
     shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
+    pointer-events-none
     group-hover:border-[#B99A4B]
     transition-colors duration-300
   "/>
 
-  {/* Trois bandes obliques */}
+  {/* 5. Trois bandes obliques */}
   <span className="
     absolute -top-2 -bottom-2 left-[7%] w-2
     -skew-x-[25deg]
     bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    group-hover:from-[#B58A22]
-    group-hover:via-[#F0D47A]
-    group-hover:to-[#876016]
     transition-colors duration-300
+    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
   "/>
 
   <span className="
     absolute -top-2 -bottom-2 left-[11%] w-2
     -skew-x-[25deg]
     bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    group-hover:from-[#B58A22]
-    group-hover:via-[#F0D47A]
-    group-hover:to-[#876016]
     transition-colors duration-300
+    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
   "/>
 
   <span className="
     absolute -top-2 -bottom-2 left-[15%] w-2
     -skew-x-[25deg]
     bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    group-hover:from-[#B58A22]
-    group-hover:via-[#F0D47A]
-    group-hover:to-[#876016]
     transition-colors duration-300
+    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
   "/>
 
-  {/* Fine lumière dorée inférieure */}
+  {/* 6. Fine ligne dorée au survol */}
   <span className="
     absolute bottom-0 left-[8%] right-[8%] h-[2px]
-    bg-[#D6B34B] opacity-0
+    bg-[#D6B34B]
+    opacity-0
     shadow-[0_0_3px_rgba(201,162,39,0.45)]
     group-hover:opacity-100
     transition-opacity duration-300
     pointer-events-none
   "/>
 
-  {/* Texte */}
-  <span className="
-    relative z-10 font-bold tracking-wider
-    text-sm sm:text-base uppercase text-[#101010]
-  ">
-    À L’ATELIER !
+  {/* 7. Texte */}
+  <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+    EN SAVOIR PLUS
   </span>
 
-  {/* Flèche */}
-  <ArrowRight className="
-    absolute right-[9%] top-1/2 -translate-y-1/2
-    z-10 w-6 h-6 text-[#101010] stroke-[2.25]
-    transition-transform duration-300
-    group-hover:translate-x-1.5
-  "/>
+  {/* 8. Flèche */}
+  <span className="relative z-10 flex items-center justify-center">
+    <ArrowRight className="
+      w-6 h-6 text-[#101010] stroke-[2.25]
+      transition-transform duration-300
+      group-hover:translate-x-1.5
+    "/>
+  </span>
 </a>
 
 
