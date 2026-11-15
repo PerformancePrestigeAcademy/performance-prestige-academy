@@ -8,7 +8,7 @@ const SERVICES = [
   {
     id: 'maintenance',
     href: '/maintenance',
-    image: '/images/maintenance.webp',
+    image: '/images/accueilmaintenance.png',
     number: '01',
     title: 'MAINTENANCE',
     description: 'Entretien, diagnostic,\nréparation',
@@ -16,7 +16,7 @@ const SERVICES = [
   {
     id: 'formation',
     href: '/formation',
-    image: '/images/formation.webp',
+    image: '/images/accueilformation.png',
     number: '02',
     title: 'FORMATION',
     description: 'Particuliers, professionnels,\napprentis, CFA',
@@ -24,7 +24,7 @@ const SERVICES = [
   {
     id: 'preparation',
     href: '/preparation-developpement',
-    image: '/images/preparation.webp',
+    image: '/images/accueilpreparation.png',
     number: '03',
     title: 'PRÉPARATION &\nDÉVELOPPEMENT',
     description: 'Performance, mise au point,\ncompétition',
@@ -32,7 +32,7 @@ const SERVICES = [
   {
     id: 'restauration',
     href: '/maintenance',
-    image: '/images/restauration.webp',
+    image: '/images/accueilmaintenance.png',
     number: '04',
     title: 'RESTAURATION',
     description: 'Véhicules anciens\net de caractère',
