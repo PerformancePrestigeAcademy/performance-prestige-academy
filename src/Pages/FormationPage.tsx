@@ -18,7 +18,7 @@ export default function FormationPage() {
     initiationMecaniqueFormation );
     const [isCFAModalOpen, setIsCFAModalOpen] = useState(false);
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white">
+    <div className="min-h-screen pb-14 bg-[#0A0A0A] text-white">
 
         <Navbar />
 
