@@ -258,7 +258,7 @@ export default function App() {
 
       <Navbar />
 
-      <main className="lg:h-[calc(100svh-68px)] lg:min-h-[636px] lg:grid lg:grid-rows-[48%_44%_8%] lg:overflow-hidden">
+      <main className="lg:h-[calc(100svh-68px)] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_40%_5%] lg:overflow-hidden">
 
         <Hero />
 
