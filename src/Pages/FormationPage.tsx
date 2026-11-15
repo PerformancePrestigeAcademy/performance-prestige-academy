@@ -22,7 +22,7 @@ const FORMATION_OBJECTIVES = [
     id: "preparation",
     href: "#preparation",
     image: "/images/formationdecouvrir.png",
-    title: "PRÉPARATION À/n L’ENTRÉE EN FORMATION",
+    title: "PRÉPARATION À\n L’ENTRÉE EN FORMATION",
   },
   {
     id: "examens",
