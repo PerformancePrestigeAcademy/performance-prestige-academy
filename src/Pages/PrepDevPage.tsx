@@ -148,7 +148,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
   href="/contact"
   className="
     group relative overflow-hidden
-    inline-flex items-center justify-between
+    inline-flex items-center justify-start gap-4
     w-full max-w-[260px] h-[60px]
     px-6
     rounded-2xl
@@ -228,7 +228,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
   "/>
 
   {/* 7. Texte */}
-  <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+  <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
     EN SAVOIR PLUS
   </span>
 
@@ -266,7 +266,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
   href="/contact"
   className="
     group relative overflow-hidden
-    inline-flex items-center justify-between
+    inline-flex items-center justify-start gap-4
     w-full max-w-[260px] h-[60px]
     px-6
     rounded-2xl
@@ -346,7 +346,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
   "/>
 
   {/* 7. Texte */}
-  <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+  <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
     EN SAVOIR PLUS
   </span>
 
