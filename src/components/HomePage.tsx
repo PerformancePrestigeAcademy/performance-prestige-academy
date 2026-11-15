@@ -194,7 +194,7 @@ function ContactBanner() {
   return (
     <section
       id="contact"
-      className="relative isolate flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-3 lg:py-0 overflow-hidden min-h-0"
+      className="relative isolate flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-1 lg:py-0 overflow-hidden min-h-0"
     >
 
       {/* Texture damier */}
