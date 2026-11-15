@@ -383,68 +383,72 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
       >
 
 
+
 {/* 1. Fond aluminium brossé */}
 <span className="
   absolute inset-0
   bg-gradient-to-b
-  from-[#F4F4F4] via-[#AEB2B5] to-[#55595D]
+  from-[#E5E6E6] via-[#AEB2B5] to-[#55595D]
   transition-all duration-300
-  group-hover:from-[#FFF9E8] group-hover:via-[#C7C9C9] group-hover:to-[#77736A]
+  group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]
 "/>
 
 {/* 2. Texture métallique horizontale */}
 <span className="
-  absolute inset-0 pointer-events-none opacity-30
-  bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.5)_1px,transparent_2px,transparent_4px)]
+  absolute inset-0 pointer-events-none opacity-25
+  bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]
 "/>
 
-{/* 3. Reflet supérieur */}
+{/* 3. Reflet supérieur métallique */}
 <span className="
   absolute inset-x-0 top-0 h-1/2 pointer-events-none
-  bg-gradient-to-b from-white/60 via-white/15 to-transparent
+  bg-gradient-to-b from-white/45 via-white/10 to-transparent
 "/>
 
-{/* 4. Bordure métallique */}
+{/* 4. Bordure métallique, sans halo */}
 <span className="
-  absolute inset-0 border border-[#F0F0F0]/80
-  shadow-[inset_0_1px_3px_rgba(255,255,255,0.7),inset_0_-2px_4px_rgba(0,0,0,0.45)]
+  absolute inset-0
+  border border-[#777B7D]
+  shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
   pointer-events-none
-  group-hover:border-[#FFD76A]
-  transition-all duration-300
+  group-hover:border-[#B99A4B]
+  transition-colors duration-300
 "/>
 
-{/* 5. Trois bandes obliques argentées puis dorées */}
+{/* 5. Trois bandes obliques argentées vers dorées */}
 <span className="
   absolute -top-2 -bottom-2 left-[7%] w-2
   -skew-x-[25deg]
-  bg-gradient-to-b from-[#55595D] via-[#F8F8F8] to-[#55595D]
-  transition-all duration-300
-  group-hover:from-[#FFD76A] group-hover:via-[#C9A227] group-hover:to-[#78530A]
+  bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+  transition-colors duration-300
+  group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
 "/>
 
 <span className="
   absolute -top-2 -bottom-2 left-[11%] w-2
   -skew-x-[25deg]
-  bg-gradient-to-b from-[#55595D] via-[#F8F8F8] to-[#55595D]
-  transition-all duration-300
-  group-hover:from-[#FFD76A] group-hover:via-[#C9A227] group-hover:to-[#78530A]
+  bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+  transition-colors duration-300
+  group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
 "/>
 
 <span className="
   absolute -top-2 -bottom-2 left-[15%] w-2
   -skew-x-[25deg]
-  bg-gradient-to-b from-[#55595D] via-[#F8F8F8] to-[#55595D]
-  transition-all duration-300
-  group-hover:from-[#FFD76A] group-hover:via-[#C9A227] group-hover:to-[#78530A]
+  bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+  transition-colors duration-300
+  group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
 "/>
 
-{/* 6. Lueur dorée au survol */}
+{/* 6. Fine ligne dorée sous le bouton au survol */}
 <span className="
-  absolute bottom-0 left-0 right-0 h-[3px]
-  bg-[#C9A227] opacity-0
-  shadow-[0_0_12px_3px_rgba(201,162,39,0.8)]
+  absolute bottom-0 left-[8%] right-[8%] h-[2px]
+  bg-[#D6B34B]
+  opacity-0
+  shadow-[0_0_3px_rgba(201,162,39,0.45)]
   group-hover:opacity-100
   transition-opacity duration-300
+  pointer-events-none
 "/>
 
 {/* 7. Texte */}
@@ -463,6 +467,7 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
     group-hover:translate-x-1.5
   "/>
 </span>
+
 
 
       </a>
