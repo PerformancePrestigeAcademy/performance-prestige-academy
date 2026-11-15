@@ -382,64 +382,88 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
         "
       >
 
-        {/* 1. Dégradé de fond global */}
-        <span
-          className="
-            absolute inset-0
-            bg-gradient-to-r from-[#B84A05] via-[#351305] to-[#080402]
-          "
-        />
 
-        {/* 2. Texture hachurée diagonale */}
-        <span
-          className="
-            absolute inset-0 opacity-20 pointer-events-none
-            bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
-          "
-        />
+{/* 1. Fond aluminium brossé */}
+<span className="
+  absolute inset-0
+  bg-gradient-to-b
+  from-[#F4F4F4] via-[#AEB2B5] to-[#55595D]
+  transition-all duration-300
+  group-hover:from-[#FFF9E8] group-hover:via-[#C7C9C9] group-hover:to-[#77736A]
+"/>
 
-        {/* 3. Reflet brillant en haut (effet gloss) */}
-        <span
-          className="
-            absolute inset-x-0 top-0 h-[45%] pointer-events-none
-            bg-gradient-to-b from-white/15 via-white/5 to-transparent
-          "
-        />
+{/* 2. Texture métallique horizontale */}
+<span className="
+  absolute inset-0 pointer-events-none opacity-30
+  bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.5)_1px,transparent_2px,transparent_4px)]
+"/>
 
-        {/* 4. Ombre portée sous la bande orange */}
-        <span
-          className="
-            absolute -top-3 -bottom-3 right-[28%] w-5
-            bg-black/60 blur-[2px]
-            -skew-x-[22deg] z-10
-          "
-        />
+{/* 3. Reflet supérieur */}
+<span className="
+  absolute inset-x-0 top-0 h-1/2 pointer-events-none
+  bg-gradient-to-b from-white/60 via-white/15 to-transparent
+"/>
 
-        {/* 5. Bande orange diagonale */}
-        <span
-          className="
-            absolute -top-3 -bottom-3 right-[26%] w-3.5
-            bg-gradient-to-b from-[#FF9A2E] via-[#F26A0A] to-[#7A2603]
-            -skew-x-[22deg] z-10
-            shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
-          "
-        />
+{/* 4. Bordure métallique */}
+<span className="
+  absolute inset-0 border border-[#F0F0F0]/80
+  shadow-[inset_0_1px_3px_rgba(255,255,255,0.7),inset_0_-2px_4px_rgba(0,0,0,0.45)]
+  pointer-events-none
+  group-hover:border-[#FFD76A]
+  transition-all duration-300
+"/>
 
-        {/* 6. Contenu Gauche (Texte) */}
-        <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
-          EN SAVOIR PLUS
-        </span>
+{/* 5. Trois bandes obliques argentées puis dorées */}
+<span className="
+  absolute -top-2 -bottom-2 left-[7%] w-2
+  -skew-x-[25deg]
+  bg-gradient-to-b from-[#55595D] via-[#F8F8F8] to-[#55595D]
+  transition-all duration-300
+  group-hover:from-[#FFD76A] group-hover:via-[#C9A227] group-hover:to-[#78530A]
+"/>
 
-        {/* 7. Flèche à droite */}
-        <span className="relative z-10 flex items-center justify-center">
-          <ArrowRight
-            className="
-              w-[24px] h-[24px] text-white stroke-[2.25]
-              transition-transform duration-300
-              group-hover:translate-x-1.5
-            "
-          />
-        </span>
+<span className="
+  absolute -top-2 -bottom-2 left-[11%] w-2
+  -skew-x-[25deg]
+  bg-gradient-to-b from-[#55595D] via-[#F8F8F8] to-[#55595D]
+  transition-all duration-300
+  group-hover:from-[#FFD76A] group-hover:via-[#C9A227] group-hover:to-[#78530A]
+"/>
+
+<span className="
+  absolute -top-2 -bottom-2 left-[15%] w-2
+  -skew-x-[25deg]
+  bg-gradient-to-b from-[#55595D] via-[#F8F8F8] to-[#55595D]
+  transition-all duration-300
+  group-hover:from-[#FFD76A] group-hover:via-[#C9A227] group-hover:to-[#78530A]
+"/>
+
+{/* 6. Lueur dorée au survol */}
+<span className="
+  absolute bottom-0 left-0 right-0 h-[3px]
+  bg-[#C9A227] opacity-0
+  shadow-[0_0_12px_3px_rgba(201,162,39,0.8)]
+  group-hover:opacity-100
+  transition-opacity duration-300
+"/>
+
+{/* 7. Texte */}
+<span className="
+  relative z-10 font-bold tracking-wider
+  text-sm sm:text-base uppercase text-[#101010]
+">
+  EN SAVOIR PLUS
+</span>
+
+{/* 8. Flèche */}
+<span className="relative z-10 flex items-center justify-center">
+  <ArrowRight className="
+    w-6 h-6 text-[#101010] stroke-[2.25]
+    transition-transform duration-300
+    group-hover:translate-x-1.5
+  "/>
+</span>
+
 
       </a>
 
