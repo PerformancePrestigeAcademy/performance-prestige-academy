@@ -105,88 +105,66 @@ Performance & Prestige Academy
 
 
 
+
 {/* Choisissez votre parcours */}
 
+<section
+  id="objectif"
+  className="scroll-mt-32 py-20 bg-[#0A0A0A] lg:py-0 lg:min-h-0 lg:flex lg:items-center lg:overflow-hidden"
+>
+  <div className="w-full px-0 lg:py-3">
 
+    <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227] w-full">
 
+      {FORMATION_OBJECTIVES.map((objective, index) => (
+        <div
+          key={objective.id}
+          className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-[380px] lg:flex-[0_0_22%] lg:-ml-[2.5%] ${
+            index === 0 ? "lg:ml-0" : ""
+          }`}
+          style={{ zIndex: index + 1 }}
+        >
+          <a
+            href={objective.href}
+            aria-label={`Accéder à la section ${objective.title.replace(/\n/g, " ")}`}
+            className={`group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-[380px] flex-col justify-end overflow-hidden ${FORMATION_PANEL_CLIPS[index]}`}
+          >
 
+            {/* Photographie */}
+            <div className="absolute inset-0 -z-20 overflow-hidden">
+              <img
+                src={objective.image}
+                alt=""
+                className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
 
+            {/* Dégradé noir */}
+            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
 
-<section id="objectif" className="scroll-mt-32 py-20 bg-[#0A0A0A] lg:py-0 lg:min-h-0 lg:flex lg:items-center lg:overflow-hidden">
+            {/* Reflet doré au survol */}
+            <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#C9A227]/0 via-transparent to-[#C9A227]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-     <div className="max-w-7xl mx-auto w-full px-6 lg:py-3">
+            {/* Titre */}
+            <div className="relative z-10 px-4 pb-8 pt-12 xl:px-6">
+              <h3 className="font-racing font-bold text-white text-lg xl:text-xl 2xl:text-2xl leading-tight whitespace-pre-line transition-colors duration-300 group-hover:text-[#F2D477]">
+                {objective.title}
+              </h3>
+            </div>
 
-         <div className="text-center mb-14 lg:mb-5">
+          </a>
 
-         <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-         VOTRE OBJECTIF
-         </p>
+          {/* Séparation lumineuse dorée */}
+          {index < 4 && (
+            <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+          )}
 
-         <h2 className="font-racing text-5xl lg:text-3xl xl:text-4xl">
-         TROUVEZ LA
-         <br />
-         <span className="gold-gradient">
-          FORMATION ADAPTÉE
-         </span>
-         </h2>
-
-         </div>
-
-         
-        <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227]">
-
-  {FORMATION_OBJECTIVES.map((objective, index) => (
-    <div
-      key={objective.id}
-      className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-[0_0_21%] lg:-ml-[1.5%] ${
-        index === 0 ? "lg:ml-0" : ""
-      }`}
-      style={{ zIndex: index + 1 }}
-    >
-      <a
-        href={objective.href}
-        aria-label={`Accéder à la section ${objective.title.replace(/\n/g, " ")}`}
-        className={`group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden ${FORMATION_PANEL_CLIPS[index]}`}
-      >
-
-        {/* Photographie */}
-        <div className="absolute inset-0 -z-20 overflow-hidden">
-          <img
-            src={objective.image}
-            alt=""
-            className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-          />
         </div>
-
-        {/* Dégradé noir */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
-
-        {/* Reflet doré au survol */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#C9A227]/0 via-transparent to-[#C9A227]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
-        {/* Titre */}
-        <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
-          <h3 className="font-racing font-bold text-white text-xl xl:text-2xl 2xl:text-3xl leading-tight whitespace-pre-line transition-colors duration-300 group-hover:text-[#F2D477]">
-            {objective.title}
-          </h3>
-        </div>
-
-      </a>
-
-      {/* Séparation lumineuse dorée */}
-      {index < 4 && (
-        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
-      )}
+      ))}
 
     </div>
-  ))}
-
-</div>
-     </div>
-
+  </div>
 </section>
-
-        </main>
 
 
 
