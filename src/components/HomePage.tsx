@@ -258,14 +258,14 @@ export default function App() {
 
       <Navbar />
 
-      <main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)_64px] lg:overflow-hidden"
+      <main className="lg:h-[calc(100svh-40px)] lg:min-h-[596px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)_64px] lg:overflow-hidden"
               >
         <Hero />
         <ServicePanels />
         <ContactBanner />
         
       </main>
-      <footer className="w-full bg-[#080808] border-t border-white/10 px-3 py-2">
+      <footer className="w-full bg-[#080808] border-t border-white/10 px-3 py-1">
   <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 font-racing text-[11px] tracking-wider text-[#A8A9AD]">
 
     <Link to="/mentions-legales" className="hover:text-[#C9A227] transition-colors">
