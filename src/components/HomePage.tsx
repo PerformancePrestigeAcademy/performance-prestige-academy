@@ -194,7 +194,7 @@ function ContactBanner() {
   return (
     <section
       id="contact"
-      className="relative isolate flex h-auto lg:h-16 flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-0 overflow-hidden min-h-0 border-2 border-blue-500"
+      className="relative isolate flex h-auto lg:h-16 flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-0 overflow-hidden min-h-0"
     >
 
       {/* Texture damier */}
@@ -263,7 +263,37 @@ export default function App() {
         <Hero />
         <ServicePanels />
         <ContactBanner />
+        
       </main>
+      <footer className="w-full bg-[#080808] border-t border-white/10 px-3 py-2">
+  <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 font-racing text-[11px] tracking-wider text-[#A8A9AD]">
+
+    <Link to="/mentions-legales" className="hover:text-[#C9A227] transition-colors">
+      MENTIONS LÉGALES
+    </Link>
+
+    <span className="text-[#C9A227]">•</span>
+
+    <Link to="/confidentialite" className="hover:text-[#C9A227] transition-colors">
+      CONFIDENTIALITÉ
+    </Link>
+
+    <span className="text-[#C9A227]">•</span>
+
+    <Link to="/cookies" className="hover:text-[#C9A227] transition-colors">
+      COOKIES
+    </Link>
+
+    <span className="text-[#C9A227]">•</span>
+
+    
+    <span className="text-white/40">
+      © 2026 PERFORMANCE & PRESTIGE ACADEMY
+    </span>
+
+  </div>
+</footer>
     </>
   );
 }
+
