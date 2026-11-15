@@ -143,83 +143,91 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
        <div className="mt-auto pt-8 w-full flex justify-center">
 
-          <a
-            href="/contact"
-            className="
-              group relative
-              w-full max-w-[340px]
-              h-[150px]
-              overflow-hidden
-              transition-transform duration-300
-              hover:scale-[1.01]
-              active:scale-[0.99]
-            "
-          >
+          
+{/* 1. Fond aluminium brossé */}
+<span className="
+  absolute inset-0
+  bg-gradient-to-b
+  from-[#E5E6E6] via-[#AEB2B5] to-[#55595D]
+  transition-all duration-300
+  group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]
+"/>
 
-   {/* Image du bouton : état normal */}
-<img
-  src="/images/BoutonPrepDev.png"
-  alt=""
-  className="
-    absolute inset-0
-    w-full h-full
-    object-fill
-    pointer-events-none
-    transition-opacity duration-300
-    opacity-100 group-hover:opacity-0
-  "
-/>
+{/* 2. Texture métallique horizontale */}
+<span className="
+  absolute inset-0 pointer-events-none opacity-25
+  bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]
+"/>
 
-{/* Image du bouton : état survol */}
-<img
-  src="/images/BoutonPrepDev-hover.png"
-  alt=""
-  className="
-    absolute inset-0
-    w-full h-full
-    object-fill
-    pointer-events-none
-    transition-opacity duration-300
-    opacity-0 group-hover:opacity-100
-  "
-/>
+{/* 3. Reflet supérieur métallique */}
+<span className="
+  absolute inset-x-0 top-0 h-1/2 pointer-events-none
+  bg-gradient-to-b from-white/45 via-white/10 to-transparent
+"/>
 
-{/* Texte */}
-<span
-  className="
-    absolute
-    left-[43%]
-    top-[45%]
-    -translate-y-1/2
-    z-10
-    text-black
-    font-bold
-    tracking-widest
-    text-sm sm:text-base
-    uppercase
-    whitespace-nowrap
-  "
->
-  À L’ATELIER !
+{/* 4. Bordure métallique, sans halo */}
+<span className="
+  absolute inset-0
+  border border-[#777B7D]
+  shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
+  pointer-events-none
+  group-hover:border-[#B99A4B]
+  transition-colors duration-300
+"/>
+
+{/* 5. Trois bandes obliques argentées vers dorées */}
+<span className="
+  absolute -top-2 -bottom-2 left-[7%] w-2
+  -skew-x-[25deg]
+  bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+  transition-colors duration-300
+  group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
+"/>
+
+<span className="
+  absolute -top-2 -bottom-2 left-[11%] w-2
+  -skew-x-[25deg]
+  bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+  transition-colors duration-300
+  group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
+"/>
+
+<span className="
+  absolute -top-2 -bottom-2 left-[15%] w-2
+  -skew-x-[25deg]
+  bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+  transition-colors duration-300
+  group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
+"/>
+
+{/* 6. Fine ligne dorée sous le bouton au survol */}
+<span className="
+  absolute bottom-0 left-[8%] right-[8%] h-[2px]
+  bg-[#D6B34B]
+  opacity-0
+  shadow-[0_0_3px_rgba(201,162,39,0.45)]
+  group-hover:opacity-100
+  transition-opacity duration-300
+  pointer-events-none
+"/>
+
+{/* 7. Texte */}
+<span className="
+  relative z-10 font-bold tracking-wider
+  text-sm sm:text-base uppercase text-[#101010]
+">
+  EN SAVOIR PLUS
 </span>
 
-    {/* Flèche */}
-          <ArrowRight
-            className="
-              absolute
-              right-[7%]
-              top-[45%]
-              -translate-y-1/2
-              z-10
-              w-7 h-7
-              text-white
-              stroke-[2]
-              transition-transform duration-300
-              group-hover:translate-x-1.5
-            "
-          />
+{/* 8. Flèche */}
+<span className="relative z-10 flex items-center justify-center">
+  <ArrowRight className="
+    w-6 h-6 text-[#101010] stroke-[2.25]
+    transition-transform duration-300
+    group-hover:translate-x-1.5
+  "/>
+</span>
 
-          </a>
 
         </div>
       </ServiceCard>
