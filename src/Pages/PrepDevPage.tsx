@@ -156,36 +156,52 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
             "
           >
 
-    {/* Image du bouton */}
-          <img
-            src="/images/BoutonPrepDev.png"
-            alt=""
-            className="
-              absolute inset-0
-              w-full h-full
-              object-fill
-              pointer-events-none
-            "
-          />
+   {/* Image du bouton : état normal */}
+<img
+  src="/images/BoutonPrepDev.png"
+  alt=""
+  className="
+    absolute inset-0
+    w-full h-full
+    object-fill
+    pointer-events-none
+    transition-opacity duration-300
+    opacity-100 group-hover:opacity-0
+  "
+/>
 
-    {/* Texte */}
-          <span
-            className="
-              absolute
-              left-[43%]
-              top-[45%]
-              -translate-y-1/2
-              z-10
-              text-white
-              font-bold
-              tracking-widest
-              text-sm sm:text-base
-              uppercase
-              whitespace-nowrap
-            "
-            >
-            À L’ATELIER !
-          </span>
+{/* Image du bouton : état survol */}
+<img
+  src="/images/BoutonPrepDev-hover.png"
+  alt=""
+  className="
+    absolute inset-0
+    w-full h-full
+    object-fill
+    pointer-events-none
+    transition-opacity duration-300
+    opacity-0 group-hover:opacity-100
+  "
+/>
+
+{/* Texte */}
+<span
+  className="
+    absolute
+    left-[43%]
+    top-[45%]
+    -translate-y-1/2
+    z-10
+    text-black
+    font-bold
+    tracking-widest
+    text-sm sm:text-base
+    uppercase
+    whitespace-nowrap
+  "
+>
+  À L’ATELIER !
+</span>
 
     {/* Flèche */}
           <ArrowRight
