@@ -11,7 +11,46 @@ import {initiationMecaniqueFormation, mecaniqueAuFemininFormation, perfectionnem
     preparationExamensCAPFormation, preparationExamensBacProFormation, preparationExamensBTSFormation,
     } from "../data/formations";
     import CFAModal from "../components/CFAModal";
+const FORMATION_OBJECTIVES = [
+  {
+    id: "debuter",
+    href: "#formation-mecanique",
+    image: "/images/formationdebuter.png",
+    title: "DÉBUTER\nLA MÉCANIQUE",
+  },
+  {
+    id: "preparation",
+    href: "#preparation",
+    image: "/images/formationdecouvrir.png",
+    title: "PRÉPARATION\nÀ L’ENTRÉE\nEN FORMATION",
+  },
+  {
+    id: "examens",
+    href: "#examens",
+    image: "/images/formationpreparer.png",
+    title: "PRÉPARATION\nAUX EXAMENS",
+  },
+  {
+    id: "perfectionnement",
+    href: "#perfectionnement",
+    image: "/images/formationperfection.png",
+    title: "PERFECTIONNEMENT\nPROFESSIONNEL",
+  },
+  {
+    id: "cfa",
+    href: "#cfa",
+    image: "/images/formationcfa.png",
+    title: "CFA &\nÉTABLISSEMENTS",
+  },
+];
 
+const FORMATION_PANEL_CLIPS = [
+  "lg:[clip-path:polygon(0_0,100%_0,92%_100%,0_100%)]",
+  "lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]",
+  "lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]",
+  "lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]",
+  "lg:[clip-path:polygon(8%_0,100%_0,100%_100%,0_100%)]",
+];
 export default function FormationPage() {
     const [isFormationModalOpen, setIsFormationModalOpen] = useState(false);
     const [selectedFormation, setSelectedFormation] = useState(
@@ -94,67 +133,55 @@ Performance & Prestige Academy
          </div>
 
          
-         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-3">
+        <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227]">
 
-         <a
-         href="#formation-mecanique"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-         >
-         <h3 className="font-racing text-xl">
-         Débuter
-         <br />
-         la mécanique
-         </h3>
-         </a>
+  {FORMATION_OBJECTIVES.map((objective, index) => (
+    <div
+      key={objective.id}
+      className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-[0_0_21%] lg:-ml-[1.5%] ${
+        index === 0 ? "lg:ml-0" : ""
+      }`}
+      style={{ zIndex: index + 1 }}
+    >
+      <a
+        href={objective.href}
+        aria-label={`Accéder à la section ${objective.title.replace(/\n/g, " ")}`}
+        className={`group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden ${FORMATION_PANEL_CLIPS[index]}`}
+      >
 
-         <a
-         href="#preparation"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-         >
-         <h3 className="font-racing text-xl">
-         Préparation
-         <br />
-         à l'entrée
-         <br />
-         en formation
-         </h3>
-         </a>
+        {/* Photographie */}
+        <div className="absolute inset-0 -z-20 overflow-hidden">
+          <img
+            src={objective.image}
+            alt=""
+            className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+          />
+        </div>
 
-         <a
-         href="#examens"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-         >
-         <h3 className="font-racing text-xl">
-         Préparation
-         <br />
-         aux examens
-         </h3>
-         </a>
+        {/* Dégradé noir */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
 
-         <a
-         href="#perfectionnement"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-         >
-         <h3 className="font-racing text-xl">
-         Perfectionnement
-         <br />
-         professionnel
-         </h3>
-         </a>
+        {/* Reflet doré au survol */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#C9A227]/0 via-transparent to-[#C9A227]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-         <a
-         href="#cfa"
-         className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 lg:h-auto lg:min-h-[112px] lg:p-3 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-         >
-         <h3 className="font-racing text-xl">
-          CFA &
-          <br />
-          Établissements
-         </h3>
-          </a>
+        {/* Titre */}
+        <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
+          <h3 className="font-racing font-bold text-white text-xl xl:text-2xl 2xl:text-3xl leading-tight whitespace-pre-line transition-colors duration-300 group-hover:text-[#F2D477]">
+            {objective.title}
+          </h3>
+        </div>
 
-         </div>
+      </a>
 
+      {/* Séparation lumineuse dorée */}
+      {index < 4 && (
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+      )}
+
+    </div>
+  ))}
+
+</div>
      </div>
 
 </section>
