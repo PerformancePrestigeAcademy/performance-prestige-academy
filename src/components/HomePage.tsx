@@ -1,268 +1,223 @@
-import { useState, useEffect } from 'react';
-import {
-  Menu, X, ChevronDown, Phone, Mail, MapPin,
-  Wrench, Gauge, BookOpen, Trophy, Shield, Zap, History,
-  CheckCircle, ArrowRight, Instagram, Facebook
-} from 'lucide-react';
+
+import { Mail, ArrowRight } from 'lucide-react';
 import Navbar from "./Navbar";
-import Footer from "../components/Footer.tsx";
 import SEO from "../components/SEO.tsx";
-import { NAV_LINKS } from "../data/navigation";
-import ContactForm from "../components/ContactForm";
 import { Link } from "react-router-dom";
 
-const MAINTENANCE = [
+const SERVICES = [
   {
     id: 'maintenance',
     href: '/maintenance',
     image: '/images/maintenance.png',
-    tag: 'Maintenance',
-    title: 'Maintenance Véhicules',
-    subtitle: 'VÉHICULES 2 ROUES & 4 ROUES',
-    description:
-      'Entretien, diagnostic et réparation pour tous vos véhicules. Notre atelier prend en charge autos et motos avec le même niveau d\'exigence et de précision.',
-    features: ['Entretien & Révisions', 'Diagnostic Électronique', 'Réparation Complète', 'Contrôle & Vérification'],
-    icon: <Wrench className="w-6 h-6" />,
+    number: '01',
+    title: 'MAINTENANCE',
+    description: 'Entretien, diagnostic,\nréparation',
   },
   {
     id: 'formation',
     href: '/formation',
     image: '/images/formation.png',
-    tag: 'Formation',
-    title: 'Formation mécanique et technique',
-    subtitle: 'DÉBUTANTS · PARTICULIERS · PROFESSIONNELS',
-    description:
-      'Des bases de la mécanique pour les particuliers débutants jusqu\'aux compétences techniques poussées pour les professionnels, avec un accompagnement jusqu\'au passage du BTS. Chaque programme est construit par des praticiens du terrain.',
-    features: ['Mécanique de base', 'Diagnostic Électronique', 'Technique avancée', 'Aide au BTS'],
-    icon: <BookOpen className="w-6 h-6" />,
+    number: '02',
+    title: 'FORMATION',
+    description: 'Particuliers, professionnels,\napprentis, CFA',
   },
   {
     id: 'preparation',
     href: '/preparation-developpement',
     image: '/images/preparation.png',
-    tag: 'Performance',
-    title: 'Préparation & Développement',
-    subtitle: 'PERFORMANCE · FIABILITÉ · COMPÉTITION',
-    description:
-      'Nous poussons votre véhicule au-delà de ses limites d\'origine. De l\'optimisation moteur au développement compétition, notre expertise technique transforme chaque machine en outil de performance. Pour les compétiteurs, nous intervenons en restant en pleine conformité avec les règlements des catégories visées.',
-    features: ['Optimisation Moteur', 'Châssis & Suspensions', 'Cartographie ECU', 'Conformité Règlements Compétition'],
-    icon: <Gauge className="w-6 h-6" />,
+    number: '03',
+    title: 'PRÉPARATION &\nDÉVELOPPEMENT',
+    description: 'Performance, mise au point,\ncompétition',
   },
   {
-  id: 'restauration',
-  href: '/maintenance',
-  image: '/images/restauration.png',
-  tag: 'Restauration',
-  title: 'Restauration de véhicules anciens',
-  subtitle: 'PRÉSERVER · RESTAURER · TRANSMETTRE',
-  description:
-    'Chaque véhicule ancien possède une histoire et des particularités qui méritent une attention spécifique. Du diagnostic initial à la remise en état, chaque intervention est réalisée avec méthode afin de préserver son authenticité, restaurer son fonctionnement et assurer sa fiabilité.',
-  features: [ 'Mécanique', 'Faisceau électrique', 'Carrosserie', 'Intérieur', ],
-  icon: <History className="w-6 h-6" />,
-},
+    id: 'restauration',
+    href: '/maintenance',
+    image: '/images/restauration.png',
+    number: '04',
+    title: 'RESTAURATION',
+    description: 'Véhicules anciens\net de caractère',
+  },
 ];
-
-const VALUES = [
-  { icon: <Trophy className="w-8 h-8" />, title: 'Excellence', desc: 'Chaque intervention est menée avec une précision et une rigueur de compétition.' },
-  { icon: <Shield className="w-8 h-8" />, title: 'Fiabilité', desc: 'Nos préparations et formations reposent sur des méthodes éprouvées en conditions réelles.' },
-  { icon: <Zap className="w-8 h-8" />, title: 'Performance', desc: 'Repousser les limites techniques est notre raison d\'être, sur route comme sur circuit.' },
-];
-
-function useScrollSpy() {
-  const [active, setActive] = useState('accueil');
-  useEffect(() => {
-    const handler = () => {
-      const sections = ['accueil', 'maintenance', 'formation', 'apropos', 'contact'];
-      for (const id of [...sections].reverse()) {
-        const el = document.getElementById(id);
-        if (el && window.scrollY >= el.offsetTop - 100) {
-          setActive(id);
-          break;
-        }
-      }
-    };
-    window.addEventListener('scroll', handler, { passive: true });
-    return () => window.removeEventListener('scroll', handler);
-  }, []);
-  return active;
-}
-
-
 
 function Hero() {
   return (
     <section
       id="accueil"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden"
+      className="relative flex items-center justify-center overflow-hidden min-h-[65svh] lg:min-h-0"
     >
-     
+      {/* Image de fond existante */}
       <div className="absolute inset-0">
         <img
           src="/images/hero.png"
-          alt="Hero background"
-          className="w-full h-full object-cover object-center opacity-80"
+          alt="Performance & Prestige Academy - Automobile et motocycle"
+          className="w-full h-full object-cover object-center"
         />
         <div className="hero-overlay absolute inset-0" />
-        <div className="absolute inset-0 checkered-accent opacity-20" />
+        <div className="absolute inset-0 checkered-accent opacity-10" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-32">
-        <p className="font-racing text-base sm:text-lg tracking-[0.5em] text-[#C9A227] mb-4 animate-fade-in-up animate-delay-100">
+      {/* Titre principal */}
+      <div className="relative z-10 w-full px-4 text-center py-16 lg:py-6">
+
+        <p className="font-racing text-xs sm:text-sm tracking-[0.5em] text-[#C9A227] mb-5">
           PERFORMANCE &amp; PRESTIGE ACADEMY
         </p>
 
-       <h1 className="font-racing font-bold text-5xl sm:text-6xl lg:text-7xl leading-none mb-6 animate-fade-in-up animate-delay-200">
-  <span className="gold-gradient">L'ART DE LA</span>
-  <br />
-  <span className="text-white">MÉCANIQUE AUTO &amp; MOTO</span>
-  <br />
-  <span className="text-[#A8A9AD]">DANS LE VAR</span>
-</h1>
-        <p className="text-[#A8A9AD] text-base sm:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed animate-fade-in-up animate-delay-300">
-  Formation, maintenance, diagnostic, restauration, et préparation performance
-  pour véhicules auto et moto. Parce que la passion mérite l'excellence.
-</p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-300">
-  
-  <a
-    href="/a-propos"
-    className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
-  >
-    NOTRE HISTOIRE
-  </a>
-  
-  <a
-    href="#maintenance"
-    className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
-  >
-    DÉCOUVRIR NOS SERVICES
-  </a>
-
-  <a
-    href="/contact"
-    className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded"
-  >
-    NOUS CONTACTER
-  </a>
-</div>
-
-      </div>
-
-      <a
-        href="#maintenance"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#C9A227] animate-bounce"
-      >
-        <ChevronDown className="w-8 h-8" />
-      </a>
-    </section>
-  );
-}
-
-function ServiceCard({ service, reversed }: { service: typeof MAINTENANCE[0]; reversed: boolean }) {
-  return (
-  
-  <Link
-    to={service.href}
-    className={`group flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-0 overflow-hidden rounded-2xl gold-border service-card`}
-  >
-      <div className="lg:w-1/2 relative overflow-hidden">
-        <img
-          src={service.image}
-          alt={service.title}
-          className="w-full h-72 sm:h-96 lg:h-full object-cover object-center transition-transform duration-700 hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent" />
-        <div className="absolute top-4 left-4">
-          <span className="bg-[#C9A227] text-black font-racing text-xs font-bold tracking-widest px-3 py-1.5 rounded">
-            {service.tag.toUpperCase()}
+        <h1 className="font-racing font-bold leading-[1.05]">
+          <span className="block gold-gradient text-4xl sm:text-5xl lg:text-5xl xl:text-6xl mb-2">
+            L'ART DE LA
           </span>
-        </div>
-      </div>
 
-      <div className="lg:w-1/2 bg-dark-card p-8 sm:p-12 flex flex-col justify-center">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="text-[#C9A227] icon-gold">{service.icon}</div>
-          <div className="gold-line" />
-        </div>
+          <span className="block text-white text-4xl sm:text-5xl lg:text-5xl xl:text-6xl">
+            MÉCANIQUE AUTO &amp; MOTO
+          </span>
 
-        <p className="font-racing text-base tracking-[0.3em] text-[#C9A227] mb-2">{service.subtitle}</p>
-        <h3 className="font-racing font-bold text-3xl sm:text-4xl text-white mb-5">{service.title}</h3>
-        <p className="text-[#A8A9AD] leading-relaxed mb-8"
-        style={{ textAlign: "justify" }}
-        >
-          {service.description}
-          </p>
+          <span className="block text-[#A8A9AD] text-3xl sm:text-4xl lg:text-4xl xl:text-5xl mt-2">
+            DANS LE VAR
+          </span>
+        </h1>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-          {service.features.map((f) => (
-            <li key={f} className="flex items-center gap-2 text-sm text-[#E5E5E5]">
-              <CheckCircle className="w-4 h-4 text-[#C9A227] flex-shrink-0" />
-              {f}
-            </li>
-          ))}
-        </ul>
-
-        <span
-  className="inline-flex items-center gap-2 text-[#C9A227] font-racing font-semibold text-sm tracking-widest group-hover:gap-4 transition-all duration-200"
->
-  DÉCOUVRIR LE SERVICE
-  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-</span>
-      </div>
-    </Link>
-  );
-}
-
-function Maintenance() {
-  return (
-    <section id="maintenance" className="py-24 sm:py-32 bg-[#0A0A0A]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-20">
-          <p className="font-racing text-base sm:text-lg tracking-[0.5em] text-[#C9A227] mb-4">NOS EXPERTISES</p>
-          <h2 className="font-racing font-bold text-4xl sm:text-5xl lg:text-6xl text-white mb-6">
-            QUATRE PILIERS
-            <span className="gold-gradient"> D'EXCELLENCE</span>
-          </h2>
-          <div className="gold-line mx-auto mb-6" />
-          <p className="text-[#A8A9AD] max-w-2xl mx-auto leading-relaxed">
-            De la maintenance quotidienne à la restauration de véhicules anciens,
-en passant par la formation et la préparation compétition, chaque projet
-bénéficie de la même exigence, de la même précision et du même engagement.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-12">
-          {MAINTENANCE.map((s, i) => (
-            <ServiceCard key={s.id} service={s} reversed={i % 2 !== 0} />
-          ))}
-        </div>
+        {/* Plus de texte descriptif ni de boutons */}
       </div>
     </section>
   );
 }
 
+function ServicePanels() {
+  return (
+    <section
+      id="services"
+      className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-black overflow-hidden"
+    >
+      {SERVICES.map((service, index) => (
+        <Link
+          key={service.id}
+          to={service.href}
+          aria-label={`Découvrir ${service.title.replace('\n', ' ')}`}
+          className="group relative isolate min-h-[340px] lg:min-h-0 overflow-hidden flex flex-col justify-end border-b lg:border-b-0 border-[#C9A227]/50"
+          style={{
+            clipPath:
+              window.innerWidth >= 1024
+                ? 'polygon(10% 0, 100% 0, 90% 100%, 0 100%)'
+                : undefined,
+          }}
+        >
+          {/* Photographie */}
+          <div className="absolute inset-0 -z-20">
+            <img
+              src={service.image}
+              alt=""
+              className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
 
+          {/* Voile sombre */}
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/75 to-black/15 group-hover:from-black/95 group-hover:via-black/65 transition-all duration-500" />
 
+          {/* Décoration dorée */}
+          <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-[#C9A227] via-[#F4D36B] to-[#8C6810] opacity-80" />
+
+          {/* Contenu */}
+          <div className="relative z-10 p-6 sm:p-7 xl:p-8">
+
+            <div className="flex items-center gap-3 mb-3">
+              <span className="font-racing font-bold text-xl sm:text-2xl text-[#D6A92B]">
+                {service.number}
+              </span>
+              <div className="h-px flex-1 bg-gradient-to-r from-[#C9A227] to-transparent" />
+            </div>
+
+            <h2 className="font-racing font-bold text-white text-xl sm:text-2xl xl:text-[1.65rem] leading-tight whitespace-pre-line mb-3">
+              {service.title}
+            </h2>
+
+            <p className="text-[#E5E5E5] text-sm sm:text-base leading-snug whitespace-pre-line min-h-[42px]">
+              {service.description}
+            </p>
+
+            {/* Bouton angulaire */}
+            <div className="mt-6 flex justify-end">
+              <span
+                className="inline-flex items-center justify-center gap-3 border border-[#C9A227] text-white font-racing font-bold text-xs tracking-wider px-5 py-3 transition-all duration-300 group-hover:bg-[#C9A227] group-hover:text-black"
+                style={{
+                  clipPath: 'polygon(8% 0, 100% 0, 92% 100%, 0 100%)',
+                }}
+              >
+                EN SAVOIR PLUS
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </section>
+  );
+}
+
+function ContactBanner() {
+  return (
+    <section
+      id="contact"
+      className="relative bg-[#080808] border-t border-[#C9A227]/60 overflow-hidden flex items-center"
+    >
+      <div className="absolute inset-0 checkered-accent opacity-20 pointer-events-none" />
+
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-5 sm:px-10 py-5 lg:py-0 flex flex-col sm:flex-row items-center justify-between gap-5">
+
+        <div className="flex items-center gap-5">
+          <div className="hidden sm:flex gap-1 -skew-x-[25deg]">
+            <span className="w-2 h-12 bg-[#C9A227]" />
+            <span className="w-2 h-12 bg-[#C9A227]" />
+            <span className="w-2 h-12 bg-[#C9A227]" />
+          </div>
+
+          <div>
+            <h2 className="font-racing font-bold text-2xl sm:text-3xl text-white italic">
+              UN PROJET ?
+            </h2>
+
+            <p className="font-racing text-xs sm:text-sm text-[#A8A9AD] tracking-wide">
+              ENTRETIEN <span className="text-[#C9A227]">•</span>
+              &nbsp; FORMATION <span className="text-[#C9A227]">•</span>
+              &nbsp; PRÉPARATION <span className="text-[#C9A227]">•</span>
+              &nbsp; RESTAURATION
+            </p>
+          </div>
+        </div>
+
+        <Link
+          to="/contact"
+          className="group inline-flex items-center justify-center gap-4 border-2 border-[#C9A227] text-white font-racing font-bold text-sm sm:text-base tracking-wider px-8 py-4 transition-all duration-300 hover:bg-[#C9A227] hover:text-black"
+          style={{
+            clipPath: 'polygon(7% 0, 100% 0, 93% 100%, 0 100%)',
+          }}
+        >
+          <Mail className="w-6 h-6" />
+          NOUS CONTACTER
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        </Link>
+
+      </div>
+    </section>
+  );
+}
 
 export default function App() {
   return (
     <>
       <SEO
- title="Mécanique Auto & Moto | Performance & Prestige Academy"
-description="Maintenance, diagnostic, restauration, formation et préparation auto & moto. Performance & Prestige Academy accompagne particuliers, professionnels et compétiteurs."
-keywords="préparation moteur, garage performance, maintenance automobile, diagnostic automobile, cartographie moteur, formation mécanique, Nans-les-Pins, Var, Performance & Prestige Academy"
-/>
+        title="Mécanique Auto & Moto | Performance & Prestige Academy"
+        description="Maintenance, diagnostic, restauration, formation et préparation auto & moto. Performance & Prestige Academy accompagne particuliers, professionnels et compétiteurs."
+        keywords="préparation moteur, garage performance, maintenance automobile, diagnostic automobile, cartographie moteur, formation mécanique, Nans-les-Pins, Var, Performance & Prestige Academy"
+      />
 
       <Navbar />
 
-      <main>
+      <main className="lg:h-[calc(100svh-68px)] lg:min-h-[620px] lg:grid lg:grid-rows-[minmax(0,0.95fr)_minmax(0,1fr)_78px] lg:overflow-hidden">
         <Hero />
-        <Maintenance />
-        <ContactForm />
+        <ServicePanels />
+        <ContactBanner />
       </main>
-
-      <Footer />
     </>
   );
 }
