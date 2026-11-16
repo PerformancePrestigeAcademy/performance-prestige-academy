@@ -98,11 +98,6 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
             </a>
 
-            {/* SÉPARATION LUMINEUSE DORÉE */}
-            {index < 4 && (
-              <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
-            )}
-
           </div>
         ))}
 
