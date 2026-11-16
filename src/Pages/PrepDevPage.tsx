@@ -38,7 +38,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
       <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1">
         <a href="#preparation-mecanique" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(0_0,100%_0,92%_100%,0_100%)]">
-          <img src="/images/preparation/mecanique.png" alt="Préparation mécanique moteur" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <img src="/images/prep-dev/mecanique.png" alt="Préparation mécanique moteur" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
           <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
             <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">PRÉPARATION<br />MÉCANIQUE</h3>
@@ -49,7 +49,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
       <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.5%]">
         <a href="#developpement-pieces" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]">
-          <img src="/images/preparation/developpement.png" alt="Développement et usinage de pièces" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <img src="/images/prep-dev/developpement.png" alt="Développement et usinage de pièces" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
           <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
             <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">DÉVELOPPEMENT<br />DE PIÈCES</h3>
@@ -60,7 +60,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
       <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.5%]">
         <a href="#acquisition-donnees" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]">
-          <img src="/images/preparation/acquisition.png" alt="Acquisition et analyse de données moto" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <img src="/images/prep-dev/acquisition.png" alt="Acquisition et analyse de données moto" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
           <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
             <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">ACQUISITION<br />& ANALYSE DE DONNÉES</h3>
@@ -71,7 +71,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
 
       <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.5%]">
         <a href="#assistance-competition" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,100%_100%,0_100%)]">
-          <img src="/images/preparation/assistance.png" alt="Assistance compétition moto" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <img src="/images/prep-dev/assistance.png" alt="Assistance compétition moto" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
           <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
             <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">ASSISTANCE<br />COMPÉTITION</h3>
