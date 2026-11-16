@@ -9,7 +9,7 @@ const SERVICES = [
   {
     id: 'maintenance',
     href: '/maintenance',
-    image: '/images/accueilmaintenance.png',
+    image: '/images/accueil/accueilmaintenance.png',
     number: '01',
     title: 'MAINTENANCE',
     description: 'Entretien, diagnostic,\nréparation',
@@ -17,7 +17,7 @@ const SERVICES = [
   {
     id: 'formation',
     href: '/formation',
-    image: '/images/accueilformation.png',
+    image: '/images/accueil/accueilformation.png',
     number: '02',
     title: 'FORMATION',
     description: 'Particuliers, professionnels,\napprentis, CFA',
@@ -25,7 +25,7 @@ const SERVICES = [
   {
     id: 'preparation',
     href: '/preparation-developpement',
-    image: '/images/accueilpreparation.png',
+    image: '/images/accueil/accueilpreparation.png',
     number: '03',
     title: 'PRÉPARATION &\nDÉVELOPPEMENT',
     description: 'Performance, mise au point,\ncompétition',
@@ -33,7 +33,7 @@ const SERVICES = [
   {
     id: 'restauration',
     href: '/maintenance',
-    image: '/images/accueilrestauration.png',
+    image: '/images/accueil/accueilrestauration.png',
     number: '04',
     title: 'RESTAURATION',
     description: 'Véhicules anciens\net de caractère',
@@ -56,7 +56,7 @@ function Hero() {
       {/* Image originale conservée */}
       <div className="absolute inset-0 -z-20">
         <img
-          src="/images/hero.png"
+          src="/images/hero/hero.png"
           alt="Performance & Prestige Academy"
           className="w-full h-full object-cover object-center"
         />

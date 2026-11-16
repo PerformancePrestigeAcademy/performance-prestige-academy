@@ -1,13 +1,4 @@
-import {
-  BarChart3,
-  BookOpen,
-  Gauge,
-  Heart,
-  ShieldCheck,
-  Trophy,
-  Wrench,
-} from "lucide-react";
-
+import {BarChart3,BookOpen,Gauge,Heart,ShieldCheck,Trophy,Wrench,} from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
@@ -29,12 +20,7 @@ export default function AProposPage() {
   <div className="absolute inset-0 bg-[#070707]" />
 
   {/* Texture légère — sans grand trou noir au centre */}
-  <div
-    className="
-      absolute inset-0
-      bg-[radial-gradient(ellipse_at_center,rgba(35,35,35,0.42)_0%,rgba(15,15,15,0.32)_48%,rgba(5,5,5,0.78)_100%)]
-    "
-  />
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(35,35,35,0.42)_0%,rgba(15,15,15,0.32)_48%,rgba(5,5,5,0.78)_100%)]"/>
 
   {/* =========================
       VERSION TABLETTE / DESKTOP
@@ -45,61 +31,25 @@ export default function AProposPage() {
       <div
         className="absolute inset-y-0 left-0 w-[44%] overflow-hidden"
         style={{
-          WebkitMaskImage:
-            "linear-gradient(to right, black 0%, black 68%, transparent 100%)",
-          maskImage:
-            "linear-gradient(to right, black 0%, black 68%, transparent 100%)",
-        }}
-      >
-        <img
-          src="/images/about-portrait.jpg"
+          WebkitMaskImage:"linear-gradient(to right, black 0%, black 68%, transparent 100%)",
+          maskImage:"linear-gradient(to right, black 0%, black 68%, transparent 100%)",}}>
+
+        <img src="/images/about/about-portrait.jpg"
           alt=""
           aria-hidden="true"
-          className="
-            absolute
-            bottom-0
-            left-[4%]
-            h-[92%]
-            w-auto
-            max-w-none
-            object-contain
-            opacity-75
-            blur-[0.4px]
-            lg:left-[8%]
-            lg:h-[96%]
-          "
-        />
+          className="absolute bottom-0 left-[4%] h-[92%] w-auto max-w-none object-contain opacity-75 blur-[0.4px] lg:left-[8%] lg:h-[96%]"/>
       </div>
 
       {/* Portrait droit — miroir */}
       <div
         className="absolute inset-y-0 right-0 w-[44%] overflow-hidden"
         style={{
-          WebkitMaskImage:
-            "linear-gradient(to left, black 0%, black 68%, transparent 100%)",
-          maskImage:
-            "linear-gradient(to left, black 0%, black 68%, transparent 100%)",
-        }}
-      >
-        <img
-          src="/images/about-portrait.jpg"
+          WebkitMaskImage:"linear-gradient(to left, black 0%, black 68%, transparent 100%)",
+          maskImage:"linear-gradient(to left, black 0%, black 68%, transparent 100%)",}}>
+        <img src="/images/about/about-portrait.jpg" 
           alt=""
           aria-hidden="true"
-          className="
-            absolute
-            bottom-0
-            right-[4%]
-            h-[92%]
-            w-auto
-            max-w-none
-            -scale-x-100
-            object-contain
-            opacity-75
-            blur-[0.4px]
-            lg:right-[8%]
-            lg:h-[96%]
-          "
-        />
+          className="absolute bottom-0 right-[4%] h-[92%] w-auto max-w-none -scale-x-100 object-contain opacity-75 blur-[0.4px] lg:right-[8%] lg:h-[96%]"/>
       </div>
     </div>
   </div>
@@ -272,7 +222,7 @@ export default function AProposPage() {
               <div className="absolute -inset-4 rounded-2xl border border-[rgba(201,162,39,0.15)]" />
 
               <img
-                src="/images/about-premiers-pas.jpg"
+                src="/images/about/about-premiers-pas.jpg"
                 alt="Les premiers pas dans la mécanique"
                 className="relative w-full h-[420px] sm:h-[540px] object-cover rounded-2xl gold-border"
               />
@@ -361,7 +311,7 @@ export default function AProposPage() {
               <div className="absolute -inset-4 rounded-2xl border border-[rgba(201,162,39,0.15)]" />
 
               <img
-                src="/images/about-competition.jpg"
+                src="/images/about/about-competition.jpg"
                 alt="Expérience en compétition"
                 className="relative w-full h-[420px] sm:h-[540px] object-cover rounded-2xl gold-border"
               />
@@ -422,7 +372,7 @@ export default function AProposPage() {
               <div className="absolute -inset-4 rounded-2xl border border-[rgba(201,162,39,0.15)]" />
 
               <img
-                src="/images/about-data.png"
+                src="/images/about/about-data.png"
                 alt="Analyse de données et acquisition"
                 className="relative w-full h-[420px] sm:h-[540px] object-cover rounded-2xl gold-border"
               />
@@ -508,7 +458,7 @@ export default function AProposPage() {
               <div className="absolute -inset-4 rounded-2xl border border-[rgba(201,162,39,0.15)]" />
 
               <img
-                src="/images/about-moteur.jpg"
+                src="/images/about/about-moteur.jpg"
                 alt="Transmission du savoir mécanique"
                 className="relative w-full h-[420px] sm:h-[540px] object-cover rounded-2xl gold-border"
               />
@@ -654,7 +604,7 @@ export default function AProposPage() {
       <section className="relative min-h-[650px] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/about-citation.jpg"
+            src="/images/about/about-citation.jpg"
             alt="Une passion pour la mécanique et la compétition"
             className="w-full h-full object-cover object-center grayscale"
           />

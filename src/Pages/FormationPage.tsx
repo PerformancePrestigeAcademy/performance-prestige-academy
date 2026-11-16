@@ -10,73 +10,33 @@ import {initiationMecaniqueFormation, mecaniqueAuFemininFormation, perfectionnem
     preparationEntreeCAPFormation, preparationEntreeBacProFormation, preparationEntreeBTSFormation,
     preparationExamensCAPFormation, preparationExamensBacProFormation, preparationExamensBTSFormation,
     } from "../data/formations";
-    import CFAModal from "../components/CFAModal";
+import CFAModal from "../components/CFAModal";
 const FORMATION_OBJECTIVES = [
-  {
-    id: "debuter",
-    href: "#formation-mecanique",
-    image: "/images/formationdebuter.png",
-    title: "DÉBUTER\nLA MÉCANIQUE",
-  },
-  {
-    id: "preparation",
-    href: "#preparation",
-    image: "/images/formationdecouvrir.png",
-    title: "PRÉPARATION À\n L’ENTRÉE EN FORMATION",
-  },
-  {
-    id: "examens",
-    href: "#examens",
-    image: "/images/formationpreparer.png",
-    title: "PRÉPARATION\nAUX EXAMENS",
-  },
-  {
-    id: "perfectionnement",
-    href: "#perfectionnement",
-    image: "/images/formationperfection.png",
-    title: "PERFECTIONNEMENT\nPROFESSIONNEL",
-  },
-  {
-    id: "cfa",
-    href: "#cfa",
-    image: "/images/formationcfa.png",
-    title: "CFA &\nÉTABLISSEMENTS",
-  },
-];
-
+  { id: "debuter",href: "#formation-mecanique",image: "/images/formation/formationdebuter.png",title: "DÉBUTER\nLA MÉCANIQUE",},
+  { id: "preparation",href: "#preparation",image: "/images/formation/formationdecouvrir.png",title: "PRÉPARATION À\n L’ENTRÉE EN FORMATION",},
+  { id: "examens",href: "#examens",image: "/images/formation/formationpreparer.png",title: "PRÉPARATION\nAUX EXAMENS",},
+  { id: "perfectionnement",href: "#perfectionnement",image: "/images/formation/formationperfection.png",title: "PERFECTIONNEMENT\nPROFESSIONNEL",},
+  { id: "cfa",href: "#cfa",image: "/images/formation/formationcfa.png",title: "CFA &\nÉTABLISSEMENTS",},];
 const FORMATION_PANEL_CLIPS = [
   "lg:[clip-path:polygon(0_0,100%_0,92%_100%,0_100%)]",
   "lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]",
   "lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]",
   "lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]",
-  "lg:[clip-path:polygon(8%_0,100%_0,100%_100%,0_100%)]",
-];
+  "lg:[clip-path:polygon(8%_0,100%_0,100%_100%,0_100%)]",];
 export default function FormationPage() {
     const [isFormationModalOpen, setIsFormationModalOpen] = useState(false);
     const [selectedFormation, setSelectedFormation] = useState(
     initiationMecaniqueFormation );
     const [isCFAModalOpen, setIsCFAModalOpen] = useState(false);
-  return (
-    <div className="min-h-screen pb-14 bg-[#0A0A0A] text-white">
+return (<div className="min-h-screen pb-14 bg-[#0A0A0A] text-white">
 
         <Navbar />
 
         <SEO
            title="Formation Mécanique Auto & Moto | Performance & Prestige Academy"
 description="Formations mécaniques pour particuliers, apprentis, professionnels et CFA : initiation, diagnostic, perfectionnement et accompagnement pratique." 
-keywords="
-formation mécanique auto,
-formation mécanique moto,
-formation automobile,
-formation CFA,
-cours mécanique,
-diagnostic automobile,
-maintenance automobile,
-Nans-les-Pins,
-Var,
-Performance & Prestige Academy
-"
-        />
+keywords="formation mécanique auto,formation mécanique moto,formation automobile,formation CFA,cours mécanique,
+diagnostic automobile,maintenance automobile,Nans-les-Pins,Var,Performance & Prestige Academy"/>
 
              {/* Premier écran : Hero + navigation + bandeau légal */}
         <main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
@@ -85,7 +45,7 @@ Performance & Prestige Academy
               surTitre="FORMATIONS"
               titre="TRANSMETTRE"
               titreGold="L'EXCELLENCE"
-              image="/images/heroformation.png"
+              image="/images/hero/heroformation.png"
             />
           </div>
 
@@ -1040,9 +1000,9 @@ Performance & Prestige Academy
         {/* 4. Contenu centré : icône et texte */}
         <span className="absolute inset-0 z-10 flex items-center justify-center gap-4">
           <span className="text-left font-bold tracking-wider text-sm sm:text-base leading-tight">
-            ÉCHANGER SUR
+            DÉCOUVRIR NOS
             <br />
-            VOTRE PROJET
+            INTERVENTIONS
           </span>
         </span>
 
