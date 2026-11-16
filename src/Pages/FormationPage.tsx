@@ -225,39 +225,31 @@ Performance & Prestige Academy
 
   <div className="mt-auto pt-8 w-full flex justify-center">
     <button type="button"onClick={() => {setSelectedFormation(initiationMecaniqueFormation);setIsFormationModalOpen(true);}}
-      className="group relative overflow-hidden inline-flex items-center justify-between w-full max-w-[260px] h-[60px] px-6 rounded-2xl font-sans font-bold text-[#171717] border border-
-      [#E8D5A5] bg-[#BFA56D] shadow-[0_0_16px_rgba(207,180,119,0.30)] transition-all duration-300 hover:border-[#FFF0C5] hover:shadow-[0_0_25px_rgba(230,204,150,0.55)] active:scale-[0.99]" >
+      className="group relative overflow-hidden inline-flex items-center justify-center w-full max-w-[260px] h-[60px] rounded-2xl font-sans text-black border border-
+  [#E8B83E] bg-gradient-to-b from-[#FFF0A6] via-[#E8AC22] to-[#98600A] shadow-[0_3px_8px_rgba(0,0,0,0.65),0_0_14px_rgba(218,158,25,0.25),inset_0_2px_3px_rgba(255,255,255,0.85),inset_0_-3px_5px_rgba(83,43,0,0.65)] transition-all duration-300 hover:brightness-110 active:scale-[0.99]">
 
-      {/* 1. Dégradé champagne métallisé */}
-      <span className="absolute inset-0 bg-gradient-to-b from-[#FFF8E5] via-[#D9C18D] to-[#927344]" />
+  {/* 1. Reflet brillant supérieur */}
+  <span className="absolute inset-x-1 top-[2px] h-[38%] rounded-t-xl bg-gradient-to-b from-white/65 via-white/20 to-transparent pointer-events-none" />
 
-      {/* 2. Texture hachurée diagonale */}
-      <span className="absolute inset-0 opacity-20 pointer-events-none bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.35)_2px,rgba(255,255,255,0.35)_3px)]" />
+  {/* 2. Dégradé métallique */}
+  <span className="absolute inset-0 bg-gradient-to-b from-[#FFE99A]/30 via-transparent to-[#6E4000]/35 pointer-events-none" />
 
-      {/* 3. Reflet brillant supérieur */}
-      <span className="absolute inset-x-0 top-0 h-[45%] pointer-events-none bg-gradient-to-b from-white/70 via-white/20 to-transparent" />
+  {/* 3. Trois bandes dorées à gauche */}
+  <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFF0A0] to-[#C17B08] -skew-x-[25deg] z-10 shadow-[1px_0_2px_rgba(0,0,0,0.35)]" />
+  <span className="absolute -top-2 -bottom-2 left-[12%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
+  <span className="absolute -top-2 -bottom-2 left-[16%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
-      {/* 4. Ombre sous les bandes */}
-      <span className="absolute -top-3 -bottom-3 right-[28%] w-5 bg-black/30 blur-[2px] -skew-x-[22deg] z-10" />
+  {/* 4. Texte centré */}
+  <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+    Découvrir
+  </span>
 
-      {/* 5. Trois bandes obliques champagne / argent */}
-      <span className="absolute -top-3 -bottom-3 right-[26%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10 shadow-[-2px_0_8px_rgba(255,255,255,0.35)]" />
+  {/* 5. Flèche à droite */}
+  <span className="absolute right-[9%] top-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
+    <ArrowRight className="w-[25px] h-[25px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+  </span>
 
-      <span className="absolute -top-3 -bottom-3 right-[21%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#D8CFBB] to-[#82765F] -skew-x-[22deg] z-10" />
-
-      <span className="absolute -top-3 -bottom-3 right-[16%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10" />
-
-      {/* 6. Texte */}
-      <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
-        Découvrir
-      </span>
-
-      {/* 7. Flèche */}
-      <span className="relative z-10 flex items-center justify-center">
-        <ArrowRight className="w-[24px] h-[24px] text-[#171717] stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
-      </span>
-
-    </button>
+</button>
   </div>
 </ServiceCard>
 
@@ -279,34 +271,28 @@ Performance & Prestige Academy
 
   <div className="mt-auto pt-8 w-full flex justify-center">
   <button type="button" onClick={() => {setSelectedFormation(mecaniqueAuFemininFormation); setIsFormationModalOpen(true);}} 
-  className="group relative overflow-hidden inline-flex items-center justify-between w-full max-w-[260px] h-[60px] px-6 rounded-2xl font-sans text-[#171717] border border-
-  [#D9C18D]/80 bg-[#D9C18D] shadow-[0_0_20px_rgba(201,162,39,0.30)] transition-all duration-300 hover:border-[#FFF0C2] hover:shadow-[0_0_25px_rgba(217,193,141,0.55)] active:scale-[0.99]">
+  className="group relative overflow-hidden inline-flex items-center justify-center w-full max-w-[260px] h-[60px] rounded-2xl font-sans text-black border border-
+  [#E8B83E] bg-gradient-to-b from-[#FFF0A6] via-[#E8AC22] to-[#98600A] shadow-[0_3px_8px_rgba(0,0,0,0.65),0_0_14px_rgba(218,158,25,0.25),inset_0_2px_3px_rgba(255,255,255,0.85),inset_0_-3px_5px_rgba(83,43,0,0.65)] transition-all duration-300 hover:brightness-110 active:scale-[0.99]">
 
-  {/* 1. Dégradé de fond global */}
-  <span className="absolute inset-0 bg-gradient-to-r from-[#FFF8E5] via-[#D9C18D] to-[#927344]" />
+  {/* 1. Reflet brillant supérieur */}
+  <span className="absolute inset-x-1 top-[2px] h-[38%] rounded-t-xl bg-gradient-to-b from-white/65 via-white/20 to-transparent pointer-events-none" />
 
-  {/* 2. Texture hachurée diagonale */}
-  <span className="absolute inset-0 opacity-20 pointer-events-none bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.25)_2px,rgba(255,255,255,0.25)_3px)]" />
+  {/* 2. Dégradé métallique */}
+  <span className="absolute inset-0 bg-gradient-to-b from-[#FFE99A]/30 via-transparent to-[#6E4000]/35 pointer-events-none" />
 
-  {/* 3. Reflet brillant en haut */}
-  <span className="absolute inset-x-0 top-0 h-[45%] pointer-events-none bg-gradient-to-b from-white/50 via-white/15 to-transparent" />
+  {/* 3. Trois bandes dorées à gauche */}
+  <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFF0A0] to-[#C17B08] -skew-x-[25deg] z-10 shadow-[1px_0_2px_rgba(0,0,0,0.35)]" />
+  <span className="absolute -top-2 -bottom-2 left-[12%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
+  <span className="absolute -top-2 -bottom-2 left-[16%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
-  {/* 4. Ombre sous les bandes métalliques */}
-  <span className="absolute -top-3 -bottom-3 right-[28%] w-5 bg-black/30 blur-[2px] -skew-x-[22deg] z-10" />
-
-  {/* 5. Trois bandes obliques champagne / argent */}
-  <span className="absolute -top-3 -bottom-3 right-[26%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10 shadow-[-2px_0_8px_rgba(255,255,255,0.35)]" />
-  <span className="absolute -top-3 -bottom-3 right-[21%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#D8CFBB] to-[#82765F] -skew-x-[22deg] z-10" />
-  <span className="absolute -top-3 -bottom-3 right-[16%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10" />
-
-  {/* 6. Texte */}
+  {/* 4. Texte centré */}
   <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
     Découvrir
   </span>
 
-  {/* 7. Flèche */}
-  <span className="relative z-10 flex items-center justify-center">
-    <ArrowRight className="w-[24px] h-[24px] text-[#171717] stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+  {/* 5. Flèche à droite */}
+  <span className="absolute right-[9%] top-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
+    <ArrowRight className="w-[25px] h-[25px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
   </span>
 
 </button>
@@ -329,7 +315,9 @@ Performance & Prestige Academy
   </ul>
 
   <div className="mt-auto pt-8 w-full flex justify-center">
-  <button type="button" onClick={() => {setSelectedFormation(perfectionnementMecaniqueFormation); setIsFormationModalOpen(true);}} className="group relative overflow-hidden inline-flex items-center justify-center w-full max-w-[260px] h-[60px] rounded-2xl font-sans text-black border border-[#E8B83E] bg-gradient-to-b from-[#FFF0A6] via-[#E8AC22] to-[#98600A] shadow-[0_3px_8px_rgba(0,0,0,0.65),0_0_14px_rgba(218,158,25,0.25),inset_0_2px_3px_rgba(255,255,255,0.85),inset_0_-3px_5px_rgba(83,43,0,0.65)] transition-all duration-300 hover:brightness-110 active:scale-[0.99]">
+  <button type="button" onClick={() => {setSelectedFormation(perfectionnementMecaniqueFormation); setIsFormationModalOpen(true);}} 
+  className="group relative overflow-hidden inline-flex items-center justify-center w-full max-w-[260px] h-[60px] rounded-2xl font-sans text-black border border-
+  [#E8B83E] bg-gradient-to-b from-[#FFF0A6] via-[#E8AC22] to-[#98600A] shadow-[0_3px_8px_rgba(0,0,0,0.65),0_0_14px_rgba(218,158,25,0.25),inset_0_2px_3px_rgba(255,255,255,0.85),inset_0_-3px_5px_rgba(83,43,0,0.65)] transition-all duration-300 hover:brightness-110 active:scale-[0.99]">
 
   {/* 1. Reflet brillant supérieur */}
   <span className="absolute inset-x-1 top-[2px] h-[38%] rounded-t-xl bg-gradient-to-b from-white/65 via-white/20 to-transparent pointer-events-none" />
