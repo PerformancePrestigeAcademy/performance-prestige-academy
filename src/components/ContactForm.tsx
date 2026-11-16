@@ -112,7 +112,7 @@ export default function ContactForm() {
   </div>
 
   <div className="gold-border rounded-xl px-6 py-4 bg-dark-card text-center">
-    ✔ Premier échange sans engagement
+    ✔ Sans engagement
   </div>
 
 </div>
@@ -316,26 +316,26 @@ w-full
   </div>
 </a>
 
-      <a
+      
+<a
   href="mailto:contact@performance-prestige-academy.fr"
   className="flex items-start gap-4 group"
 >
-  <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center group-hover:bg-[#C9A227]/10 transition">
+  <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center group-hover:bg-[#C9A227]/10 transition flex-shrink-0">
     <Mail className="w-5 h-5 text-[#C9A227]" />
   </div>
 
-  <div className="flex-1">
+  <div className="flex-1 min-w-0">
     <p className="text-xs text-[#A8A9AD] uppercase tracking-wider">
       Email
     </p>
 
-    <p className="text-white leading-relaxed group-hover:text-[#C9A227] transition">
-      contact@performance-
-      <br />
-      prestige-academy.fr
+    <p className="text-white leading-relaxed break-words group-hover:text-[#C9A227] transition">
+      contact@performance-prestige-academy.fr
     </p>
   </div>
 </a>
+
 
       <div className="flex items-start gap-4">
         <div className="w-10 h-10 rounded-full border border-[rgba(201,162,39,0.35)] flex items-center justify-center">
