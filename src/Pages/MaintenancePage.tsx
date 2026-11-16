@@ -20,10 +20,9 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
 
 
-{/* Premier écran : Hero + navigation */}
+<main className="lg:h-[calc(100svh-80px)] lg:min-h-[560px] lg:grid lg:grid-rows-[52%_minmax(0,1fr)] lg:overflow-hidden">
 
-<main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
-
+  {/* HERO */}
   <div className="min-h-0 overflow-hidden [&>section]:!h-full [&>section]:!min-h-0 [&>section]:!max-h-full">
     <HeroPage
       surTitre="MAINTENANCE"
@@ -34,69 +33,75 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
     />
   </div>
 
-  {/* Navigation des services */}
-
+  {/* CARTES DE NAVIGATION */}
   <section id="maintenance" className="scroll-mt-28 py-20 bg-[#0A0A0A] lg:py-0 lg:min-h-0 lg:flex lg:items-center lg:overflow-hidden">
 
-    <div className="max-w-7xl mx-auto w-full px-6 lg:py-3">
+    <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227] w-full h-full">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-3">
-
-        {/* Carte 1 */}
-
-        <a href="#entretien" className="group relative overflow-hidden rounded-2xl h-64 lg:h-40 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-          <img src="/images/maintenance/entretien.png" alt="" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
-          <div className="absolute inset-0 flex items-end justify-center p-4">
-            <h3 className="font-racing text-lg text-white text-center uppercase">Entretien<br />courant</h3>
+      {/* CARTE 1 - ENTRETIEN */}
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1">
+        <a href="#entretien" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(0_0,100%_0,92%_100%,0_100%)]">
+          <img src="/images/maintenance/entretien.png" alt="Entretien courant automobile" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-5 pb-7 pt-12 xl:px-6 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-lg xl:text-xl leading-tight group-hover:text-[#F2D477] transition-colors">ENTRETIEN<br />COURANT</h3>
           </div>
         </a>
-
-        {/* Carte 2 */}
-
-        <a href="#revision" className="group relative overflow-hidden rounded-2xl h-64 lg:h-40 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-          <img src="/images/maintenance/revision.png" alt="" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
-          <div className="absolute inset-0 flex items-end justify-center p-4">
-            <h3 className="font-racing text-lg text-white text-center uppercase">Révision<br />constructeur</h3>
-          </div>
-        </a>
-
-        {/* Carte 3 */}
-
-        <a href="#diagnostic" className="group relative overflow-hidden rounded-2xl h-64 lg:h-40 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-          <img src="/images/maintenance/diagnostique.png" alt="" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
-          <div className="absolute inset-0 flex items-end justify-center p-4">
-            <h3 className="font-racing text-lg text-white text-center uppercase">Diagnostic</h3>
-          </div>
-        </a>
-
-        {/* Carte 4 */}
-
-        <a href="#performance" className="group relative overflow-hidden rounded-2xl h-64 lg:h-40 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-          <img src="/images/maintenance/preparation.png" alt="" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
-          <div className="absolute inset-0 flex items-end justify-center p-4">
-            <h3 className="font-racing text-lg text-white text-center uppercase">Préparation<br />& Optimisation</h3>
-          </div>
-        </a>
-
-        {/* Carte 5 */}
-
-        <a href="#restauration" className="group relative overflow-hidden rounded-2xl h-64 lg:h-40 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-          <img src="/images/maintenance/restauration.png" alt="" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
-          <div className="absolute inset-0 flex items-end justify-center p-4">
-            <h3 className="font-racing text-lg text-white text-center uppercase">Restauration<br />véhicules de collection</h3>
-          </div>
-        </a>
-
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
       </div>
+
+      {/* CARTE 2 - REVISION */}
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.2%]">
+        <a href="#revision" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]">
+          <img src="/images/maintenance/revision.png" alt="Révision constructeur automobile" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-5 pb-7 pt-12 xl:px-6 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-lg xl:text-xl leading-tight group-hover:text-[#F2D477] transition-colors">RÉVISION<br />CONSTRUCTEUR</h3>
+          </div>
+        </a>
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+      </div>
+
+      {/* CARTE 3 - DIAGNOSTIC */}
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.2%]">
+        <a href="#diagnostic" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]">
+          <img src="/images/maintenance/diagnostique.png" alt="Diagnostic électronique automobile" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-5 pb-7 pt-12 xl:px-6 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-lg xl:text-xl leading-tight group-hover:text-[#F2D477] transition-colors">DIAGNOSTIC</h3>
+          </div>
+        </a>
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+      </div>
+
+      {/* CARTE 4 - PREPARATION */}
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.2%]">
+        <a href="#performance" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]">
+          <img src="/images/maintenance/preparation.png" alt="Préparation et optimisation moteur" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-5 pb-7 pt-12 xl:px-6 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-lg xl:text-xl leading-tight group-hover:text-[#F2D477] transition-colors">PRÉPARATION<br />& OPTIMISATION</h3>
+          </div>
+        </a>
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+      </div>
+
+      {/* CARTE 5 - RESTAURATION */}
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.2%]">
+        <a href="#restauration" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,100%_100%,0_100%)]">
+          <img src="/images/maintenance/restauration.png" alt="Restauration de véhicules de collection" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-5 pb-7 pt-12 xl:px-6 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-lg xl:text-xl leading-tight group-hover:text-[#F2D477] transition-colors">RESTAURATION<br />VÉHICULES DE<br />COLLECTION</h3>
+          </div>
+        </a>
+      </div>
+
     </div>
   </section>
 
 </main>
+
 
 
 
