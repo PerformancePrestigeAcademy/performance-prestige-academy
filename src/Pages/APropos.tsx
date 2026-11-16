@@ -7,169 +7,96 @@ export default function AProposPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
       <SEO
-  title="À propos | Performance & Prestige Academy"
-  description="Découvrez le parcours, l’expérience en mécanique et compétition ainsi que la philosophie de Performance & Prestige Academy."
-  keywords="Performance Prestige Academy, mécanique automobile, mécanique moto, compétition automobile, préparation moteur, formation mécanique"
-/>
+        title="À propos | Performance & Prestige Academy"
+        description="Découvrez le parcours, l’expérience en mécanique et compétition ainsi que la philosophie de Performance & Prestige Academy."
+        keywords="Performance Prestige Academy, mécanique automobile, mécanique moto, compétition automobile, préparation moteur, formation mécanique"/>
 
       <Navbar />
 
       {/* Hero À propos — portraits cinématographiques en miroir */}
-<section className="relative min-h-[760px] overflow-hidden bg-[#050505] lg:min-h-screen">
-  {/* Fond principal */}
-  <div className="absolute inset-0 bg-[#070707]" />
+      <section className="relative min-h-[760px] overflow-hidden bg-[#050505] lg:min-h-screen">
+      {/* Fond principal */}
+      <div className="absolute inset-0 bg-[#070707]" />
+       {/* Texture légère — sans grand trou noir au centre */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(35,35,35,0.42)_0%,rgba(15,15,15,0.32)_48%,rgba(5,5,5,0.78)_100%)]"/>
 
-  {/* Texture légère — sans grand trou noir au centre */}
-  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(35,35,35,0.42)_0%,rgba(15,15,15,0.32)_48%,rgba(5,5,5,0.78)_100%)]"/>
+      {/* =========================
+          VERSION TABLETTE / DESKTOP
+      ========================== */}
+      <div className="absolute inset-0 hidden justify-center md:flex">
+        <div className="relative h-full w-full max-w-[1700px]">
+          {/* Portrait gauche — original */}
+          <div
+            className="absolute inset-y-0 left-0 w-[44%] overflow-hidden"
+            style={{
+              WebkitMaskImage:"linear-gradient(to right, black 0%, black 68%, transparent 100%)",
+              maskImage:"linear-gradient(to right, black 0%, black 68%, transparent 100%)",}}>
 
-  {/* =========================
-      VERSION TABLETTE / DESKTOP
-  ========================== */}
-  <div className="absolute inset-0 hidden justify-center md:flex">
-    <div className="relative h-full w-full max-w-[1700px]">
-      {/* Portrait gauche — original */}
-      <div
-        className="absolute inset-y-0 left-0 w-[44%] overflow-hidden"
-        style={{
-          WebkitMaskImage:"linear-gradient(to right, black 0%, black 68%, transparent 100%)",
-          maskImage:"linear-gradient(to right, black 0%, black 68%, transparent 100%)",}}>
+            <img src="/images/about/about-portrait.jpg"
+              alt="" aria-hidden="true"
+              className="absolute bottom-0 left-[4%] h-[92%] w-auto max-w-none object-contain opacity-75 blur-[0.4px] lg:left-[8%] lg:h-[96%]"/>
+          </div>
 
-        <img src="/images/about/about-portrait.jpg"
-          alt=""
-          aria-hidden="true"
-          className="absolute bottom-0 left-[4%] h-[92%] w-auto max-w-none object-contain opacity-75 blur-[0.4px] lg:left-[8%] lg:h-[96%]"/>
+          {/* Portrait droit — miroir */}
+          <div
+            className="absolute inset-y-0 right-0 w-[44%] overflow-hidden"
+            style={{
+              WebkitMaskImage:"linear-gradient(to left, black 0%, black 68%, transparent 100%)",
+              maskImage:"linear-gradient(to left, black 0%, black 68%, transparent 100%)",}}>
+            <img src="/images/about/about-portrait.jpg" 
+              alt="" aria-hidden="true"
+              className="absolute bottom-0 right-[4%] h-[92%] w-auto max-w-none -scale-x-100 object-contain opacity-75 blur-[0.4px] lg:right-[8%] lg:h-[96%]"/>
+          </div>
+        </div>
       </div>
 
-      {/* Portrait droit — miroir */}
-      <div
-        className="absolute inset-y-0 right-0 w-[44%] overflow-hidden"
-        style={{
-          WebkitMaskImage:"linear-gradient(to left, black 0%, black 68%, transparent 100%)",
-          maskImage:"linear-gradient(to left, black 0%, black 68%, transparent 100%)",}}>
-        <img src="/images/about/about-portrait.jpg" 
-          alt=""
-          aria-hidden="true"
-          className="absolute bottom-0 right-[4%] h-[92%] w-auto max-w-none -scale-x-100 object-contain opacity-75 blur-[0.4px] lg:right-[8%] lg:h-[96%]"/>
+      {/* =========================
+          VERSION MOBILE
+      ========================== */}
+      <div className="absolute inset-0 md:hidden">
+        <img
+          src="/images/about-portrait.jpg"
+          alt="" aria-hidden="true"
+          className="absolute bottom-0 left-1/2 h-[84%] w-auto max-w-none -translate-x-1/2 object-contain opacity-60 blur-[0.4px]"/>
+
+        {/* Assombrissement latéral mobile */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/10 to-black/55" />
+
+        {/* Lisibilité au centre sans cacher complètement la photo */}
+        <div
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.12)_0%,rgba(0,0,0,0.18)_42%,rgba(0,0,0,0.58)_100%)]"/>
       </div>
-    </div>
-  </div>
 
-  {/* =========================
-      VERSION MOBILE
-  ========================== */}
-  <div className="absolute inset-0 md:hidden">
-    <img
-      src="/images/about-portrait.jpg"
-      alt=""
-      aria-hidden="true"
-      className="
-        absolute
-        bottom-0
-        left-1/2
-        h-[84%]
-        w-auto
-        max-w-none
-        -translate-x-1/2
-        object-contain
-        opacity-60
-        blur-[0.4px]
-      "
-    />
+      {/* Voile central desktop beaucoup plus léger */}
+      <div className="absolute inset-0 hidden md:block bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.18)_0%,rgba(0,0,0,0.12)_26%,rgba(0,0,0,0.08)_48%,rgba(0,0,0,0.24)_76%,rgba(0,0,0,0.45)_100%)]"/>
 
-    {/* Assombrissement latéral mobile */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/10 to-black/55" />
+      {/* Assombrissement vertical similaire aux autres Hero */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-[#0A0A0A]"/>
 
-    {/* Lisibilité au centre sans cacher complètement la photo */}
-    <div
-      className="
-        absolute inset-0
-        bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.12)_0%,rgba(0,0,0,0.18)_42%,rgba(0,0,0,0.58)_100%)]
-      "
-    />
-  </div>
+      {/* Vignette douce */}
+      <div className="absolute inset-0 shadow-[inset_0_0_110px_rgba(0,0,0,0.48)]" />
 
-  {/* Voile central desktop beaucoup plus léger */}
-  <div
-    className="
-      absolute inset-0 hidden md:block
-      bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.18)_0%,rgba(0,0,0,0.12)_26%,rgba(0,0,0,0.08)_48%,rgba(0,0,0,0.24)_76%,rgba(0,0,0,0.45)_100%)]
-    "
-  />
+      {/* Contenu */}
+      <div className="relative z-10 mx-auto flex min-h-[760px] max-w-5xl flex-col items-center justify-center px-6 pb-28 pt-36 text-center lg:min-h-screen">
+    
+      {/* Ombre locale uniquement derrière le texte */}
+      <div aria-hidden="true"
+      className="absolute left-1/2 top-1/2 h-[320px] w-[min(90vw,720px)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/20 blur-3xl"/>
 
-  {/* Assombrissement vertical similaire aux autres Hero */}
-  <div
-    className="
-      absolute inset-0
-      bg-gradient-to-b
-      from-black/55
-      via-transparent
-      to-[#0A0A0A]
-    "
-  />
-
-  {/* Vignette douce */}
-  <div className="absolute inset-0 shadow-[inset_0_0_110px_rgba(0,0,0,0.48)]" />
-
-  {/* Contenu */}
-  <div
-    className="
-      relative z-10
-      mx-auto
-      flex min-h-[760px] max-w-5xl
-      flex-col items-center justify-center
-      px-6
-      pb-28 pt-36
-      text-center
-      lg:min-h-screen
-    "
-  >
-    {/* Ombre locale uniquement derrière le texte */}
-    <div
-      aria-hidden="true"
-      className="
-        absolute
-        left-1/2 top-1/2
-        h-[320px] w-[min(90vw,720px)]
-        -translate-x-1/2 -translate-y-1/2
-        rounded-full
-        bg-black/20
-        blur-3xl
-      "
-    />
-
-    <div className="relative z-10">
+      <div className="relative z-10">
+      
       <p className="mb-5 font-racing text-xl tracking-[0.42em] text-[#C9A227]">
-  L&apos;HISTOIRE
-</p>
+        L&apos;HISTOIRE
+      </p>
 
-      <h1
-        className="
-          font-racing
-          text-5xl
-          font-black
-          leading-none
-          tracking-tight
-          text-white
-          sm:text-7xl
-          lg:text-8xl
-        "
-      >
-        À <span className="gold-gradient">PROPOS</span>
+      <h1 className="font-racing text-5xl font-black leading-none tracking-tight text-white sm:text-7xl lg:text-8xl">
+          À 
+        <span className="gold-gradient">
+          PROPOS
+        </span>
       </h1>
 
-      <p
-        className="
-          mt-7
-          max-w-xl
-          font-racing
-          text-xs
-          uppercase
-          tracking-[0.2em]
-          text-white/75
-          sm:text-base
-          sm:tracking-[0.24em]
-        "
-      >
+      <p className="mt-7 max-w-xl font-racing text-xs uppercase tracking-[0.2em] text-white/75 sm:text-base sm:tracking-[0.24em]">
         Une passion devenue métier
       </p>
     </div>
