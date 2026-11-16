@@ -140,7 +140,7 @@ function ServicePanels() {
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#C9A227]/0 via-transparent to-[#C9A227]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             {/* Contenu */}
-            <div className="relative z-10 px-6 pb-6 pt-12 xl:px-8 xl:pb-7">
+            <div className={`relative z-10 pb-6 pt-12 xl:pb-7 ${index === 0? "px-6 xl:px-8": "pl-20 pr-6 xl:pl-24 2xl:pl-28"}`}>
 
               <div className="flex items-center gap-3 mb-3">
 
