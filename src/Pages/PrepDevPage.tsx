@@ -31,7 +31,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
       <a href="#preparation-mecanique" className="group relative overflow-hidden rounded-2xl h-64 md:h-72 gold-border hover:-translate-y-2 transition-all duration-300">
-        <img src="/images/preparation/preparation-mecanique.png" alt="Préparation mécanique moteur" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+        <img src="/images/prep-dev/mecanique.png" alt="Préparation mécanique moteur" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
         <div className="absolute inset-0 flex items-end justify-center p-6 text-center">
           <h3 className="font-racing text-2xl text-white drop-shadow-lg">Préparation<br />mécanique</h3>
@@ -39,7 +39,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       </a>
 
       <a href="#developpement-pieces" className="group relative overflow-hidden rounded-2xl h-64 md:h-72 gold-border hover:-translate-y-2 transition-all duration-300">
-        <img src="/images/preparation/developpement-pieces.png" alt="Développement et usinage de pièces" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+        <img src="/images/prep-dev/developpement.png" alt="Développement et usinage de pièces" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
         <div className="absolute inset-0 flex items-end justify-center p-6 text-center">
           <h3 className="font-racing text-2xl text-white drop-shadow-lg">Développement<br />de pièces</h3>
@@ -47,7 +47,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       </a>
 
       <a href="#acquisition-donnees" className="group relative overflow-hidden rounded-2xl h-64 md:h-72 gold-border hover:-translate-y-2 transition-all duration-300">
-        <img src="/images/preparation/acquisition-donnees.png" alt="Acquisition et analyse de données moto" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+        <img src="/images/prep-dev/acquisition.png" alt="Acquisition et analyse de données moto" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
         <div className="absolute inset-0 flex items-end justify-center p-6 text-center">
           <h3 className="font-racing text-2xl text-white drop-shadow-lg">Acquisition<br />& analyse de données</h3>
@@ -55,7 +55,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       </a>
 
       <a href="#assistance-competition" className="group relative overflow-hidden rounded-2xl h-64 md:h-72 gold-border hover:-translate-y-2 transition-all duration-300">
-        <img src="/images/preparation/assistance-competition.png" alt="Assistance compétition moto" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+        <img src="/images/prep-dev/assistance.png" alt="Assistance compétition moto" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
         <div className="absolute inset-0 flex items-end justify-center p-6 text-center">
           <h3 className="font-racing text-2xl text-white drop-shadow-lg">Assistance<br />compétition</h3>
