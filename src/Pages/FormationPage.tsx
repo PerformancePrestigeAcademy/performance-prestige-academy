@@ -342,13 +342,13 @@ Performance & Prestige Academy
   {/* 3. Reflet brillant en haut */}
   <span className="absolute inset-x-0 top-0 h-[45%] pointer-events-none bg-gradient-to-b from-white/50 via-white/15 to-transparent" />
 
-  {/* 4. Ombre sous les bandes métalliques */}
-  <span className="absolute -top-3 -bottom-3 right-[28%] w-5 bg-black/30 blur-[2px] -skew-x-[22deg] z-10" />
+    {/* 4. Ombre discrète sous les bandes */}
+  <span className="absolute -top-3 -bottom-3 right-[28%] w-2 bg-black/25 blur-[2px] -skew-x-[22deg] z-10" />
 
-  {/* 5. Trois bandes obliques champagne / argent */}
-  <span className="absolute -top-3 -bottom-3 right-[26%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10 shadow-[-2px_0_8px_rgba(255,255,255,0.35)]" />
-  <span className="absolute -top-3 -bottom-3 right-[21%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#D8CFBB] to-[#82765F] -skew-x-[22deg] z-10" />
-  <span className="absolute -top-3 -bottom-3 right-[16%] w-3.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10" />
+  {/* 5. Trois bandes métalliques fines et distinctes */}
+  <span className="absolute -top-3 -bottom-3 right-[26%] w-1.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10 shadow-[-1px_0_4px_rgba(255,255,255,0.25)]" />
+  <span className="absolute -top-3 -bottom-3 right-[21%] w-1.5 bg-gradient-to-b from-[#FFFFFF] via-[#D8CFBB] to-[#82765F] -skew-x-[22deg] z-10" />
+  <span className="absolute -top-3 -bottom-3 right-[16%] w-1.5 bg-gradient-to-b from-[#FFFFFF] via-[#E9E2D1] to-[#9B927F] -skew-x-[22deg] z-10" />
 
   {/* 6. Texte */}
   <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
