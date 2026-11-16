@@ -1037,19 +1037,19 @@ Performance & Prestige Academy
         <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
         <span className="absolute -top-2 -bottom-2 left-[11%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
-        {/* 4. Contenu : icône et texte */}
-        <span className="relative z-10 flex items-center gap-4">
+        {/* 4. Contenu centré : icône et texte */}
+        <span className="absolute inset-0 z-10 flex items-center justify-center gap-4">
           <BookOpen className="w-8 h-8 text-black flex-shrink-0 stroke-[1.75]" />
           <span className="text-left font-bold tracking-wider text-sm sm:text-base leading-tight">
-            DÉCOUVRIR LES
+            ÉCHANGER SUR
             <br />
-            INTERVENTIONS
+            VOTRE PROJET
           </span>
         </span>
 
         {/* 5. Flèche à droite */}
-        <span className="relative z-10 flex items-center justify-center pr-1">
-          <ArrowRight className="w-[28px] h-[28px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1"/>
+        <span className="absolute right-[9%] top-1/2 -translate-y-1/2 z-20 flex items-center justify-center">
+          <ArrowRight className="w-[28px] h-[28px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
         </span>
 
       </button>
@@ -1082,8 +1082,8 @@ Performance & Prestige Academy
         <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
         <span className="absolute -top-2 -bottom-2 left-[11%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
-        {/* 4. Contenu : icône et texte */}
-        <span className="relative z-10 flex items-center gap-4">
+        {/* 4. Contenu centré : icône et texte */}
+        <span className="absolute inset-0 z-10 flex items-center justify-center gap-4">
           <Users className="w-8 h-8 text-black flex-shrink-0 stroke-[1.75]" />
           <span className="text-left font-bold tracking-wider text-sm sm:text-base leading-tight">
             ÉCHANGER SUR
@@ -1093,7 +1093,7 @@ Performance & Prestige Academy
         </span>
 
         {/* 5. Flèche à droite */}
-        <span className="relative z-10 flex items-center justify-center pr-1">
+        <span className="absolute right-[9%] top-1/2 -translate-y-1/2 z-20 flex items-center justify-center">
           <ArrowRight className="w-[28px] h-[28px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
         </span>
 
