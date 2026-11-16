@@ -18,7 +18,7 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       <Navbar />
 
       
-<main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
+<main className="lg:h-[calc(100svh-80px)] lg:min-h-[560px] lg:grid lg:grid-rows-[52%_minmax(0,1fr)] lg:overflow-hidden">
 
   {/* HERO */}
   <div className="min-h-0 overflow-hidden [&>section]:!h-full [&>section]:!min-h-0 [&>section]:!max-h-full">
