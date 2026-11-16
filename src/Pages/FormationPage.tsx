@@ -629,9 +629,9 @@ Performance & Prestige Academy
           <span className="absolute inset-0 bg-gradient-to-b from-[#FFE99A]/30 via-transparent to-[#6E4000]/35 pointer-events-none" />
 
           {/* 3. Trois bandes dorées à gauche */}
-          <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFF0A0] to-[#C17B08] -skew-x-[25deg] z-10 shadow-[1px_0_2px_rgba(0,0,0,0.35)]" />
+          <span className="absolute -top-2 -bottom-2 left-[8%]  w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFF0A0] to-[#C17B08] -skew-x-[25deg] z-10 shadow-[1px_0_2px_rgba(0,0,0,0.35)]" />
           <span className="absolute -top-2 -bottom-2 left-[12%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
-          <span className="absolute -top-2 -bottom-2 left-[16%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg]] z-10" />
+          <span className="absolute -top-2 -bottom-2 left-[16%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
           {/* 4. Texte centré */}
           <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
@@ -1039,7 +1039,6 @@ Performance & Prestige Academy
 
         {/* 4. Contenu centré : icône et texte */}
         <span className="absolute inset-0 z-10 flex items-center justify-center gap-4">
-          <BookOpen className="w-8 h-8 text-black flex-shrink-0 stroke-[1.75]" />
           <span className="text-left font-bold tracking-wider text-sm sm:text-base leading-tight">
             ÉCHANGER SUR
             <br />
