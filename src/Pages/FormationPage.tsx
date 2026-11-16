@@ -211,7 +211,7 @@ Performance & Prestige Academy
 {/* DÉBUTANT */}
 
 <ServiceCard number="01" subtitle="DÉBUTANT" title="Découvrir la mécanique">
-  
+
   <ul className="space-y-3 text-[#A8A9AD]">
     <li>✔ Entretien courant</li>
     <li>✔ Fonctionnement d'un moteur</li>
@@ -387,350 +387,177 @@ Performance & Prestige Academy
 
 
 
-<section id="preparation" 
-            className="scroll-mt-32 py-24 bg-[#0A0A0A]">
+<section id="preparation" className="scroll-mt-32 py-24 bg-[#0A0A0A]">
 
-     <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-         <div className="text-center mb-20">
+    <div className="text-center mb-20">
 
-             <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-             ACCOMPAGNEMENT
-             </p>
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        ACCOMPAGNEMENT
+      </p>
 
-             <h2 className="font-racing text-5xl mb-6">
-             PRÉPARATION À
-             <br />
-             <span className="gold-gradient">
-             L'ENTRÉE EN FORMATION
-             </span>
-             </h2>
+      <h2 className="font-racing text-5xl mb-6">
+          PRÉPARATION À
+        <br />
+        <span className="gold-gradient">
+          L'ENTRÉE EN FORMATION
+        </span>
+      </h2>
 
-             <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-             Vous souhaitez intégrer une formation en mécanique mais vous manquez
-             de bases ou de confiance ?
-             Nous proposons une remise à niveau adaptée avant votre entrée en CAP,
-             Bac Professionnel ou BTS.
-             </p>
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Vous souhaitez intégrer une formation en mécanique mais vous manquez
+        de bases ou de confiance ?
+        Nous proposons une remise à niveau adaptée avant votre entrée en CAP,
+        Bac Professionnel ou BTS.
+      </p>
 
-         </div>
-     </div>
+    </div>
+  </div>
 
 {/* Préparation à l'entrée en formation */}
 
-     <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-         <div className="grid lg:grid-cols-3 gap-8">
+    <div className="grid lg:grid-cols-3 gap-8">
 
-            {/* ENTREE EN FORMATION CAP */}
+      {/* ENTREE EN FORMATION CAP */}
         
-             <ServiceCard
-    number="01"
-    subtitle="CAP"
-    title="Découvrir les fondamentaux"
->
+      <ServiceCard 
+        number="01"
+        subtitle="CAP"
+        title="Découvrir les fondamentaux">
 
-    <ul className="space-y-3 text-[#A8A9AD]">
-
+      <ul className="space-y-3 text-[#A8A9AD]">
         <li>• Entretien courant des véhicules</li>
         <li>• Contrôles et diagnostics simples</li>
         <li>• Remplacement des organes d'usure</li>
         <li>• Méthodes de travail en atelier</li>
+      </ul>
 
-    </ul>
+      <div className="mt-auto pt-8 w-full flex justify-center">
+        <button type="button" onClick={() => {setSelectedFormation(preparationEntreeCAPFormation); setIsFormationModalOpen(true);}} className="group relative overflow-hidden inline-flex items-center justify-center w-full max-w-[260px] h-[60px] rounded-2xl font-sans text-black border border-[#E8B83E] bg-gradient-to-b from-[#FFF0A6] via-[#E8AC22] to-[#98600A] shadow-[0_3px_8px_rgba(0,0,0,0.65),0_0_14px_rgba(218,158,25,0.25),inset_0_2px_3px_rgba(255,255,255,0.85),inset_0_-3px_5px_rgba(83,43,0,0.65)] transition-all duration-300 hover:brightness-110 active:scale-[0.99]">
 
-    <div className="mt-auto pt-8 w-full flex justify-center">
-  <button
-    type="button"
-    onClick={() => {
-      setSelectedFormation(preparationEntreeCAPFormation);
-      setIsFormationModalOpen(true);
-    }}
-    className="
-      group relative overflow-hidden
-      inline-flex items-center justify-between
-      w-full max-w-[260px] h-[60px]
-      px-6
-      rounded-2xl
-      font-sans text-white
-      border border-[#A81B22]/80
-      bg-[#0C0204]
-      shadow-[0_0_20px_rgba(168,27,34,0.4)]
-      transition-all duration-300
-      hover:border-[#d62832] hover:shadow-[0_0_25px_rgba(214,40,50,0.55)]
-      active:scale-[0.99]
-    "
-  >
-    {/* 1. Dégradé de fond global */}
-    <span
-      className="
-        absolute inset-0
-        bg-gradient-to-r from-[#690D13] via-[#240407] to-[#0A0203]
-      "
-    />
+          {/* 1. Reflet brillant supérieur */}
+          <span className="absolute inset-x-1 top-[2px] h-[38%] rounded-t-xl bg-gradient-to-b from-white/65 via-white/20 to-transparent pointer-events-none" />
 
-    {/* 2. Texture hachurée diagonale */}
-    <span
-      className="
-        absolute inset-0 opacity-20 pointer-events-none
-        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
-      "
-    />
+          {/* 2. Dégradé métallique */}
+          <span className="absolute inset-0 bg-gradient-to-b from-[#FFE99A]/30 via-transparent to-[#6E4000]/35 pointer-events-none" />
 
-    {/* 3. Reflet brillant en haut (effet gloss) */}
-    <span
-      className="
-        absolute inset-x-0 top-0 h-[45%] pointer-events-none
-        bg-gradient-to-b from-white/15 via-white/5 to-transparent
-      "
-    />
+          {/* 3. Trois bandes dorées à gauche */}
+          <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFF0A0] to-[#C17B08] -skew-x-[25deg] z-10 shadow-[1px_0_2px_rgba(0,0,0,0.35)]" />
+          <span className="absolute -top-2 -bottom-2 left-[12%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
+          <span className="absolute -top-2 -bottom-2 left-[16%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
-    {/* 4. Ombre portée sous la bande rouge */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[28%] w-5
-        bg-black/60 blur-[2px]
-        -skew-x-[22deg] z-10
-      "
-    />
+          {/* 4. Texte centré */}
+          <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+            Découvrir
+          </span>
 
-    {/* 5. Bande rouge diagonale */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[26%] w-3.5
-        bg-gradient-to-b from-[#F23038] via-[#A61218] to-[#2B0305]
-        -skew-x-[22deg] z-10
-        shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
-      "
-    />
+          {/* 5. Flèche à droite */}
+          <span className="absolute right-[9%] top-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
+            <ArrowRight className="w-[25px] h-[25px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+          </span>
 
-    {/* 6. Contenu Gauche (Texte) */}
-    <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
-      Découvrir
-    </span>
+        </button>
+      </div>
 
-    {/* 7. Flèche à droite */}
-    <span className="relative z-10 flex items-center justify-center">
-      <ArrowRight
-        className="
-          w-[24px] h-[24px] text-white stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1.5
-        "
-      />
-    </span>
-  </button>
-</div>
+      </ServiceCard>
 
-</ServiceCard>
-      
-            {/* ENTREE EN FORMATION BAC PRO */}
+      {/* ENTREE EN FORMATION BAC PRO */}
 
-             <ServiceCard
-    number="02"
-    subtitle="BAC PRO"
-    title="Développer son autonomie"
->
+      <ServiceCard
+        number="02"
+        subtitle="BAC PRO"
+        title="Développer son autonomie">
 
-    <ul className="space-y-3 text-[#A8A9AD]">
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>• Diagnostic des systèmes</li>
+          <li>• Maintenance corrective</li>
+          <li>• Contrôles et réglages</li>
+          <li>• Recherche de panne</li>
+        </ul>
 
-        <li>• Diagnostic des systèmes</li>
-        <li>• Maintenance corrective</li>
-        <li>• Contrôles et réglages</li>
-        <li>• Recherche de panne</li>
+        <div className="mt-auto pt-8 w-full flex justify-center">
+          <button type="button" onClick={() => {setSelectedFormation(preparationEntreeBacProFormation); setIsFormationModalOpen(true);}} 
+          className="group relative overflow-hidden inline-flex items-center justify-center w-full max-w-[260px] h-[60px] rounded-2xl font-sans text-black border border-
+          [#E8B83E] bg-gradient-to-b from-[#FFF0A6] via-[#E8AC22] to-[#98600A] shadow-[0_3px_8px_rgba(0,0,0,0.65),0_0_14px_rgba(218,158,25,0.25),inset_0_2px_3px_rgba(255,255,255,0.85),inset_0_-3px_5px_rgba(83,43,0,0.65)] transition-all duration-300 hover:brightness-110 active:scale-[0.99]">
 
-    </ul>
+            {/* 1. Reflet brillant supérieur */}
+            <span className="absolute inset-x-1 top-[2px] h-[38%] rounded-t-xl bg-gradient-to-b from-white/65 via-white/20 to-transparent pointer-events-none" />
 
-    <div className="mt-auto pt-8 w-full flex justify-center">
-  <button
-    type="button"
-    onClick={() => {
-      setSelectedFormation(preparationEntreeBacProFormation);
-      setIsFormationModalOpen(true);
-    }}
-    className="
-      group relative overflow-hidden
-      inline-flex items-center justify-between
-      w-full max-w-[260px] h-[60px]
-      px-6
-      rounded-2xl
-      font-sans text-white
-      border border-[#A81B22]/80
-      bg-[#0C0204]
-      shadow-[0_0_20px_rgba(168,27,34,0.4)]
-      transition-all duration-300
-      hover:border-[#d62832] hover:shadow-[0_0_25px_rgba(214,40,50,0.55)]
-      active:scale-[0.99]
-    "
-  >
-    {/* 1. Dégradé de fond global */}
-    <span
-      className="
-        absolute inset-0
-        bg-gradient-to-r from-[#690D13] via-[#240407] to-[#0A0203]
-      "
-    />
+            {/* 2. Dégradé métallique */}
+            <span className="absolute inset-0 bg-gradient-to-b from-[#FFE99A]/30 via-transparent to-[#6E4000]/35 pointer-events-none" />
 
-    {/* 2. Texture hachurée diagonale */}
-    <span
-      className="
-        absolute inset-0 opacity-20 pointer-events-none
-        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
-      "
-    />
+            {/* 3. Trois bandes dorées à gauche */}
+            <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFF0A0] to-[#C17B08] -skew-x-[25deg] z-10 shadow-[1px_0_2px_rgba(0,0,0,0.35)]" />
+            <span className="absolute -top-2 -bottom-2 left-[12%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
+            <span className="absolute -top-2 -bottom-2 left-[16%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
-    {/* 3. Reflet brillant en haut (effet gloss) */}
-    <span
-      className="
-        absolute inset-x-0 top-0 h-[45%] pointer-events-none
-        bg-gradient-to-b from-white/15 via-white/5 to-transparent
-      "
-    />
+            {/* 4. Texte centré */}
+            <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+              Découvrir
+            </span>
 
-    {/* 4. Ombre portée sous la bande rouge */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[28%] w-5
-        bg-black/60 blur-[2px]
-        -skew-x-[22deg] z-10
-      "
-    />
+            {/* 5. Flèche à droite */}
+            <span className="absolute right-[9%] top-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
+              <ArrowRight className="w-[25px] h-[25px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+            </span>
 
-    {/* 5. Bande rouge diagonale */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[26%] w-3.5
-        bg-gradient-to-b from-[#F23038] via-[#A61218] to-[#2B0305]
-        -skew-x-[22deg] z-10
-        shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
-      "
-    />
+          </button>
+        </div>
 
-    {/* 6. Contenu Gauche (Texte) */}
-    <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
-      Découvrir
-    </span>
+      </ServiceCard>
 
-    {/* 7. Flèche à droite */}
-    <span className="relative z-10 flex items-center justify-center">
-      <ArrowRight
-        className="
-          w-[24px] h-[24px] text-white stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1.5
-        "
-      />
-    </span>
-  </button>
-</div>
+      {/* ENTREE EN FORMATION BTS */}
+    
+      <ServiceCard
+        number="03"
+        subtitle="BTS"
+        title="Approfondir son expertise">
 
-</ServiceCard>
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>• Analyse des systèmes complexes</li>
+          <li>• Diagnostic avancé</li>
+          <li>• Organisation des interventions</li>
+          <li>• Documentation constructeur</li>
+        </ul>
 
-            {/* ENTREE EN FORMATION BTS */}
-             <ServiceCard
-    number="03"
-    subtitle="BTS"
-    title="Approfondir son expertise"
->
+        <div className="mt-auto pt-8 w-full flex justify-center">
+          <button type="button" onClick={() => {setSelectedFormation(preparationEntreeBTSFormation); setIsFormationModalOpen(true);}} 
+            className="group relative overflow-hidden inline-flex items-center justify-center w-full max-w-[260px] h-[60px] rounded-2xl font-sans text-black border border-
+            [#E8B83E] bg-gradient-to-b from-[#FFF0A6] via-[#E8AC22] to-[#98600A] shadow-[0_3px_8px_rgba(0,0,0,0.65),0_0_14px_rgba(218,158,25,0.25),inset_0_2px_3px_rgba(255,255,255,0.85),inset_0_-3px_5px_rgba(83,43,0,0.65)] transition-all duration-300 hover:brightness-110 active:scale-[0.99]">
 
-    <ul className="space-y-3 text-[#A8A9AD]">
+            {/* 1. Reflet brillant supérieur */}
+            <span className="absolute inset-x-1 top-[2px] h-[38%] rounded-t-xl bg-gradient-to-b from-white/65 via-white/20 to-transparent pointer-events-none" />
 
-        <li>• Analyse des systèmes complexes</li>
-        <li>• Diagnostic avancé</li>
-        <li>• Organisation des interventions</li>
-        <li>• Documentation constructeur</li>
+            {/* 2. Dégradé métallique */}
+            <span className="absolute inset-0 bg-gradient-to-b from-[#FFE99A]/30 via-transparent to-[#6E4000]/35 pointer-events-none" />
 
-    </ul>
+            {/* 3. Trois bandes dorées à gauche */}
+            <span className="absolute -top-2 -bottom-2 left-[8%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFF0A0] to-[#C17B08] -skew-x-[25deg] z-10 shadow-[1px_0_2px_rgba(0,0,0,0.35)]" />
+            <span className="absolute -top-2 -bottom-2 left-[12%] w-[5px] bg-gradient-to-r from-[#9A5C00] via-[#FFF4B8] to-[#D18B0B] -skew-x-[25deg] z-10" />
+            <span className="absolute -top-2 -bottom-2 left-[16%] w-[5px] bg-gradient-to-r from-[#8B5100] via-[#FFEBA0] to-[#C17B08] -skew-x-[25deg] z-10" />
 
-    <div className="mt-auto pt-8 w-full flex justify-center">
-  <button
-    type="button"
-    onClick={() => {
-      setSelectedFormation(preparationEntreeBTSFormation);
-      setIsFormationModalOpen(true);
-    }}
-    className="
-      group relative overflow-hidden
-      inline-flex items-center justify-between
-      w-full max-w-[260px] h-[60px]
-      px-6
-      rounded-2xl
-      font-sans text-white
-      border border-[#A81B22]/80
-      bg-[#0C0204]
-      shadow-[0_0_20px_rgba(168,27,34,0.4)]
-      transition-all duration-300
-      hover:border-[#d62832] hover:shadow-[0_0_25px_rgba(214,40,50,0.55)]
-      active:scale-[0.99]
-    "
-  >
-    {/* 1. Dégradé de fond global */}
-    <span
-      className="
-        absolute inset-0
-        bg-gradient-to-r from-[#690D13] via-[#240407] to-[#0A0203]
-      "
-    />
+            {/* 4. Texte centré */}
+            <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
+              Découvrir
+            </span>
 
-    {/* 2. Texture hachurée diagonale */}
-    <span
-      className="
-        absolute inset-0 opacity-20 pointer-events-none
-        bg-[repeating-linear-gradient(-45deg,transparent,transparent_2px,rgba(255,255,255,0.18)_2px,rgba(255,255,255,0.18)_3px)]
-      "
-    />
+            {/* 5. Flèche à droite */}
+            <span className="absolute right-[9%] top-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
+              <ArrowRight className="w-[25px] h-[25px] text-black stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+            </span>
 
-    {/* 3. Reflet brillant en haut (effet gloss) */}
-    <span
-      className="
-        absolute inset-x-0 top-0 h-[45%] pointer-events-none
-        bg-gradient-to-b from-white/15 via-white/5 to-transparent
-      "
-    />
+          </button>
+        </div>
 
-    {/* 4. Ombre portée sous la bande rouge */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[28%] w-5
-        bg-black/60 blur-[2px]
-        -skew-x-[22deg] z-10
-      "
-    />
-
-    {/* 5. Bande rouge diagonale */}
-    <span
-      className="
-        absolute -top-3 -bottom-3 right-[26%] w-3.5
-        bg-gradient-to-b from-[#F23038] via-[#A61218] to-[#2B0305]
-        -skew-x-[22deg] z-10
-        shadow-[-2px_0_8px_rgba(0,0,0,0.6)]
-      "
-    />
-
-    {/* 6. Contenu Gauche (Texte) */}
-    <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase">
-      Découvrir
-    </span>
-
-    {/* 7. Flèche à droite */}
-    <span className="relative z-10 flex items-center justify-center">
-      <ArrowRight
-        className="
-          w-[24px] h-[24px] text-white stroke-[2.25]
-          transition-transform duration-300
-          group-hover:translate-x-1.5
-        "
-      />
-    </span>
-  </button>
-</div>
-
-</ServiceCard>
+      </ServiceCard>
 
 
-         </div>
+    </div>
 
-     </div>
+  </div>
 
 </section>
 
