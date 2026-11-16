@@ -1084,7 +1084,6 @@ Performance & Prestige Academy
 
         {/* 4. Contenu centré : icône et texte */}
         <span className="absolute inset-0 z-10 flex items-center justify-center gap-4">
-          <Users className="w-8 h-8 text-black flex-shrink-0 stroke-[1.75]" />
           <span className="text-left font-bold tracking-wider text-sm sm:text-base leading-tight">
             ÉCHANGER SUR
             <br />
