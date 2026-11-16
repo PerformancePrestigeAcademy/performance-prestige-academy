@@ -20,106 +20,75 @@ keywords="préparation compétition, préparation moteur, préparation châssis,
       
 <main className="lg:h-[calc(100svh-80px)] lg:min-h-[560px] lg:grid lg:grid-rows-[52%_minmax(0,1fr)] lg:overflow-hidden">
 
- 
-{/* Hero maintenance */}
-
-<section id="maintenance" className="py-16 lg:py-12 bg-[#0A0A0A] scroll-mt-28">
-
-  <div className="max-w-7xl mx-auto px-6">
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
-
-      {/* Carte 1 - Entretien */}
-
-      <a href="#entretien" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-
-        <img src="/images/maintenance/entretien.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
-
-        <div className="absolute inset-0 flex items-end justify-center p-6">
-          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
-            Entretien
-          </h3>
-        </div>
-
-      </a>
-
-      {/* Carte 2 - Révision */}
-
-      <a href="#revision" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-
-        <img src="/images/maintenance/revision.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
-
-        <div className="absolute inset-0 flex items-end justify-center p-6">
-          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
-            Révision
-          </h3>
-        </div>
-
-      </a>
-
-      {/* Carte 3 - Diagnostic */}
-
-      <a href="#diagnostic" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-
-        <img src="/images/maintenance/diagnostique.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
-
-        <div className="absolute inset-0 flex items-end justify-center p-6">
-          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
-            Diagnostic
-          </h3>
-        </div>
-
-      </a>
-
-      {/* Carte 4 - Préparation */}
-
-      <a href="#performance" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-
-        <img src="/images/maintenance/preparation.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
-
-        <div className="absolute inset-0 flex items-end justify-center p-6">
-          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
-            Préparation
-            <br />
-            & Optimisation
-          </h3>
-        </div>
-
-      </a>
-
-      {/* Carte 5 - Restauration */}
-
-      <a href="#restauration" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
-
-        <img src="/images/maintenance/restauration.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
-
-        <div className="absolute inset-0 flex items-end justify-center p-6">
-          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
-            Restauration
-            <br />
-            véhicules de collection
-          </h3>
-        </div>
-
-      </a>
-
-    </div>
-
+  {/* HERO */}
+  <div className="min-h-0 overflow-hidden [&>section]:!h-full [&>section]:!min-h-0 [&>section]:!max-h-full">
+    <HeroPage
+      surTitre="PRÉPARATION & DÉVELOPPEMENT"
+      titre="L'EXIGENCE DE LA"
+      titreGold="PERFORMANCE"
+      image="/images/hero/heropreparation.png"
+      scrollTarget="preparation-developpement"
+    />
   </div>
 
-</section>
+  {/* CARTES DE NAVIGATION */}
+  <section id="preparation-developpement" className="scroll-mt-28 py-20 bg-[#0A0A0A] lg:py-0 lg:min-h-0 lg:flex lg:items-center lg:overflow-hidden">
+
+    <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227] w-full h-full">
+
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1">
+        <a href="#preparation-mecanique" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(0_0,100%_0,92%_100%,0_100%)]">
+          <img src="/images/prep-dev/mecanique.png" alt="Préparation mécanique moteur" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">PRÉPARATION<br />MÉCANIQUE</h3>
+          </div>
+        </a>
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+      </div>
+
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.5%]">
+        <a href="#developpement-pieces" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]">
+          <img src="/images/prep-dev/developpement.png" alt="Développement et usinage de pièces" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">DÉVELOPPEMENT<br />DE PIÈCES</h3>
+          </div>
+        </a>
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+      </div>
+
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.5%]">
+        <a href="#acquisition-donnees" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,92%_100%,0_100%)]">
+          <img src="/images/prep-dev/acquisition.png" alt="Acquisition et analyse de données moto" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">ACQUISITION<br />& ANALYSE DE DONNÉES</h3>
+          </div>
+        </a>
+        <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
+      </div>
+
+      <div className="relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-1 lg:-ml-[1.5%]">
+        <a href="#assistance-competition" className="group relative isolate flex h-full min-h-[300px] sm:min-h-[320px] lg:min-h-0 flex-col justify-end overflow-hidden lg:[clip-path:polygon(8%_0,100%_0,100%_100%,0_100%)]">
+          <img src="/images/prep-dev/assistance.png" alt="Assistance compétition moto" className="absolute inset-0 -z-20 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/85 via-45% to-black/10" />
+          <div className="relative z-10 px-6 pb-7 pt-12 xl:px-8 xl:pb-8">
+            <h3 className="font-racing font-bold text-white text-xl xl:text-2xl leading-tight group-hover:text-[#F2D477] transition-colors">ASSISTANCE<br />COMPÉTITION</h3>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
 
 </main>
+
+
+
+
+
+
 
 
 

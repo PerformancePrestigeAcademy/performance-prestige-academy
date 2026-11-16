@@ -29,78 +29,105 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
 
 
+
 {/* Hero maintenance */}
 
+<section id="maintenance" className="py-16 lg:py-12 bg-[#0A0A0A] scroll-mt-28">
 
+  <div className="max-w-7xl mx-auto px-6">
 
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
 
+      {/* Carte 1 - Entretien */}
 
-<section id="maintenance" className="py-20 bg-[#0A0A0A] scroll-mt-28">
+      <a href="#entretien" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
 
-  <div className="max-w-7xl mx-auto px-6 translate-x-4">
+        <img src="/images/maintenance/entretien.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
 
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
 
-      <a
-  href="#entretien"
-  className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
->
-  <h3 className="font-racing text-xl">
-    Entretien
-    <br />
-    courant
-  </h3>
-</a>
+        <div className="absolute inset-0 flex items-end justify-center p-6">
+          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
+            Entretien
+          </h3>
+        </div>
 
-      <a
-        href="#revision"
-        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-      >
-        <h3 className="font-racing text-xl">
-          Révision
-          <br />
-          constructeur
-        </h3>
       </a>
 
-      <a
-        href="#diagnostic"
-        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-      >
-        <h3 className="font-racing text-xl">
-          Diagnostic
-        </h3>
+      {/* Carte 2 - Révision */}
+
+      <a href="#revision" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
+
+        <img src="/images/maintenance/revision.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
+
+        <div className="absolute inset-0 flex items-end justify-center p-6">
+          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
+            Révision
+          </h3>
+        </div>
+
       </a>
 
-      <a
-        href="#performance"
-        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-      >
-        <h3 className="font-racing text-xl">
-          Préparation
-          <br />
-          & Optimisation
-        </h3>
+      {/* Carte 3 - Diagnostic */}
+
+      <a href="#diagnostic" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
+
+        <img src="/images/maintenance/diagnostique.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
+
+        <div className="absolute inset-0 flex items-end justify-center p-6">
+          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
+            Diagnostic
+          </h3>
+        </div>
+
       </a>
 
-      <a
-        href="#restauration"
-        className="bg-dark-card service-card gold-border rounded-2xl h-56 p-8 flex items-center justify-center text-center hover:-translate-y-2 transition-all duration-300"
-      >
-        <h3 className="font-racing text-xl">
-          Restauration
-        <br />
-          véhicules de
-        <br />
-          collection
-        </h3>
+      {/* Carte 4 - Préparation */}
+
+      <a href="#performance" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
+
+        <img src="/images/maintenance/preparation.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
+
+        <div className="absolute inset-0 flex items-end justify-center p-6">
+          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
+            Préparation
+            <br />
+            & Optimisation
+          </h3>
+        </div>
+
       </a>
- 
+
+      {/* Carte 5 - Restauration */}
+
+      <a href="#restauration" className="group relative overflow-hidden rounded-2xl h-64 lg:h-60 border border-[#C9A227]/40 hover:border-[#C9A227] transition-all duration-500 hover:-translate-y-2">
+
+        <img src="/images/maintenance/restauration.png" alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 group-hover:from-black/80 transition-all duration-500" />
+
+        <div className="absolute inset-0 flex items-end justify-center p-6">
+          <h3 className="font-racing text-xl text-white text-center uppercase tracking-wide drop-shadow-lg">
+            Restauration
+            <br />
+            véhicules de collection
+          </h3>
+        </div>
+
+      </a>
+
     </div>
 
   </div>
 
 </section>
+
 
 
 
