@@ -17,17 +17,6 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
       <Navbar />
 
-      <HeroPage
-        surTitre="MAINTENANCE"
-        titre="PRENDRE SOIN"
-        titreGold="DE VOTRE PASSION"
-        image="/images/hero/heromaintenance.png"
-        scrollTarget="maintenance"
-      />
-
-
-
-
 
 
 
