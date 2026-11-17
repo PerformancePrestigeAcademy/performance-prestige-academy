@@ -2,6 +2,7 @@ import {BarChart3,BookOpen,Gauge,Heart,ShieldCheck,Trophy,Wrench,} from "lucide-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
+import ContactBanner from "../components/ContactBanner";
 
 export default function AProposPage() {
   return (
@@ -686,7 +687,8 @@ export default function AProposPage() {
 </section>
 
 
-
+    <ContactBanner />
+    
       <Footer />
 
     

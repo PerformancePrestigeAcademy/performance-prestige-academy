@@ -60,12 +60,12 @@ return (<div className="min-h-screen pb-14 bg-[#0A0A0A] text-white">
     
     <div className="w-full h-full px-0">
 
-      <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227] w-full">
+      <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex h-full min-h-0 overflow-hidden bg-black border-y border-[#C9A227] w-full">
 
         {FORMATION_OBJECTIVES.map((objective, index) => (
           <div
             key={objective.id}
-            className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-[460px] lg:flex-[0_0_22%] lg:-ml-[2.5%] ${index === 0 ? "lg:ml-0" : ""}`}
+            className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-[0_0_22%] lg:-ml-[2.5%] ${index === 0 ? "lg:ml-0" : ""}`}
             style={{ zIndex: index + 1 }}>
 
             <a href={objective.href}
@@ -1023,7 +1023,7 @@ return (<div className="min-h-screen pb-14 bg-[#0A0A0A] text-white">
     </div>
 
   </div>
-  
+
 </section>
 
     <ContactBanner />

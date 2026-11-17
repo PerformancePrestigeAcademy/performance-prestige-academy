@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import ServiceCard from "../components/ServiceCard";
 import { ArrowRight } from "lucide-react";
+import ContactBanner from "../components/ContactBanner";
 
 const MAINTENANCE_OBJECTIVES = [
   { id: "entretien", href: "#entretien", image: "/images/maintenance/entretien.png", title: "ENTRETIEN\nCOURANT" },
@@ -58,11 +59,11 @@ export default function MaintenancePage() {
   >
     <div className="w-full h-full px-0">
 
-      <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227] w-full">
+      <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex h-full min-h-0 overflow-hidden bg-black border-y border-[#C9A227] w-full">
 
         {MAINTENANCE_OBJECTIVES.map((objective, index) => (
           <div key={objective.id}
-            className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-[460px] lg:flex-[0_0_22%] lg:-ml-[2.5%] ${
+            className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-0 lg:flex-[0_0_22%] lg:-ml-[2.5%] ${
               index === 0 ? "lg:ml-0" : ""}`}
             style={{ zIndex: index + 1 }}
           >
@@ -1003,6 +1004,8 @@ className="scroll-mt-32 py-24 bg-[#0A0A0A]">
   </div>
 
 </section>
+
+    <ContactBanner />
 
   <Footer />
 

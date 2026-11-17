@@ -102,8 +102,7 @@ function ServicePanels() {
   return (
     <section
       id="services"
-      className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227]"
-    >
+      className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex h-full min-h-0 overflow-hidden bg-black border-y border-[#C9A227]">
 
       {SERVICES.map((service, index) => (
         <div
