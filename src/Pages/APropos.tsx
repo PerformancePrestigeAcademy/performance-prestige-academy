@@ -15,7 +15,7 @@ export default function AProposPage() {
       <Navbar />
 
       {/* Hero À propos — portraits cinématographiques en miroir */}
-      <section className="relative min-h-[760px] overflow-hidden bg-[#050505] lg:min-h-screen">
+      <section className="relative min-h-[760px] overflow-hidden bg-[#050505] lg:min-h-[calc(100svh-156px)]">
       
       {/* Fond principal */}
       <div className="absolute inset-0 bg-[#070707]" />
@@ -80,7 +80,7 @@ export default function AProposPage() {
       <div className="absolute inset-0 shadow-[inset_0_0_110px_rgba(0,0,0,0.48)]" />
 
       {/* Contenu */}
-      <div className="relative z-10 mx-auto flex min-h-[760px] max-w-5xl flex-col items-center justify-center px-6 pb-28 pt-36 text-center lg:min-h-screen">
+      <div className="relative z-10 mx-auto flex min-h-[760px] max-w-5xl flex-col items-center justify-center px-6 pb-28 pt-36 text-center lg:min-h-[calc(100svh-156px)]">
     
       {/* Ombre locale uniquement derrière le texte */}
       <div aria-hidden="true"
