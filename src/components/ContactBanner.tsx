@@ -8,7 +8,7 @@ export default function ContactBanner({ fixed = true }: ContactBannerProps) {
   return (
     <section
       id="contact"
-      className={`${fixed ? "fixed bottom-0 left-0 right-0 z-50" : "relative"} isolate flex h-auto lg:h-16 flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-0 overflow-hidden min-h-0`}
+      className={`${fixed ? "fixed bottom-9 left-0 right-0 z-50" : "relative"} isolate flex h-auto lg:h-16 flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-5 bg-[#080808] border-t border-[#A8A9AD] px-5 sm:px-8 xl:px-12 py-0 overflow-hidden min-h-0`}
     >
       {/* Texture damier */}
       <div className="absolute inset-0 -z-10 checkered-accent opacity-20 pointer-events-none" />

@@ -183,7 +183,7 @@ function ServicePanels() {
   );
 }
 
-<ContactBanner />
+<ContactBanner fixed={false} />
 
 export default function App() {
   return (
