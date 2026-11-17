@@ -39,15 +39,19 @@ return (<div className="min-h-screen pb-14 bg-[#0A0A0A] text-white">
     keywords="formation mécanique auto,formation mécanique moto,formation automobile,formation CFA,cours mécanique,diagnostic automobile,
     maintenance automobile,Nans-les-Pins,Var,Performance & Prestige Academy"/>
 
+
   {/* Premier écran : Hero + navigation + bandeau légal */}
-  <main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
+  <main className="lg:h-[calc(100svh-100px)] lg:min-h-0 lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
+    
     <div className="min-h-0 overflow-hidden [&>section]:!h-full [&>section]:!min-h-0 [&>section]:!max-h-full">
+      
       <HeroPage
         surTitre="FORMATIONS"
         titre="TRANSMETTRE"
         titreGold="L'EXCELLENCE"
         image="/images/hero/heroformation.png"
       />
+      
     </div>
 
 

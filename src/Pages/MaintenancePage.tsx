@@ -39,7 +39,7 @@ export default function MaintenancePage() {
 
 {/* PREMIER ÉCRAN : HERO + NAVIGATION */}
 
-<main className="lg:h-[100svh] lg:min-h-[636px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
+<main className="lg:h-[calc(100svh-100px)] lg:min-h-0 lg:grid lg:grid-rows-[55%_minmax(0,1fr)] lg:overflow-hidden">
 
   {/* HERO */}
   <div className="min-h-0 overflow-hidden [&>section]:!h-full [&>section]:!min-h-0 [&>section]:!max-h-full">
