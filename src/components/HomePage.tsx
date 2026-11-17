@@ -72,19 +72,15 @@ function Hero() {
         </p>
 
         <h1 className="font-racing font-bold leading-[1.02]">
-
           <span className="block gold-gradient text-4xl sm:text-5xl xl:text-6xl mb-1">
             L'ART DE LA
           </span>
-
           <span className="block text-white text-4xl sm:text-5xl xl:text-6xl">
             MÉCANIQUE AUTO &amp; MOTO
           </span>
-
           <span className="block text-[#A8A9AD] text-3xl sm:text-4xl xl:text-5xl mt-2">
             DANS LE VAR
           </span>
-
         </h1>
 
         <div className="flex items-center justify-center gap-3 mt-5">
@@ -96,7 +92,6 @@ function Hero() {
           </div>
           <div className="w-20 h-px bg-gradient-to-l from-transparent to-[#C9A227]" />
         </div>
-
       </div>
     </section>
   );
@@ -144,9 +139,7 @@ function ServicePanels() {
 
               <div className="flex items-center gap-3 mb-3">
 
-                <span className="font-racing font-bold text-2xl text-[#D6A92B]">
-                  {service.number}
-                </span>
+                <span className="font-racing font-bold text-2xl text-[#D6A92B]"> {service.number} </span>
 
                 <div className="h-px w-16 bg-gradient-to-r from-[#C9A227] to-transparent" />
 
@@ -164,12 +157,10 @@ function ServicePanels() {
               <div className="mt-6 flex justify-start">
 
                 <span
-                  className="inline-flex items-center justify-center gap-3 border-2 border-[#C9A227] text-white font-racing font-bold text-xs xl:text-sm tracking-wide px-5 xl:px-6 py-3 transition-all duration-300 group-hover:bg-[#C9A227] group-hover:text-black"
-                  style={{
-                    clipPath: 'polygon(8% 0,100% 0,92% 100%,0 100%)'
-                  }}
-                >
-                  EN SAVOIR PLUS
+                  className="inline-flex items-center justify-center gap-3 border-2 border-[#C9A227] text-white font-racing font-bold 
+                  text-xs xl:text-sm tracking-wide px-5 xl:px-6 py-3 transition-all duration-300 group-hover:bg-[#C9A227] group-hover:text-black"
+                  style={{clipPath: 'polygon(8% 0,100% 0,92% 100%,0 100%)'}}>
+                    EN SAVOIR PLUS
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
 
@@ -181,8 +172,8 @@ function ServicePanels() {
 
           {/* Séparation lumineuse indépendante du cadrage */}
           {index < 3 && (
-            <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />
-          )}
+            <div className="hidden lg:block absolute pointer-events-none right-0 top-[-5%] h-[110%] w-[3px] bg-gradient-to-b from-[#F7D66B] 
+            via-[#C9A227] to-[#78530A] -skew-x-[12deg] shadow-[0_0_12px_rgba(201,162,39,0.6)]" />)}
 
         </div>
       ))}
@@ -235,12 +226,9 @@ function ContactBanner() {
       <Link
         to="/contact"
         className="group relative inline-flex items-center justify-center gap-4 border-2 border-[#C9A227] text-white font-racing font-bold text-sm xl:text-base tracking-wider px-8 xl:px-12 py-4 transition-all duration-300 hover:bg-[#C9A227] hover:text-black shrink-0"
-        style={{
-          clipPath: 'polygon(7% 0,100% 0,93% 100%,0 100%)'
-        }}
-      >
+        style={{clipPath: 'polygon(7% 0,100% 0,93% 100%,0 100%)'}}>
         <Mail className="w-6 h-6" />
-        NOUS CONTACTER
+          NOUS CONTACTER
         <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
       </Link>
 

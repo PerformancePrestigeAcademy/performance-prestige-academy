@@ -23,15 +23,15 @@ const MAINTENANCE_PANEL_CLIPS = [
 
 export default function MaintenancePage() {
   return (
-        <div className="min-h-screen bg-[#0A0A0A] text-white">
+  <div className="min-h-screen bg-[#0A0A0A] text-white">
 
-          <SEO
-title="Maintenance Auto & Moto | Performance & Prestige Academy"
-description="Entretien, révision constructeur, diagnostic électronique et réparation mécanique auto & moto avec une approche rigoureuse et adaptée à chaque véhicule."
-keywords="garage automobile, révision, entretien, diagnostic, préparation moteur, performance automobile"
-/>
+    <SEO
+      title="Maintenance Auto & Moto | Performance & Prestige Academy"
+      description="Entretien, révision constructeur, diagnostic électronique et réparation mécanique auto & moto avec une approche rigoureuse et adaptée à chaque véhicule."
+      keywords="garage automobile, révision, entretien, diagnostic, préparation moteur, performance automobile"
+    />
 
-      <Navbar />
+    <Navbar />
 
 
 
@@ -61,11 +61,9 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
       <div className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex overflow-hidden bg-black border-y border-[#C9A227] w-full">
 
         {MAINTENANCE_OBJECTIVES.map((objective, index) => (
-          <div
-            key={objective.id}
+          <div key={objective.id}
             className={`relative min-h-[300px] sm:min-h-[320px] lg:min-h-[460px] lg:flex-[0_0_22%] lg:-ml-[2.5%] ${
-              index === 0 ? "lg:ml-0" : ""
-            }`}
+              index === 0 ? "lg:ml-0" : ""}`}
             style={{ zIndex: index + 1 }}
           >
             <a
@@ -123,396 +121,226 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 <section id="entretien"
   className="scroll-mt-32 py-24 bg-[#0D0D0D]">
 
-     <div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-         <div className="text-center mb-20">
+    <div className="text-center mb-20">
 
-         <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-            ENTRETIEN
-         </p>
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        ENTRETIEN
+      </p>
 
-         <h2 className="font-racing text-5xl mb-6">
-            ENTRETIEN
-         <br />
-         <span className="gold-gradient">
-            COURANT
-         </span>
-         </h2>
+      <h2 className="font-racing text-5xl mb-6">
+         ENTRETIEN
+      <br />
+      <span className="gold-gradient">
+         COURANT
+      </span>
+      </h2>
 
-         <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
             Un entretien régulier est la meilleure garantie de fiabilité, de sécurité
             et de longévité de votre véhicule. Chaque intervention est réalisée selon
             les préconisations constructeur avec des pièces et consommables de qualité.
-         </p>
-
-         </div>
-
-     <div className="grid lg:grid-cols-3 gap-8">
-
-{/* Carte 1 */}
-
-    <ServiceCard
-    number="01"
-    title="Révisions & entretiens"
->
-
-    <ul className="space-y-3 text-[#A8A9AD]">
-
-        <li>✔ Vidange moteur</li>
-        <li>✔ Remplacement des filtres</li>
-        <li>✔ Contrôle des niveaux</li>
-        <li>✔ Vérification batterie</li>
-        <li>✔ Contrôle visuel complet</li>
-
-    </ul>
-
-    <div className="mt-auto pt-8 w-full flex justify-center">
-
-     <a
-  href="/contact"
-  className="
-    group relative overflow-hidden
-    inline-flex items-center justify-start gap-4
-    w-full max-w-[260px] h-[60px]
-    px-6
-    rounded-2xl
-    font-sans text-white
-    border border-transparent
-    bg-transparent
-    shadow-none
-    transition-all duration-300
-    active:scale-[0.99]
-  "
->
-  {/* 1. Fond aluminium brossé */}
-  <span className="
-    absolute inset-0
-    bg-gradient-to-b
-    from-[#E5E6E6] via-[#AEB2B5] to-[#55595D]
-    transition-all duration-300
-    group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]
-  "/>
-
-  {/* 2. Texture métallique horizontale */}
-  <span className="
-    absolute inset-0 pointer-events-none opacity-25
-    bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]
-  "/>
-
-  {/* 3. Reflet supérieur métallique */}
-  <span className="
-    absolute inset-x-0 top-0 h-1/2 pointer-events-none
-    bg-gradient-to-b from-white/45 via-white/10 to-transparent
-  "/>
-
-  {/* 4. Bordure métallique */}
-  <span className="
-    absolute inset-0
-    border border-[#777B7D]
-    shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
-    pointer-events-none
-    group-hover:border-[#B99A4B]
-    transition-colors duration-300
-  "/>
-
-  {/* 5. Trois bandes obliques */}
-  <span className="
-    absolute -top-2 -bottom-2 left-[7%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
-
-  <span className="
-    absolute -top-2 -bottom-2 left-[11%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
-
-  <span className="
-    absolute -top-2 -bottom-2 left-[15%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
-
-  {/* 6. Fine ligne dorée au survol */}
-  <span className="
-    absolute bottom-0 left-[8%] right-[8%] h-[2px]
-    bg-[#D6B34B]
-    opacity-0
-    shadow-[0_0_3px_rgba(201,162,39,0.45)]
-    group-hover:opacity-100
-    transition-opacity duration-300
-    pointer-events-none
-  "/>
-
-  {/* 7. Texte */}
-  <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
-    EN SAVOIR PLUS
-  </span>
-
-  {/* 8. Flèche */}
-  <span className="relative z-10 flex items-center justify-center">
-    <ArrowRight className="
-      w-6 h-6 text-[#101010] stroke-[2.25]
-      transition-transform duration-300
-      group-hover:translate-x-1.5
-    "/>
-  </span>
-</a>
-
-    </div>
-</ServiceCard>
-
-    {/* Carte 2 */}
-
-         <ServiceCard
-    number="02"
-    title="Freinage & sécurité"
->
-
-    <ul className="space-y-3 text-[#A8A9AD]">
-
-        <li>✔ Plaquettes</li>
-        <li>✔ Disques</li>
-        <li>✔ Liquide de frein</li>
-        <li>✔ Purge complète</li>
-        <li>✔ Contrôle sécurité</li>
-
-    </ul>
-
-    <div className="mt-auto pt-8 w-full flex justify-center">
-
-      <a
-  href="/contact"
-  className="
-    group relative overflow-hidden
-    inline-flex items-center justify-start gap-4
-    w-full max-w-[260px] h-[60px]
-    px-6
-    rounded-2xl
-    font-sans text-white
-    border border-transparent
-    bg-transparent
-    shadow-none
-    transition-all duration-300
-    active:scale-[0.99]
-  "
->
-  {/* 1. Fond aluminium brossé */}
-  <span className="
-    absolute inset-0
-    bg-gradient-to-b
-    from-[#E5E6E6] via-[#AEB2B5] to-[#55595D]
-    transition-all duration-300
-    group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]
-  "/>
-
-  {/* 2. Texture métallique horizontale */}
-  <span className="
-    absolute inset-0 pointer-events-none opacity-25
-    bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]
-  "/>
-
-  {/* 3. Reflet supérieur métallique */}
-  <span className="
-    absolute inset-x-0 top-0 h-1/2 pointer-events-none
-    bg-gradient-to-b from-white/45 via-white/10 to-transparent
-  "/>
-
-  {/* 4. Bordure métallique */}
-  <span className="
-    absolute inset-0
-    border border-[#777B7D]
-    shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
-    pointer-events-none
-    group-hover:border-[#B99A4B]
-    transition-colors duration-300
-  "/>
-
-  {/* 5. Trois bandes obliques */}
-  <span className="
-    absolute -top-2 -bottom-2 left-[7%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
-
-  <span className="
-    absolute -top-2 -bottom-2 left-[11%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
-
-  <span className="
-    absolute -top-2 -bottom-2 left-[15%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
-
-  {/* 6. Fine ligne dorée au survol */}
-  <span className="
-    absolute bottom-0 left-[8%] right-[8%] h-[2px]
-    bg-[#D6B34B]
-    opacity-0
-    shadow-[0_0_3px_rgba(201,162,39,0.45)]
-    group-hover:opacity-100
-    transition-opacity duration-300
-    pointer-events-none
-  "/>
-
-  {/* 7. Texte */}
-  <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
-    EN SAVOIR PLUS
-  </span>
-
-  {/* 8. Flèche */}
-  <span className="relative z-10 flex items-center justify-center">
-    <ArrowRight className="
-      w-6 h-6 text-[#101010] stroke-[2.25]
-      transition-transform duration-300
-      group-hover:translate-x-1.5
-    "/>
-  </span>
-</a>
+      </p>
 
     </div>
 
-</ServiceCard>
+    <div className="grid lg:grid-cols-3 gap-8">
+
+      {/* Carte 1 */}
+
+      <ServiceCard
+      number="01"
+      title="Révisions & entretiens"
+      >
+
+      <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Vidange moteur</li>
+          <li>✔ Remplacement des filtres</li>
+          <li>✔ Contrôle des niveaux</li>
+          <li>✔ Vérification batterie</li>
+          <li>✔ Contrôle visuel complet</li>
+      </ul>
+
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+          <a href="/contact"
+            className="group relative overflow-hidden inline-flex items-center justify-start gap-4 w-full max-w-[260px] h-[60px] px-6 rounded-2xl
+              font-sans text-white border border-transparent bg-transparent shadow-none transition-all duration-300 active:scale-[0.99]">
+              
+            {/* 1. Fond aluminium brossé */}
+            <span className="absolute inset-0 bg-gradient-to-b from-[#E5E6E6] via-[#AEB2B5] to-[#55595D] transition-all duration-300
+              group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]"/>
+
+            {/* 2. Texture métallique horizontale */}
+            <span className="absolute inset-0 pointer-events-none opacity-25 bg-[repeating-linear-gradient(0deg,transparent_0px,
+              rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]"/>
+
+            {/* 3. Reflet supérieur métallique */}
+            <span className="absolute inset-x-0 top-0 h-1/2 pointer-events-none bg-gradient-to-b from-white/45 via-white/10 to-transparent"/>
+
+            {/* 4. Bordure métallique */}
+            <span className="absolute inset-0 border border-[#777B7D] shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
+              pointer-events-none group-hover:border-[#B99A4B] transition-colors duration-300"/>
+
+            {/* 5. Trois bandes obliques */}
+            <span className="absolute -top-2 -bottom-2 left-[7%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
+
+            <span className="absolute -top-2 -bottom-2 left-[11%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
+
+            <span className="absolute -top-2 -bottom-2 left-[15%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
+
+            {/* 6. Fine ligne dorée au survol */}
+            <span className="absolute bottom-0 left-[8%] right-[8%] h-[2px] bg-[#D6B34B] opacity-0 shadow-[0_0_3px_rgba(201,162,39,0.45)]
+              group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"/>
+
+             {/* 7. Texte */}
+            <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+              EN SAVOIR PLUS
+            </span>
+
+            {/* 8. Flèche */}
+            <span className="relative z-10 flex items-center justify-center">
+              <ArrowRight className="w-6 h-6 text-[#101010] stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+            </span>
+          </a>
+
+        </div>
+      </ServiceCard>
+
+      {/* Carte 2 */}
+
+      <ServiceCard
+      number="02"
+      title="Freinage & sécurité">
+
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Plaquettes</li>
+          <li>✔ Disques</li>
+          <li>✔ Liquide de frein</li>
+          <li>✔ Purge complète</li>
+          <li>✔ Contrôle sécurité</li>
+        </ul>
+
+        <div className="mt-auto pt-8 w-full flex justify-center">
+
+          <a href="/contact"
+            className="group relative overflow-hidden inline-flex items-center justify-start gap-4 w-full max-w-[260px] h-[60px] px-6
+             rounded-2xl font-sans text-white border border-transparent bg-transparent shadow-none transition-all duration-300 active:scale-[0.99]">
+            
+            {/* 1. Fond aluminium brossé */}
+            <span className="absolute inset-0 bg-gradient-to-b from-[#E5E6E6] via-[#AEB2B5] to-[#55595D] transition-all duration-300
+              group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]"/>
+
+            {/* 2. Texture métallique horizontale */}
+            <span className="absolute inset-0 pointer-events-none opacity-25 bg-[repeating-linear-gradient(0deg,transparent_0px,
+            rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]"/>
+
+            {/* 3. Reflet supérieur métallique */}
+            <span className="absolute inset-x-0 top-0 h-1/2 pointer-events-none bg-gradient-to-b from-white/45 via-white/10 to-transparent"/>
+
+            {/* 4. Bordure métallique */}
+            <span className="absolute inset-0 border border-[#777B7D] shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
+              pointer-events-none group-hover:border-[#B99A4B] transition-colors duration-300"/>
+
+            {/* 5. Trois bandes obliques */}
+            <span className="absolute -top-2 -bottom-2 left-[7%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
+
+            <span className="absolute -top-2 -bottom-2 left-[11%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
+
+            <span className="absolute -top-2 -bottom-2 left-[15%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
+
+            {/* 6. Fine ligne dorée au survol */}
+            <span className="absolute bottom-0 left-[8%] right-[8%] h-[2px] bg-[#D6B34B] opacity-0 shadow-[0_0_3px_rgba(201,162,39,0.45)]
+              group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"/>
+
+            {/* 7. Texte */}
+            <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+              EN SAVOIR PLUS
+            </span>
+
+            {/* 8. Flèche */}
+            <span className="relative z-10 flex items-center justify-center">
+              <ArrowRight className="w-6 h-6 text-[#101010] stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+            </span>
+          </a>
+
+        </div>
+
+      </ServiceCard>
 
 
-    {/* Carte 3 */}
+      {/* Carte 3 */}
 
-         <ServiceCard
-    number="03"
-    title="Liaisons au sol"
->
+      <ServiceCard
+       number="03"
+      title="Liaisons au sol">
 
-    <ul className="space-y-3 text-[#A8A9AD]">
+        <ul className="space-y-3 text-[#A8A9AD]">
+          <li>✔ Pneumatiques</li>
+          <li>✔ Géométrie</li>
+          <li>✔ Suspension</li>
+          <li>✔ Direction</li>
+          <li>✔ Contrôle roulage</li>
+        </ul>
 
-        <li>✔ Pneumatiques</li>
-        <li>✔ Géométrie</li>
-        <li>✔ Suspension</li>
-        <li>✔ Direction</li>
-        <li>✔ Contrôle roulage</li>
+        <div className="mt-auto pt-8 w-full flex justify-center">
 
-    </ul>
+          <a href="/contact"
+            className="group relative overflow-hidden inline-flex items-center justify-start gap-4 w-full max-w-[260px] h-[60px] px-6 rounded-2xl 
+            font-sans text-white border border-transparent bg-transparent shadow-none transition-all duration-300 active:scale-[0.99]">
+        
+            {/* 1. Fond aluminium brossé */}
+            <span className="absolute inset-0 bg-gradient-to-b from-[#E5E6E6] via-[#AEB2B5] to-[#55595D] transition-all duration-300
+              group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]"/>
 
-    <div className="mt-auto pt-8 w-full flex justify-center">
+            {/* 2. Texture métallique horizontale */}
+            <span className="absolute inset-0 pointer-events-none opacity-25 bg-[repeating-linear-gradient(0deg,transparent_0px,
+             rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]"/>
 
-      <a
-  href="/contact"
-  className="
-    group relative overflow-hidden
-    inline-flex items-center justify-start gap-4
-    w-full max-w-[260px] h-[60px]
-    px-6
-    rounded-2xl
-    font-sans text-white
-    border border-transparent
-    bg-transparent
-    shadow-none
-    transition-all duration-300
-    active:scale-[0.99]
-  "
->
-  {/* 1. Fond aluminium brossé */}
-  <span className="
-    absolute inset-0
-    bg-gradient-to-b
-    from-[#E5E6E6] via-[#AEB2B5] to-[#55595D]
-    transition-all duration-300
-    group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]
-  "/>
+            {/* 3. Reflet supérieur métallique */}
+            <span className="absolute inset-x-0 top-0 h-1/2 pointer-events-none bg-gradient-to-b from-white/45 via-white/10 to-transparent"/>
 
-  {/* 2. Texture métallique horizontale */}
-  <span className="
-    absolute inset-0 pointer-events-none opacity-25
-    bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]
-  "/>
+            {/* 4. Bordure métallique */}
+            <span className="absolute inset-0 border border-[#777B7D] shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
+              pointer-events-none group-hover:border-[#B99A4B] transition-colors duration-300"/>
 
-  {/* 3. Reflet supérieur métallique */}
-  <span className="
-    absolute inset-x-0 top-0 h-1/2 pointer-events-none
-    bg-gradient-to-b from-white/45 via-white/10 to-transparent
-  "/>
+            {/* 5. Trois bandes obliques */}
+            <span className="absolute -top-2 -bottom-2 left-[7%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
 
-  {/* 4. Bordure métallique */}
-  <span className="
-    absolute inset-0
-    border border-[#777B7D]
-    shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
-    pointer-events-none
-    group-hover:border-[#B99A4B]
-    transition-colors duration-300
-  "/>
+            <span className="absolute -top-2 -bottom-2 left-[11%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
 
-  {/* 5. Trois bandes obliques */}
-  <span className="
-    absolute -top-2 -bottom-2 left-[7%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
+            <span className="absolute -top-2 -bottom-2 left-[15%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+              transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
 
-  <span className="
-    absolute -top-2 -bottom-2 left-[11%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
+            {/* 6. Fine ligne dorée au survol */}
+            <span className="absolute bottom-0 left-[8%] right-[8%] h-[2px] bg-[#D6B34B] opacity-0 shadow-[0_0_3px_rgba(201,162,39,0.45)]
+               group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"/>
 
-  <span className="
-    absolute -top-2 -bottom-2 left-[15%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
+            {/* 7. Texte */}
+            <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+              EN SAVOIR PLUS
+            </span>
 
-  {/* 6. Fine ligne dorée au survol */}
-  <span className="
-    absolute bottom-0 left-[8%] right-[8%] h-[2px]
-    bg-[#D6B34B]
-    opacity-0
-    shadow-[0_0_3px_rgba(201,162,39,0.45)]
-    group-hover:opacity-100
-    transition-opacity duration-300
-    pointer-events-none
-  "/>
+            {/* 8. Flèche */}
+            <span className="relative z-10 flex items-center justify-center">
+              <ArrowRight className="w-6 h-6 text-[#101010] stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+            </span>
+          </a>
 
-  {/* 7. Texte */}
-  <span className="relative z-10 ml-8 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
-    EN SAVOIR PLUS
-  </span>
+        </div>
 
-  {/* 8. Flèche */}
-  <span className="relative z-10 flex items-center justify-center">
-    <ArrowRight className="
-      w-6 h-6 text-[#101010] stroke-[2.25]
-      transition-transform duration-300
-      group-hover:translate-x-1.5
-    "/>
-  </span>
-</a>
+      </ServiceCard>
 
     </div>
-
-  </ServiceCard>
-
-     </div>
 
   </div>
 
@@ -528,126 +356,119 @@ keywords="garage automobile, révision, entretien, diagnostic, préparation mote
 
 <section
 id="revision"
-className="scroll-mt-32 py-24 bg-[#0A0A0A]"
->
+className="scroll-mt-32 py-24 bg-[#0A0A0A]">
 
-<div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-<div className="text-center mb-20">
+    <div className="text-center mb-20">
 
-<p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-RÉVISION
-</p>
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+      RÉVISION
+      </p>
 
-<h2 className="font-racing text-5xl mb-6">
-RÉVISION
-<br />
-<span className="gold-gradient">
-CONSTRUCTEUR
-</span>
-</h2>
+      <h2 className="font-racing text-5xl mb-6">
+      RÉVISION
+      <br />
+      <span className="gold-gradient">
+      CONSTRUCTEUR
+      </span>
+      </h2>
 
-<p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-Chaque constructeur définit des procédures précises pour garantir la
-fiabilité, la sécurité et les performances de votre véhicule.
-Nous appliquons ces préconisations avec rigueur afin de préserver votre
-automobile dans les meilleures conditions.
-</p>
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+      Chaque constructeur définit des procédures précises pour garantir la
+      fiabilité, la sécurité et les performances de votre véhicule.
+      Nous appliquons ces préconisations avec rigueur afin de préserver votre
+      automobile dans les meilleures conditions.
+      </p>
 
-</div>
+    </div>
 
-<div className="grid lg:grid-cols-3 gap-8">
+    <div className="grid lg:grid-cols-3 gap-8">
 
-{/* ================= Carte 04 ================= */}
+    {/* ================= Carte 04 ================= */}
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             04
-             </p>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+           04
+        </p>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Carnet d'entretien
-</h3>
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Carnet d'entretien
+        </h3>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Respect des échéances</li>
+          <li>✔ Suivi constructeur</li>
+          <li>✔ Historique d'entretien</li>
+          <li>✔ Contrôles réglementaires</li>
+          <li>✔ Préservation de la valeur</li>
+        </ul>
 
-<li>✔ Respect des échéances</li>
-<li>✔ Suivi constructeur</li>
-<li>✔ Historique d'entretien</li>
-<li>✔ Contrôles réglementaires</li>
-<li>✔ Préservation de la valeur</li>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+         Un suivi rigoureux permet de conserver un véhicule fiable et valorisé
+         dans le temps.
+        </p>
 
-</ul>
+      </div>
 
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Un suivi rigoureux permet de conserver un véhicule fiable et valorisé
-dans le temps.
-</p>
+      {/* ================= Carte 05 ================= */}
 
-</div>
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-{/* ================= Carte 05 ================= */}
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          05
+        </p>
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Pièces & consommables
+        </h3>
 
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             05
-             </p>
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Pièces constructeur</li>
+          <li>✔ Pièces OEM</li>
+          <li>✔ Lubrifiants adaptés</li>
+          <li>✔ Consommables de qualité</li>
+          <li>✔ Montage conforme</li>
+        </ul>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Pièces & consommables
-</h3>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Chaque composant est sélectionné afin de respecter les exigences du
+          constructeur et la fiabilité du véhicule.
+        </p>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
+      </div>
 
-<li>✔ Pièces constructeur</li>
-<li>✔ Pièces OEM</li>
-<li>✔ Lubrifiants adaptés</li>
-<li>✔ Consommables de qualité</li>
-<li>✔ Montage conforme</li>
+      {/* ================= Carte 06 ================= */}
 
-</ul>
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Chaque composant est sélectionné afin de respecter les exigences du
-constructeur et la fiabilité du véhicule.
-</p>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          06
+        </p>
 
-</div>
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Contrôle complet
+        </h3>
 
-{/* ================= Carte 06 ================= */}
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Organes de sécurité</li>
+          <li>✔ Contrôle moteur</li>
+          <li>✔ Contrôle transmission</li>
+          <li>✔ Vérifications électroniques</li>
+          <li>✔ Essai dynamique</li>
+        </ul>
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Chaque intervention se termine par une série de contrôles garantissant
+          le bon fonctionnement de l'ensemble du véhicule.
+        </p>
 
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             06
-             </p>
+      </div>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Contrôle complet
-</h3>
+    </div>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Organes de sécurité</li>
-<li>✔ Contrôle moteur</li>
-<li>✔ Contrôle transmission</li>
-<li>✔ Vérifications électroniques</li>
-<li>✔ Essai dynamique</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Chaque intervention se termine par une série de contrôles garantissant
-le bon fonctionnement de l'ensemble du véhicule.
-</p>
-
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
@@ -658,125 +479,117 @@ le bon fonctionnement de l'ensemble du véhicule.
     DIAGNOSTIC
 =========================== */}
 
-<section
-id="diagnostic"
-className="scroll-mt-32 py-24 bg-[#0D0D0D]"
->
+<section id="diagnostic"
+className="scroll-mt-32 py-24 bg-[#0D0D0D]">
 
-<div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-<div className="text-center mb-20">
+    <div className="text-center mb-20">
 
-<p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-DIAGNOSTIC
-</p>
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        DIAGNOSTIC
+      </p>
 
-<h2 className="font-racing text-5xl mb-6">
-RECHERCHE
-<br />
-<span className="gold-gradient">
-DE PANNE
-</span>
-</h2>
+      <h2 className="font-racing text-5xl mb-6">
+        RECHERCHE
+        <br />
+        <span className="gold-gradient">
+        DE PANNE
+        </span>
+      </h2>
 
-<p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-Un diagnostic précis constitue la première étape d'une réparation réussie.
-Grâce à des outils professionnels et une méthodologie rigoureuse,
-nous identifions l'origine réelle du dysfonctionnement avant toute intervention.
-</p>
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Un diagnostic précis constitue la première étape d'une réparation réussie.
+        Grâce à des outils professionnels et une méthodologie rigoureuse,
+        nous identifions l'origine réelle du dysfonctionnement avant toute intervention.
+      </p>
 
-</div>
+    </div>
 
-<div className="grid lg:grid-cols-3 gap-8">
+    <div className="grid lg:grid-cols-3 gap-8">
 
-{/* ================= Carte 07 ================= */}
+      {/* ================= Carte 07 ================= */}
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             07
-             </p>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          07
+        </p>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Diagnostic électronique
-</h3>
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Diagnostic électronique
+        </h3>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Lecture calculateurs</li>
+          <li>✔ Analyse des défauts</li>
+          <li>✔ Paramètres en temps réel</li>
+          <li>✔ Effacement & validation</li>
+          <li>✔ Diagnostic multimarques</li>
+        </ul>
 
-<li>✔ Lecture calculateurs</li>
-<li>✔ Analyse des défauts</li>
-<li>✔ Paramètres en temps réel</li>
-<li>✔ Effacement & validation</li>
-<li>✔ Diagnostic multimarques</li>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Les outils de diagnostic permettent d'obtenir une vision précise de
+          l'état électronique du véhicule.
+        </p>
 
-</ul>
+      </div>
 
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Les outils de diagnostic permettent d'obtenir une vision précise de
-l'état électronique du véhicule.
-</p>
+      {/* ================= Carte 08 ================= */}
 
-</div>
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-{/* ================= Carte 08 ================= */}
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          08
+        </p>
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Recherche de panne
+        </h3>
 
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             08
-             </p>
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Analyse méthodique</li>
+          <li>✔ Contrôles ciblés</li>
+          <li>✔ Mesures techniques</li>
+          <li>✔ Vérification des organes</li>
+          <li>✔ Identification de la cause</li>
+        </ul>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Recherche de panne
-</h3>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Chaque panne est étudiée afin d'identifier son origine réelle avant toute réparation.
+        </p>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
+      </div>
 
-<li>✔ Analyse méthodique</li>
-<li>✔ Contrôles ciblés</li>
-<li>✔ Mesures techniques</li>
-<li>✔ Vérification des organes</li>
-<li>✔ Identification de la cause</li>
+      {/* ================= Carte 09 ================= */}
 
-</ul>
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Chaque panne est étudiée afin d'identifier son origine réelle avant toute réparation.
-</p>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          09
+        </p>
 
-</div>
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Validation des réparations
+        </h3>
 
-{/* ================= Carte 09 ================= */}
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Contrôles après intervention</li>
+          <li>✔ Essais dynamiques</li>
+          <li>✔ Vérification des valeurs</li>
+          <li>✔ Contrôle final</li>
+          <li>✔ Restitution du véhicule</li>
+        </ul>
 
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Chaque réparation est contrôlée afin de garantir un fonctionnement optimal avant restitution.
+        </p>
 
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             09
-             </p>
+      </div>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Validation des réparations
-</h3>
+    </div>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Contrôles après intervention</li>
-<li>✔ Essais dynamiques</li>
-<li>✔ Vérification des valeurs</li>
-<li>✔ Contrôle final</li>
-<li>✔ Restitution du véhicule</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Chaque réparation est contrôlée afin de garantir un fonctionnement optimal avant restitution.
-</p>
-
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
@@ -787,225 +600,167 @@ Chaque réparation est contrôlée afin de garantir un fonctionnement optimal av
     PERFORMANCE & COMPÉTITION
 =========================== */}
 
-<section
-id="performance"
-className="scroll-mt-32 py-24 bg-[#0A0A0A]"
->
+<section id="performance"
+className="scroll-mt-32 py-24 bg-[#0A0A0A]">
 
-<div className="max-w-7xl mx-auto px-6">
+  <div className="max-w-7xl mx-auto px-6">
 
-<div className="text-center mb-20">
+    <div className="text-center mb-20">
 
-<p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-PERFORMANCE
-</p>
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        PERFORMANCE
+      </p>
 
-<h2 className="font-racing text-5xl mb-6">
-PERFORMANCE
-<br />
-<span className="gold-gradient">
-& COMPÉTITION
-</span>
-</h2>
+      <h2 className="font-racing text-5xl mb-6">
+        PERFORMANCE
+        <br />
+        <span className="gold-gradient">
+        & COMPÉTITION
+        </span>
+      </h2>
 
-<p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-Chaque véhicule possède un potentiel inexploité.
-Notre rôle est de le développer avec méthode, fiabilité et précision,
-qu'il s'agisse d'une utilisation routière exigeante ou d'une préparation
-destinée à la compétition.
-</p>
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Chaque véhicule possède un potentiel inexploité.
+        Notre rôle est de le développer avec méthode, fiabilité et précision,
+        qu'il s'agisse d'une utilisation routière exigeante ou d'une préparation
+        destinée à la compétition.
+      </p>
 
-</div>
+    </div>
 
-<div className="grid lg:grid-cols-3 gap-8">
+    <div className="grid lg:grid-cols-3 gap-8">
 
-{/* Carte 10 */}
+      {/* Carte 10 */}
 
-<a href="/preparation-developpement" className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer">
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             10
-             </p>
+      <a href="/preparation-developpement" 
+        className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer">
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Développement moteur
-</h3>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          10
+        </p>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Développement moteur
+        </h3>
 
-<li>✔ Optimisation moteur</li>
-<li>✔ Recherche de performance</li>
-<li>✔ Fiabilisation</li>
-<li>✔ Développement personnalisé</li>
-<li>✔ Validation technique</li>
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Optimisation moteur</li>
+          <li>✔ Recherche de performance</li>
+          <li>✔ Fiabilisation</li>
+          <li>✔ Développement personnalisé</li>
+          <li>✔ Validation technique</li>
+        </ul>
 
-</ul>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Chaque préparation est développée selon vos objectifs et votre utilisation.
+        </p>
 
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Chaque préparation est développée selon vos objectifs et votre utilisation.
-</p>
+      </a>
 
-</a>
+      {/* Carte 11 */}
 
-{/* Carte 11 */}
+      <a href="/preparation-developpement" 
+        className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer">
 
-<a href="/preparation-developpement" className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer">
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             11
-             </p>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          11
+        </p>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Mise au point
-</h3>
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Mise au point
+        </h3>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Châssis</li>
+          <li>✔ Suspensions</li>
+          <li>✔ Géométrie</li>
+          <li>✔ Équilibre dynamique</li>
+          <li>✔ Réglages personnalisés</li>
+        </ul>
 
-<li>✔ Châssis</li>
-<li>✔ Suspensions</li>
-<li>✔ Géométrie</li>
-<li>✔ Équilibre dynamique</li>
-<li>✔ Réglages personnalisés</li>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Chaque réglage vise à exploiter pleinement le potentiel du véhicule.
+        </p>
 
-</ul>
+      </a>
 
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Chaque réglage vise à exploiter pleinement le potentiel du véhicule.
-</p>
+      {/* Carte 12 */}
 
-</a>
+      <a href="/preparation-developpement"
+        className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer">
 
-{/* Carte 12 */}
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          12
+        </p>
 
-<a
-  href="/preparation-developpement"
-  className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col cursor-pointer"
->
-            <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             12
-             </p>
+        <h3 className="font-racing text-3xl mb-6 text-center">
+         Sport mécanique
+        </h3>
 
-<h3 className="font-racing text-3xl mb-6 text-center">
-Sport mécanique
-</h3>
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Préparation compétition</li>
+          <li>✔ Assistance circuit</li>
+          <li>✔ Développement technique</li>
+          <li>✔ Fiabilisation endurance</li>
+          <li>✔ Accompagnement pilote</li>
+        </ul>
 
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Notre expérience du terrain nous permet d'accompagner les projets les plus ambitieux.
+        </p>
 
-<li>✔ Préparation compétition</li>
-<li>✔ Assistance circuit</li>
-<li>✔ Développement technique</li>
-<li>✔ Fiabilisation endurance</li>
-<li>✔ Accompagnement pilote</li>
+      </a>
 
-</ul>
+    </div>
 
-<p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-Notre expérience du terrain nous permet d'accompagner les projets les plus ambitieux.
-</p>
+    <div className="text-center mt-16">
 
-</a>
+      <a href="/preparation-developpement"
+        className="group relative overflow-hidden inline-flex items-center justify-between w-full max-w-[260px] h-[60px] px-6 rounded-2xl
+          font-sans text-white border border-transparent bg-transparent shadow-none transition-all duration-300 active:scale-[0.99]">
 
-</div>
+        {/* 1. Fond aluminium brossé */}
+        <span className="absolute inset-0 bg-gradient-to-b from-[#E5E6E6] via-[#AEB2B5] to-[#55595D] transition-all duration-300
+          group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]"/>
 
-<div className="text-center mt-16">
- <a
-  href="/preparation-developpement"
-  className="
-    group relative overflow-hidden
-    inline-flex items-center justify-between
-    w-full max-w-[260px] h-[60px]
-    px-6
-    rounded-2xl
-    font-sans text-white
-    border border-transparent
-    bg-transparent
-    shadow-none
-    transition-all duration-300
-    active:scale-[0.99]
-  "
->
-  {/* 1. Fond aluminium brossé */}
-  <span className="
-    absolute inset-0
-    bg-gradient-to-b
-    from-[#E5E6E6] via-[#AEB2B5] to-[#55595D]
-    transition-all duration-300
-    group-hover:from-[#F0E7CF] group-hover:via-[#B9B8B2] group-hover:to-[#625C4F]
-  "/>
+        {/* 2. Texture métallique horizontale */}
+        <span className="absolute inset-0 pointer-events-none opacity-25 bg-[repeating-linear-gradient(0deg,transparent_0px,
+         rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]"/>
 
-  {/* 2. Texture métallique horizontale */}
-  <span className="
-    absolute inset-0 pointer-events-none opacity-25
-    bg-[repeating-linear-gradient(0deg,transparent_0px,rgba(255,255,255,0.45)_1px,transparent_2px,transparent_4px)]
-  "/>
+        {/* 3. Reflet supérieur métallique */}
+        <span className="absolute inset-x-0 top-0 h-1/2 pointer-events-none bg-gradient-to-b from-white/45 via-white/10 to-transparent"/>
 
-  {/* 3. Reflet supérieur métallique */}
-  <span className="
-    absolute inset-x-0 top-0 h-1/2 pointer-events-none
-    bg-gradient-to-b from-white/45 via-white/10 to-transparent
-  "/>
+        {/* 4. Bordure métallique */}
+        <span className="absolute inset-0 border border-[#777B7D] shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
+          pointer-events-none group-hover:border-[#B99A4B] transition-colors duration-300"/>
 
-  {/* 4. Bordure métallique */}
-  <span className="
-    absolute inset-0
-    border border-[#777B7D]
-    shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),inset_0_-2px_3px_rgba(0,0,0,0.4)]
-    pointer-events-none
-    group-hover:border-[#B99A4B]
-    transition-colors duration-300
-  "/>
+        {/* 5. Trois bandes obliques */}
+        <span className="absolute -top-2 -bottom-2 left-[7%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+          transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
 
-  {/* 5. Trois bandes obliques */}
-  <span className="
-    absolute -top-2 -bottom-2 left-[7%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
+        <span className="absolute -top-2 -bottom-2 left-[11%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+          transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
 
-  <span className="
-    absolute -top-2 -bottom-2 left-[11%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
+        <span className="absolute -top-2 -bottom-2 left-[15%] w-2 -skew-x-[25deg] bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
+          transition-colors duration-300 group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]"/>
 
-  <span className="
-    absolute -top-2 -bottom-2 left-[15%] w-2
-    -skew-x-[25deg]
-    bg-gradient-to-b from-[#73787C] via-[#F1F2F2] to-[#62676B]
-    transition-colors duration-300
-    group-hover:from-[#B58A22] group-hover:via-[#F0D47A] group-hover:to-[#876016]
-  "/>
+        {/* 6. Fine ligne dorée au survol */}
+        <span className="absolute bottom-0 left-[8%] right-[8%] h-[2px] bg-[#D6B34B] opacity-0 shadow-[0_0_3px_rgba(201,162,39,0.45)]
+          group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"/>
 
-  {/* 6. Fine ligne dorée au survol */}
-  <span className="
-    absolute bottom-0 left-[8%] right-[8%] h-[2px]
-    bg-[#D6B34B]
-    opacity-0
-    shadow-[0_0_3px_rgba(201,162,39,0.45)]
-    group-hover:opacity-100
-    transition-opacity duration-300
-    pointer-events-none
-  "/>
+        {/* 7. Texte */}
+        <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
+          Voir la page dédiée
+        </span>
 
-  {/* 7. Texte */}
-  <span className="relative z-10 font-bold tracking-wider text-sm sm:text-base uppercase text-[#101010]">
-    Voir la page dédiée
-  </span>
+        {/* 8. Flèche */}
+        <span className="relative z-10 flex items-center justify-center">
+          <ArrowRight className="w-6 h-6 text-[#101010] stroke-[2.25] transition-transform duration-300 group-hover:translate-x-1.5"/>
+        </span>
+      </a>
+    </div>
 
-  {/* 8. Flèche */}
-  <span className="relative z-10 flex items-center justify-center">
-    <ArrowRight className="
-      w-6 h-6 text-[#101010] stroke-[2.25]
-      transition-transform duration-300
-      group-hover:translate-x-1.5
-    "/>
-  </span>
-</a>
-</div>
-
-</div>
+  </div>
 
 </section>
 
@@ -1016,128 +771,120 @@ Notre expérience du terrain nous permet d'accompagner les projets les plus ambi
     RESTAURATION DE COLLECTION
 =========================== */}
 
-<section
-id="restauration"
-className="scroll-mt-32 py-24 bg-[#0D0D0D]"
->
+<section id="restauration"
+className="scroll-mt-32 py-24 bg-[#0D0D0D]">
 
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-20">
 
-     <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-     RESTAURATION
-     </p>
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        RESTAURATION
+      </p>
 
-     <h2 className="font-racing text-5xl mb-6">
-     RESTAURATION DE VÉHICULES
-     <br />
-     <span className="gold-gradient">
-      DE COLLECTION
-     </span>
-     </h2>
-
-     <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-      Chaque véhicule de collection porte une histoire et mérite une attention particulière.
-      Nous réalisons sa restauration mécanique avec méthode et précision, dans le respect
-      de sa conception d'origine, afin de lui redonner fiabilité, agrément et longévité.
-     </p>
+      <h2 className="font-racing text-5xl mb-6">
+          RESTAURATION DE VÉHICULES
+        <br />
+        <span className="gold-gradient">
+          DE COLLECTION
+        </span>
+      </h2>
+ 
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Chaque véhicule de collection porte une histoire et mérite une attention particulière.
+        Nous réalisons sa restauration mécanique avec méthode et précision, dans le respect
+        de sa conception d'origine, afin de lui redonner fiabilité, agrément et longévité.
+      </p>
 
     </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
+    <div className="grid lg:grid-cols-3 gap-8">
 
-{/* Carte 13 */}
+      {/* Carte 13 */}
 
-        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             13
-             </p>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          13
+        </p>
 
-         <h3 className="font-racing text-3xl mb-6 text-center">
+        <h3 className="font-racing text-3xl mb-6 text-center">
          Remise en route
-         </h3>
+        </h3>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Diagnostic général</li>
+          <li>✔ Remplacement des fluides</li>
+          <li>✔ Remise en état des circuits</li>
+          <li>✔ Contrôle de l'alimentation</li>
+          <li>✔ Essais progressifs</li>
+        </ul>
 
-         <li>✔ Diagnostic général</li>
-         <li>✔ Remplacement des fluides</li>
-         <li>✔ Remise en état des circuits</li>
-         <li>✔ Contrôle de l'alimentation</li>
-         <li>✔ Essais progressifs</li>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Une remise en route méthodique permet de préserver la mécanique et de sécuriser
+          la reprise d'utilisation après une longue immobilisation.
+        </p>
 
+      </div>
+
+      {/* Carte 14 */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          14
+        </p>
+
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Restauration mécanique
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Moteur</li>
+          <li>✔ Transmission</li>
+          <li>✔ Freinage</li>
+          <li>✔ Trains roulants</li>
+          <li>✔ Electricité</li>
+          <li>✔ Carburation</li>
          </ul>
 
-         <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-         Une remise en route méthodique permet de préserver la mécanique et de sécuriser
-         la reprise d'utilisation après une longue immobilisation.
-         </p>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          Chaque ensemble mécanique est contrôlé et remis en état selon les besoins réels
+          du véhicule et les objectifs définis pour le projet.
+        </p>
 
-        </div>
+      </div>
 
-{/* Carte 14 */}
+      {/* Carte 15 */}
 
-        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
 
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             14
-             </p>
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          15
+        </p>
 
-         <h3 className="font-racing text-3xl mb-6 text-center">
-         Restauration mécanique
-         </h3>
+        <h3 className="font-racing text-3xl mb-6 text-center">
+          Authenticité & fiabilité
+        </h3>
 
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Respect de la configuration d'origine</li>
+          <li>✔ Recherche de pièces adaptées</li>
+          <li>✔ Conservation des éléments</li>
+          <li>✔ Fiabilisation</li>
+          <li>✔ Suivi à long terme</li>
+        </ul>
 
-         <li>✔ Moteur</li>
-         <li>✔ Transmission</li>
-         <li>✔ Freinage</li>
-         <li>✔ Trains roulants</li>
-         <li>✔ Electricité</li>
-         <li>✔ Carburation</li>
-
-         </ul>
-
-         <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-         Chaque ensemble mécanique est contrôlé et remis en état selon les besoins réels
-         du véhicule et les objectifs définis pour le projet.
-         </p>
-
-        </div>
-
-{/* Carte 15 */}
-
-        <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-         <p className="text-7xl font-black text-[#C9A22720] mb-6">
-             15
-             </p>
-
-         <h3 className="font-racing text-3xl mb-6 text-center">
-         Authenticité & fiabilité
-         </h3>
-
-         <ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-         <li>✔ Respect de la configuration d'origine</li>
-         <li>✔ Recherche de pièces adaptées</li>
-         <li>✔ Conservation des éléments</li>
-         <li>✔ Fiabilisation</li>
-         <li>✔ Suivi à long terme</li>
-
-         </ul>
-
-         <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
-         L'objectif est de préserver l'identité du véhicule tout en garantissant
-         un fonctionnement fiable, durable et adapté à son utilisation.
-         </p>
-
-        </div>
+        <p className="mt-auto text-sm text-[#A8A9AD] leading-relaxed text-center">
+          L'objectif est de préserver l'identité du véhicule tout en garantissant
+          un fonctionnement fiable, durable et adapté à son utilisation.
+        </p>
 
       </div>
 
     </div>
+
+  </div>
 
 </section>
 
@@ -1148,222 +895,118 @@ className="scroll-mt-32 py-24 bg-[#0D0D0D]"
     LA MÉTHODE PPA
 =========================== */}
 
-<section
-id="methode"
-className="scroll-mt-32 py-24 bg-[#0A0A0A]"
->
-
-<div className="max-w-7xl mx-auto px-6">
-
-<div className="text-center mb-20">
-
-<p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
-NOTRE MÉTHODE
-</p>
-
-<h2 className="font-racing text-5xl mb-6">
-LA MÉTHODE
-<br />
-<span className="gold-gradient">
-PERFORMANCE & PRESTIGE
-</span>
-</h2>
-
-<p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
-Chaque intervention suit une méthodologie rigoureuse.
-Notre objectif n'est pas seulement de réparer un véhicule, mais de comprendre son fonctionnement, d'assurer sa fiabilité et de garantir des performances durables.
-</p>
-
-</div>
-
-<div className="grid lg:grid-cols-3 gap-8">
-
-{/* Carte */}
-
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             01
-             </p>
-
-<h3 className="font-racing text-3xl text-center mb-6">
-Analyse
-</h3>
-
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Écoute du client</li>
-<li>✔ Analyse des symptômes</li>
-<li>✔ Contrôles préliminaires</li>
-<li>✔ Définition des besoins</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] text-center">
-Chaque intervention débute par une analyse complète afin d'orienter le diagnostic et les travaux à réaliser.
-</p>
-
-</div>
-
-{/* Carte */}
-
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             02
-             </p>
-
-<h3 className="font-racing text-3xl text-center mb-6">
-Intervention
-</h3>
-
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Méthodes professionnelles</li>
-<li>✔ Respect constructeur</li>
-<li>✔ Pièces adaptées</li>
-<li>✔ Travail de précision</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] text-center">
-Chaque opération est réalisée dans le respect des procédures afin de garantir qualité et fiabilité.
-</p>
-
-</div>
-
-{/* Carte */}
-
-<div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
-
-<p className="text-7xl font-black text-[#C9A22720] mb-6">
-             03
-             </p>
-
-<h3 className="font-racing text-3xl text-center mb-6">
-Validation
-</h3>
-
-<ul className="space-y-3 text-[#A8A9AD] mb-8">
-
-<li>✔ Contrôle qualité</li>
-<li>✔ Essais</li>
-<li>✔ Vérifications finales</li>
-<li>✔ Restitution du véhicule</li>
-
-</ul>
-
-<p className="mt-auto text-sm text-[#A8A9AD] text-center">
-Le véhicule est systématiquement contrôlé avant sa restitution afin de garantir un résultat conforme à nos exigences.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-{/* ===========================
-        CTA FINAL
-=========================== */}
-
-<section className="py-28 bg-[#0D0D0D]">
-
-<div className="max-w-6xl mx-auto px-6">
-
-<div className="bg-dark-card gold-border rounded-3xl overflow-hidden">
-
-<div className="grid lg:grid-cols-2 items-center">
-
-{/* Logo */}
-
-<div className="flex justify-center items-center p-12">
-
-<img
-src="/images/logo-transparent.png"
-alt="Performance & Prestige Academy"
-className="
-w-[360px]
-h-[360px]
-object-contain
-drop-shadow-[0_0_35px_rgba(201,162,39,0.25)]
-"
-/>
-
-</div>
-
-{/* Texte */}
-
-<div className="p-10 lg:p-14">
-
-<p className="font-racing text-xl tracking-[0.35em] text-[#C9A227] mb-4">
-
-UN PROJET ?
-
-</p>
-
-<h2 className="font-racing text-5xl mb-8">
-
-CONFIEZ-NOUS
-
-<br />
-
-<span className="gold-gradient">
-
-VOTRE VÉHICULE
-
-</span>
-
-</h2>
-
-<p className="text-[#A8A9AD] leading-relaxed mb-8 text-justify">
-
-Entretien, réparation, préparation moteur ou accompagnement en compétition.
-
-Chaque projet bénéficie de la même exigence, de la même rigueur et de la même passion qui font l'identité de Performance & Prestige Academy.
-
-</p>
-
-<div className="flex flex-col sm:flex-row gap-4">
-
-<a
-href="/contact"
-className="btn-gold text-black font-racing font-bold text-sm tracking-widest px-10 py-4 rounded text-center"
->
-
-DEMANDER UN DEVIS
-
-</a>
-
-<a
-href="tel:+33683872631"
-className="btn-outline-gold text-white font-racing font-bold text-sm tracking-widest px-10 py-4 rounded text-center"
->
-
-NOUS APPELER
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<Footer />
+<section id="methode"
+className="scroll-mt-32 py-24 bg-[#0A0A0A]">
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="text-center mb-20">
+
+      <p className="font-racing text-xl tracking-[0.4em] text-[#C9A227] mb-4">
+        NOTRE MÉTHODE
+      </p>
+
+      <h2 className="font-racing text-5xl mb-6">
+        LA MÉTHODE
+        <br />
+        <span className="gold-gradient">
+        PERFORMANCE & PRESTIGE
+        </span>
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-[#A8A9AD] leading-relaxed">
+        Chaque intervention suit une méthodologie rigoureuse.
+        Notre objectif n'est pas seulement de réparer un véhicule, mais de comprendre son fonctionnement, d'assurer sa fiabilité et de garantir des performances durables.
+      </p>
 
     </div>
+
+    <div className="grid lg:grid-cols-3 gap-8">
+
+      {/* Carte */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          01
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Analyse
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Écoute du client</li>
+          <li>✔ Analyse des symptômes</li>
+          <li>✔ Contrôles préliminaires</li>
+          <li>✔ Définition des besoins</li>
+        </ul>
+
+        <p className="mt-auto text-sm text-[#A8A9AD] text-center">
+          Chaque intervention débute par une analyse complète afin d'orienter le diagnostic et les travaux à réaliser.
+        </p>
+
+      </div>
+
+      {/* Carte */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          02
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Intervention
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Méthodes professionnelles</li>
+          <li>✔ Respect constructeur</li>
+          <li>✔ Pièces adaptées</li>
+          <li>✔ Travail de précision</li>
+        </ul>
+
+        <p className="mt-auto text-sm text-[#A8A9AD] text-center">
+          Chaque opération est réalisée dans le respect des procédures afin de garantir qualité et fiabilité.
+        </p>
+
+      </div>
+
+    {/* Carte */}
+
+      <div className="bg-dark-card gold-border rounded-2xl service-card p-8 h-full flex flex-col">
+
+        <p className="text-7xl font-black text-[#C9A22720] mb-6">
+          03
+        </p>
+
+        <h3 className="font-racing text-3xl text-center mb-6">
+          Validation
+        </h3>
+
+        <ul className="space-y-3 text-[#A8A9AD] mb-8">
+          <li>✔ Contrôle qualité</li>
+          <li>✔ Essais</li>
+          <li>✔ Vérifications finales</li>
+          <li>✔ Restitution du véhicule</li>
+        </ul>
+
+        <p className="mt-auto text-sm text-[#A8A9AD] text-center">
+          Le véhicule est systématiquement contrôlé avant sa restitution afin de garantir un résultat conforme à nos exigences.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <Footer />
+
+  </div>
   );
 }
 
