@@ -102,7 +102,7 @@ function ServicePanels() {
   return (
     <section
       id="services"
-      className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex h-full min-h-0 overflow-hidden bg-black border-y border-[#C9A227]">
+      className="relative isolate grid grid-cols-1 sm:grid-cols-2 lg:flex h-full lg:h-[calc(100%+44px)] min-h-0 overflow-hidden bg-black border-y border-[#C9A227]">
 
       {SERVICES.map((service, index) => (
         <div
@@ -195,7 +195,7 @@ export default function App() {
 
       <Navbar />
 
-      <main className="lg:h-[calc(100svh-92px)] lg:min-h-0 lg:grid lg:grid-rows-[52%_minmax(0,1fr)_64px] lg:overflow-hidden"
+      <main className="lg:h-[calc(100svh-56px)] lg:min-h-[596px] lg:grid lg:grid-rows-[55%_minmax(0,1fr)_64px] lg:overflow-hidden"
               >
         <Hero />
         <ServicePanels />
