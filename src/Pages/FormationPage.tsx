@@ -11,6 +11,8 @@ import {initiationMecaniqueFormation, mecaniqueAuFemininFormation, perfectionnem
     preparationExamensCAPFormation, preparationExamensBacProFormation, preparationExamensBTSFormation,
     } from "../data/formations";
 import CFAModal from "../components/CFAModal";
+import ContactBanner from "../components/ContactBanner";
+
 const FORMATION_OBJECTIVES = [
   { id: "debuter",href: "#formation-mecanique",image: "/images/formation/formationdebuter.png",title: "DÉBUTER\nLA MÉCANIQUE",},
   { id: "preparation",href: "#preparation",image: "/images/formation/formationdecouvrir.png",title: "PRÉPARATION À\n L’ENTRÉE EN FORMATION",},
@@ -1019,24 +1021,30 @@ return (<div className="min-h-screen pb-14 bg-[#0A0A0A] text-white">
       </a>
 
     </div>
+
   </div>
+  
 </section>
 
-<Footer />
+    <ContactBanner />
+
+    <Footer />
 
 
-<FormationModal
-  formation={selectedFormation}
-  isOpen={isFormationModalOpen}
-  onClose={() => setIsFormationModalOpen(false)}
-  onRequestInformation={() => {setIsFormationModalOpen(false); window.location.href = "/contact";}}
-/>
-<CFAModal
-  isOpen={isCFAModalOpen}
-  onClose={() => setIsCFAModalOpen(false)}
-  onContact={() => { setIsCFAModalOpen(false); window.location.href = "/contact";}}
-/>
-     </div>
+    <FormationModal
+      formation={selectedFormation}
+      isOpen={isFormationModalOpen}
+      onClose={() => setIsFormationModalOpen(false)}
+      onRequestInformation={() => {setIsFormationModalOpen(false); window.location.href = "/contact";}}
+    />
+    <CFAModal
+      isOpen={isCFAModalOpen}
+      onClose={() => setIsCFAModalOpen(false)}
+      onContact={() => { setIsCFAModalOpen(false); window.location.href = "/contact";}}
+    />
+
+    </div>
 
   );
+
 }
